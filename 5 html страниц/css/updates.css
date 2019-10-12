@@ -1,0 +1,53 @@
+.header{
+  background: #fff;
+}
+.header .logo{
+  padding-bottom: 10px;
+}
+.bg_prod{
+  padding-top: 17%;
+  background: url(../img/bg_upd.png) no-repeat;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+}
+.date{
+  margin-top: 10px;
+  width: 100%;
+  background: #bf1b2d;
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+}
+.card-wrap ul{
+  margin-left: 20px;
+}
+.card-wrap ul li{
+  font-size: 18px;
+  padding-top: 10px;
+  list-style: disc;
+}
+.card-wrap img{
+  width: 100%;
+}
+.page-link{
+  border: 0;
+  color: #000;
+  font-size: 24px;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: normal;
+}
+.page-link:hover{
+  background: transparent;
+  color: #000;
+  text-decoration: underline;
+}
+.link-active{
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+  color: #bf1b2d;
+  text-decoration: underline;
+}
+.link-active:hover{
+  color: #bf1b2d;
+  text-decoration: underline;
+}
