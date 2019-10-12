@@ -1,0 +1,408 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html{
+	overflow-x: hidden;
+}
+body{
+	background: linear-gradient(45deg, #fff 5%, #d6d6d6 100%);
+	overflow-x: hidden;
+	font-family: 'GilroyReg';
+}
+a, a:hover{
+	color: inherit;
+	text-decoration: none;
+}
+h1, h2{
+	padding: 0;
+	margin: 0;
+}
+.img-fluid{
+	max-width: 100%;
+	height: auto;
+}
+ul, li{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+.bg-item{
+	position: absolute;
+}
+.bg-item-1{
+	top: -40px;
+	left: 0px;
+	transform: translateX(50%)
+}
+.bg-item-2{
+	top: -115px;
+	right: 0;
+	transform: translateX(105%)
+}
+.bg-item-3{
+	right: 0;
+	top: 300px;
+	transform: translateX(95%);
+}
+/*--------Header--------*/
+.header{
+	font-size: 30px;
+	font-family: 'GilroyReg';
+	padding: 40px 0;
+}
+.header .row{
+	position: relative;
+}
+.header .logo span{
+	color: #fa6a55;
+}
+.header .number{
+	text-align: center;
+}
+.header .number a{
+	color: #252244;
+}
+/*------Header end------*/
+/*--------Content--------*/
+.step{
+	border-bottom: 1px solid #e5e4e7;
+	padding-bottom: 60px; 
+}
+.step .container .row{
+	position: relative;
+}
+.step h1{
+	font-size: 44px;
+	font-family: 'GilroyThin';
+}
+.step .home{
+	transform-origin: left top;
+	transform: scale(1.1);
+}
+.step .home + div{
+	margin-top: 100px;
+}
+.step .btn-orange{
+	background: #fa6a55;
+	font-family: 'GilroyBold';
+	border: 0;
+	max-width: 100%;
+	padding: 23px 75px;
+	font-size: 20px;
+	color: #fff;
+	cursor: pointer;
+	box-shadow: 0px 10px 10px #f68d709f;
+	border-radius: 3px;
+}  
+#step-1 .btn-orange{
+	margin-bottom: 20px;
+}
+#step-1 .about ul{
+	font-family: 'GilroyReg';
+	font-size: 20px;
+	padding-top: 50px;
+}
+#step-1 .about ul li{
+	padding-bottom: 15px;
+	padding-left: 30px;
+	position: relative;
+}
+#step-1 .about ul li::before{
+	font-family: 'fontello';
+	content: '\e800';
+	color: #fa6a55;
+	position: absolute;
+	left: 0px;
+}
+.step .descr{
+	text-align: center;
+	font-family: 'GilroyReg';
+}
+.step .descr:hover{
+	text-decoration: underline;
+}
+.step .descr-step{
+	font-size: 15px;
+	font-family: 'GilroyReg';
+}
+.step .descr-step span{
+	color: #fa6a55;
+}
+.step h2{
+	font-size: 24px;
+	font-family: 'GilroyUltra';
+	padding: 20px 0 9px;
+}
+.step h2 + p{
+	font-size: 15px;
+	color: #777777;
+}
+.step input[type="text"]{
+	width: 100%;
+	border: 0;
+	border-radius: 5px;
+	font-size: 18px;
+	padding: 15px 26px;
+	margin-bottom: 15px;
+	border: 2px solid transparent;
+}
+#step-4 input[type="text"]:last-child{
+	margin: 0;
+}
+.step input:focus{
+	border: 2px solid #fa6a55;
+	outline: none;
+	color: #fa6a55;
+}
+.step input:focus::-webkit-input-placeholder{color: #fa6a55;}
+.step input:focus::-moz-placeholder{color: #fa6a55;}
+.step input:focus:-moz-placeholder{color: #fa6a55;}
+.step input:focus:-ms-input-placeholder{color: #fa6a55;}
+.step .choose{
+	background: #fff;
+	padding: 20px 15px;
+	max-height: 450px;
+	flex: 0 0 350px;
+	border-radius: 3px;
+}
+
+.step .choose .list li{
+	padding-bottom: 10px;
+	position: relative;
+	pointer-events: none;
+}
+.step .choose .list li:after{
+	content: '\e801';
+	font-family: 'Fontello';
+	position: absolute;
+	font-size: 14px;
+	color: #fa6a55;
+	left: 0px;
+	top: 2px;
+	pointer-events: all;
+	cursor: pointer;
+}
+.step .choose .list li.second:after{
+	content: '\e802';
+	font-family: 'Fontello';
+	position: absolute;
+	font-size: 14px;
+	color: #fa6a55;
+	left: 0px;
+	top: 2px;
+	pointer-events: all;
+	z-index: 10;
+}
+.step .choose .list ul{
+	display: none;
+}
+.step .choose .list > ul{
+	display: block;
+}
+.step .choose .list li label{
+	cursor: pointer;
+	pointer-events: all;
+}
+.step .choose .list > li + ul{
+	padding-left: 40px;
+}
+.step .choose .list > li + ul > li + ul{
+	padding-left: 25px;
+}
+.step .choose .list input[type="checkbox"]{
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	position: absolute;
+	left: -9999999px;
+}
+.step .choose .list label .checkbox-text{
+	font-family: 'GilroyReg';
+	font-size: 16px;
+	position: relative;
+	padding-left: 45px;
+}
+#step-2 .choose .list > li label .checkbox-text{
+	font-family: 'GilroyBold';
+	font-size: 18px;
+}
+.step .choose .list label .checkbox-text:before{
+	content: '';
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	border: 2px solid #fa6a55;
+	border-radius: 3px;
+	left: 19px;
+	top: 3px;
+}
+.step .choose .list label input[type="checkbox"]:checked + .checkbox-text{
+	color: #fa6a55;
+}
+.step .choose .list label input[type="checkbox"]:checked + .checkbox-text:before{
+	background: #fa6a55;
+}
+.step .wrapper-select{
+	width: 100%;
+}
+.step .selected{
+	padding-left: 45px;
+	max-height: 450px;
+	overflow-y: hidden;
+}
+.step .selected .added{
+	position: relative;
+	width: 160px;
+	font-size: 15px;
+	color: #fa6a55;
+	font-family: 'GilroyBold';
+	padding: 6px 15px;
+	border: 1px solid #fa6a55;
+	border-radius: 4px;
+	margin-top: 19px;
+	pointer-events: none;
+}
+.step .selected .added:before{
+	content: '\e803';
+	font-family: 'Fontello';
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: #fa6a55;
+	color: #fff;
+	border-radius: 50%;
+	width: 16px;
+	height: 16px;
+	transform: translate(50%, -50%) rotate(45deg);
+	text-align: center;
+	cursor: pointer;
+	pointer-events: all;
+}
+#step-3 .added-wrapper{
+	height: 100%;
+	overflow: hidden;
+}
+.step .cart{
+	font-size: 18px;
+	font-family: 'GilroyReg';
+}
+.step .cart span{
+	color: #fa6a55;
+}
+#step-4 label{
+	margin-bottom: 20px;
+}
+#step-4 label .text{
+	color: #9f9f9f;
+	font-family: 'GilroyReg';
+	position: relative;
+	cursor: pointer;
+}
+#step-4 label .text a{
+	color: #000;
+}
+#step-4 label .text a:hover{
+	text-decoration: underline;
+}
+#step-4 label .text:before{
+	content: '';
+	position: absolute;
+	width: 12px;
+	height: 12px;
+	border: 2px solid #fa6a55;
+	border-radius: 3px;
+	left: -20px;
+	top: 3px;
+}
+#step-4 .agree{
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	z-index: -10;
+	left: -9999px;
+	opacity: 0;
+}
+#step-4 .agree:checked + .text:before{
+	background: #fa6a55;
+	cursor: pointer;
+}
+/*------Content end------*/
+/*--------Footer--------*/
+.footer{
+	font-family: 'GilroyReg';
+	font-size: 18px;
+	padding: 30px 0;
+}
+.footer a:hover:not(.login){
+	text-decoration: underline;
+}
+.footer .login{
+	border: 1px solid #fa6a55;
+	color: #fa6a55;
+	padding: 7px 15px;
+	display: inline-block;
+}
+/*------Footer end------*/
+/*Media queries*/
+@media screen and (max-width: 991px){
+	.header .number{
+		text-align: right;
+	}
+}
+@media screen and (max-width: 767px){
+	#step-1 h1{
+		font-size: 34px;
+	}
+	.step .wrapper-select{
+		-ms-flex-direction: column;
+		flex-direction: column;
+	}
+	.step .selected{
+		padding: 0;
+	}
+	.step .added-wrapper{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.step .selected .added-wrapper .added{
+		width: 150px;
+		margin: 5px;
+	}
+	.step .selected .added-wrapper{
+		padding: 5px 0;
+	}
+	.footer{
+		font-size: 14px;
+	}
+	.step .btn-orange{
+		font-size: 15px;
+	}
+	.step p.descr{
+		font-size: 14px;
+	}
+}
+@media screen and (max-width: 575px){
+	.header .logo, .header .number{
+		text-align: left;
+	}
+	.header{
+		padding: 10px 0;
+	}
+	.header .logo{
+		padding-bottom: 5px;
+	}
+	.step .home + div{
+		width: 100%;
+	}
+	.step .btn-orange{
+		padding: 23px 0;
+		width: 100%;
+		text-align: center;
+	}
+	.footer .login{
+		margin: 0;
+	}
+}
