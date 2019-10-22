@@ -1,0 +1,271 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'PF Din Text Cond Pro';
+	font-weight: normal;
+	box-sizing: border-box;
+}
+a{
+	color: #000;
+}
+h1{
+	font-size: 30px;
+	text-transform: uppercase;
+}
+h2{
+	font-size: 24px;
+	text-transform: uppercase;
+}
+section{padding: 20px 10px;}
+header{
+	.top{
+		background-color: #ff9c00;
+		font-size: 20px;
+		padding: 10px;
+		display: flex;
+		color: #fff;
+		justify-content: space-between;
+
+		.gam{
+			position: relative;
+			width: 22px;
+			padding: 2px 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			
+			span{
+				height: 2px;
+				width: 100%;
+				background-color: #fff;
+			}
+		}
+		
+		.title{
+			text-transform: uppercase;
+		}
+	}
+
+	.video{
+		height: 215px;
+		background-color: blue;
+	}
+}
+
+section.about{
+	padding: 20px 15px;
+	.stars{
+		display: flex;
+
+		.star{
+			padding-right: 7px;
+		}
+	}
+	.descr{
+		font-size: 15px;
+		.address{
+			margin-bottom: 3px;
+		}
+		p{
+			margin-bottom: 16px;
+
+			span{
+				text-decoration: underline;
+			}
+		}
+		h3{
+			text-transform: uppercase;
+			font-weight: bold;
+			margin-bottom: 15px;
+		}
+		.rating {
+			display: flex;
+			align-items: center;
+
+			span{
+				text-decoration: none;
+			}
+		}
+		.rating-inner{
+			color: #9ccc00;
+			font-size: 44px;
+			font-weight: bold;
+			padding-right: 23px;
+		}
+		.link a{
+			color: #000;
+			font-weight: bold;
+			margin-right: 8px;
+		}
+
+	}
+}
+
+section.tours{
+	background-color: #fcbd5c;
+
+	.tb-line{
+		font-size: 15px;
+		display: flex;
+		background-color: #fdf9ee;
+		padding: 10px 8px;
+		margin-bottom: 5px;
+		span:first-child{
+			width: 45%;
+			text-transform: uppercase;
+		}
+		span:last-child{
+			width: 55%;
+			text-decoration: underline;
+		}
+	}
+	a{
+		color: #fff;
+		text-decoration: none;
+		font-size: 15px;
+		background-color: #6481c5;
+		display: block;
+		text-align: center;
+		padding: 10px 0;
+		border-radius: 3px;
+		margin-top: 10px;
+	}
+}
+section.tickets{
+	padding: 0;
+	.ticket{
+		& > div{
+			padding: 10px!important;
+		}
+
+		.roundtrip{
+			background-color: #fff;
+			padding: 29px 10px;
+
+			p{
+				display: flex;
+				align-items: center;
+				font-size: 18px;
+
+				span:first-child{
+					width: 30%;
+					font-size: 15px;
+					text-transform: uppercase;
+					color: #454545;
+				}
+			}
+			p:first-child{
+				margin-bottom: 12px;
+			}
+		}
+		.inf-ticket{
+			font-size: 18px;
+			padding: 23px 0;
+			border: 1px solid #ccc;
+			border-left: 0;
+			border-right: 0;
+			
+			p{
+				margin-bottom: 13px;
+			}
+
+			p:first-child{
+				text-transform: uppercase;
+			}
+			p:last-child{
+				margin-bottom: 0;
+			}
+		}
+		.total{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 20px 10px;
+
+			.price{
+				display: flex;
+				justify-content: space-between;
+				min-width: 120px;
+				border-radius: 3px;
+				font-size: 11px;
+				color: #fff;
+				background-color: #ff9c00;
+				padding: 10px;
+				margin-bottom: 10px;
+
+				span:first-child{
+					font-size: 24px;
+				}
+				span:last-child{
+					text-decoration: underline;
+				}
+			}
+			p{font-size: 12px;}
+		}
+	}
+	.ticket-2{
+		border: 10px solid #fcbd5c;
+		border-left: none;
+		border-right: none;
+	}
+	.more{
+		background-color: #fcbd5c;
+		padding: 8px 10px 12px;
+
+		a{
+			text-decoration: underline;
+			font-size: 12px;
+		}
+	}
+}
+section.hotel{
+	h2{
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	p{
+		font-size: 16px;
+	}
+	input{
+		color: #000;
+		text-align: center;
+		font-size: 16px;
+		width: 100%;
+		padding: 6px 0;
+		margin-bottom: 10px;
+		border: 1px solid #cccccc;
+	}
+	button{
+		border: none;
+		background-color: #6481c5;
+		color: #fff;
+		width: 100%;
+		padding: 10px 0;
+	}
+}
+.separator{
+	height: 40px;
+	background-color: #f1f1f1;
+}
+section.about-hotel{
+	h2{
+		font-weight: bold;
+		margin-bottom: 16px;
+	}
+	h3{
+		text-transform: uppercase;
+		font-size: 15px;
+		font-weight: bold;
+		margin-bottom: 16px;
+	}
+	p{
+		margin-bottom: 16px;
+
+		span{
+			font-weight: bold;
+		}
+	}
+	p:last-child{
+		margin-bottom: 0;
+	}
+}
