@@ -5,9 +5,6 @@
 	font-weight: normal;
 	box-sizing: border-box;
 }
-.ytp-icon-large-play-button-hover{
-	background: no-repeat url('img/play.png') -40px -494px!important;
-}
   .slick-prev:before,
   .slick-next:before {
     display: none;
@@ -142,6 +139,9 @@ section.about{
 
 section.tours{
 	background-color: #fcbd5c;
+	h2{
+		margin-bottom: 15px;
+	}
 
 	.tb-line{
 		font-size: 15px;
@@ -174,7 +174,7 @@ section.tickets{
 	padding: 0;
 	.ticket{
 		& > div{
-			padding: 10px!important;
+			padding: 10px;
 		}
 
 		.roundtrip{
@@ -199,7 +199,7 @@ section.tickets{
 		}
 		.inf-ticket{
 			font-size: 18px;
-			padding: 23px 0;
+			padding: 23px 10px;
 			border: 1px solid #ccc;
 			border-left: 0;
 			border-right: 0;
