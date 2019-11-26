@@ -25,6 +25,7 @@ ul{list-style: none;}
   -ms-user-select: none;
   -o-user-select: none;
   user-select: none;
+  font-size: 16px;
 }
 
 .checkbox + label:before {
@@ -111,7 +112,7 @@ ul{list-style: none;}
 
 .checkbox-description {
   padding: 20px 0 0 30px;
-  font-size: 15px;
+  font-size: 16px;
 }
 .form-group-btn{
   display: flex;
