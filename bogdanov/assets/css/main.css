@@ -29,7 +29,6 @@ header .wrapper {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 1650px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -58,6 +57,9 @@ header .wrapper .menu .menu-inner {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 header .wrapper .menu .menu-inner .nav {
@@ -71,6 +73,7 @@ header .wrapper .menu .menu-inner .nav {
 
 header .wrapper .menu .menu-inner .nav a {
   padding-left: 70px;
+  padding-bottom: 20px;
 }
 
 header .wrapper .menu .menu-inner .nav a:hover {
@@ -98,6 +101,71 @@ header .wrapper .menu .menu-inner .login span {
 header .wrapper .menu .menu-inner .login a.signin {
   color: #ff0000;
   font-weight: 700;
+}
+
+header .wrapper.unauthed .login-auth {
+  display: none;
+}
+
+header .wrapper.authed .login-auth {
+  display: block;
+  position: relative;
+  margin-left: 200px;
+}
+
+header .wrapper.authed .login-auth .mini-avatar {
+  position: relative;
+  width: 160px;
+  padding-left: 69px;
+  height: 91px;
+  background-image: url("../img/avatar.png");
+  background-size: 91px 91px;
+  background-repeat: no-repeat;
+  background-position: 100%;
+}
+
+header .wrapper.authed .login-auth .mini-avatar::after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 28px;
+  background-image: url("../img/arrow-orange.png");
+  background-size: 15px 28px;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+  left: 10px;
+  top: 30px;
+}
+
+header .wrapper.authed .login-auth .actions {
+  display: none;
+  position: absolute;
+  right: 0;
+  width: 230px;
+  text-align: center;
+  padding: 22px 30px;
+}
+
+header .wrapper.authed .login-auth .actions a {
+  display: block;
+  font-size: 24px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  border-bottom: 3px solid #a89fab;
+}
+
+header .wrapper.authed .login-auth .actions a:first-child {
+  padding-top: 0;
+}
+
+header .wrapper.authed .login-auth .actions a:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+header .wrapper.authed .login {
+  display: none !important;
 }
 
 section.main {
@@ -397,7 +465,6 @@ footer.footer a {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 100%;
     margin: 0 auto;
   }
   header .wrapper .logo {
@@ -962,130 +1029,25 @@ footer.footer a {
 
 @media screen and (max-width: 650px) {
   header {
-    padding-top: 0px;
-  }
-  header .wrapper {
-    width: 100%;
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
+    padding-top: 10px;
   }
   header .wrapper .logo {
-    max-width: 230px;
+    margin-left: 10px;
+    max-width: 200px;
   }
   header .wrapper .menu-btn {
-    position: relative;
-    display: block;
-    right: 0;
-    bottom: 0;
-    width: 70px;
-    height: 42px;
-    margin: 0;
-  }
-  header .wrapper .menu-btn span {
-    position: absolute;
-    height: 6px;
-    width: 100%;
-    background: #000;
-    top: 50%;
-    margin-top: -3px;
-    border-radius: 2px;
-    -webkit-transition: .2s ease;
-    -o-transition: .2s ease;
-    transition: .2s ease;
-  }
-  header .wrapper .menu-btn span::after, header .wrapper .menu-btn span::before {
-    content: "";
-    position: absolute;
-    height: 6px;
-    width: 100%;
-    background: #000;
-    border-radius: 2px;
-    -webkit-transition: .2s ease;
-    -o-transition: .2s ease;
-    transition: .2s ease;
-    -webkit-transform-origin: center center;
-    -ms-transform-origin: center center;
-    transform-origin: center center;
-    right: 0;
-  }
-  header .wrapper .menu-btn span::after {
-    content: "";
-    position: absolute;
-    height: 6px;
-    width: 100%;
-    background: #000;
-    -webkit-transform: translateY(17px);
-    -ms-transform: translateY(17px);
-    transform: translateY(17px);
-  }
-  header .wrapper .menu-btn span::before {
-    content: "";
-    position: absolute;
-    height: 6px;
-    width: 100%;
-    background: #000;
-    -webkit-transform: translateY(-17px);
-    -ms-transform: translateY(-17px);
-    transform: translateY(-17px);
-  }
-  header .wrapper .menu-btn_active span {
-    height: 0;
-  }
-  header .wrapper .menu-btn_active span::after {
-    -webkit-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    width: 57px;
-  }
-  header .wrapper .menu-btn_active span::before {
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    width: 57px;
+    margin-right: 10px;
   }
   header .wrapper .menu {
-    position: absolute;
-    width: 100%;
-    top: 100%;
-    background-color: #fff;
-    display: none;
-    border: 40px solid #fff;
-    font-size: 24px;
-    z-index: 99;
+    border: 10px solid #fff;
+    border-top: 20px solid #fff;
+    border-bottom: 20px solid #fff;
   }
-  header .wrapper .menu .menu-inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+  header .wrapper .menu .login-auth {
+    margin-left: 0;
   }
-  header .wrapper .menu .menu-inner .nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-  header .wrapper .menu .menu-inner .login {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+  header .wrapper a {
+    font-size: 18px !important;
   }
   section.main .wrapper .news {
     border-top: 40px solid #ff0000;

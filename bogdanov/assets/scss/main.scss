@@ -20,10 +20,9 @@ header{
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		width: 1650px;
 		margin: 0 auto;
 		padding: 0 20px;
-
+		
 		.logo{
 			max-width: 300px;
 		}
@@ -40,6 +39,7 @@ header{
 			.menu-inner{
 				display: flex;
 				justify-content: flex-end;
+				align-items: center;
 
 				.nav{
 					display: flex;
@@ -47,6 +47,7 @@ header{
 
 					a{
 						padding-left: 70px;
+						padding-bottom: 20px;
 
 						&:hover{
 							text-decoration: underline;
@@ -70,6 +71,68 @@ header{
 						font-weight: 700;
 					}
 				}
+			}
+		}
+		&.unauthed{
+			.login-auth{
+				display: none;
+			}
+		}
+		&.authed{
+			.login-auth{
+				display: block;
+				position: relative;
+				margin-left: 200px;
+
+				.mini-avatar{
+					position: relative;
+					width: 160px;
+					padding-left: 69px;
+					height: 91px;
+					background-image: url('../img/avatar.png');
+					background-size: 91px 91px;
+					background-repeat: no-repeat;
+					background-position: 100%;
+
+					&::after{
+						content: '';
+						position: absolute;
+						width: 15px;
+						height: 28px;
+						background-image: url('../img/arrow-orange.png');
+						background-size: 15px 28px;
+						transform: rotate(90deg);
+						left: 10px;
+						top: 30px;
+					}
+				}
+				.actions{
+					display: none;
+					position: absolute;
+					right: 0;
+					width: 230px;
+					text-align: center;
+					padding: 22px 30px;
+
+					a{
+						display: block;
+						font-size: 24px;
+						padding-top: 18px;
+						padding-bottom: 18px;
+						border-bottom: 3px solid #a89fab;
+
+						&:first-child{
+							padding-top: 0;
+						}
+						&:last-child{
+							padding-bottom: 0;
+							border-bottom: 0;
+						}
+					}
+				}
+			}
+			.login{
+				display: none !important;
 			}
 		}
 	}
@@ -279,7 +342,6 @@ footer.footer{
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
-			width: 100%;
 			margin: 0 auto;
 
 			.logo{
@@ -772,100 +834,26 @@ footer.footer{
 }
 @media screen and (max-width: 650px){
 	header{
-		padding-top: 0px;
+		padding-top: 10px;
 		.wrapper{
-			width: 100%;
-			position: relative;
-			display: flex;
-			justify-content: space-between;
-			align-items: flex-end;
-
 			.logo{
-				max-width: 230px;
+				margin-left: 10px;
+				max-width: 200px;
 			}
 			.menu-btn{
-				position: relative;
-				display: block;
-				right: 0;
-				bottom: 0;
-				width: 70px;
-				height: 42px;
-				margin: 0;
-
-				span{
-					position: absolute;
-					height: 6px;
-					width: 100%;
-					background: #000;
-					top: 50%;	margin-top: -3px;
-					border-radius: 2px;
-					transition: .2s ease;
-
-					&::after, &::before{
-						content: "";
-						position: absolute;
-						height: 6px;
-						width: 100%;
-						background: #000;
-						border-radius: 2px;
-						transition: .2s ease;
-						transform-origin: center center;
-						right: 0;
-					}
-					&::after{
-						content: "";
-						position: absolute;
-						height: 6px;
-						width: 100%;
-						background: #000;
-						transform: translateY(17px);
-					}
-					&::before{
-						content: "";
-						position: absolute;
-						height: 6px;
-						width: 100%;
-						background: #000;
-						transform: translateY(-17px);
-					}
-				}
-			}
-			.menu-btn_active{
-				span{
-					height: 0;
-					&::after{
-						transform: rotate(-45deg);
-						width: 57px;
-					}
-					&::before{
-						transform: rotate(45deg);
-						width: 57px;
-					}
-				}
+				margin-right: 10px;
 			}
 			.menu{
-				position:absolute;
-				width: 100%;
-				top: 100%;
-				background-color: #fff;
-				display: none;
-				border: 40px solid #fff;
-				font-size: 24px;
-				z-index: 99;
+				border: 10px solid #fff;
+				border-top: 20px solid #fff;
+				border-bottom: 20px solid #fff;
 
-				.menu-inner{
-					display: flex;
-					justify-content: space-between;
-
-					.nav{
-						display: flex;
-						flex-direction: column;
-					}
-					.login{
-						display: flex;
-						flex-direction: column;
-					}
+				.login-auth{
+					margin-left: 0;
 				}
+			}
+			a{
+				font-size: 18px!important;
 			}
 		}
 	}
