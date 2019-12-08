@@ -815,6 +815,9 @@ footer.footer a {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
   }
   header .wrapper .menu .menu-inner .nav {
     display: -webkit-box;
@@ -844,6 +847,19 @@ footer.footer a {
   header .wrapper .menu .menu-inner .login .signin {
     color: #000 !important;
     font-weight: 400 !important;
+  }
+  header .wrapper .menu .menu-inner .login-auth .mini-avatar {
+    display: none;
+  }
+  header .wrapper .menu .menu-inner .login-auth .actions {
+    padding: 0;
+    position: static;
+    display: block;
+  }
+  header .wrapper .menu .menu-inner .login-auth .actions a {
+    border: none;
+    padding: 0;
+    padding-bottom: 20px;
   }
   section.main .wrapper .news {
     border-top: 40px solid #ff0000;
@@ -1080,15 +1096,7 @@ footer.footer a {
     margin-bottom: 55px;
   }
   section.main .wrapper .content-wrapper .content .content-1 .content-inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
+    display: block;
   }
   section.main .wrapper .content-wrapper .content .content-1 .content-inner .item {
     background-color: #fff;
@@ -1106,6 +1114,7 @@ footer.footer a {
     text-align: center;
     border: none;
     max-width: 160px;
+    margin: 0 auto;
   }
   section.main .wrapper .content-wrapper .content .content-1 .content-inner .item p.descr {
     padding-top: 10px;
@@ -1116,21 +1125,12 @@ footer.footer a {
   }
   section.main .wrapper .content-wrapper .content .content-1 .content-inner .item-2 {
     padding: 30px 10px 30px;
-    margin: 0 16px 0;
   }
   section.main .wrapper .content-wrapper .content .content-1 .content-inner .item-3 {
     padding: 40px 10px 40px;
   }
   section.main .wrapper .content-wrapper .content .content-2 .content-inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
+    display: block;
   }
   section.main .wrapper .content-wrapper .content .content-2 .content-inner .item {
     background-color: #fff;
@@ -1148,6 +1148,7 @@ footer.footer a {
     text-align: center;
     border: none;
     max-width: 160px;
+    margin: 0 auto;
   }
   section.main .wrapper .content-wrapper .content .content-2 .content-inner .item p.descr {
     font-size: 22px;
@@ -1160,7 +1161,6 @@ footer.footer a {
   }
   section.main .wrapper .content-wrapper .content .content-2 .content-inner .item-2 {
     padding: 30px 10px 30px;
-    margin: 0 16px 0;
   }
   section.main .wrapper .content-wrapper .content .content-2 .content-inner .item-2 p.descr {
     padding-top: 50px;
@@ -1207,36 +1207,47 @@ footer.footer a {
     font-size: 22px;
   }
   section.main .wrapper .content-wrapper .content .content-3 .content-inner .item-1, section.main .wrapper .content-wrapper .content .content-3 .content-inner .item-3, section.main .wrapper .content-wrapper .content .content-3 .content-inner .item-5, section.main .wrapper .content-wrapper .content .content-3 .content-inner .item-7 {
-    margin-right: 24px;
+    margin-right: 0px;
   }
   section.main .wrapper .content-wrapper .content .content-3 .content-inner .item-3, section.main .wrapper .content-wrapper .content .content-3 .content-inner .item-4 {
-    margin-top: 24px;
-    margin-bottom: 24px;
+    margin: 0;
   }
   footer.footer {
-    padding: 40px 25px 40px 50px;
+    padding: 10px;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   footer.footer p {
     font-size: 20px;
   }
   footer.footer a {
     font-size: 20px;
+    margin-left: 0;
+    margin-top: 20px;
   }
 }
 
 @media screen and (max-width: 450px) {
   header {
-    padding-top: 20px;
+    padding-top: 10px;
   }
   header .wrapper .logo {
+    margin-left: 10px;
     max-width: 200px;
   }
   header .wrapper .menu-btn {
-    width: 60px;
+    margin-right: 10px;
   }
   header .wrapper .menu {
-    border: 20px solid #fff;
-    font-size: 20px;
+    border: 10px solid #fff;
+    border-top: 20px solid #fff;
+    border-bottom: 20px solid #fff;
+  }
+  header .wrapper .menu .login-auth {
+    margin-left: 0;
+  }
+  header .wrapper a {
+    font-size: 18px !important;
   }
   section.main .wrapper .news {
     border-top: 40px solid #ff0000;

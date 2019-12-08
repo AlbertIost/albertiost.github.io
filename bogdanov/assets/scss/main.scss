@@ -643,6 +643,7 @@ footer.footer{
 				.menu-inner{
 					display: flex;
 					justify-content: space-between;
+					align-items: flex-start;
 
 					.nav{
 						display: flex;
@@ -660,6 +661,22 @@ footer.footer{
 						.signin{
 							color: #000!important;
 							font-weight: 400!important;
+						}
+					}
+					.login-auth{
+						.mini-avatar{
+							display: none;
+						}
+						.actions{
+							padding: 0;
+							position: static;
+							display: block;
+							
+							a{
+								border: none;
+								padding: 0;
+								padding-bottom: 20px;
+							}
 						}
 					}
 				}
@@ -895,9 +912,7 @@ footer.footer{
 					}
 					.content-1{
 						.content-inner{
-							display: flex;
-							justify-content: center;
-							align-items: flex-end;
+							display: block;
 							
 							.item{
 								background-color: #fff;
@@ -908,6 +923,7 @@ footer.footer{
 								text-align: center;
 								border: none;
 								max-width: 160px;
+								margin: 0 auto;
 
 								p.descr{
 									padding-top: 10px;
@@ -919,7 +935,6 @@ footer.footer{
 							}
 							.item-2{
 								padding: 30px 10px 30px;
-								margin: 0 16px 0;
 							}
 							.item-3{
 								padding: 40px 10px 40px;
@@ -928,9 +943,7 @@ footer.footer{
 					}
 					.content-2{
 						.content-inner{
-							display: flex;
-							justify-content: center;
-							align-items: flex-end;
+							display: block;
 							
 							.item{
 								background-color: #fff;
@@ -941,6 +954,7 @@ footer.footer{
 								text-align: center;
 								border: none;
 								max-width: 160px;
+								margin: 0 auto;
 
 								p.descr{
 									font-size: 22px;
@@ -955,7 +969,6 @@ footer.footer{
 							}
 							.item-2{
 								padding: 30px 10px 30px;
-								margin: 0 16px 0;
 
 								p.descr{
 									padding-top: 50px;
@@ -994,11 +1007,10 @@ footer.footer{
 								}
 							}
 							.item-1, .item-3, .item-5, .item-7{
-								margin-right: 24px;
+								margin-right: 0px;
 							}
 							.item-3, .item-4{
-								margin-top: 24px;
-								margin-bottom: 24px;
+								margin:0;
 							}
 						}
 					}
@@ -1008,29 +1020,41 @@ footer.footer{
 	}
 
 	footer.footer{
-		padding: 40px 25px 40px 50px;
+		padding: 10px;
+		flex-wrap: wrap;
 
 		p{
 			font-size: 20px;
 		}
 		a{
 			font-size: 20px;
+			margin-left: 0;
+			margin-top: 20px;
 		}
 	}
 }
 @media screen and (max-width: 450px){
 	header{
-		padding-top: 20px;
+		padding-top: 10px;
 		.wrapper{
 			.logo{
+				margin-left: 10px;
 				max-width: 200px;
 			}
 			.menu-btn{
-				width: 60px;
+				margin-right: 10px;
 			}
 			.menu{
-				border: 20px solid #fff;
-				font-size: 20px;
+				border: 10px solid #fff;
+				border-top: 20px solid #fff;
+				border-bottom: 20px solid #fff;
+
+				.login-auth{
+					margin-left: 0;
+				}
+			}
+			a{
+				font-size: 18px!important;
 			}
 		}
 	}

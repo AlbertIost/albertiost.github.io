@@ -58,3 +58,11 @@
 		}
 	}
 }
+@media screen and (max-width: 650px){
+	.contentNext{
+		right: 0;
+	}
+	.contentPrev{
+		left: 0;
+	}
+}
