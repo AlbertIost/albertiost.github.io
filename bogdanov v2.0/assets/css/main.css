@@ -704,7 +704,7 @@ footer.footer a {
 
 @media screen and (max-width: 1250px) {
   header {
-    padding-top: 20px;
+    padding-top: 10px;
   }
   header .wrapper {
     -webkit-box-align: center;
@@ -713,7 +713,7 @@ footer.footer a {
     padding: 0;
   }
   header .wrapper .logo {
-    max-width: 300px;
+    max-width: 250px;
     margin-left: 30px;
   }
   header .wrapper .menu-btn {
@@ -790,7 +790,7 @@ footer.footer a {
     transform-origin: right;
   }
   header .wrapper .menu-btn_active span {
-    height: 0;
+    width: 0;
   }
   header .wrapper .menu {
     position: absolute;
@@ -867,22 +867,23 @@ footer.footer a {
   }
   section.main .wrapper .news {
     border-top: 40px solid #ff0000;
-    margin-top: 40px;
+    margin-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
+    padding-top: 10px;
   }
   section.main .wrapper .news .date {
     padding-right: 5px;
   }
   section.main .wrapper .news .date p {
-    font-size: 16px;
+    font-size: 14px;
     text-align: right;
   }
   section.main .wrapper .news .heading {
-    font-size: 24px;
+    font-size: 20px;
   }
   section.main .wrapper .news .descr {
-    font-size: 16px;
+    font-size: 14px;
   }
   section.main .wrapper .content-wrapper {
     position: relative;
@@ -891,7 +892,7 @@ footer.footer a {
     background-size: cover;
     padding: 20px 0 20px;
   }
-  section.main .wrapper .content-wrapper .content p.heading {
+  section.main .wrapper .content-wrapper p.heading {
     font-size: 30px;
     color: #fff;
     font-weight: 700;
@@ -899,12 +900,29 @@ footer.footer a {
     margin-bottom: 55px;
     position: relative;
   }
+  section.main .wrapper .content-wrapper .content .slick-track {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
   section.main .wrapper .content-wrapper .content .content-1 .content-inner {
     margin-bottom: 20px;
   }
   section.main .wrapper .content-wrapper .content .content-1 .content-inner .item p.descr {
     padding-top: 10px;
-    font-size: 22px;
+    font-size: 18px;
+  }
+  section.main .wrapper .content-wrapper .content .content-1 .content-inner .item-1 img {
+    width: 63px;
+  }
+  section.main .wrapper .content-wrapper .content .content-1 .content-inner .item-2 img {
+    width: 85px;
+  }
+  section.main .wrapper .content-wrapper .content .content-1 .content-inner .item-3 img {
+    width: 75px;
   }
   section.main .wrapper .content-wrapper .content .content-2 .content-inner {
     display: -webkit-box;
@@ -920,26 +938,35 @@ footer.footer a {
   }
   section.main .wrapper .content-wrapper .content .content-2 .content-inner .item p.descr {
     padding-top: 10px;
-    font-size: 22px;
+    font-size: 18px;
   }
   section.main .wrapper .content-wrapper .content .content-2 .content-inner .item-1 {
     padding: 30px 10px 30px;
   }
   section.main .wrapper .content-wrapper .content .content-2 .content-inner .item-1 p.descr {
-    padding-top: 40px;
+    padding-top: 20px;
+  }
+  section.main .wrapper .content-wrapper .content .content-2 .content-inner .item-1 img {
+    width: 85px;
   }
   section.main .wrapper .content-wrapper .content .content-2 .content-inner .item-2 {
     padding: 30px 10px 30px;
     margin: 0 16px 0;
   }
   section.main .wrapper .content-wrapper .content .content-2 .content-inner .item-2 p.descr {
-    padding-top: 50px;
+    padding-top: 30px;
+  }
+  section.main .wrapper .content-wrapper .content .content-2 .content-inner .item-2 img {
+    width: 72px;
   }
   section.main .wrapper .content-wrapper .content .content-2 .content-inner .item-3 {
     padding: 30px 10px 30px;
   }
   section.main .wrapper .content-wrapper .content .content-2 .content-inner .item-3 p.descr {
-    padding-top: 50px;
+    padding-top: 30px;
+  }
+  section.main .wrapper .content-wrapper .content .content-2 .content-inner .item-3 img {
+    width: 72px;
   }
   section.main .wrapper .content-wrapper .content .content-3 {
     margin: 0;
@@ -948,14 +975,15 @@ footer.footer a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    max-width: 424px;
+    max-width: 600px;
     margin: 0 auto;
     margin-bottom: 20px;
   }
@@ -974,19 +1002,19 @@ footer.footer a {
     align-items: center;
     text-align: center;
     border: none;
-    width: 200px;
-    padding: 22px 12px 22px;
+    width: 160px;
+    padding: 12px;
+    margin-bottom: 25px;
+  }
+  section.main .wrapper .content-wrapper .content .content-3 .content-inner .item img {
+    width: 70px;
   }
   section.main .wrapper .content-wrapper .content .content-3 .content-inner .item p.descr {
     padding-top: 10px;
-    font-size: 22px;
+    font-size: 18px;
   }
-  section.main .wrapper .content-wrapper .content .content-3 .content-inner .item-1, section.main .wrapper .content-wrapper .content .content-3 .content-inner .item-3, section.main .wrapper .content-wrapper .content .content-3 .content-inner .item-5, section.main .wrapper .content-wrapper .content .content-3 .content-inner .item-7 {
-    margin-right: 24px;
-  }
-  section.main .wrapper .content-wrapper .content .content-3 .content-inner .item-3, section.main .wrapper .content-wrapper .content .content-3 .content-inner .item-4 {
-    margin-top: 24px;
-    margin-bottom: 24px;
+  section.main .wrapper .content-wrapper .content .content-3 .content-inner .item-2, section.main .wrapper .content-wrapper .content .content-3 .content-inner .item-5 {
+    margin: 0 16px 25px;
   }
   footer.footer {
     padding: 40px 25px 40px 50px;
@@ -1010,11 +1038,6 @@ footer.footer a {
   header .wrapper .menu-btn {
     margin-right: 10px;
   }
-  header .wrapper .menu .menu-inner {
-    border: 10px solid #fff;
-    border-top: 20px solid #fff;
-    border-bottom: 20px solid #fff;
-  }
   header .wrapper .menu .menu-inner .login-auth {
     margin-left: 0;
   }
@@ -1030,6 +1053,8 @@ footer.footer a {
   section.main .wrapper .news {
     border-top: 40px solid #ff0000;
     margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
   section.main .wrapper .news .date {
     padding-right: 5px;
@@ -1049,7 +1074,7 @@ footer.footer a {
     background-size: cover;
     padding: 20px 0 20px;
   }
-  section.main .wrapper .content-wrapper .content p.heading {
+  section.main .wrapper .content-wrapper p.heading {
     font-size: 30px;
     color: #fff;
     font-weight: 700;
@@ -1057,85 +1082,88 @@ footer.footer a {
     margin-bottom: 55px;
   }
   section.main .wrapper .content-wrapper .content .content-1 .content-inner {
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   section.main .wrapper .content-wrapper .content .content-1 .content-inner .item {
     background-color: #fff;
     margin: 0;
+    width: 100px;
   }
   section.main .wrapper .content-wrapper .content .content-1 .content-inner .item p.descr {
-    font-size: 22px;
+    font-size: 16px;
   }
   section.main .wrapper .content-wrapper .content .content-1 .content-inner .item-1 {
     padding: 20px 10px 20px;
   }
   section.main .wrapper .content-wrapper .content .content-1 .content-inner .item-1 img {
-    max-width: 59px;
+    width: 47px;
   }
   section.main .wrapper .content-wrapper .content .content-1 .content-inner .item-2 {
     padding: 30px 10px 30px;
+    margin: 0 16px;
   }
   section.main .wrapper .content-wrapper .content .content-1 .content-inner .item-3 {
     padding: 40px 10px 40px;
   }
   section.main .wrapper .content-wrapper .content .content-2 .content-inner {
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   section.main .wrapper .content-wrapper .content .content-2 .content-inner .item {
     background-color: #fff;
     font-size: 18px;
     border: none;
-    max-width: 160px;
     margin: 0;
+    width: 100px;
   }
   section.main .wrapper .content-wrapper .content .content-2 .content-inner .item p.descr {
-    font-size: 22px;
+    font-size: 16px;
   }
   section.main .wrapper .content-wrapper .content .content-2 .content-inner .item-1 {
     padding: 30px 10px 30px;
   }
   section.main .wrapper .content-wrapper .content .content-2 .content-inner .item-1 p.descr {
-    padding-top: 40px;
+    padding-top: 20px;
   }
   section.main .wrapper .content-wrapper .content .content-2 .content-inner .item-2 {
     padding: 30px 10px 30px;
+    margin: 0 16px;
   }
   section.main .wrapper .content-wrapper .content .content-2 .content-inner .item-2 p.descr {
-    padding-top: 50px;
+    padding-top: 30px;
   }
   section.main .wrapper .content-wrapper .content .content-2 .content-inner .item-3 {
     padding: 30px 10px 30px;
   }
   section.main .wrapper .content-wrapper .content .content-2 .content-inner .item-3 p.descr {
-    padding-top: 50px;
+    padding-top: 30px;
   }
   section.main .wrapper .content-wrapper .content .content-3 .content-inner {
-    max-width: none;
+    width: 332px;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
   }
+  section.main .wrapper .content-wrapper .content .content-3 .content-inner .item {
+    width: 100px;
+  }
   section.main .wrapper .content-wrapper .content .content-3 .content-inner .item p.descr {
     padding-top: 10px;
-    font-size: 22px;
-  }
-  section.main .wrapper .content-wrapper .content .content-3 .content-inner .item-3, section.main .wrapper .content-wrapper .content .content-3 .content-inner .item-4 {
-    margin: 24px 0;
-  }
-  section.main .wrapper .content-wrapper .content .content-3 .content-inner .item-1, section.main .wrapper .content-wrapper .content .content-3 .content-inner .item-3, section.main .wrapper .content-wrapper .content .content-3 .content-inner .item-5, section.main .wrapper .content-wrapper .content .content-3 .content-inner .item-7 {
-    margin-right: 24px;
+    font-size: 16px;
   }
   footer.footer {
     padding: 10px;
   }
   footer.footer p {
-    font-size: 16px;
+    font-size: 14px;
   }
   footer.footer a {
-    font-size: 16px;
+    font-size: 14px;
     margin-left: 0;
+    padding: 15px 20px;
   }
 }
 
@@ -1192,8 +1220,8 @@ footer.footer a {
   }
   section.main .wrapper .news {
     border-top: 40px solid #ff0000;
-    margin-top: 30px;
-    padding-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
   }
   section.main .wrapper .news .date {
     padding-right: 5px;
@@ -1206,12 +1234,11 @@ footer.footer a {
   section.main .wrapper .news .heading {
     font-size: 20px;
     font-weight: 700;
-    padding-bottom: 7px;
   }
   section.main .wrapper .news .descr {
     font-size: 14px;
   }
-  section.main .wrapper .content-wrapper .content p.heading {
+  section.main .wrapper .content-wrapper p.heading {
     font-size: 20px;
   }
   section.main .wrapper .content-wrapper .content .content-1 .content-inner .item {
@@ -1235,29 +1262,20 @@ footer.footer a {
   }
   section.main .wrapper .content-wrapper .content .content-2 .content-inner .item p.descr {
     font-size: 14px;
+    padding-top: 10px;
   }
   section.main .wrapper .content-wrapper .content .content-2 .content-inner .item-1 img {
     max-width: 40px;
   }
-  section.main .wrapper .content-wrapper .content .content-2 .content-inner .item-1 p.descr {
-    font-size: 14px;
-    padding-top: 10px;
-  }
   section.main .wrapper .content-wrapper .content .content-2 .content-inner .item-2 img {
     max-width: 60px;
-  }
-  section.main .wrapper .content-wrapper .content .content-2 .content-inner .item-2 p.descr {
-    font-size: 14px;
-    padding-top: 10px;
   }
   section.main .wrapper .content-wrapper .content .content-2 .content-inner .item-3 img {
     max-width: 60px;
   }
-  section.main .wrapper .content-wrapper .content .content-2 .content-inner .item-3 p.descr {
-    font-size: 14px;
-    padding-top: 10px;
-  }
   section.main .wrapper .content-wrapper .content .content-3 .content-inner {
+    width: 100%;
+    max-width: 332px;
     -ms-flex-pack: distribute;
     justify-content: space-around;
     -webkit-box-align: stretch;
@@ -1272,7 +1290,7 @@ footer.footer a {
     margin-bottom: 20px;
   }
   section.main .wrapper .content-wrapper .content .content-3 .content-inner .item p.descr {
-    font-size: 14px;
+    font-size: 13px;
   }
   section.main .wrapper .content-wrapper .content .content-3 .content-inner .item img {
     max-width: 60px;

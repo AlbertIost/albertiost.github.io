@@ -18,8 +18,7 @@ $(document).ready(function(){
 		{
 			breakpoint: 1251,
 			settings: {
-				asNavFor: '.content-dots',
-				adaptiveHeight: true,
+				asNavFor: '.content-for',
 				slidesToShow: 1,
 				infinite: true,
 				speed: 300,
@@ -28,14 +27,16 @@ $(document).ready(function(){
 				arrows: true,
 				appendArrows: '.content-wrapper',
 				prevArrow: '<div class="contentPrev"></div>',
-				nextArrow: '<div class="contentNext"></div>'
+				nextArrow: '<div class="contentNext"></div>',
+				dots: true,
+				appendDots: '.content-dots'
 			}
 		}
 		]
 
 	});
 
-	$('.content-dots').slick({
+	$('.content-for').slick({
 		responsive: [{
 			breakpoint: 5000,
 			settings: 'unslick'
@@ -43,7 +44,7 @@ $(document).ready(function(){
 		{
 			breakpoint: 1251,
 			settings: {
-				slidesToShow: 3,
+				slidesToShow: 1,
 				asNavFor: '.content',
 				focusOnSelect: true
 			}

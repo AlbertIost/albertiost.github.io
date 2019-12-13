@@ -557,13 +557,13 @@ footer.footer{
 }
 @media screen and (max-width: 1250px){
 	header{
-		padding-top: 20px;
+		padding-top: 10px;
 		.wrapper{
 			align-items: center;
 			padding: 0;
 
 			.logo{
-				max-width: 300px;
+				max-width: 250px;
 				margin-left: 30px;
 			}
 			.menu-btn{
@@ -625,7 +625,7 @@ footer.footer{
 					transform-origin: right;
 				}
 				span{
-					height: 0;
+					width: 0;
 				}
 			}
 			.menu{
@@ -693,23 +693,24 @@ footer.footer{
 		.wrapper{
 			.news{
 				border-top: 40px solid #ff0000;
-				margin-top: 40px;
+				margin-top:10px;
 				padding-left: 10px;
 				padding-right: 10px;
+				padding-top: 10px;
 				
 				.date{
 					padding-right: 5px;
 					
 					p{
-						font-size: 16px;
+						font-size: 14px;
 						text-align: right;
 					}
 				}
 				.heading{
-					font-size: 24px;
+					font-size: 20px;
 				}
 				.descr{
-					font-size: 16px;
+					font-size: 14px;
 
 				}
 			}
@@ -720,14 +721,19 @@ footer.footer{
 				background-position: 40% 100%;
 				background-size: cover;
 				padding: 20px 0 20px;
-				.content{
-					p.heading{
+				p.heading{
 						font-size: 30px;
 						color: #fff;
 						font-weight: 700;
 						text-align: center;
 						margin-bottom: 55px;
 						position: relative;
+				}
+				.content{
+					
+					.slick-track{
+						display:flex;
+						align-items: center;
 					}
 					.content-1{
 						.content-inner{
@@ -736,7 +742,22 @@ footer.footer{
 							.item{
 								p.descr{
 									padding-top: 10px;
-									font-size: 22px;
+									font-size: 18px;
+								}
+							}
+							.item-1{
+								img{
+									width: 63px;
+								}
+							}
+							.item-2{
+								img{
+									width: 85px;
+								}
+							}
+							.item-3{
+								img{
+									width: 75px;
 								}
 							}
 						}
@@ -752,14 +773,17 @@ footer.footer{
 
 								p.descr{
 									padding-top: 10px;
-									font-size: 22px;
+									font-size: 18px;
 								}
 							}
 							.item-1{
 								padding: 30px 10px 30px;
 
 								p.descr{
-									padding-top: 40px;
+									padding-top: 20px;
+								}
+								img{
+									width: 85px;
 								}
 							}
 							.item-2{
@@ -767,14 +791,20 @@ footer.footer{
 								margin: 0 16px 0;
 
 								p.descr{
-									padding-top: 50px;
+									padding-top: 30px;
+								}
+								img{
+									width: 72px;
 								}
 							}
 							.item-3{
 								padding: 30px 10px 30px;
 
 								p.descr{
-									padding-top: 50px;
+									padding-top: 30px;
+								}
+								img{
+									width: 72px;
 								}
 							}
 						}
@@ -783,10 +813,10 @@ footer.footer{
 						margin: 0;
 						.content-inner{
 							display: flex;
-							justify-content: space-around;
+							justify-content: center;
 							align-items: stretch;
 							flex-wrap: wrap;
-							max-width: 424px;
+							max-width: 600px;
 							margin: 0 auto;
 							margin-bottom: 20px;
 							
@@ -798,20 +828,20 @@ footer.footer{
 								align-items: center;
 								text-align: center;
 								border: none;
-								width: 200px;
-								padding: 22px 12px 22px;
+								width: 160px;
+								padding: 12px;
+								margin-bottom: 25px;
 
+								img{
+									width: 70px;
+								}
 								p.descr{
 									padding-top: 10px;
-									font-size: 22px;
+									font-size: 18px;
 								}
 							}
-							.item-1, .item-3, .item-5, .item-7{
-								margin-right: 24px;
-							}
-							.item-3, .item-4{
-								margin-top: 24px;
-								margin-bottom: 24px;
+							.item-2, .item-5{
+								margin: 0 16px 25px;
 							}
 						}
 					}
@@ -843,9 +873,6 @@ footer.footer{
 			}
 			.menu{
 				.menu-inner{
-					border: 10px solid #fff;
-					border-top: 20px solid #fff;
-					border-bottom: 20px solid #fff;
 
 					.login-auth{
 						margin-left: 0;
@@ -870,6 +897,8 @@ footer.footer{
 			.news{
 				border-top: 40px solid #ff0000;
 				margin-top: 10px;
+				padding-top: 10px;
+				padding-bottom: 20px;
 				
 				.date{
 					padding-right: 5px;
@@ -892,33 +921,35 @@ footer.footer{
 				background-position: 40% 100%;
 				background-size: cover;
 				padding: 20px 0 20px;
+				p.heading{
+					font-size: 30px;
+					color: #fff;
+					font-weight: 700;
+					text-align: center;
+					margin-bottom: 55px;
+				}
 				.content{
-					p.heading{
-						font-size: 30px;
-						color: #fff;
-						font-weight: 700;
-						text-align: center;
-						margin-bottom: 55px;
-					}
 					.content-1{
 						.content-inner{
-							justify-content: space-around;
+							justify-content: center;
 							.item{
 								background-color: #fff;
 								margin: 0;
+								width: 100px;
 
 								p.descr{
-									font-size: 22px;
+									font-size: 16px;
 								}
 							}
 							.item-1{
 								padding: 20px 10px 20px;
 								img{
-									max-width: 59px;
+									width: 47px;
 								}
 							}
 							.item-2{
 								padding: 30px 10px 30px;
+								margin: 0 16px;
 							}
 							.item-3{
 								padding: 40px 10px 40px;
@@ -927,59 +958,54 @@ footer.footer{
 					}
 					.content-2{
 						.content-inner{
-							justify-content: space-around;
+							justify-content: center;
 							
 							.item{
 								background-color: #fff;
 								font-size: 18px;
 								border: none;
-								max-width: 160px;
 								margin: 0;
+								width: 100px;
 
 								p.descr{
-									font-size: 22px;
+									font-size: 16px;
 								}
 							}
 							.item-1{
 								padding: 30px 10px 30px;
 
 								p.descr{
-									padding-top: 40px;
+									padding-top: 20px;
 								}
 							}
 							.item-2{
 								padding: 30px 10px 30px;
-
+								margin: 0 16px;
 								p.descr{
-									padding-top: 50px;
+									padding-top: 30px;
 								}
 							}
 							.item-3{
 								padding: 30px 10px 30px;
 
+
 								p.descr{
-									padding-top: 50px;
+									padding-top: 30px;
 								}
 							}
 						}
 					}
 					.content-3{
 						.content-inner{
-							max-width: none;
+							width: 332px;
 							justify-content: center;
 							
 							.item{
-
+								width: 100px;
 								p.descr{
 									padding-top: 10px;
-									font-size: 22px;
+									font-size: 16px;
 								}
-							}
-							.item-3, .item-4{
-								margin:24px 0;
-							}
-							.item-1, .item-3, .item-5, .item-7{
-								margin-right: 24px;
 							}
 						}
 					}
@@ -992,11 +1018,12 @@ footer.footer{
 		padding: 10px;
 
 		p{
-			font-size: 16px;
+			font-size: 14px;
 		}
 		a{
-			font-size: 16px;
+			font-size: 14px;
 			margin-left: 0;
+			padding: 15px 20px;
 		}
 	}
 }
@@ -1052,8 +1079,8 @@ footer.footer{
 		.wrapper{
 			.news{
 				border-top: 40px solid #ff0000;
-				margin-top: 30px;
-				padding-top: 20px;
+				padding-top: 10px;
+				padding-bottom: 20px;
 				
 				.date{
 					padding-right: 5px;
@@ -1067,17 +1094,16 @@ footer.footer{
 				.heading{
 					font-size: 20px;
 					font-weight: 700;
-					padding-bottom: 7px;
 				}
 				.descr{
 					font-size: 14px;
 				}
 			}
 			.content-wrapper{
+				p.heading{
+					font-size: 20px;
+				}
 				.content{
-					p.heading{
-						font-size: 20px;
-					}
 					.content-1{
 						.content-inner{
 							.item{
@@ -1111,6 +1137,7 @@ footer.footer{
 								padding: 20px 10px;
 								p.descr{
 									font-size: 14px;
+									padding-top: 10px;
 								}
 							}
 							.item-1{
@@ -1118,8 +1145,6 @@ footer.footer{
 									max-width: 40px;
 								}
 								p.descr{
-									font-size: 14px;
-									padding-top: 10px;
 								}
 							}
 							.item-2{
@@ -1127,8 +1152,6 @@ footer.footer{
 									max-width: 60px;
 								}
 								p.descr{
-									font-size: 14px;
-									padding-top: 10px;
 								}
 							}
 							.item-3{
@@ -1136,8 +1159,6 @@ footer.footer{
 									max-width: 60px;
 								}
 								p.descr{
-									font-size: 14px;
-									padding-top: 10px;
 								}
 							}
 
@@ -1145,6 +1166,8 @@ footer.footer{
 					}
 					.content-3{
 						.content-inner{
+							width: 100%;
+							max-width: 332px;
 							justify-content: space-around;
 							align-items: stretch;
 							margin-bottom: 0;
@@ -1154,7 +1177,7 @@ footer.footer{
 								margin: 0;
 								margin-bottom: 20px;
 								p.descr{
-									font-size: 14px;
+									font-size: 13px;
 								}
 								img{
 									max-width: 60px;

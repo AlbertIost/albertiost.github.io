@@ -16,17 +16,28 @@
 	}
 }
 .content-dots{
-	.slick-track{
-		display: flex;
-		justify-content: center;
-	}
-	li.slick-slide{
-		border: 2px solid #fff;
-		margin: 20px 8px 0 8px;
-	}
-	li.slick-current{
-		background-color: #ff0000;
-		border: none;
+	position: relative;
+
+	.slick-dots{
+		margin-bottom: 25px;
+		li{
+			width: 10px;
+			height: 10px;
+			border: 2px solid #fff;
+			background: none;
+			border-radius: 50%;
+			&:nth-child(2){
+				margin: 0 15px;
+			}
+			&.slick-active{
+				background: #ff0000;
+				border: 2px solid #ff0000;
+			}
+
+			button{
+				display: none;
+			}
+		}
 	}
 }
 .contentPrev, .contentNext{
@@ -47,6 +58,14 @@
 @media screen and (min-width: 1251px){
 	.content-dots{
 		display: none;
+	}
+	.content-for{
+		display: none;
+	}
+}
+@media screen and (max-width: 1250px){
+	.content p.heading{
+		display: none !important;
 	}
 }
 @media screen and (min-width: 1651px){
