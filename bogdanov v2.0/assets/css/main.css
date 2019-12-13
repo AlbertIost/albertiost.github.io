@@ -480,8 +480,6 @@ footer.footer a {
   header .wrapper .menu {
     background-color: #fff;
     display: block;
-    margin-top: 40px;
-    margin-bottom: 40px;
     font-size: 24px;
     z-index: 99;
   }
@@ -696,6 +694,9 @@ footer.footer a {
   section.main .wrapper .content-wrapper .content .content-3 .content-inner .item-3, section.main .wrapper .content-wrapper .content .content-3 .content-inner .item-4 {
     margin-top: 0px;
     margin-bottom: 0px;
+  }
+  footer.footer {
+    padding: 20px;
   }
   footer.footer p {
     font-size: 30px;

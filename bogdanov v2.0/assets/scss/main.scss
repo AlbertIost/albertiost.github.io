@@ -357,8 +357,6 @@ footer.footer{
 			.menu{
 				background-color: #fff;
 				display: block;
-				margin-top: 40px;
-				margin-bottom: 40px;
 				font-size: 24px;
 				z-index: 99;
 
@@ -550,6 +548,7 @@ footer.footer{
 		}
 	}
 	footer.footer{
+		padding: 20px;
 		p{
 			font-size: 30px;
 		}
