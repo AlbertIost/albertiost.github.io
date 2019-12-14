@@ -600,8 +600,22 @@ footer.footer .wrapper .login-footer p.signin a {
     font-weight: 700;
   }
   section.profile .wrapper {
-    width: 1200px;
+    width: 1000px;
     padding: 0;
+  }
+  section.profile .wrapper .avatar .avatar-form {
+    width: 275px;
+    height: 275px;
+  }
+  section.profile .wrapper .social .about p.name {
+    font-size: 30px;
+  }
+  section.profile .wrapper .social .about p.descr {
+    font-size: 20px;
+    padding: 15px 0;
+  }
+  section.profile .wrapper .social .link {
+    padding-top: 30px;
   }
 }
 

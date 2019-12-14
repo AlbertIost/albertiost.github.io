@@ -517,8 +517,28 @@ footer.footer{
 	}
 	section.profile{
 		.wrapper{
-			width: 1200px;
+			width: 1000px;
 			padding: 0;
+			.avatar{
+				.avatar-form{
+					width: 275px;
+					height: 275px;
+				}
+			}
+			.social{
+				.about{
+					p.name{
+						font-size: 30px;
+					}
+					p.descr{
+						font-size: 20px;
+						padding: 15px 0;
+					}
+				}
+				.link{
+					padding-top: 30px;
+				}
+			}
 		}
 	}
 }
