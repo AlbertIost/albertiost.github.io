@@ -1039,13 +1039,14 @@ footer.footer .wrapper .login-footer p.signin a {
     width: 160px;
   }
   section.profile .wrapper .social .link {
-    width: 120px;
+    width: 112px;
   }
   section.profile .wrapper .social .link a {
     width: 50px;
     height: 50px;
     background-size: 50px 50px;
-    margin-bottom: 20px;
+    margin-bottom: 12px;
+    margin-right: 12px;
   }
   section.accordion .wrapper .accordion__item .title {
     padding: 20px 20px 20px 70px;
@@ -1110,6 +1111,9 @@ footer.footer .wrapper .login-footer p.signin a {
   }
   section.accordion .wrapper .accordion__item-5 .content .content__section a.info {
     font-size: 22px;
+  }
+  footer.footer {
+    margin-top: 0px;
   }
   footer.footer .wrapper .logo-footer {
     width: 170px;
