@@ -1,33 +1,47 @@
-.news-dots, .content-dots{
-	.slick-track{
-		transform: none !important;
-	}
-
-	li.slick-slide{
-		width: 11px!important;
-		height: 11px;
-		border: 2px solid #000;
-		border-radius: 50%;
-		margin: 20px 8px 0 8px;
-	}
-	li.slick-current{
-		background-color: #ff0000;
-		border: none;
-	}
-}
 .content-dots{
 	position: relative;
 
 	.slick-dots{
-		margin-bottom: 25px;
+		bottom: 0;
 		li{
 			width: 10px;
 			height: 10px;
 			border: 2px solid #fff;
 			background: none;
 			border-radius: 50%;
-			&:nth-child(2){
-				margin: 0 15px;
+			margin-right: 15px;
+			margin-left: 0;
+			&:last-child{
+				margin-right: 0;
+			}
+			&.slick-active{
+				background: #ff0000;
+				border: 2px solid #ff0000;
+			}
+
+			button{
+				display: none;
+			}
+		}
+	}
+}
+.news-dots{
+	position: relative;
+	display: block;
+
+	.slick-dots{
+		display:flex;
+		bottom: 0;
+		li{
+			width: 10px;
+			height: 10px;
+			border: 2px solid #000;
+			background: none;
+			border-radius: 50%;
+			margin-right: 15px;
+			margin-left: 0;
+			&:last-child{
+				margin-right: 0;
 			}
 			&.slick-active{
 				background: #ff0000;
@@ -69,13 +83,7 @@
 	}
 }
 @media screen and (min-width: 1651px){
-	.news-dots{
-		.slick-track{
-			width: 100%;
-			display: flex;
-			justify-content: center;
-		}
-	}
+	
 }
 @media screen and (max-width: 650px){
 	.contentNext{

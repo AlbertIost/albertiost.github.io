@@ -1,13 +1,8 @@
 $(document).ready(function(){
 	$('.slider-news').slick({
-		asNavFor: '.news-dots',
-		arrows: false
-	});
-
-	$('.news-dots').slick({
-		slidesToShow: 3,
-		asNavFor: '.slider-news',
-		focusOnSelect: true
+		arrows: false,
+		dots: true,
+		appendDots: '.news-dots'
 	});
 
 
