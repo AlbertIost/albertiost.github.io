@@ -40,8 +40,6 @@ header{
 		.menu{
 			background-color: #fff;
 			display: block;
-			margin-top: 40px;
-			margin-bottom: 40px;
 			font-size: 30px;
 			z-index: 99;
 			.menu-inner{
@@ -52,10 +50,11 @@ header{
 				.nav{
 					display: flex;
 					justify-content: space-between;
+					padding: 40px 0;
 
 					a{
+						font-weight: 700;
 						padding-left: 70px;
-						padding-bottom: 20px;
 
 						&:hover{
 							text-decoration: underline;
@@ -121,10 +120,12 @@ header{
 					width: 230px;
 					text-align: center;
 					padding: 22px 30px;
+					background: #fff;
 
 					a{
 						display: block;
 						font-size: 24px;
+						font-weight: 700;
 						padding-top: 18px;
 						padding-bottom: 18px;
 						border-bottom: 3px solid #a89fab;
@@ -740,8 +741,6 @@ footer.footer{
 			.menu{
 				background-color: #fff;
 				display: block;
-				margin-top: 40px;
-				margin-bottom: 40px;
 				font-size: 24px;
 				z-index: 99;
 
@@ -786,17 +785,13 @@ footer.footer{
 }
 @media screen and (max-width: 1250px){
 	header{
-		padding-top: 20px;
+		padding-top: 10px;
 		.wrapper{
-			width: 100%;
-			position: relative;
-			display: flex;
-			justify-content: space-between;
-			align-items: flex-end;
+			align-items: center;
 			padding: 0;
 
 			.logo{
-				max-width: 300px;
+				max-width: 250px;
 				margin-left: 30px;
 			}
 			.menu-btn{
@@ -807,56 +802,58 @@ footer.footer{
 				bottom: 0;
 				width: 70px;
 				height: 42px;
-
+				&::after, &::before{
+					content: "";
+					position: absolute;
+					height: 6px;
+					width: 100%;
+					background: #000;
+					border-radius: 2px;
+					transition: .2s ease;
+					transform-origin: center center;
+					right: 0;
+				}
+				&::after{
+					content: "";
+					position: absolute;
+					height: 6px;
+					width: 100%;
+					background: #000;
+					top: 0;
+				}
+				&::before{
+					content: "";
+					position: absolute;
+					height: 6px;
+					width: 100%;
+					background: #000;
+					bottom: 0;
+				}
 				span{
 					position: absolute;
 					height: 6px;
 					width: 100%;
 					background: #000;
-					top: 50%;	margin-top: -3px;
+					top: 50%;
+					transform: translateY(-50%);
+					right: 0;
 					border-radius: 2px;
 					transition: .2s ease;
-
-					&::after, &::before{
-						content: "";
-						position: absolute;
-						height: 6px;
-						width: 100%;
-						background: #000;
-						border-radius: 2px;
-						transition: .2s ease;
-						transform-origin: center center;
-						right: 0;
-					}
-					&::after{
-						content: "";
-						position: absolute;
-						height: 6px;
-						width: 100%;
-						background: #000;
-						transform: translateY(17px);
-					}
-					&::before{
-						content: "";
-						position: absolute;
-						height: 6px;
-						width: 100%;
-						background: #000;
-						transform: translateY(-17px);
-					}
 				}
 			}
 			.menu-btn_active{
+				&::after{
+					transform: rotate(-45deg);
+					width: 52px;
+					transform-origin: right;
+				}
+				&::before{
+					transform: rotate(45deg);
+					width: 52px;
+					transform-origin: right;
+				}
 				span{
-					height: 0;
-					&::after{
-						transform: rotate(-45deg);
-						width: 57px;
-					}
-					&::before{
-						transform: rotate(45deg);
-						width: 57px;
-					}
+					width: 0;
 				}
 			}
 			.menu{
@@ -865,9 +862,7 @@ footer.footer{
 				top: 100%;
 				background-color: #fff;
 				display: none;
-				border: 40px solid #fff;
-				border-top: 40px solid #fff;
-				border-bottom: 40px solid #fff;
+				border: 30px solid #fff;
 				margin: 0;
 				font-size: 24px;
 				z-index: 99;
@@ -880,6 +875,11 @@ footer.footer{
 					.nav{
 						display: flex;
 						flex-direction: column;
+						padding: 0;
+						a{
+							padding-left: 0;
+							padding-bottom: 20px;
+						}
 					}
 					span{
 						display: none;
@@ -896,6 +896,7 @@ footer.footer{
 						}
 					}
 					.login-auth{
+						margin: 0;
 						.mini-avatar{
 							display: none;
 						}
@@ -903,6 +904,7 @@ footer.footer{
 							padding: 0;
 							position: static;
 							display: block;
+							width: auto;
 							
 							a{
 								border: none;
@@ -1114,18 +1116,25 @@ footer.footer{
 		.wrapper{
 			.logo{
 				margin-left: 10px;
-				max-width: 200px;
+				max-width: 240px;
 			}
 			.menu-btn{
 				margin-right: 10px;
 			}
 			.menu{
-				border: 10px solid #fff;
-				border-top: 20px solid #fff;
-				border-bottom: 20px solid #fff;
+				.menu-inner{
 
-				.login-auth{
-					margin-left: 0;
+					.login-auth{
+						margin-left: 0;
+						.actions{
+							width: auto;
+						}
+					}
+					.nav{
+						a{
+							padding-left: 0;
+						}
+					}
 				}
 			}
 			a{
@@ -1184,6 +1193,55 @@ footer.footer{
 				.mail{
 					font-size: 14px;
 				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 500px){
+	header{
+		.wrapper{
+			.logo{
+				margin-left: 10px;
+				max-width: 200px;
+			}
+			.menu-btn{
+				width: 50px;
+				height: 32px;
+				&::after, &::before{
+					height: 4px;
+				}
+				span{
+					height: 4px;
+					transform: translateY(-50%);
+				}
+			}
+			.menu-btn_active{
+				&::after{
+					transform: rotate(-45deg);
+					width: 40px;
+					transform-origin: right;
+				}
+				&::before{
+					transform: rotate(45deg);
+					width: 40px;
+					transform-origin: right;
+				}
+				span{
+					width: 0;
+					right: 0;
+				}
+			}
+			.menu{
+				border: 10px solid #fff;
+				border-top: 20px solid #fff;
+				border-bottom: 20px solid #fff;
+
+				.login-auth{
+					margin-left: 0;
+				}
+			}
+			a{
+				font-size: 18px!important;
 			}
 		}
 	}
