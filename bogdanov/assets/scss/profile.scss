@@ -254,7 +254,7 @@ section.accordion{
 				}
 			}
 			.content{
-				padding: 50px 34px 0px;
+				padding: 50px 34px 34px;
 				display: none;
 				box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
 
@@ -279,6 +279,10 @@ section.accordion{
 					.type{
 						margin-bottom: 15px;
 						color: #919193;
+					}
+
+					&:last-child{
+						margin-bottom: 0;
 					}
 				}
 			}
@@ -540,6 +544,67 @@ footer.footer{
 				}
 			}
 		}
+	}
+	section.accordion{
+		.wrapper{
+			.accordion__item{
+				.title{
+					padding: 30px 60px 30px 120px;
+					background-position: 30px 50%;
+					background-size: 60px 43px;
+					p{
+						font-size: 20px;
+					}
+					.arrow{
+						width: 23px;
+						height: 40px;
+						background-size: 100%;
+					}
+				}
+				.content{
+					padding: 30px;
+					.content__section{
+						.type{
+							font-size: 20px;
+						}
+						.info{
+							font-size: 20px;
+						}
+						&:last-child{
+							margin-bottom: 0;
+							padding-bottom: 0;
+						}
+					}
+				}
+			}
+			.accordion__item-1{
+				.content{
+					.content__section{
+						margin-bottom: 30px;
+						.type{
+							font-size: 20px;
+							margin-bottom: 10px;
+						}
+						.info{
+							font-size: 20px;
+						}
+					}
+				}
+			}
+			.accordion__item-3{
+				.content{
+					.content__section{
+						margin-bottom: 25px;
+						.type{
+							margin-bottom: 0;
+						}
+					}
+				}
+			}
+		}
+	}
+	footer#footer.footer{
+		margin-top: 100px;
 	}
 }
 @media screen and (max-width: 1250px){
@@ -995,7 +1060,7 @@ footer.footer{
 					background-size: 40px 30px;
 
 					p{
-						font-size: 18px;
+						font-size: 16px;
 					}
 					.arrow{
 						width: 21px;
@@ -1004,38 +1069,30 @@ footer.footer{
 					}
 				}
 				.content{
-					padding: 35px 30px 0px;
+					padding: 20px;
 					display: none;
 
-					p.section{
-						font-size: 26px;
-						margin-bottom: 25px;
-					}
-
 					.content__section{
-						margin-bottom: 25px;
-
-						p{
-							font-size: 20px;
-						}
+						margin-bottom: 15px;
 						p.info{
 							padding-left: 20px;
+							font-size: 16px;
 						}
 						.type{
-							margin-bottom: 15px;
+							margin-bottom: 5px;
+							font-size: 16px;
 						}
 					}
 				}
 			}
 			.accordion__item-2{
 				.content{
+					p.section{
+						font-size: 24px;
+					}
 					.content__section{
 						display: flex;
 						margin-bottom: 25px;
-
-						p.info{
-							padding-left: 20px;
-						}
 						.type{
 							margin-bottom: 0px;
 						}
@@ -1075,7 +1132,7 @@ footer.footer{
 			}
 		}
 	}
-	footer.footer{
+	footer#footer.footer{
 		margin-top: 0px;
 		.wrapper{
 			.logo-footer{
@@ -1096,6 +1153,7 @@ footer.footer{
 			}
 			.site-map{
 				padding: 0;
+				width: 50%;
 
 				.article{
 					font-size: 16px;

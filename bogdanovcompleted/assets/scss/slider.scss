@@ -1,0 +1,100 @@
+.content-dots{
+	position: relative;
+
+	.slick-dots{
+		bottom: 0;
+		li{
+			width: 10px;
+			height: 10px;
+			border: 2px solid #fff;
+			background: none;
+			border-radius: 50%;
+			margin-right: 15px;
+			margin-left: 0;
+			&:last-child{
+				margin-right: 0;
+			}
+			&.slick-active{
+				background: #ff0000;
+				border: 2px solid #ff0000;
+			}
+
+			button{
+				display: none;
+			}
+		}
+	}
+}
+.news-dots{
+	position: relative;
+	display: block;
+
+	.slick-dots{
+		display:flex;
+		bottom: 0;
+		li{
+			width: 10px;
+			height: 10px;
+			border: 2px solid #000;
+			background: none;
+			border-radius: 50%;
+			margin-right: 15px;
+			margin-left: 0;
+			&:last-child{
+				margin-right: 0;
+			}
+			&.slick-active{
+				background: #ff0000;
+				border: 2px solid #ff0000;
+			}
+
+			button{
+				display: none;
+			}
+		}
+	}
+}
+.contentPrev, .contentNext{
+	background: url('../img/arrow.png') no-repeat center center;
+	width: 24px;
+	height: 30px;
+	position: absolute;
+	top:26px;
+	z-index: 999;
+}
+.contentPrev{
+	left: 50px;
+	transform: rotate(180deg);
+}
+.contentNext{
+	right: 50px;
+}
+@media screen and (min-width: 1251px){
+	.content-dots{
+		display: none;
+	}
+	.content-for{
+		display: none;
+	}
+}
+@media screen and (max-width: 1250px){
+	.content p.heading{
+		display: none !important;
+	}
+}
+@media screen and (min-width: 1651px){
+	
+}
+@media screen and (max-width: 650px){
+	.contentNext{
+		right: 0;
+	}
+	.contentPrev{
+		left: 0;
+	}
+}
+@media screen and (max-width: 500px){
+	.contentNext, .contentPrev{
+		top: 20px;
+	}
+}
