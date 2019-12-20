@@ -185,6 +185,9 @@ section.profile .wrapper {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin: 105px auto 66px;
   width: 1300px;
 }
@@ -222,7 +225,7 @@ section.profile .wrapper .avatar .about p.descr {
 }
 
 section.profile .wrapper .social {
-  padding: 60px 0px 25px;
+  padding: 25px 0;
 }
 
 section.profile .wrapper .social .about {
@@ -502,9 +505,35 @@ footer.footer .wrapper .site-map ul li a {
   color: #fff;
 }
 
-footer.footer .wrapper .contacts .mail {
-  font-size: 25px;
+footer.footer .wrapper .contacts .contact-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+footer.footer .wrapper .contacts .contact-group a {
+  width: 50%;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 10px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+footer.footer .wrapper .contacts .contact-group a i::before {
   color: #fff;
+}
+
+footer.footer .wrapper .contacts .contact-group a:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 footer.footer .wrapper .login-footer {
@@ -606,6 +635,8 @@ footer.footer .wrapper .login-footer p.signin a {
   section.profile .wrapper {
     width: 1000px;
     padding: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
   section.profile .wrapper .avatar .avatar-form {
     width: 275px;
@@ -665,6 +696,27 @@ footer.footer .wrapper .login-footer p.signin a {
   }
   footer#footer.footer {
     margin-top: 100px;
+    padding: 30px 0;
+  }
+  footer#footer.footer .wrapper .site-map p.article {
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+  footer#footer.footer .wrapper .site-map ul li {
+    padding-bottom: 10px;
+  }
+  footer#footer.footer .wrapper .site-map ul li a {
+    font-size: 20px;
+  }
+  footer#footer.footer .wrapper .contacts .article {
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+  footer#footer.footer .wrapper .login-footer .signup a {
+    font-size: 20px;
+  }
+  footer#footer.footer .wrapper .login-footer .signin a {
+    font-size: 20px;
   }
 }
 
@@ -910,7 +962,7 @@ footer.footer .wrapper .login-footer p.signin a {
     background-size: 100%;
   }
   section.accordion .wrapper .accordion__item .content {
-    padding: 35px 30px 0px;
+    padding: 30px;
     display: none;
   }
   section.accordion .wrapper .accordion__item .content p.section {
@@ -960,12 +1012,12 @@ footer.footer .wrapper .login-footer p.signin a {
   section.accordion .wrapper .accordion__item-5 .content .content__section a.info {
     font-size: 22px;
   }
-  footer.footer {
+  footer#footer.footer {
     background: #24242a;
     padding: 40px 0 30px;
     margin-top: 50px;
   }
-  footer.footer .wrapper {
+  footer#footer.footer .wrapper {
     margin: 0 auto;
     padding: 0;
     width: 660px;
@@ -978,7 +1030,7 @@ footer.footer .wrapper .login-footer p.signin a {
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
-  footer.footer .wrapper p.article {
+  footer#footer.footer .wrapper p.article {
     color: #fff;
     font-size: 18px;
     font-weight: 700;
@@ -986,35 +1038,32 @@ footer.footer .wrapper .login-footer p.signin a {
     letter-spacing: 3px;
     padding-bottom: 20px;
   }
-  footer.footer .wrapper .logo {
+  footer#footer.footer .wrapper .logo {
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
   }
-  footer.footer .wrapper .site-map {
+  footer#footer.footer .wrapper .site-map {
     -webkit-box-ordinal-group: 4;
     -ms-flex-order: 3;
     order: 3;
     padding-left: 20px;
   }
-  footer.footer .wrapper .site-map ul li {
+  footer#footer.footer .wrapper .site-map ul li {
     padding-bottom: 5px;
   }
-  footer.footer .wrapper .site-map ul li a {
+  footer#footer.footer .wrapper .site-map ul li a {
     font-size: 18px;
     letter-spacing: 3px;
     color: #fff;
   }
-  footer.footer .wrapper .contacts {
+  footer#footer.footer .wrapper .contacts {
     -webkit-box-ordinal-group: 5;
     -ms-flex-order: 4;
     order: 4;
+    padding-right: 45px;
   }
-  footer.footer .wrapper .contacts .mail {
-    font-size: 25px;
-    color: #fff;
-  }
-  footer.footer .wrapper .login-footer {
+  footer#footer.footer .wrapper .login-footer {
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
@@ -1027,25 +1076,25 @@ footer.footer .wrapper .login-footer p.signin a {
     flex-direction: column;
     padding-bottom: 40px;
   }
-  footer.footer .wrapper .login-footer p a {
+  footer#footer.footer .wrapper .login-footer p a {
     color: #fff;
     text-transform: uppercase;
     font-size: 20px;
     display: inline-block;
     text-align: center;
   }
-  footer.footer .wrapper .login-footer p.signup {
+  footer#footer.footer .wrapper .login-footer p.signup {
     padding-bottom: 15px;
   }
-  footer.footer .wrapper .login-footer p.signup a {
+  footer#footer.footer .wrapper .login-footer p.signup a {
     background: #ff0000;
     padding: 16px 35px;
     letter-spacing: 2px;
   }
-  footer.footer .wrapper .login-footer p.signin {
+  footer#footer.footer .wrapper .login-footer p.signin {
     text-align: center;
   }
-  footer.footer .wrapper .login-footer p.signin a {
+  footer#footer.footer .wrapper .login-footer p.signin a {
     border-bottom: 1px solid #fff;
   }
 }
@@ -1073,6 +1122,15 @@ footer.footer .wrapper .login-footer p.signin a {
   header .wrapper a {
     font-size: 18px !important;
   }
+  section.profile {
+    margin-top: 10px;
+  }
+  section.profile .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
   section.profile .wrapper .avatar {
     padding: 0;
   }
@@ -1098,11 +1156,12 @@ footer.footer .wrapper .login-footer p.signin a {
     color: #4a4a57;
   }
   section.profile .wrapper .social {
+    margin-top: 20px;
     padding: 0;
-    width: 160px;
+    width: auto;
   }
   section.profile .wrapper .social .link {
-    width: 112px;
+    width: 236px;
   }
   section.profile .wrapper .social .link a {
     width: 50px;
@@ -1110,6 +1169,12 @@ footer.footer .wrapper .login-footer p.signin a {
     background-size: 50px 50px;
     margin-bottom: 12px;
     margin-right: 12px;
+  }
+  section.profile .wrapper .social .link a:nth-child(2n) {
+    margin-right: 12px;
+  }
+  section.profile .wrapper .social .link a:nth-child(4n) {
+    margin-right: 0px;
   }
   section.accordion .wrapper .accordion__item .title {
     padding: 20px 20px 20px 70px;
@@ -1173,31 +1238,35 @@ footer.footer .wrapper .login-footer p.signin a {
   footer#footer.footer {
     margin-top: 0px;
   }
-  footer#footer.footer .wrapper .logo-footer {
-    width: 170px;
+  footer#footer.footer .wrapper {
+    max-width: 400px;
   }
-  footer#footer.footer .wrapper .login-footer .signup a {
-    padding: 15px 20px !important;
-    font-size: 16px;
+  footer#footer.footer .wrapper .logo-footer {
+    width: 160px;
+  }
+  footer#footer.footer .wrapper .login-footer p.signup a {
+    padding: 10px 15px;
+    font-size: 14px;
   }
   footer#footer.footer .wrapper .login-footer .signin a {
-    font-size: 16px;
+    font-size: 14px;
   }
   footer#footer.footer .wrapper .site-map {
     padding: 0;
     width: 50%;
   }
-  footer#footer.footer .wrapper .site-map .article {
-    font-size: 16px;
+  footer#footer.footer .wrapper .site-map p.article {
+    font-size: 14px;
   }
   footer#footer.footer .wrapper .site-map ul li a {
     font-size: 14px;
   }
-  footer#footer.footer .wrapper .contacts p.article {
-    font-size: 16px;
+  footer#footer.footer .wrapper .contacts {
+    padding-right: 0px;
   }
-  footer#footer.footer .wrapper .contacts .mail {
+  footer#footer.footer .wrapper .contacts p.article {
     font-size: 14px;
+    text-align: center;
   }
 }
 
@@ -1251,5 +1320,11 @@ footer.footer .wrapper .login-footer p.signin a {
   }
   header .wrapper a {
     font-size: 18px !important;
+  }
+  footer#footer.footer .wrapper {
+    max-width: 100%;
+  }
+  footer#footer.footer .wrapper .login-footer .signup a {
+    padding: 10px 15px;
   }
 }

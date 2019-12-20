@@ -150,6 +150,7 @@ section.profile{
 	.wrapper{
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		margin: 105px auto 66px;
 		width: 1300px;
 		.avatar{
@@ -183,7 +184,7 @@ section.profile{
 		}
 
 		.social{
-			padding: 60px 0px 25px;
+			padding: 25px 0;
 			.about{
 				border-bottom: 3px solid #f0d2d2;
 				padding-left: 5px;
@@ -433,10 +434,24 @@ footer.footer{
 			}
 		}
 		.contacts{
+			.contact-group{
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				a{
+					width: 50%;
+					font-size: 35px;
+					text-align: center;
+					margin-bottom: 10px;
+					transition: .3s;
+					i::before{
+						color: #fff;
+					}
 
-			.mail{
-				font-size: 25px;
-				color: #fff;
+					&:hover{
+						transform: scale(1.2);
+					}
+				}
 			}
 		}
 		.login-footer{
@@ -523,6 +538,8 @@ footer.footer{
 		.wrapper{
 			width: 1000px;
 			padding: 0;
+			margin-top: 0px;
+			margin-bottom: 0px;
 			.avatar{
 				.avatar-form{
 					width: 275px;
@@ -605,6 +622,41 @@ footer.footer{
 	}
 	footer#footer.footer{
 		margin-top: 100px;
+		padding: 30px 0;
+		.wrapper{
+			.site-map{
+				p.article{
+					font-size: 20px;
+					padding-bottom: 15px;
+				}
+				ul{
+					li{
+						padding-bottom: 10px;
+						a{
+							font-size: 20px;
+						}
+					}
+				}
+			}
+			.contacts{
+				.article{
+					font-size: 20px;
+					padding-bottom: 15px;
+				}
+			}
+			.login-footer{
+				.signup{
+					a{
+						font-size: 20px;
+					}
+				}
+				.signin{
+					a{
+						font-size: 20px;
+					}
+				}
+			}
+		}
 	}
 }
 @media screen and (max-width: 1250px){
@@ -821,7 +873,7 @@ footer.footer{
 					}
 				}
 				.content{
-					padding: 35px 30px 0px;
+					padding: 30px;
 					display: none;
 
 					p.section{
@@ -892,7 +944,7 @@ footer.footer{
 			}
 		}
 	}
-	footer.footer{
+	footer#footer.footer{
 		background: #24242a;
 		padding: 40px 0 30px;
 		margin-top: 50px;
@@ -934,11 +986,7 @@ footer.footer{
 			}
 			.contacts{
 				order: 4;
-
-				.mail{
-					font-size: 25px;
-					color: #fff;
-				}
+				padding-right: 45px;
 			}
 			.login-footer{
 				order: 2;
@@ -1007,7 +1055,9 @@ footer.footer{
 		}
 	}
 	section.profile{
+		margin-top: 10px;
 		.wrapper{
+			flex-direction: column;
 			.avatar{
 				padding: 0;
 				.avatar-form{
@@ -1035,16 +1085,23 @@ footer.footer{
 			}
 
 			.social{
+				margin-top: 20px;
 				padding: 0;
-				width: 160px;
+				width: auto;
 				.link{
-					width: 112px;
+					width: 236px;
 					a{
 						width: 50px;
 						height: 50px;
 						background-size: 50px 50px;
 						margin-bottom: 12px;
 						margin-right: 12px;
+						&:nth-child(2n){
+							margin-right: 12px;
+						}
+						&:nth-child(4n){
+							margin-right: 0px;
+						}
 					}
 				}
 			}
@@ -1135,19 +1192,20 @@ footer.footer{
 	footer#footer.footer{
 		margin-top: 0px;
 		.wrapper{
+			max-width: 400px;
 			.logo-footer{
-				width: 170px;
+				width: 160px;
 			}
 			.login-footer{
-				.signup{
+				p.signup{
 					a{
-						padding: 15px 20px!important;
-						font-size: 16px;
+						padding: 10px 15px;
+						font-size: 14px;
 					}
 				}
 				.signin{
 					a{
-						font-size: 16px;
+						font-size: 14px;
 					}
 				}
 			}
@@ -1155,8 +1213,8 @@ footer.footer{
 				padding: 0;
 				width: 50%;
 
-				.article{
-					font-size: 16px;
+				p.article{
+					font-size: 14px;
 				}
 				ul{
 					li{
@@ -1167,11 +1225,10 @@ footer.footer{
 				}
 			}
 			.contacts{
+				padding-right: 0px;
 				p.article{
-					font-size: 16px;
-				}
-				.mail{
 					font-size: 14px;
+					text-align: center;
 				}
 			}
 		}
@@ -1222,6 +1279,18 @@ footer.footer{
 			}
 			a{
 				font-size: 18px!important;
+			}
+		}
+	}
+	footer#footer.footer{
+		.wrapper{
+			max-width: 100%;
+			.login-footer{
+				.signup{
+					a{
+						padding: 10px 15px;
+					}
+				}
 			}
 		}
 	}

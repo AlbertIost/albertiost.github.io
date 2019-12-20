@@ -964,6 +964,33 @@ footer.footer .wrapper .login-footer p.signin a {
     color: #ff0000;
     font-weight: 700;
   }
+  section.article .wrapper {
+    width: 100%;
+    max-width: 1100px;
+  }
+  section.article .wrapper h1 {
+    font-size: 40px;
+  }
+  section.article .wrapper .info {
+    padding: 40px 0;
+    font-size: 20px;
+  }
+  section.article .wrapper .info span.comments {
+    background-size: 28px 26px;
+    background-position: 45px 0;
+  }
+  section.article .wrapper .basis p {
+    font-size: 20px;
+  }
+  section.article .wrapper .basis p:first-child {
+    padding-bottom: 20px;
+  }
+  section.article .wrapper .content {
+    padding: 60px 40px;
+  }
+  section.article .wrapper .content p.text {
+    font-size: 20px;
+  }
   section.article .wrapper .content .author {
     padding: 33px 60px;
   }
