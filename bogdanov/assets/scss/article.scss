@@ -480,13 +480,11 @@ section.comments{
 			padding-top: 60px;
 			
 			.avatar{
-				min-width: 127px;
 				width: 127px;
 				height: 127px;
 			}
 			textarea{
 				font-size: 20px;
-				min-width: 800px;
 				width: 800px;
 				max-width: 800px;
 				height: 180px;
@@ -517,13 +515,16 @@ section.comments{
 					}
 
 					.avatar{
-						min-width: 127px;
 						width: 127px;
 						height: 127px;
+						flex-grow: 0;
+						flex-shrink: 0;
 					}
 					.mess{
 						padding-left: 25px;
 						padding-top: 15px;
+						flex-grow: 1;
+						flex-shrink: 1;
 						.first-line{
 							a.author{
 								color: #f24843;
@@ -579,7 +580,8 @@ section.recomendation{
 					box-shadow: 0px 7px 18px 10px rgba(0, 0, 0, .1);
 					position: relative;
 					width: 320px;
-					padding-bottom: 16px;
+					padding-bottom: 36px;
+					height: 100%;
 
 					.label{
 						position:absolute;
@@ -602,6 +604,10 @@ section.recomendation{
 						display: flex;
 						justify-content: space-between;
 						padding: 0 24px;
+						position: absolute;
+						bottom: 0;
+						width: 100%;
+						padding-bottom: 10px;
 						.stat{
 							display: flex;
 							font-size: 16px;
@@ -654,7 +660,7 @@ section.recomendation{
 footer.footer{
 	background: #24242a;
 	padding: 70px 0 50px;
-	margin-top: 70px;
+	margin-top: 120px;
 
 	.wrapper{
 		margin: 0 auto;
@@ -687,10 +693,24 @@ footer.footer{
 			}
 		}
 		.contacts{
+			.contact-group{
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				a{
+					width: 50%;
+					font-size: 35px;
+					text-align: center;
+					margin-bottom: 10px;
+					transition: .3s;
+					i::before{
+						color: #fff;
+					}
 
-			.mail{
-				font-size: 25px;
-				color: #fff;
+					&:hover{
+						transform: scale(1.2);
+					}
+				}
 			}
 		}
 		.login-footer{
@@ -781,7 +801,7 @@ footer.footer{
 				font-size: 40px;
 			}
 			.info{
-				padding: 40px 0;
+				padding: 20px 0;
 				font-size: 20px;
 				span.comments{
 					background-size: 28px 26px;
@@ -797,15 +817,162 @@ footer.footer{
 				}
 			}
 			.content{
-				padding: 60px 40px;
+				padding: 40px;
 				p.text{
 					font-size: 20px;
+					padding-bottom: 25px;
 				}
 				.author{
 					padding: 33px 60px;
+					.profile{
+						.name{
+							p{
+								font-size: 24px;
+							}
+						}
+					}
+					.social{
+						.rating{
+							span{
+								font-size: 24px;
+							}
+						}
+						.links{
+							p{
+								font-size: 24px;
+							}
+						}
+					}
 				}
 				.accordion-item{
-					
+					.accordion-title{
+						padding: 35px 50px;
+						span{
+							font-size: 30px;
+						}
+						.arrow{
+							width: 23px;
+							height: 40px;
+						}
+					}
+				}
+				h3{
+					padding: 50px 0 30px;
+				}
+				.also{
+					margin-top: 0;
+				}
+			}
+			.download-wrapper.authed{
+				.download-authed{
+					.text{
+						font-size: 24px;
+					}
+				}
+			}
+		}
+	}
+	section.comments{
+		.wrapper{
+			.comment-group{
+				.section-comment{
+					.comment{
+						.avatar{
+							width: 100px;
+							height: 100px;
+						}
+						.mess{
+							padding-top: 10px;
+							padding-left: 15px;
+
+							p.first-line{
+								a.author{
+									font-size: 20px;
+								}
+								span.date{
+									font-size: 16px;
+								}
+							}
+							p.second-line{
+								font-size: 20px;
+							}
+							p.third-line{
+								a.reply{
+									font-size: 20px;
+								}
+							}
+						}
+					}
+					.comment.reply-comment{
+						background-position: 48px -5px;
+						padding-left: 130px;
+					}
+				}
+			}
+		}
+	}
+	section.recomendation{
+		.wrapper{
+			width: 100%;
+			max-width: 1330px;
+			padding: 0;
+			h1{
+				margin: 50px 0 40px;
+				font-size: 40px;
+			}
+			.rec-section{
+				.rec-block-wrapper{
+					width: 300px;
+					.rec-block{
+						width: 100%;
+
+						p{
+							font-size: 20px;
+						}
+					}
+				}
+			}
+			.more{
+				a{
+					font-size: 20px;
+				}
+			}
+		}
+	}
+	footer#footer.footer{
+		margin-top: 100px;
+		padding: 30px 0;
+		.wrapper{
+			.site-map{
+				p.article{
+					font-size: 20px;
+					padding-bottom: 15px;
+				}
+				ul{
+					li{
+						padding-bottom: 10px;
+						a{
+							font-size: 20px;
+						}
+					}
+				}
+			}
+			.contacts{
+				.article{
+					font-size: 20px;
+					padding-bottom: 15px;
+				}
+			}
+			.login-footer{
+				.signup{
+					a{
+						font-size: 20px;
+					}
+				}
+				.signin{
+					a{
+						font-size: 20px;
+					}
 				}
 			}
 		}
@@ -950,21 +1117,22 @@ footer.footer{
 			padding-left: 50px;
 			padding-right: 50px;
 			h1{
-				font-size: 50px;
-				padding-top: 140px;
+				padding-top: 20px;
 			}
 			.info{
-				padding: 50px 0;
 			}
 			.content{
-			padding-left: 24px;
-			padding-right: 24px;
-			padding-bottom: 40px;
+			padding: 24px;
 
+				ul.list{
+					padding-bottom: 20px;
+				}
 				.accordion-item{
 					.accordion-title{
-						font-size: 24px;
-						padding: 35px 25px;
+						padding: 20px;
+						span{
+							font-size: 24px;
+						}
 
 						.arrow{
 							width: 21px;
@@ -977,7 +1145,7 @@ footer.footer{
 					}
 				}
 				h3{
-					padding: 55px 0 40px;
+					padding: 30px 0 20px;
 				}
 				.image{
 					width: 550px;
@@ -1031,10 +1199,17 @@ footer.footer{
 	section.comments{
 		.wrapper{
 			padding: 0 30px;
-
 			.write-comm{
+				.avatar{
+					width: 100px;
+					height: 100px;
+					flex-grow: 0;
+					flex-shrink: 0;
+				}
 				textarea{
 					width:100%;
+					flex-grow: 1;
+					flex-shrink: 1;
 				}
 			}
 		}
@@ -1057,7 +1232,7 @@ footer.footer{
 			}
 		}
 	}
-	footer.footer{
+	footer#footer.footer{
 		background: #24242a;
 		padding: 40px 0 30px;
 		margin-top: 50px;
@@ -1099,11 +1274,7 @@ footer.footer{
 			}
 			.contacts{
 				order: 4;
-
-				.mail{
-					font-size: 25px;
-					color: #fff;
-				}
+				padding-right: 45px;
 			}
 			.login-footer{
 				order: 2;
@@ -1137,6 +1308,15 @@ footer.footer{
 			}
 		}
 	}	
+}
+@media screen and (max-width: 959px){
+	section.recomendation{
+		.wrapper{
+			.rec-section{
+				justify-content: space-evenly;
+			}
+		}
+	}
 }
 @media screen and (max-width: 650px){
 	header{
@@ -1182,29 +1362,32 @@ footer.footer{
 			padding-right: 10px;
 		}
 	}
-	footer.footer{
+	footer#footer.footer{
+		margin-top: 0px;
 		.wrapper{
+			max-width: 400px;
 			.logo-footer{
-				width: 170px;
+				width: 160px;
 			}
 			.login-footer{
-				.signup{
+				p.signup{
 					a{
-						padding: 15px 20px!important;
-						font-size: 16px;
+						padding: 10px 15px;
+						font-size: 14px;
 					}
 				}
 				.signin{
 					a{
-						font-size: 16px;
+						font-size: 14px;
 					}
 				}
 			}
 			.site-map{
 				padding: 0;
+				width: 50%;
 
-				.article{
-					font-size: 16px;
+				p.article{
+					font-size: 14px;
 				}
 				ul{
 					li{
@@ -1215,11 +1398,10 @@ footer.footer{
 				}
 			}
 			.contacts{
+				padding-right: 0px;
 				p.article{
-					font-size: 16px;
-				}
-				.mail{
 					font-size: 14px;
+					text-align: center;
 				}
 			}
 		}
@@ -1270,6 +1452,18 @@ footer.footer{
 			}
 			a{
 				font-size: 18px!important;
+			}
+		}
+	}
+	footer#footer.footer{
+		.wrapper{
+			max-width: 100%;
+			.login-footer{
+				.signup{
+					a{
+						padding: 10px 15px;
+					}
+				}
 			}
 		}
 	}

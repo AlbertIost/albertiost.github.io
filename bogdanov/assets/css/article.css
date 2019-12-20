@@ -631,14 +631,12 @@ section.comments .wrapper .write-comm {
 }
 
 section.comments .wrapper .write-comm .avatar {
-  min-width: 127px;
   width: 127px;
   height: 127px;
 }
 
 section.comments .wrapper .write-comm textarea {
   font-size: 20px;
-  min-width: 800px;
   width: 800px;
   max-width: 800px;
   height: 180px;
@@ -670,14 +668,23 @@ section.comments .wrapper .comment-group .section-comment .comment.reply-comment
 }
 
 section.comments .wrapper .comment-group .section-comment .comment .avatar {
-  min-width: 127px;
   width: 127px;
   height: 127px;
+  -webkit-box-flex: 0;
+  -ms-flex-positive: 0;
+  flex-grow: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 section.comments .wrapper .comment-group .section-comment .comment .mess {
   padding-left: 25px;
   padding-top: 15px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
 }
 
 section.comments .wrapper .comment-group .section-comment .comment .mess .first-line a.author {
@@ -740,7 +747,8 @@ section.recomendation .wrapper .rec-section .rec-block-wrapper .rec-block {
   box-shadow: 0px 7px 18px 10px rgba(0, 0, 0, 0.1);
   position: relative;
   width: 320px;
-  padding-bottom: 16px;
+  padding-bottom: 36px;
+  height: 100%;
 }
 
 section.recomendation .wrapper .rec-section .rec-block-wrapper .rec-block .label {
@@ -770,6 +778,10 @@ section.recomendation .wrapper .rec-section .rec-block-wrapper .rec-block .rec-f
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0 24px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 10px;
 }
 
 section.recomendation .wrapper .rec-section .rec-block-wrapper .rec-block .rec-footer .stat {
@@ -830,7 +842,7 @@ section.recomendation .wrapper .more a {
 footer.footer {
   background: #24242a;
   padding: 70px 0 50px;
-  margin-top: 70px;
+  margin-top: 120px;
 }
 
 footer.footer .wrapper {
@@ -863,9 +875,35 @@ footer.footer .wrapper .site-map ul li a {
   color: #fff;
 }
 
-footer.footer .wrapper .contacts .mail {
-  font-size: 25px;
+footer.footer .wrapper .contacts .contact-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+footer.footer .wrapper .contacts .contact-group a {
+  width: 50%;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 10px;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}
+
+footer.footer .wrapper .contacts .contact-group a i::before {
   color: #fff;
+}
+
+footer.footer .wrapper .contacts .contact-group a:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 footer.footer .wrapper .login-footer {
@@ -972,7 +1010,7 @@ footer.footer .wrapper .login-footer p.signin a {
     font-size: 40px;
   }
   section.article .wrapper .info {
-    padding: 40px 0;
+    padding: 20px 0;
     font-size: 20px;
   }
   section.article .wrapper .info span.comments {
@@ -986,13 +1024,111 @@ footer.footer .wrapper .login-footer p.signin a {
     padding-bottom: 20px;
   }
   section.article .wrapper .content {
-    padding: 60px 40px;
+    padding: 40px;
   }
   section.article .wrapper .content p.text {
     font-size: 20px;
+    padding-bottom: 25px;
   }
   section.article .wrapper .content .author {
     padding: 33px 60px;
+  }
+  section.article .wrapper .content .author .profile .name p {
+    font-size: 24px;
+  }
+  section.article .wrapper .content .author .social .rating span {
+    font-size: 24px;
+  }
+  section.article .wrapper .content .author .social .links p {
+    font-size: 24px;
+  }
+  section.article .wrapper .content .accordion-item .accordion-title {
+    padding: 35px 50px;
+  }
+  section.article .wrapper .content .accordion-item .accordion-title span {
+    font-size: 30px;
+  }
+  section.article .wrapper .content .accordion-item .accordion-title .arrow {
+    width: 23px;
+    height: 40px;
+  }
+  section.article .wrapper .content h3 {
+    padding: 50px 0 30px;
+  }
+  section.article .wrapper .content .also {
+    margin-top: 0;
+  }
+  section.article .wrapper .download-wrapper.authed .download-authed .text {
+    font-size: 24px;
+  }
+  section.comments .wrapper .comment-group .section-comment .comment .avatar {
+    width: 100px;
+    height: 100px;
+  }
+  section.comments .wrapper .comment-group .section-comment .comment .mess {
+    padding-top: 10px;
+    padding-left: 15px;
+  }
+  section.comments .wrapper .comment-group .section-comment .comment .mess p.first-line a.author {
+    font-size: 20px;
+  }
+  section.comments .wrapper .comment-group .section-comment .comment .mess p.first-line span.date {
+    font-size: 16px;
+  }
+  section.comments .wrapper .comment-group .section-comment .comment .mess p.second-line {
+    font-size: 20px;
+  }
+  section.comments .wrapper .comment-group .section-comment .comment .mess p.third-line a.reply {
+    font-size: 20px;
+  }
+  section.comments .wrapper .comment-group .section-comment .comment.reply-comment {
+    background-position: 48px -5px;
+    padding-left: 130px;
+  }
+  section.recomendation .wrapper {
+    width: 100%;
+    max-width: 1330px;
+    padding: 0;
+  }
+  section.recomendation .wrapper h1 {
+    margin: 50px 0 40px;
+    font-size: 40px;
+  }
+  section.recomendation .wrapper .rec-section .rec-block-wrapper {
+    width: 300px;
+  }
+  section.recomendation .wrapper .rec-section .rec-block-wrapper .rec-block {
+    width: 100%;
+  }
+  section.recomendation .wrapper .rec-section .rec-block-wrapper .rec-block p {
+    font-size: 20px;
+  }
+  section.recomendation .wrapper .more a {
+    font-size: 20px;
+  }
+  footer#footer.footer {
+    margin-top: 100px;
+    padding: 30px 0;
+  }
+  footer#footer.footer .wrapper .site-map p.article {
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+  footer#footer.footer .wrapper .site-map ul li {
+    padding-bottom: 10px;
+  }
+  footer#footer.footer .wrapper .site-map ul li a {
+    font-size: 20px;
+  }
+  footer#footer.footer .wrapper .contacts .article {
+    font-size: 20px;
+    padding-bottom: 15px;
+  }
+  footer#footer.footer .wrapper .login-footer .signup a {
+    font-size: 20px;
+  }
+  footer#footer.footer .wrapper .login-footer .signin a {
+    font-size: 20px;
   }
 }
 
@@ -1164,20 +1300,19 @@ footer.footer .wrapper .login-footer p.signin a {
     padding-right: 50px;
   }
   section.article .wrapper h1 {
-    font-size: 50px;
-    padding-top: 140px;
-  }
-  section.article .wrapper .info {
-    padding: 50px 0;
+    padding-top: 20px;
   }
   section.article .wrapper .content {
-    padding-left: 24px;
-    padding-right: 24px;
-    padding-bottom: 40px;
+    padding: 24px;
+  }
+  section.article .wrapper .content ul.list {
+    padding-bottom: 20px;
   }
   section.article .wrapper .content .accordion-item .accordion-title {
+    padding: 20px;
+  }
+  section.article .wrapper .content .accordion-item .accordion-title span {
     font-size: 24px;
-    padding: 35px 25px;
   }
   section.article .wrapper .content .accordion-item .accordion-title .arrow {
     width: 21px;
@@ -1188,7 +1323,7 @@ footer.footer .wrapper .login-footer p.signin a {
     font-size: 20px;
   }
   section.article .wrapper .content h3 {
-    padding: 55px 0 40px;
+    padding: 30px 0 20px;
   }
   section.article .wrapper .content .image {
     width: 550px;
@@ -1234,8 +1369,22 @@ footer.footer .wrapper .login-footer p.signin a {
   section.comments .wrapper {
     padding: 0 30px;
   }
+  section.comments .wrapper .write-comm .avatar {
+    width: 100px;
+    height: 100px;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+  }
   section.comments .wrapper .write-comm textarea {
     width: 100%;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    -ms-flex-negative: 1;
+    flex-shrink: 1;
   }
   section.recomendation .wrapper {
     padding: 0 30px;
@@ -1249,12 +1398,12 @@ footer.footer .wrapper .login-footer p.signin a {
   section.recomendation .wrapper .more {
     margin-top: 20px;
   }
-  footer.footer {
+  footer#footer.footer {
     background: #24242a;
     padding: 40px 0 30px;
     margin-top: 50px;
   }
-  footer.footer .wrapper {
+  footer#footer.footer .wrapper {
     margin: 0 auto;
     padding: 0;
     width: 660px;
@@ -1267,7 +1416,7 @@ footer.footer .wrapper .login-footer p.signin a {
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
-  footer.footer .wrapper p.article {
+  footer#footer.footer .wrapper p.article {
     color: #fff;
     font-size: 18px;
     font-weight: 700;
@@ -1275,35 +1424,32 @@ footer.footer .wrapper .login-footer p.signin a {
     letter-spacing: 3px;
     padding-bottom: 20px;
   }
-  footer.footer .wrapper .logo {
+  footer#footer.footer .wrapper .logo {
     -webkit-box-ordinal-group: 2;
     -ms-flex-order: 1;
     order: 1;
   }
-  footer.footer .wrapper .site-map {
+  footer#footer.footer .wrapper .site-map {
     -webkit-box-ordinal-group: 4;
     -ms-flex-order: 3;
     order: 3;
     padding-left: 20px;
   }
-  footer.footer .wrapper .site-map ul li {
+  footer#footer.footer .wrapper .site-map ul li {
     padding-bottom: 5px;
   }
-  footer.footer .wrapper .site-map ul li a {
+  footer#footer.footer .wrapper .site-map ul li a {
     font-size: 18px;
     letter-spacing: 3px;
     color: #fff;
   }
-  footer.footer .wrapper .contacts {
+  footer#footer.footer .wrapper .contacts {
     -webkit-box-ordinal-group: 5;
     -ms-flex-order: 4;
     order: 4;
+    padding-right: 45px;
   }
-  footer.footer .wrapper .contacts .mail {
-    font-size: 25px;
-    color: #fff;
-  }
-  footer.footer .wrapper .login-footer {
+  footer#footer.footer .wrapper .login-footer {
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
@@ -1316,26 +1462,34 @@ footer.footer .wrapper .login-footer p.signin a {
     flex-direction: column;
     padding-bottom: 40px;
   }
-  footer.footer .wrapper .login-footer p a {
+  footer#footer.footer .wrapper .login-footer p a {
     color: #fff;
     text-transform: uppercase;
     font-size: 20px;
     display: inline-block;
     text-align: center;
   }
-  footer.footer .wrapper .login-footer p.signup {
+  footer#footer.footer .wrapper .login-footer p.signup {
     padding-bottom: 15px;
   }
-  footer.footer .wrapper .login-footer p.signup a {
+  footer#footer.footer .wrapper .login-footer p.signup a {
     background: #ff0000;
     padding: 16px 35px;
     letter-spacing: 2px;
   }
-  footer.footer .wrapper .login-footer p.signin {
+  footer#footer.footer .wrapper .login-footer p.signin {
     text-align: center;
   }
-  footer.footer .wrapper .login-footer p.signin a {
+  footer#footer.footer .wrapper .login-footer p.signin a {
     border-bottom: 1px solid #fff;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  section.recomendation .wrapper .rec-section {
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
   }
 }
 
@@ -1370,30 +1524,38 @@ footer.footer .wrapper .login-footer p.signin a {
     padding-left: 10px;
     padding-right: 10px;
   }
-  footer.footer .wrapper .logo-footer {
-    width: 170px;
+  footer#footer.footer {
+    margin-top: 0px;
   }
-  footer.footer .wrapper .login-footer .signup a {
-    padding: 15px 20px !important;
-    font-size: 16px;
+  footer#footer.footer .wrapper {
+    max-width: 400px;
   }
-  footer.footer .wrapper .login-footer .signin a {
-    font-size: 16px;
+  footer#footer.footer .wrapper .logo-footer {
+    width: 160px;
   }
-  footer.footer .wrapper .site-map {
+  footer#footer.footer .wrapper .login-footer p.signup a {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+  footer#footer.footer .wrapper .login-footer .signin a {
+    font-size: 14px;
+  }
+  footer#footer.footer .wrapper .site-map {
     padding: 0;
+    width: 50%;
   }
-  footer.footer .wrapper .site-map .article {
-    font-size: 16px;
-  }
-  footer.footer .wrapper .site-map ul li a {
+  footer#footer.footer .wrapper .site-map p.article {
     font-size: 14px;
   }
-  footer.footer .wrapper .contacts p.article {
-    font-size: 16px;
-  }
-  footer.footer .wrapper .contacts .mail {
+  footer#footer.footer .wrapper .site-map ul li a {
     font-size: 14px;
+  }
+  footer#footer.footer .wrapper .contacts {
+    padding-right: 0px;
+  }
+  footer#footer.footer .wrapper .contacts p.article {
+    font-size: 14px;
+    text-align: center;
   }
 }
 
@@ -1447,5 +1609,11 @@ footer.footer .wrapper .login-footer p.signin a {
   }
   header .wrapper a {
     font-size: 18px !important;
+  }
+  footer#footer.footer .wrapper {
+    max-width: 100%;
+  }
+  footer#footer.footer .wrapper .login-footer .signup a {
+    padding: 10px 15px;
   }
 }
