@@ -924,7 +924,7 @@ footer.footer{
 				.rec-block-wrapper{
 					width: 300px;
 					.rec-block{
-						width: 100%;
+						width: 300px;
 
 						p{
 							font-size: 20px;
@@ -1228,7 +1228,7 @@ footer.footer{
 				}
 			}
 			.more{
-				margin-top: 20px;
+				margin: 20px 0 20px;
 			}
 		}
 	}
@@ -1352,16 +1352,229 @@ footer.footer{
 	}
 	section.article{
 		.wrapper{
-			padding-left: 10px;
-			padding-right: 10px;
+			padding-left: 5px;
+			padding-right: 5px;
+			h1{
+				font-size: 20px;
+			}
+			.info{
+				padding: 10px 0;
+				.date{
+					font-size: 16px;
+				}
+				span.comments{
+					font-size: 16px;
+					padding-left: 40px;
+					background-size: 23px 21px;
+					background-position: 10px 0;
+				}
+			}
+			.basis{
+				p{
+					font-size: 16px;
+					&:first-child{
+						padding-bottom: 10px;
+					}
+				}
+			}
+			.content{
+				padding: 10px;
+				p.text{
+					font-size: 16px;
+					padding-bottom: 15px;
+				}
+				.accordion-item{
+					.accordion-title{
+						padding: 10px;
+						span{
+							font-size: 18px;
+						}
+						.arrow{
+							width: 14px;
+							height: 24px;
+						}
+					}
+					.accordion-content{
+						padding: 10px 15px;
+						font-size: 16px;
+					}
+				}
+				h3{
+					padding: 15px 0 10px;
+					font-size: 20px;
+				}
+				ul.list{
+					padding-bottom: 5px;
+					li{
+						font-size: 16px;
+						padding-left: 20px;
+						padding-bottom: 10px;
+
+						&::before{
+							width: 6px;
+							height: 6px;
+							border: 3px solid #ff0000;
+							left: 0;
+							top: 6px;
+						}
+					}
+				}
+				.also{
+					margin: 10px 0;
+					.also-inner{
+						padding: 0;
+						box-shadow: none;
+						p{
+							padding-bottom: 10px;
+							a{
+								font-size: 18px;
+							}
+							a.red{
+								font-size: 18px;
+								padding: 15px 20px;
+							}
+						}
+					}
+				}
+				.list-group{
+					flex-wrap: wrap;
+				}
+				.author{
+					padding-left: 0;
+					padding-right: 0;
+					.profile{
+						padding-bottom: 20px;
+						.avatar{
+							width: 100px;
+						}
+						.name{
+							padding-left: 10px;
+							p{
+								font-size: 20px!important;
+								padding: 0;
+
+								&:first-child{
+									padding-bottom: 10px;
+								}
+							}
+						}
+					}
+					.social{
+						.rating{
+							span{
+								font-size: 20px;
+								padding-right: 10px;
+							}
+							.star-group{
+								label, label:hover{
+									width: 20px;
+									height: 19px;
+								}
+							}
+						}
+						.links{
+							p{
+								font-size: 20px;
+								padding: 10px 0;
+							}
+							.link-group{
+								a{
+									width: 40px;
+									height: 40px;
+									margin-right: 10px;
+								}
+							}
+						}
+					}
+				}
+			}
+			.download-wrapper.authed{
+				.download-authed{
+					padding: 10px;
+					height: auto;
+					display: block;
+					.text{
+						font-size: 18px;
+						padding-right: 0px;
+						display: block;
+						margin-bottom: 10px;
+					}
+					.icon-download{
+						display: inline-block;
+						width: 40px;
+						height: 50px;
+					}
+				}
+			}
 		}
 	}
 	section.comments{
+		margin-top: 10px;
 		.wrapper{
 			padding-left: 10px;
 			padding-right: 10px;
+			p.heading{
+				font-size: 20px;
+			}
+			.write-comm{
+				padding-top: 20px;
+				.avatar{
+					display: none;
+				}
+				textarea{
+					margin: 0;
+					font-size: 16px;
+					padding: 10px;
+				}
+			}
+			.comment-group{
+				.section-comment{
+					.comment{
+						margin-top: 20px;
+						.avatar{
+							display:none;
+						}
+						.mess{
+							padding: 0;
+							p.first-line{
+								a.author{
+									font-size: 16px;
+								}
+							}
+							p.second-line{
+								font-size: 16px;
+								padding: 7px 0;
+							}
+							p.third-line{
+								a.reply{
+									font-size: 16px;
+								}
+							}
+						}
+
+						&.reply-comment{
+							padding-left: 20px;
+							padding-top: 15px;
+							background: none;
+						}
+					}
+				}
+			}
 		}
 	}
+	section.recomendation{
+		.wrapper{
+			padding: 0;
+			h1{
+				font-size: 24px;
+				margin: 20px 0 10px;
+			}
+			.more{
+				margin-top: 0;
+			}
+		}
+	}
+
 	footer#footer.footer{
 		margin-top: 0px;
 		.wrapper{

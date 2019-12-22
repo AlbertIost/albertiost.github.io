@@ -2,8 +2,16 @@
   .rec-block {
     margin: 0 auto;
   }
+  .rec-block-wrapper {
+    margin-bottom: 0 !important;
+    padding-bottom: 30px;
+  }
   .slick-next {
-    right: 50px !important;
+    z-index: 999;
+    right: 50px;
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
   }
   .slick-next::before {
     background-image: url("../img/arrow-orange.png");
@@ -11,7 +19,11 @@
     z-index: 999;
   }
   .slick-prev {
-    left: 50px !important;
+    z-index: 999;
+    left: 50px;
+    -webkit-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    transform: translateY(-30px);
   }
   .slick-prev::before {
     background-image: url("../img/arrow-orange.png");
@@ -28,5 +40,14 @@
     display: block;
     height: 35px;
     width: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .slick-next {
+    right: 0;
+  }
+  .slick-prev {
+    left: 0;
   }
 }

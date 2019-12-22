@@ -2,8 +2,14 @@
 	.rec-block{
 		margin: 0 auto;
 	}
+	.rec-block-wrapper{
+		margin-bottom: 0!important;
+		padding-bottom: 30px;
+	}
 	.slick-next{
-		right: 50px !important;
+		z-index: 999;
+		right: 50px;
+		transform: translateY(-30px);
 		&::before{
 			background-image: url('../img/arrow-orange.png');
 			background-size: 100%;
@@ -11,7 +17,9 @@
 		}
 	}
 	.slick-prev{
-		left: 50px !important;
+		z-index: 999;
+		left: 50px;
+		transform: translateY(-30px);
 		&::before{
 			background-image: url('../img/arrow-orange.png');
 			background-size: 100%;
@@ -24,5 +32,13 @@
 			display: block;
 			height: 35px;
 			width: 20px;
+	}
+}
+@media screen and (max-width: 600px){
+	.slick-next{
+		right: 0;
+	}
+	.slick-prev{
+		left: 0;
 	}
 }

@@ -1098,7 +1098,7 @@ footer.footer .wrapper .login-footer p.signin a {
     width: 300px;
   }
   section.recomendation .wrapper .rec-section .rec-block-wrapper .rec-block {
-    width: 100%;
+    width: 300px;
   }
   section.recomendation .wrapper .rec-section .rec-block-wrapper .rec-block p {
     font-size: 20px;
@@ -1396,7 +1396,7 @@ footer.footer .wrapper .login-footer p.signin a {
     padding: 30px 15px;
   }
   section.recomendation .wrapper .more {
-    margin-top: 20px;
+    margin: 20px 0 20px;
   }
   footer#footer.footer {
     background: #24242a;
@@ -1517,12 +1517,199 @@ footer.footer .wrapper .login-footer p.signin a {
     font-size: 18px !important;
   }
   section.article .wrapper {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  section.article .wrapper h1 {
+    font-size: 20px;
+  }
+  section.article .wrapper .info {
+    padding: 10px 0;
+  }
+  section.article .wrapper .info .date {
+    font-size: 16px;
+  }
+  section.article .wrapper .info span.comments {
+    font-size: 16px;
+    padding-left: 40px;
+    background-size: 23px 21px;
+    background-position: 10px 0;
+  }
+  section.article .wrapper .basis p {
+    font-size: 16px;
+  }
+  section.article .wrapper .basis p:first-child {
+    padding-bottom: 10px;
+  }
+  section.article .wrapper .content {
+    padding: 10px;
+  }
+  section.article .wrapper .content p.text {
+    font-size: 16px;
+    padding-bottom: 15px;
+  }
+  section.article .wrapper .content .accordion-item .accordion-title {
+    padding: 10px;
+  }
+  section.article .wrapper .content .accordion-item .accordion-title span {
+    font-size: 18px;
+  }
+  section.article .wrapper .content .accordion-item .accordion-title .arrow {
+    width: 14px;
+    height: 24px;
+  }
+  section.article .wrapper .content .accordion-item .accordion-content {
+    padding: 10px 15px;
+    font-size: 16px;
+  }
+  section.article .wrapper .content h3 {
+    padding: 15px 0 10px;
+    font-size: 20px;
+  }
+  section.article .wrapper .content ul.list {
+    padding-bottom: 5px;
+  }
+  section.article .wrapper .content ul.list li {
+    font-size: 16px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+  }
+  section.article .wrapper .content ul.list li::before {
+    width: 6px;
+    height: 6px;
+    border: 3px solid #ff0000;
+    left: 0;
+    top: 6px;
+  }
+  section.article .wrapper .content .also {
+    margin: 10px 0;
+  }
+  section.article .wrapper .content .also .also-inner {
+    padding: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  section.article .wrapper .content .also .also-inner p {
+    padding-bottom: 10px;
+  }
+  section.article .wrapper .content .also .also-inner p a {
+    font-size: 18px;
+  }
+  section.article .wrapper .content .also .also-inner p a.red {
+    font-size: 18px;
+    padding: 15px 20px;
+  }
+  section.article .wrapper .content .list-group {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  section.article .wrapper .content .author {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  section.article .wrapper .content .author .profile {
+    padding-bottom: 20px;
+  }
+  section.article .wrapper .content .author .profile .avatar {
+    width: 100px;
+  }
+  section.article .wrapper .content .author .profile .name {
     padding-left: 10px;
+  }
+  section.article .wrapper .content .author .profile .name p {
+    font-size: 20px !important;
+    padding: 0;
+  }
+  section.article .wrapper .content .author .profile .name p:first-child {
+    padding-bottom: 10px;
+  }
+  section.article .wrapper .content .author .social .rating span {
+    font-size: 20px;
     padding-right: 10px;
+  }
+  section.article .wrapper .content .author .social .rating .star-group label, section.article .wrapper .content .author .social .rating .star-group label:hover {
+    width: 20px;
+    height: 19px;
+  }
+  section.article .wrapper .content .author .social .links p {
+    font-size: 20px;
+    padding: 10px 0;
+  }
+  section.article .wrapper .content .author .social .links .link-group a {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  section.article .wrapper .download-wrapper.authed .download-authed {
+    padding: 10px;
+    height: auto;
+    display: block;
+  }
+  section.article .wrapper .download-wrapper.authed .download-authed .text {
+    font-size: 18px;
+    padding-right: 0px;
+    display: block;
+    margin-bottom: 10px;
+  }
+  section.article .wrapper .download-wrapper.authed .download-authed .icon-download {
+    display: inline-block;
+    width: 40px;
+    height: 50px;
+  }
+  section.comments {
+    margin-top: 10px;
   }
   section.comments .wrapper {
     padding-left: 10px;
     padding-right: 10px;
+  }
+  section.comments .wrapper p.heading {
+    font-size: 20px;
+  }
+  section.comments .wrapper .write-comm {
+    padding-top: 20px;
+  }
+  section.comments .wrapper .write-comm .avatar {
+    display: none;
+  }
+  section.comments .wrapper .write-comm textarea {
+    margin: 0;
+    font-size: 16px;
+    padding: 10px;
+  }
+  section.comments .wrapper .comment-group .section-comment .comment {
+    margin-top: 20px;
+  }
+  section.comments .wrapper .comment-group .section-comment .comment .avatar {
+    display: none;
+  }
+  section.comments .wrapper .comment-group .section-comment .comment .mess {
+    padding: 0;
+  }
+  section.comments .wrapper .comment-group .section-comment .comment .mess p.first-line a.author {
+    font-size: 16px;
+  }
+  section.comments .wrapper .comment-group .section-comment .comment .mess p.second-line {
+    font-size: 16px;
+    padding: 7px 0;
+  }
+  section.comments .wrapper .comment-group .section-comment .comment .mess p.third-line a.reply {
+    font-size: 16px;
+  }
+  section.comments .wrapper .comment-group .section-comment .comment.reply-comment {
+    padding-left: 20px;
+    padding-top: 15px;
+    background: none;
+  }
+  section.recomendation .wrapper {
+    padding: 0;
+  }
+  section.recomendation .wrapper h1 {
+    font-size: 24px;
+    margin: 20px 0 10px;
+  }
+  section.recomendation .wrapper .more {
+    margin-top: 0;
   }
   footer#footer.footer {
     margin-top: 0px;
