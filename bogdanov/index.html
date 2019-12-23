@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/slider.css">
+	<link rel="stylesheet" href="assets/css/header.css">
 	<link rel="stylesheet" href="assets/css/main.css">
 	<title>Bogdanov</title>
 </head>
@@ -36,10 +37,11 @@
 		</div>
 	</header>
 	<!--Header для авторизованных-->
-	<header class="header" id="header">
+	<header class="header notifications" id="header">
 		<div class="wrapper">
 			<div class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></div>
 			<a href="#" class="menu-btn">
+				<div class="notification"></div>
 				<span></span>
 			</a>
 			<div class="menu">
@@ -51,7 +53,9 @@
 						<a href="#">Проекты</a>
 					</div>
 					<div class="login-auth">
-						<div class="mini-avatar"></div>
+						<div class="mini-avatar">
+							<div class="notification"></div>
+						</div>
 						<div class="actions">
 							<a href="#">Мой профиль</a>
 							<a href="#">Мои статьи</a>
