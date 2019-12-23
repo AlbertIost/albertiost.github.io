@@ -1,0 +1,23 @@
+.content-dots{
+	margin: 0;
+	.slick-track{
+		transform: none !important;
+		display: flex;
+		justify-content: center;
+	}
+
+	li.slick-slide{
+		width: 16px!important;
+		height: 16px!important;
+		border: 1px solid #000;
+		border-radius: 50%;
+		margin: 20px 8px 0 8px;
+	}
+	li.slick-current{
+		background-color: #f24843;
+		border: none;
+	}
+}
+.slick-slide{
+	padding: 0 5px;
+}

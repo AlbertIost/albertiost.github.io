@@ -13,8 +13,9 @@
 	<script src="https://kit.fontawesome.com/3a877ea64e.js" crossorigin="anonymous"></script>
 </head>
 <body>
+	<!--Header для неавторизованных-->
 	<header class="header" id="header">
-		<div class="wrapper authed">
+		<div class="wrapper">
 			<div class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></div>
 			<a href="#" class="menu-btn">
 				<span></span>
@@ -31,6 +32,25 @@
 						<a class="signup" href="#">Регистрация</a>
 						<span>/</span>
 						<a class="signin" href="#">Вход</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--Header для авторизованных-->
+	<header class="header" id="header">
+		<div class="wrapper">
+			<div class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></div>
+			<a href="#" class="menu-btn">
+				<span></span>
+			</a>
+			<div class="menu">
+				<div class="menu-inner">
+					<div class="nav">
+						<a href="#">Обучение</a>
+						<a href="#">Карьера</a>
+						<a href="#">Бизнес</a>
+						<a href="#">Проекты</a>
 					</div>
 					<div class="login-auth">
 						<div class="mini-avatar"></div>
@@ -280,7 +300,7 @@
 			<div class="contacts">
 				<p class="article">Контакты</p>
 				<p class="contact-group">
-					<a href="#"><i class="fab fa-vk"></i></a>
+					<a href="#"><i class="fab fa-youtube"></i></a>
 					<a href="#"><i class="fab fa-facebook-f"></i></a>
 					<a href="#"><i class="fab fa-instagram"></i></a>
 					<a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -288,7 +308,7 @@
 			</div>
 			<div class="login-footer">
 				<p class="signup"><a href="#">Регистрация</a></p>
-				<p class="signin"><a href="#">Вход в профиль</a></p>
+				<!--<p class="signin"><a href="#">Вход в профиль</a></p>-->
 			</div>
 		</div>
 	</footer>

@@ -102,42 +102,24 @@ header .wrapper .menu .menu-inner .login a.signin {
   font-weight: 700;
 }
 
-header .wrapper.unauthed .login-auth {
-  display: none;
-}
-
-header .wrapper.authed .login-auth {
+header .wrapper .login-auth {
   display: block;
   position: relative;
-  margin-left: 200px;
+  margin-left: 130px;
 }
 
-header .wrapper.authed .login-auth .mini-avatar {
+header .wrapper .login-auth .mini-avatar {
   position: relative;
-  width: 160px;
-  padding-left: 69px;
+  width: 91px;
   height: 91px;
+  margin-right: 75px;
   background-image: url("../img/avatar.png");
   background-size: 91px 91px;
   background-repeat: no-repeat;
   background-position: 100%;
 }
 
-header .wrapper.authed .login-auth .mini-avatar::after {
-  content: '';
-  position: absolute;
-  width: 15px;
-  height: 28px;
-  background-image: url("../img/arrow-orange.png");
-  background-size: 15px 28px;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  left: 10px;
-  top: 30px;
-}
-
-header .wrapper.authed .login-auth .actions {
+header .wrapper .login-auth .actions {
   display: none;
   position: absolute;
   right: 0;
@@ -147,7 +129,7 @@ header .wrapper.authed .login-auth .actions {
   background: #fff;
 }
 
-header .wrapper.authed .login-auth .actions a {
+header .wrapper .login-auth .actions a {
   display: block;
   font-size: 24px;
   font-weight: 700;
@@ -156,17 +138,13 @@ header .wrapper.authed .login-auth .actions a {
   border-bottom: 3px solid #a89fab;
 }
 
-header .wrapper.authed .login-auth .actions a:first-child {
+header .wrapper .login-auth .actions a:first-child {
   padding-top: 0;
 }
 
-header .wrapper.authed .login-auth .actions a:last-child {
+header .wrapper .login-auth .actions a:last-child {
   padding-bottom: 0;
   border-bottom: 0;
-}
-
-header .wrapper.authed .login {
-  display: none !important;
 }
 
 section.main {
@@ -894,7 +872,11 @@ footer.footer a {
   }
   header .wrapper .menu .menu-inner .login .signin {
     color: #000 !important;
-    font-weight: 400 !important;
+    font-weight: 700 !important;
+  }
+  header .wrapper .menu .menu-inner .login .signup {
+    font-weight: 700;
+    padding-bottom: 20px;
   }
   header .wrapper .menu .menu-inner .login-auth {
     margin: 0;

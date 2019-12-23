@@ -2,7 +2,7 @@ $(document).ready(function(){
 	$('.menu-btn').click(function(e){
 		e.preventDefault;
 		$(this).toggleClass('menu-btn_active');
-		$('.menu').slideToggle(300);
+		$(this).next('.menu').slideToggle(300);
 	});
 	$('.login-auth .mini-avatar').click(function(){
 		$(this).next('.actions').slideToggle(300);

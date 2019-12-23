@@ -111,42 +111,24 @@ header .wrapper .menu .menu-inner .login a.signin {
   font-weight: 700;
 }
 
-header .wrapper.unauthed .login-auth {
-  display: none;
-}
-
-header .wrapper.authed .login-auth {
+header .wrapper .login-auth {
   display: block;
   position: relative;
-  margin-left: 200px;
+  margin-left: 130px;
 }
 
-header .wrapper.authed .login-auth .mini-avatar {
+header .wrapper .login-auth .mini-avatar {
   position: relative;
-  width: 160px;
-  padding-left: 69px;
+  width: 91px;
   height: 91px;
+  margin-right: 75px;
   background-image: url("../img/avatar.png");
   background-size: 91px 91px;
   background-repeat: no-repeat;
   background-position: 100%;
 }
 
-header .wrapper.authed .login-auth .mini-avatar::after {
-  content: '';
-  position: absolute;
-  width: 15px;
-  height: 28px;
-  background-image: url("../img/arrow-orange.png");
-  background-size: 15px 28px;
-  -webkit-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  transform: rotate(90deg);
-  left: 10px;
-  top: 30px;
-}
-
-header .wrapper.authed .login-auth .actions {
+header .wrapper .login-auth .actions {
   display: none;
   position: absolute;
   right: 0;
@@ -156,7 +138,7 @@ header .wrapper.authed .login-auth .actions {
   background: #fff;
 }
 
-header .wrapper.authed .login-auth .actions a {
+header .wrapper .login-auth .actions a {
   display: block;
   font-size: 24px;
   font-weight: 700;
@@ -165,17 +147,13 @@ header .wrapper.authed .login-auth .actions a {
   border-bottom: 3px solid #a89fab;
 }
 
-header .wrapper.authed .login-auth .actions a:first-child {
+header .wrapper .login-auth .actions a:first-child {
   padding-top: 0;
 }
 
-header .wrapper.authed .login-auth .actions a:last-child {
+header .wrapper .login-auth .actions a:last-child {
   padding-bottom: 0;
   border-bottom: 0;
-}
-
-header .wrapper.authed .login {
-  display: none !important;
 }
 
 section.article .wrapper {
@@ -216,6 +194,7 @@ section.article .wrapper .basis p {
   font-size: 25px;
   font-weight: 700;
   letter-spacing: 1px;
+  text-align: justify;
 }
 
 section.article .wrapper .basis p:first-child {
@@ -242,6 +221,7 @@ section.article .wrapper .content .text {
   letter-spacing: 0.45px;
   padding-bottom: 45px;
   line-height: 1.5;
+  text-align: justify;
 }
 
 section.article .wrapper .content .list-group {
@@ -329,6 +309,7 @@ section.article .wrapper .content .accordion-item .accordion-title .arrow-active
 
 section.article .wrapper .content .accordion-item .accordion-content {
   display: none;
+  text-align: justify;
   font-size: 22px;
   color: #202023;
   padding: 35px 80px;
@@ -573,10 +554,6 @@ section.article .wrapper .download-wrapper.authed .download-authed .icon-downloa
   background-repeat: no-repeat;
 }
 
-section.article .wrapper .download-wrapper.authed .download-unauthed {
-  display: none;
-}
-
 section.article .wrapper .download-wrapper.unauthed .download-unauthed {
   width: 710px;
   height: 135px;
@@ -602,10 +579,6 @@ section.article .wrapper .download-wrapper.unauthed .download-unauthed p a {
   font-weight: 700;
   color: #ff0000;
   border-bottom: 2px solid #ff0000;
-}
-
-section.article .wrapper .download-wrapper.unauthed .download-authed {
-  display: none;
 }
 
 section.comments .wrapper {
@@ -906,26 +879,12 @@ footer.footer .wrapper .contacts .contact-group a:hover {
   transform: scale(1.2);
 }
 
-footer.footer .wrapper .login-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-}
-
 footer.footer .wrapper .login-footer p a {
   color: #fff;
   text-transform: uppercase;
   font-size: 25px;
   display: inline-block;
   text-align: center;
-}
-
-footer.footer .wrapper .login-footer p.signup {
-  padding-bottom: 27px;
 }
 
 footer.footer .wrapper .login-footer p.signup a {
@@ -1276,7 +1235,11 @@ footer.footer .wrapper .login-footer p.signin a {
   }
   header .wrapper .menu .menu-inner .login .signin {
     color: #000 !important;
-    font-weight: 400 !important;
+    font-weight: 700 !important;
+  }
+  header .wrapper .menu .menu-inner .login .signup {
+    font-weight: 700;
+    padding-bottom: 20px;
   }
   header .wrapper .menu .menu-inner .login-auth {
     margin: 0;
@@ -1453,14 +1416,7 @@ footer.footer .wrapper .login-footer p.signin a {
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    padding-bottom: 40px;
+    padding-top: 10px;
   }
   footer#footer.footer .wrapper .login-footer p a {
     color: #fff;
@@ -1470,7 +1426,7 @@ footer.footer .wrapper .login-footer p.signin a {
     text-align: center;
   }
   footer#footer.footer .wrapper .login-footer p.signup {
-    padding-bottom: 15px;
+    margin-bottom: 40px;
   }
   footer#footer.footer .wrapper .login-footer p.signup a {
     background: #ff0000;
@@ -1479,6 +1435,7 @@ footer.footer .wrapper .login-footer p.signin a {
   }
   footer#footer.footer .wrapper .login-footer p.signin {
     text-align: center;
+    margin-bottom: 60px;
   }
   footer#footer.footer .wrapper .login-footer p.signin a {
     border-bottom: 1px solid #fff;
@@ -1720,11 +1677,15 @@ footer.footer .wrapper .login-footer p.signin a {
   footer#footer.footer .wrapper .logo-footer {
     width: 160px;
   }
+  footer#footer.footer .wrapper .login-footer {
+    margin-bottom: 20px;
+    padding: 0;
+  }
   footer#footer.footer .wrapper .login-footer p.signup a {
     padding: 10px 15px;
     font-size: 14px;
   }
-  footer#footer.footer .wrapper .login-footer .signin a {
+  footer#footer.footer .wrapper .login-footer p.signin a {
     font-size: 14px;
   }
   footer#footer.footer .wrapper .site-map {
@@ -1800,7 +1761,7 @@ footer.footer .wrapper .login-footer p.signin a {
   footer#footer.footer .wrapper {
     max-width: 100%;
   }
-  footer#footer.footer .wrapper .login-footer .signup a {
-    padding: 10px 15px;
+  footer#footer.footer .wrapper .login-footer p.signup a {
+    padding: 10px 13px;
   }
 }

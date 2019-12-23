@@ -72,68 +72,46 @@ header{
 				}
 			}
 		}
-		&.unauthed{
-			.login-auth{
-				display: none;
-			}
-		}
-		&.authed{
-			.login-auth{
-				display: block;
+		.login-auth{
+			display: block;
+			position: relative;
+			margin-left: 130px;
+
+			.mini-avatar{
 				position: relative;
-				margin-left: 200px;
-
-				.mini-avatar{
-					position: relative;
-					width: 160px;
-					padding-left: 69px;
-					height: 91px;
-					background-image: url('../img/avatar.png');
-					background-size: 91px 91px;
-					background-repeat: no-repeat;
-					background-position: 100%;
-
-					&::after{
-						content: '';
-						position: absolute;
-						width: 15px;
-						height: 28px;
-						background-image: url('../img/arrow-orange.png');
-						background-size: 15px 28px;
-						transform: rotate(90deg);
-						left: 10px;
-						top: 30px;
-					}
-				}
-				.actions{
-					display: none;
-					position: absolute;
-					right: 0;
-					width: 230px;
-					text-align: center;
-					padding: 22px 30px;
-					background: #fff;
-
-					a{
-						display: block;
-						font-size: 24px;
-						font-weight: 700;
-						padding-top: 18px;
-						padding-bottom: 18px;
-						border-bottom: 3px solid #a89fab;
-
-						&:first-child{
-							padding-top: 0;
-						}
-						&:last-child{
-							padding-bottom: 0;
-							border-bottom: 0;
-						}
-					}
-				}
+				width: 91px;
+				height: 91px;
+				margin-right: 75px;
+				background-image: url('../img/avatar.png');
+				background-size: 91px 91px;
+				background-repeat: no-repeat;
+				background-position: 100%;
 			}
-			.login{
-				display: none !important;
+			.actions{
+				display: none;
+				position: absolute;
+				right: 0;
+				width: 230px;
+				text-align: center;
+				padding: 22px 30px;
+				background: #fff;
+
+				a{
+					display: block;
+					font-size: 24px;
+					font-weight: 700;
+					padding-top: 18px;
+					padding-bottom: 18px;
+					border-bottom: 3px solid #a89fab;
+
+					&:first-child{
+						padding-top: 0;
+					}
+					&:last-child{
+						padding-bottom: 0;
+						border-bottom: 0;
+					}
+				}
 			}
 		}
 	}
@@ -716,7 +694,11 @@ footer.footer{
 
 						.signin{
 							color: #000!important;
-							font-weight: 400!important;
+							font-weight: 700!important;
+						}
+						.signup{
+							font-weight: 700;
+							padding-bottom: 20px;
 						}
 					}
 					.login-auth{
