@@ -17,9 +17,10 @@ $(document).ready(function(){
 
 	function check_form(){
 		form_status = mail_status && tel_status && name_status && surname_status && agree1_status && agree2_status;
-		console.log('Form_status = ' + form_status);
 		if(form_status){
 			$('.send').removeAttr('disabled');
+			$('.send').css('cursor', 'pointer');
+			$('.send').css('opacity', '1');
 		}
 	}
 	
@@ -30,7 +31,6 @@ $(document).ready(function(){
 				mail.removeClass('error');
 				mail.parent().addClass('ok');
 				mail_status = true;
-				console.log(mail_status);
 				check_form();
 			}else{
 				mail.parents().next('.valid').text('Не верный формат данных');
@@ -38,6 +38,8 @@ $(document).ready(function(){
 				mail.parent().removeClass('ok');
 				mail_status = false;
 				$('.send').attr('disabled', '');
+				$('.send').css('cursor', 'default');
+				$('.send').css('opacity', '.5');
 			}
 		}
 	});
@@ -57,63 +59,65 @@ $(document).ready(function(){
 			$(this).addClass('error');
 			tel_status = false;
 			$('.send').attr('disabled', '');
+			$('.send').css('cursor', 'default');
+			$('.send').css('opacity', '.5');	
 		}
 	});
 
 	$("#name").change(function(){
 		let name = $(this).val();
-		if(name.length > 0){
+		let patt1 = /[^А-Яа-я\-]/;
+		name_status = !patt1.test(name);
+
+		if(name_status && name.replace(/\-/, "").length >= 3){
 			$(this).parent().addClass('ok');
 			$(this).removeClass('error');
-			name_status = true;
 			check_form();
 		}else{
 			$(this).parent().removeClass('ok');
 			$(this).addClass('error');
-			name_status = false;
 			$('.send').attr('disabled', '');
+			$('.send').css('cursor', 'default');
+			$('.send').css('opacity', '.5');
 		}
 	});
 
 	$("#surname").change(function(){
-		let name = $(this).val();
-		if(name.length > 0){
+		let surname = $(this).val();
+		let patt1 = /[^А-Яа-я\-]/;
+		surname_status = !patt1.test(surname);
+
+		if(surname_status && surname.replace(/\-/, "").length >= 3){
 			$(this).parent().addClass('ok');
 			$(this).removeClass('error');
-			surname_status = true;
 			check_form();
 		}else{
 			$(this).parent().removeClass('ok');
 			$(this).addClass('error');
-			surname_status = false;
 			$('.send').attr('disabled', '');
+			$('.send').css('cursor', 'default');
+			$('.send').css('opacity', '.5');
 		}
 	});
 
 	$('#agree-1').change(function(){
 		agree1_status = $('#agree-1').prop('checked');
-		if(!agree1_status)
+		if(!agree1_status){
 			$('.send').attr('disabled', '');
+			$('.send').css('cursor', 'default');
+			$('.send').css('opacity', '.5');
+		}
 		check_form();
 	});
 
 	$('#agree-2').change(function(){
 		agree2_status = $('#agree-2').prop('checked');
-		if(!agree2_status)
+		if(!agree2_status){
 			$('.send').attr('disabled', '');
+			$('.send').css('cursor', 'default');
+			$('.send').css('opacity', '.5');
+		}
 		check_form();
-	});
-	$('a.signup').click(function(e){
-		e.preventDefault();
-		$('.modal').addClass('active');
-	});
-	$('p.signup a').click(function(e){
-		e.preventDefault();
-		$('.modal').addClass('active');
-	});
-	$('.cancel').click(function(e){
-		e.preventDefault();
-		$('.modal').removeClass('active');
 	});
 
 	$('select').styler();

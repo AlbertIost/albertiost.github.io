@@ -21,7 +21,7 @@ footer{
 	align-items: center;
 	z-index: 1000;
 	form{
-		width: 930px;
+		width: 750px;
 		max-width: 100%;
 		.heading{
 			display: inline-block;
@@ -35,7 +35,7 @@ footer{
 			background: #fff;
 		}
 		.form-body{
-			padding: 45px 35px;
+			padding: 30px;
 			background: #fff;
 
 			h2{
@@ -96,6 +96,7 @@ footer{
 			}
 			.second-group{
 				display: flex;
+				flex-direction: column;
 				.input-name{
 					color: #727275;
 					font-size: 20px;
@@ -103,6 +104,7 @@ footer{
 				}
 				.birthday{
 					margin-right: 65px;
+					margin-bottom: 27px;
 					.select-group{
 						display: flex;
 						.jq-selectbox{
@@ -242,7 +244,8 @@ footer{
 			.agree{
 				display:flex;
 				flex-direction: column;
-				align-items: flex-end;
+				align-items: flex-start;
+				margin-top: 27px;
 				.checkbox-wrapper{
 					width: 280px;
 					padding-bottom: 16px;
@@ -286,7 +289,7 @@ footer{
 		.form-footer{
 			background: #fff;
 			display: flex;
-			justify-content: flex-end;
+			justify-content: flex-start;
 			padding: 0 35px 30px;
 			a.cancel{
 				font-size: 20px;
@@ -300,6 +303,7 @@ footer{
 				font-weight: 700;
 			}
 			.send{
+				opacity: .5;
 				font-size: 20px;
 				text-transform: uppercase;
 				color: #fff;
@@ -342,6 +346,7 @@ footer{
 				}
 				.second-group{
 					.birthday{
+						margin-bottom: 20px;
 						.input-name{
 							font-size: 16px;
 						}
@@ -415,10 +420,12 @@ footer{
 					font-size: 16px;
 				}
 				.input-group{
+					flex-wrap: nowrap;
+					flex-direction: column;
 					.input-section{
 						width: 200px;
 						padding: 0;
-						margin-right: 30px;
+						margin-right: 0px;
 						margin-bottom: 10px;
 						.input-name{
 							font-size: 14px;
@@ -432,6 +439,7 @@ footer{
 				.second-group{
 					.birthday{
 						margin-right: 20px;
+						margin-bottom: 10px;
 						.input-name{
 							font-size: 14px;
 							padding-bottom: 5px;
@@ -496,6 +504,7 @@ footer{
 							padding-bottom: 5px;
 						}
 						.radio-group{
+							padding-top: 0;
 							label{
 								font-size: 16px;
 								&::before{
@@ -558,7 +567,7 @@ footer{
 				.input-group{
 					justify-content: space-between;
 					.input-section{
-						width: 150px;
+						width: 200px;
 						margin-right: 0px;
 						margin-bottom: 5px;
 						.input-name{
@@ -568,7 +577,7 @@ footer{
 						input{
 							width: 100%;
 							font-size: 12px;
-							padding: 5px 7px;
+							padding: 7px 10px;
 						}
 						div.ok{
 							&::after{
@@ -580,7 +589,6 @@ footer{
 					}
 				}
 				.second-group{
-					flex-wrap: wrap;
 					.birthday{
 						margin-right: 10px;
 						margin-bottom: 5px;
