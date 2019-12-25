@@ -275,87 +275,6 @@ section.accordion{
 		}
 	}
 }
-footer.footer{
-	background: #24242a;
-	padding: 70px 0 50px;
-	margin-top: 120px;
-
-	.wrapper{
-		margin: 0 auto;
-		padding: 0 60px;
-
-		display: flex;
-		justify-content: space-between;
-		p.article{
-			color: #fff;
-			font-size: 25px;
-			font-weight: 700;
-			text-transform: uppercase;
-			letter-spacing: 3px;
-			padding-bottom: 26px;
-		}
-		
-		.site-map{
-
-			ul{
-
-				li{
-					padding-bottom: 18px;
-
-					a{
-						font-size: 25px;
-						letter-spacing: 3px;
-						color: #fff;
-					}
-				}
-			}
-		}
-		.contacts{
-			.contact-group{
-				display: flex;
-				justify-content: space-between;
-				flex-wrap: wrap;
-				a{
-					width: 50%;
-					font-size: 35px;
-					text-align: center;
-					margin-bottom: 10px;
-					transition: .3s;
-					i::before{
-						color: #fff;
-					}
-
-					&:hover{
-						transform: scale(1.2);
-					}
-				}
-			}
-		}
-		.login-footer{
-			p{
-				a{
-					color: #fff;
-					text-transform: uppercase;
-					font-size: 25px;
-					display: inline-block;
-					text-align: center;
-				}
-			}
-			p.signup{
-				a{
-					background: #ff0000;
-					padding: 24px 36px;
-				}
-			}
-			p.signin{
-				text-align: center;
-				a{
-					border-bottom: 1px solid #fff;
-				}
-			}
-		}
-	}
-}
 
 @media screen and (max-width: 1650px){
 	section.profile{
@@ -444,44 +363,7 @@ footer.footer{
 			}
 		}
 	}
-	footer#footer.footer{
-		margin-top: 100px;
-		padding: 30px 0;
-		.wrapper{
-			.site-map{
-				p.article{
-					font-size: 20px;
-					padding-bottom: 15px;
-				}
-				ul{
-					li{
-						padding-bottom: 10px;
-						a{
-							font-size: 20px;
-						}
-					}
-				}
-			}
-			.contacts{
-				.article{
-					font-size: 20px;
-					padding-bottom: 15px;
-				}
-			}
-			.login-footer{
-				.signup{
-					a{
-						font-size: 20px;
-					}
-				}
-				.signin{
-					a{
-						font-size: 20px;
-					}
-				}
-			}
-		}
-	}
+	
 }
 @media screen and (max-width: 1250px){
 	section.profile{
@@ -634,82 +516,7 @@ footer.footer{
 				}
 			}
 		}
-	}
-	footer#footer.footer{
-		background: #24242a;
-		padding: 40px 0 30px;
-		margin-top: 50px;
-
-		.wrapper{
-			margin: 0 auto;
-			padding: 0;
-			width: 660px;
-
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
-			p.article{
-				color: #fff;
-				font-size: 18px;
-				font-weight: 700;
-				text-transform: uppercase;
-				letter-spacing: 3px;
-				padding-bottom: 20px;
-			}
-			.logo{
-				order: 1;
-			}
-			.site-map{
-				order: 3;
-				padding-left: 20px;
-
-				ul{
-					li{
-						padding-bottom: 5px;
-
-						a{
-							font-size: 18px;
-							letter-spacing: 3px;
-							color: #fff;
-						}
-					}
-				}
-			}
-			.contacts{
-				order: 4;
-				padding-right: 45px;
-			}
-			.login-footer{
-				order: 2;
-				padding-top: 10px;
-				
-				p{
-					a{
-						color: #fff;
-						text-transform: uppercase;
-						font-size: 20px;
-						display: inline-block;
-						text-align: center;
-					}
-				}
-				p.signup{
-					a{
-						background: #ff0000;
-						padding: 16px 35px;
-						letter-spacing: 2px;
-					}
-				margin-bottom: 40px;
-				}
-				p.signin{
-					text-align: center;
-					a{
-						border-bottom: 1px solid #fff;
-					}
-				margin-bottom: 60px;
-				}
-			}
-		}
-	}		
+	}	
 }
 
 @media screen and (max-width: 650px){
@@ -843,66 +650,6 @@ footer.footer{
 						a.info{
 							font-size: 22px;
 						}
-					}
-				}
-			}
-		}
-	}
-	footer#footer.footer{
-		margin-top: 0px;
-		.wrapper{
-			max-width: 400px;
-			.logo-footer{
-				width: 160px;
-			}
-			.login-footer{
-				margin-bottom: 20px;
-				padding: 0;
-				p.signup{
-					a{
-						padding: 10px 15px;
-						font-size: 14px;
-					}
-				}
-				p.signin{
-					a{
-						font-size: 14px;
-					}
-				}
-			}
-			.site-map{
-				padding: 0;
-				width: 50%;
-
-				p.article{
-					font-size: 14px;
-				}
-				ul{
-					li{
-						a{
-							font-size: 14px;
-						}
-					}
-				}
-			}
-			.contacts{
-				padding-right: 0px;
-				p.article{
-					font-size: 14px;
-					text-align: center;
-				}
-			}
-		}
-	}
-}
-@media screen and (max-width: 500px){
-	footer#footer.footer{
-		.wrapper{
-			max-width: 100%;
-			.login-footer{
-				p.signup{
-					a{
-						padding: 10px 13px;
 					}
 				}
 			}
