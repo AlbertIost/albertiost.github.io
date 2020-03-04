@@ -25,7 +25,7 @@ select.mf-input__m{
 	border: 1px solid transparent!important;
 }
 label.required + .mf-input__m.notCompleted, select.mf-input__m.notCompleted{
-	border: 1px solid #ff2727!important;
+	border: 1px solid #b0f2ff!important;
 }
 .ac-inbox--icon .mf-inbox--menu-item a:before, .ac-inbox--icon .mf-inbox--submenu-item a:before, .mf-appmenu--submenu-item-icon:before, .mf-breadcrumb--item.has-submenu:after, .mf-icon, .mf-simple-list__icon .mf-simple-list--item:before {
     font-family: morfont;

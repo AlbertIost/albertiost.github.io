@@ -86,20 +86,20 @@
         <label>Tipo de documento</label>
         <ul id="ul_pasaporte" class="radio-list" style="min-width:200px">
             <li>
-                <input type="radio" value="N.I.E." id="rdbTipoDocNie" name="rdbTipoDoc" checked="checked">
+                <input type="radio" value="Pasaporte" id="rdbTipoDocPasDdi" name="rdbTipoDoc" checked="checked">
+                <span for="rdbTipoDocPasDdi" class="w100">Pasaporte</span>
+            </li>
+            <li>
+                <input type="radio" value="N.I.E." id="rdbTipoDocNie" name="rdbTipoDoc">
                 <span for="rdbTipoDocNie" class="w50">N.I.E.</span>
             </li>
             <li>
                 <input type="radio" value="D.N.I." id="rdbTipoDocDni" name="rdbTipoDoc">
                 <span for="rdbTipoDocDni" class="w50">D.N.I.</span>
             </li>
-            <li>
-                <input type="radio" value="Pasaporte" id="rdbTipoDocPasDdi" name="rdbTipoDoc">
-                <span for="rdbTipoDocPasDdi" class="w100">Pasaporte</span>
-            </li>
         </ul>
         <div class="fld">
-            <label class="required" for="intPasaporte" id="lblPasaporte">N.I.E.</label>
+            <label class="required" for="intPasaporte" id="lblPasaporte">Pasaporte</label>
             <input type="text" id="intPasaporte" maxlength="50" class="mf-input__m" title="Nombre y apellidos" name="intPasaporte" value="">
         </div>
 
@@ -357,7 +357,7 @@
         </ul>
         <div class="fld">
             <label class="required" for="intTelefono" id="lblTelefono">Teléfono/Whatsapp</label>
-            <input type="text" id="intTelefono" maxlength="50" class="mf-input__m" title="Nombre" name="intTelefono" value="">
+            <input type="text" id="intTelefono" maxlength="50" class="mf-input__m" title="Nombre" name="intTelefono" value="" placeholder="000-00-00-00">
         </div>
     </div>
     <div class="mf-layout--row">

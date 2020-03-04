@@ -162,7 +162,6 @@ $("#ul_pasaporte input").click(function (e) {
 			break;
 		}
 	}
-	lbl.append("<span class='fld-help'>Campo obligatorio</span>");
 });
 
 $("#ul_telefono input").click(function (e) {
@@ -252,4 +251,10 @@ $("label.required").next(".mf-input__m").change(function(){
 	}else{
 		$(this).addClass("notCompleted");
 	}
+});
+$("#rdbTipoConTel").click(function(){
+	$("#intTelefono").attr("placeholder", "000-00-00-00");
+});
+$("#rdbTipoConMail").click(function(){
+	$("#intTelefono").attr("placeholder", "name@domen.com");
 });
