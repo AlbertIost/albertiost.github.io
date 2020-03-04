@@ -146,33 +146,6 @@ $("#block_provincias input[value='Aceptar']").click(function () {
 	$("#block_services").show();
 });
 
-
-$("#block_services input[value='Aceptar']").click(function () {
-	if (!$("#slc_service option:selected").val()) {
-		$('#block_services .error_list').show();
-		return;
-	}
-
-	$('#block_services .error_list').hide();
-	$("#block_services").hide();
-	var serviceSelected = $("#dv_service_selected");
-	serviceSelected.show();
-
-	var selected = $("#slc_service option:selected").text();
-	serviceSelected.find("span.text-info").text(selected);
-	obj.service = selected;
-
-	$("#block_solicitante").show();
-});
-
-
-$("#block_services input[value='Volver']").click(function () {
-	$("#block_services").hide();
-	$("#dv_provincia_selected").hide();
-	$("#block_provincias").show();
-});
-
-
 $("#ul_pasaporte input").click(function (e) {
 	var lbl = $("#lblPasaporte");
 	switch (e.currentTarget.value) {
@@ -196,11 +169,7 @@ $("#ul_telefono input").click(function (e) {
 	var lbl = $("#lblTelefono");
 	switch (e.currentTarget.value) {
 		case "Teléfono": {
-			lbl.text("Teléfono");
-			break;
-		}
-		case "WhatsApp": {
-			lbl.text("WhatsApp");
+			lbl.text("Teléfono/WhatsApp");
 			break;
 		}
 		case "e-Mail": {
@@ -265,4 +234,22 @@ $("#block_finish input[value='Volver']").click(function () {
 	$("#dv_fecha_selected").show().hide();
 	$("#dv_escriba_selected").show().hide();
 	$("#dv_conexión_selected").show().hide();
+});
+$("label.required").next(".mf-input__m").addClass("notCompleted");
+$("select.mf-input__m").addClass("notCompleted");
+
+$("select.mf-input__m").change(function(){
+	if($(this).children("option:selected").val() != 0){
+		$(this).removeClass("notCompleted");
+	}else{
+		$(this).addClass("notCompleted");
+	}
+});
+
+$("label.required").next(".mf-input__m").change(function(){
+	if($(this).val() != ""){
+		$(this).removeClass("notCompleted");
+	}else{
+		$(this).addClass("notCompleted");
+	}
 });

@@ -13,11 +13,7 @@
 <link href="Content/bootstrap.css" rel="stylesheet"/>
 <link href="Content/site.css" rel="stylesheet"/>
 
-    <script src="Scripts/jquery-3.3.1.js"></script>
-<script src="Scripts/jquery.validate.js"></script>
-<script src="Scripts/jquery.validate.unobtrusive.js"></script>
-<script src="Scripts/modernizr-2.8.3.js"></script>
-<script src="Scripts/bootstrap.js"></script>
+<script src="Scripts/jquery-3.3.1.js"></script>
 
 </head>
 <body class="sede">
@@ -99,24 +95,24 @@
             </li>
             <li>
                 <input type="radio" value="Pasaporte" id="rdbTipoDocPasDdi" name="rdbTipoDoc">
-                <span for="rdbTipoDocPasDdi" class="w100">Pasaporte / Documento de identidad</span>
+                <span for="rdbTipoDocPasDdi" class="w100">Pasaporte</span>
             </li>
         </ul>
         <div class="fld">
-            <label class="required" for="intPasaporte" id="lblPasaporte">N.I.E.<span class="fld-help">Campo obligatorio</span></label>
+            <label class="required" for="intPasaporte" id="lblPasaporte">N.I.E.</label>
             <input type="text" id="intPasaporte" maxlength="50" class="mf-input__m" title="Nombre y apellidos" name="intPasaporte" value="">
         </div>
 
         <div class="fld">
             <label class="required" for="intApellidos">
-                <span>Nombre y apellidos</span><span class="fld-help">Campo obligatorio</span>
+                <span>Nombre y apellidos</span>
             </label>
             <input type="text" id="intApellidos" maxlength="50" class="mf-input__m" title="Nombre y apellidos" name="intApellidos" value="">
         </div>
 
         <div class="fld">
             <label class="required" for="intNacimiento">
-                <span>Año de nacimiento</span><span class="fld-help">Campo obligatorio</span>
+                <span>Año de nacimiento</span>
             </label>
             <input type="text" id="intNacimiento" maxlength="50" class="mf-input__m" title="Año de nacimiento" name="intNacimiento" value="">
         </div>
@@ -124,7 +120,6 @@
         <div id="divPaisNac" class="fld">
             <label for="slt_PaisNac" class="required">
                 <span>País de nacionalidad</span>
-                <span class="fld-help">Campo obligatorio</span>
             </label>
             <span id="divCompPaisCitado">
                 <select id="slt_PaisNac" data-live-search="true" title="País de nacionalidad" data-size="10" class="mf-input__m" required="required" name="txtPaisNac">
@@ -337,35 +332,31 @@
 
         <div class="fld">
             <label for="intFecha">
-                <span>Fecha de Caducidad de su tarjeta actual</span><span class="fld-help">DD/MM/AAAA</span>
+                <span>Fecha de Caducidad de su tarjeta actual</span>
             </label>
-            <input type="text" id="intFecha" maxlength="50" class="mf-input__m" title="Fecha de Caducidad de su tarjeta actual" name="intFecha" value="">
+            <input type="text" id="intFecha" maxlength="50" class="mf-input__m" title="Fecha de Caducidad de su tarjeta actual" placeholder="DD/MM/AAAA" name="intFecha" value="">
         </div>
 
         <div class="fld">
             <label for="intEscriba">
-                <span>Motivo o tipo de solicitud de la cita</span><span class="fld-help">Escriba claramente en el campo para qué trámite en concreto reserva la cita.</span>
+                <span>Motivo o tipo de solicitud de la cita</span><span class="fld-help"></span>
             </label>
-            <input type="text" id="intEscriba" maxlength="50" class="mf-input__m" title="Fecha de Caducidad de su tarjeta actual" name="intEscriba" value="">
+            <textarea name="intEscriba" class="mf-input__m" id="intEscriba" cols="30" rows="10" placeholder="Escriba claramente en el campo para qué trámite en concreto reserva la cita."></textarea>
         </div>
 
         <label>Tipo de conexión</label>
         <ul id="ul_telefono" class="radio-list" style="min-width:200px">
             <li>
-                <input type="radio" value="e-Mail" id="rdbTipoConMail" name="rdbTipoCon" checked="checked">
+                <input type="radio" value="Teléfono" id="rdbTipoConTel" name="rdbTipoCon" checked="checked">
+                <span for="rdbTipoConTel" class="w50">Teléfono/Whatsapp</span>
+            </li>
+            <li>
+                <input type="radio" value="e-Mail" id="rdbTipoConMail" name="rdbTipoCon">
                 <span for="rdbTipoConMail" class="w100">e-Mail</span>
-            </li>
-            <li>
-                <input type="radio" value="Teléfono" id="rdbTipoConTel" name="rdbTipoCon">
-                <span for="rdbTipoConTel" class="w50">Teléfono</span>
-            </li>
-            <li>
-                <input type="radio" value="WhatsApp" id="rdbTipoConWap" name="rdbTipoCon">
-                <span for="rdbTipoConWap" class="w50">WhatsApp</span>
             </li>
         </ul>
         <div class="fld">
-            <label class="required" for="intTelefono" id="lblTelefono">e-Mail<span class="fld-help">Campo obligatorio</span></label>
+            <label class="required" for="intTelefono" id="lblTelefono">Teléfono/Whatsapp</label>
             <input type="text" id="intTelefono" maxlength="50" class="mf-input__m" title="Nombre" name="intTelefono" value="">
         </div>
     </div>
