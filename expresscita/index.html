@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Automatización Sede</title>
+
+    <link href="Content/custom/jquery-ui.css" rel="stylesheet"/>
+<link href="Content/custom/gcsses.css" rel="stylesheet"/>
+<link href="Content/custom/gdhtmlwin.css" rel="stylesheet"/>
+<link href="Content/custom/gstyles.css" rel="stylesheet"/>
+<link href="Content/bootstrap.css" rel="stylesheet"/>
+<link href="Content/site.css" rel="stylesheet"/>
+
+    <script src="Scripts/jquery-3.3.1.js"></script>
+<script src="Scripts/jquery.validate.js"></script>
+<script src="Scripts/jquery.validate.unobtrusive.js"></script>
+<script src="Scripts/modernizr-2.8.3.js"></script>
+<script src="Scripts/bootstrap.js"></script>
+
+</head>
+<body class="sede">
+    <div id="container" class="mf-container">
+        <header id="header" class="mf-header" role="banner">
+            <div class="mf-header--container">
+                <div class="mf-header--logo">
+                    <p class="mf-logo">
+                        <span class="mf-logo--link">
+                            <img class="mf-logo--img" src="Content/images/logo 6.png" alt="Extranjería" title="Extranjería">
+                        </span>
+                    </p>
+                    <div class="mf-topbar--container">
+                        <h3 class="main-app-title">Proceso automático para la solicitud de cita previa</h3>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="wrap" class="mf-wrapper">
+            <main id="mainWindow" class="mf-main">
+                <div class="mf-layout--main">
+                    <section class="mf-layout--main-content">
+                        <div class="mf-window-header">
+                            <h2 class="mf-window-header--title">INTERNET CITA PREVIA</h2>
+                        </div>
+                        <div class="mf-main--content ac-custom-content">
+                            <div id="dv_provincia_selected" class="fld" style="">
+                                <span>Provincia seleccionada:</span>
+                                <span class="text-info">Almeria</span>
+                            </div>
+                            <div id="dv_service_selected" class="fld" style="">
+                                <span>Trámites:</span>
+                                <span class="text-info">FAMILIARES DE RESIDENTES COMUNITARIOS</span>
+                            </div>
+                            <div id="dv_documento_selected" class="fld" style="display:none">
+                                <span>Documento:</span>
+                                <span class="text-info"></span>
+                            </div>
+                            <div id="dv_apellidos_selected" class="fld" style="display:none">
+                                <span>Apellidos y nombre:</span>
+                                <span class="text-info"></span>
+                            </div>
+                            <div id="dv_nacimiento_selected" class="fld" style="display:none">
+                                <span>Año de nacimiento:</span>
+                                <span class="text-info"></span>
+                            </div>
+                            <div id="dv_nacionalidad_selected" class="fld" style="display:none">
+                                <span>País de nacionalidad:</span>
+                                <span class="text-info"></span>
+                            </div>
+                            <div id="dv_fecha_selected" class="fld" style="display:none">
+                                <span>Fecha de Caducidad de su tarjeta actual:</span>
+                                <span class="text-info"></span>
+                            </div>
+                            <div id="dv_escriba_selected" class="fld" style="display:none">
+                                <span>Motivo o tipo de solicitud de la cita:</span>
+                                <span class="text-info"></span>
+                            </div>
+                            <div id="dv_conexión_selected" class="fld" style="display:none">
+                                <span>Conexión:</span>
+                                <span class="text-info"></span>
+                            </div>
+                        </div>
+                        
+<div id="block_solicitante" class="mf-main--content ac-custom-content">
+    <div class="fld">
+        <label for="form">INTRODUZCA LOS DATOS DEL SOLICITANTE DE LA CITA</label>
+    </div>
+    <div class="fld inlnRadio">
+        <label>Tipo de documento</label>
+        <ul id="ul_pasaporte" class="radio-list" style="min-width:200px">
+            <li>
+                <input type="radio" value="N.I.E." id="rdbTipoDocNie" name="rdbTipoDoc" checked="checked">
+                <span for="rdbTipoDocNie" class="w50">N.I.E.</span>
+            </li>
+            <li>
+                <input type="radio" value="D.N.I." id="rdbTipoDocDni" name="rdbTipoDoc">
+                <span for="rdbTipoDocDni" class="w50">D.N.I.</span>
+            </li>
+            <li>
+                <input type="radio" value="Pasaporte" id="rdbTipoDocPasDdi" name="rdbTipoDoc">
+                <span for="rdbTipoDocPasDdi" class="w100">Pasaporte / Documento de identidad</span>
+            </li>
+        </ul>
+        <div class="fld">
+            <label class="required" for="intPasaporte" id="lblPasaporte">N.I.E.<span class="fld-help">Campo obligatorio</span></label>
+            <input type="text" id="intPasaporte" maxlength="50" class="mf-input__m" title="Nombre y apellidos" name="intPasaporte" value="">
+        </div>
+
+        <div class="fld">
+            <label class="required" for="intApellidos">
+                <span>Nombre y apellidos</span><span class="fld-help">Campo obligatorio</span>
+            </label>
+            <input type="text" id="intApellidos" maxlength="50" class="mf-input__m" title="Nombre y apellidos" name="intApellidos" value="">
+        </div>
+
+        <div class="fld">
+            <label class="required" for="intNacimiento">
+                <span>Año de nacimiento</span><span class="fld-help">Campo obligatorio</span>
+            </label>
+            <input type="text" id="intNacimiento" maxlength="50" class="mf-input__m" title="Año de nacimiento" name="intNacimiento" value="">
+        </div>
+
+        <div id="divPaisNac" class="fld">
+            <label for="slt_PaisNac" class="required">
+                <span>País de nacionalidad</span>
+                <span class="fld-help">Campo obligatorio</span>
+            </label>
+            <span id="divCompPaisCitado">
+                <select id="slt_PaisNac" data-live-search="true" title="País de nacionalidad" data-size="10" class="mf-input__m" required="required" name="txtPaisNac">
+                    <option value="0">Seleccionar ...</option>
+                    <option value="401">AFGANISTAN</option>
+                    <option value="102">ALBANIA</option>
+                    <option value="103">ALEMANIA</option>
+                    <option value="133">ANDORRA</option>
+                    <option value="301">ANGOLA</option>
+                    <option value="258">ANGUILLA</option>
+                    <option value="255">ANTIGUA Y BARBUDA</option>
+                    <option value="200">ANTILLAS NL.</option>
+                    <option value="600">APATRIDA</option>
+                    <option value="403">ARABIA SAUDI</option>
+                    <option value="304">ARGELIA</option>
+                    <option value="202">ARGENTINA</option>
+                    <option value="142">ARMENIA</option>
+                    <option value="257">ARUBA</option>
+                    <option value="500">AUSTRALIA</option>
+                    <option value="104">AUSTRIA</option>
+                    <option value="143">AZERBAYAN</option>
+                    <option value="203">BAHAMAS</option>
+                    <option value="405">BAHREIN</option>
+                    <option value="432">BANGLADESH</option>
+                    <option value="205">BARBADOS</option>
+                    <option value="105">BELGICA</option>
+                    <option value="207">BELICE</option>
+                    <option value="302">BENIN</option>
+                    <option value="407">BHUTAN</option>
+                    <option value="144">BIELORRUSIA O BELARUS</option>
+                    <option value="204">BOLIVIA</option>
+                    <option value="156">BOSNIA-HERZEGOVINA</option>
+                    <option value="305">BOTSWANA</option>
+                    <option value="206">BRASIL</option>
+                    <option value="409">BRUNEI DARUSSALAM</option>
+                    <option value="134">BULGARIA</option>
+                    <option value="303">BURKINA FASO</option>
+                    <option value="321">BURUNDI</option>
+                    <option value="315">CABO VERDE</option>
+                    <option value="402">CAMBOYA</option>
+                    <option value="308">CAMERUN</option>
+                    <option value="208">CANADA</option>
+                    <option value="310">CENTROAFRICA REPUBLICA</option>
+                    <option value="372">CHAD</option>
+                    <option value="210">CHILE</option>
+                    <option value="406">CHINA</option>
+                    <option value="107">CHIPRE</option>
+                    <option value="212">COLOMBIA</option>
+                    <option value="311">COMORES</option>
+                    <option value="312">CONGO BRAZZAVILLE</option>
+                    <option value="460">COREA, REP. POP. DEMOC.</option>
+                    <option value="410">COREA, REPUBLICA</option>
+                    <option value="314">COSTA DE MARFIL</option>
+                    <option value="214">COSTA RICA</option>
+                    <option value="140">CROACIA</option>
+                    <option value="216">CUBA</option>
+                    <option value="108">DINAMARCA</option>
+                    <option value="317">DJIBOUTI</option>
+                    <option value="217">DOMINICA</option>
+                    <option value="218">DOMINICANA REPUBLICA</option>
+                    <option value="222">ECUADOR</option>
+                    <option value="224">EEUU</option>
+                    <option value="300">EGIPTO</option>
+                    <option value="220">EL SALVADOR</option>
+                    <option value="136">EL VATICANO</option>
+                    <option value="429">EMIRATOS ARABES UNIDOS</option>
+                    <option value="384">ERITREA</option>
+                    <option value="158">ESLOVAQUIA</option>
+                    <option value="141">ESLOVENIA</option>
+                    <option value="109">ESPAÑA</option>
+                    <option value="137">ESTONIA</option>
+                    <option value="318">ETIOPIA</option>
+                    <option value="550">FIDJI</option>
+                    <option value="411">FILIPINAS</option>
+                    <option value="110">FINLANDIA</option>
+                    <option value="111">FRANCIA</option>
+                    <option value="320">GABON</option>
+                    <option value="323">GAMBIA</option>
+                    <option value="145">GEORGIA</option>
+                    <option value="322">GHANA</option>
+                    <option value="229">GRANADA REPUBLICA</option>
+                    <option value="113">GRECIA</option>
+                    <option value="228">GUATEMALA</option>
+                    <option value="225">GUAYANA</option>
+                    <option value="324">GUINEA ECUATORIAL</option>
+                    <option value="325">GUINEA REPUBLICA</option>
+                    <option value="328">GUINEA-BISSAU</option>
+                    <option value="230">HAITI</option>
+                    <option value="123">HOLANDA</option>
+                    <option value="232">HONDURAS</option>
+                    <option value="114">HUNGRIA</option>
+                    <option value="412">INDIA</option>
+                    <option value="414">INDONESIA</option>
+                    <option value="413">IRAK</option>
+                    <option value="415">IRAN</option>
+                    <option value="115">IRLANDA</option>
+                    <option value="116">ISLANDIA</option>
+                    <option value="520">ISLAS MARSCHALL</option>
+                    <option value="417">ISRAEL</option>
+                    <option value="117">ITALIA</option>
+                    <option value="233">JAMAICA</option>
+                    <option value="416">JAPON</option>
+                    <option value="419">JORDANIA</option>
+                    <option value="146">KAZAJSTAN</option>
+                    <option value="336">KENIA</option>
+                    <option value="147">KIRGUISTAN</option>
+                    <option value="501">KIRIBATI</option>
+                    <option value="421">KUWAIT</option>
+                    <option value="418">LAOS</option>
+                    <option value="436">LAS MALDIVAS</option>
+                    <option value="337">LESOTHO</option>
+                    <option value="138">LETONIA</option>
+                    <option value="423">LIBANO</option>
+                    <option value="342">LIBERIA</option>
+                    <option value="344">LIBIA</option>
+                    <option value="118">LIECHTENSTEIN</option>
+                    <option value="139">LITUANIA</option>
+                    <option value="119">LUXEMBURGO</option>
+                    <option value="463">MACAO</option>
+                    <option value="159">MACEDONIA</option>
+                    <option value="354">MADAGASCAR</option>
+                    <option value="425">MALASIA</option>
+                    <option value="900">MALASIA - GRAN BRETAÑA</option>
+                    <option value="346">MALAWI</option>
+                    <option value="347">MALI</option>
+                    <option value="120">MALTA</option>
+                    <option value="348">MARRUECOS</option>
+                    <option value="349">MAURICIO</option>
+                    <option value="350">MAURITANIA</option>
+                    <option value="234">MEJICO</option>
+                    <option value="525">MICRONESIA</option>
+                    <option value="148">MOLDAVIA</option>
+                    <option value="121">MONACO</option>
+                    <option value="427">MONGOLIA</option>
+                    <option value="160">MONTENEGRO</option>
+                    <option value="351">MOZAMBIQUE</option>
+                    <option value="400">MYANMAR</option>
+                    <option value="353">NAMIBIA</option>
+                    <option value="541">NAURU</option>
+                    <option value="420">NEPAL</option>
+                    <option value="236">NICARAGUA</option>
+                    <option value="360">NIGER</option>
+                    <option value="352">NIGERIA</option>
+                    <option value="122">NORUEGA</option>
+                    <option value="540">NUEVA ZELANDA</option>
+                    <option value="444">OMAN</option>
+                    <option value="424">PAKISTAN</option>
+                    <option value="238">PANAMA</option>
+                    <option value="542">PAPUA NUEVA GUINEA</option>
+                    <option value="240">PARAGUAY</option>
+                    <option value="242">PERU</option>
+                    <option value="124">POLONIA</option>
+                    <option value="125">PORTUGAL</option>
+                    <option value="244">PUERTO RICO</option>
+                    <option value="431">QATAR</option>
+                    <option value="112">REINO UNIDO</option>
+                    <option value="380">REP. DEMOCRATICA DEL CONGO (EX-ZAIRE)</option>
+                    <option value="157">REPUBLICA CHECA</option>
+                    <option value="355">REUNION-COMO</option>
+                    <option value="306">RUANDA</option>
+                    <option value="127">RUMANIA</option>
+                    <option value="149">RUSIA</option>
+                    <option value="551">SALOMON</option>
+                    <option value="552">SAMOA OCCIDENTAL</option>
+                    <option value="256">SAN CRISTOBAL Y NEVIS</option>
+                    <option value="135">SAN MARINO</option>
+                    <option value="254">SAN VICENTE</option>
+                    <option value="253">SANTA LUCIA</option>
+                    <option value="361">SANTO TOME Y PRINCIPE</option>
+                    <option value="363">SEICHELLES</option>
+                    <option value="362">SENEGAL</option>
+                    <option value="366">SENEGAMBIA</option>
+                    <option value="155">SERBIA</option>
+                    <option value="364">SIERRA LEONA</option>
+                    <option value="426">SINGAPUR</option>
+                    <option value="433">SIRIA</option>
+                    <option value="365">SOMALIA</option>
+                    <option value="404">SRI LANKA</option>
+                    <option value="367">SUDAFRICA</option>
+                    <option value="368">SUDAN</option>
+                    <option value="128">SUECIA</option>
+                    <option value="129">SUIZA</option>
+                    <option value="250">SURINAM</option>
+                    <option value="371">SWAZILANDIA</option>
+                    <option value="154">TADJIKISTAN</option>
+                    <option value="408">TAIWAN</option>
+                    <option value="370">TANZANIA</option>
+                    <option value="428">THAILANDIA</option>
+                    <option value="465">TIMOR ORIENTAL</option>
+                    <option value="374">TOGO</option>
+                    <option value="554">TONGA</option>
+                    <option value="245">TRINIDAD Y TOBAGO</option>
+                    <option value="378">TUNEZ</option>
+                    <option value="151">TURKMENIA</option>
+                    <option value="130">TURQUIA</option>
+                    <option value="560">TUVALU</option>
+                    <option value="152">UCRANIA</option>
+                    <option value="358">UGANDA</option>
+                    <option value="246">URUGUAY</option>
+                    <option value="153">UZBEKISTAN</option>
+                    <option value="565">VANUATU</option>
+                    <option value="248">VENEZUELA</option>
+                    <option value="430">VIETNAM</option>
+                    <option value="434">YEMEN</option>
+                    <option value="382">ZAMBIA</option>
+                    <option value="357">ZIMBABWE</option>
+                </select>
+            </span>
+        </div>
+
+        <div class="fld">
+            <label for="intFecha">
+                <span>Fecha de Caducidad de su tarjeta actual</span><span class="fld-help">DD/MM/AAAA</span>
+            </label>
+            <input type="text" id="intFecha" maxlength="50" class="mf-input__m" title="Fecha de Caducidad de su tarjeta actual" name="intFecha" value="">
+        </div>
+
+        <div class="fld">
+            <label for="intEscriba">
+                <span>Motivo o tipo de solicitud de la cita</span><span class="fld-help">Escriba claramente en el campo para qué trámite en concreto reserva la cita.</span>
+            </label>
+            <input type="text" id="intEscriba" maxlength="50" class="mf-input__m" title="Fecha de Caducidad de su tarjeta actual" name="intEscriba" value="">
+        </div>
+
+        <label>Tipo de conexión</label>
+        <ul id="ul_telefono" class="radio-list" style="min-width:200px">
+            <li>
+                <input type="radio" value="e-Mail" id="rdbTipoConMail" name="rdbTipoCon" checked="checked">
+                <span for="rdbTipoConMail" class="w100">e-Mail</span>
+            </li>
+            <li>
+                <input type="radio" value="Teléfono" id="rdbTipoConTel" name="rdbTipoCon">
+                <span for="rdbTipoConTel" class="w50">Teléfono</span>
+            </li>
+            <li>
+                <input type="radio" value="WhatsApp" id="rdbTipoConWap" name="rdbTipoCon">
+                <span for="rdbTipoConWap" class="w50">WhatsApp</span>
+            </li>
+        </ul>
+        <div class="fld">
+            <label class="required" for="intTelefono" id="lblTelefono">e-Mail<span class="fld-help">Campo obligatorio</span></label>
+            <input type="text" id="intTelefono" maxlength="50" class="mf-input__m" title="Nombre" name="intTelefono" value="">
+        </div>
+    </div>
+    <div class="mf-layout--row">
+        <input value="Aceptar" class="mf-button" type="button">
+        <input value="Volver" class="mf-button" type="button">
+    </div>
+    <div class="mf-layout--row">
+        <text class="error_list" style="display:none">El valor debe ser seleccionado</text>
+    </div>
+</div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="Scripts/app.js"></script>
+
+    
+</body>
+</html>

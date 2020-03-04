@@ -63,7 +63,7 @@ section.article{
 			}
 		}
 		.content{
-			padding: 90px 80px;
+			padding: 90px 80px 0;
 			
 			a.link-blue{
 				color: #161688;
@@ -557,6 +557,7 @@ section.recomendation{
 			}
 			.content{
 				padding: 40px;
+				padding-bottom: 0;
 				p.text{
 					font-size: 20px;
 					padding-bottom: 25px;
@@ -691,6 +692,7 @@ section.recomendation{
 			}
 			.content{
 			padding: 24px;
+			padding-bottom: 0;
 
 				ul.list{
 					padding-bottom: 20px;
@@ -840,6 +842,7 @@ section.recomendation{
 			}
 			.content{
 				padding: 10px;
+				padding-bottom: 0;
 				p.text{
 					font-size: 16px;
 					padding-bottom: 15px;
