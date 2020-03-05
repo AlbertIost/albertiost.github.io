@@ -25,7 +25,7 @@ select.mf-input__m{
 	border: 1px solid transparent!important;
 }
 label.required + .mf-input__m.notCompleted, select.mf-input__m.notCompleted{
-	border: 1px solid #ff7992!important;
+	box-shadow: 0px 0px 6px 3px #4c97ff;
 }
 .ac-inbox--icon .mf-inbox--menu-item a:before, .ac-inbox--icon .mf-inbox--submenu-item a:before, .mf-appmenu--submenu-item-icon:before, .mf-breadcrumb--item.has-submenu:after, .mf-icon, .mf-simple-list__icon .mf-simple-list--item:before {
     font-family: morfont;
@@ -4912,6 +4912,9 @@ textarea {
     .error select.mf-input__m, .select2-container.mf-input__m, input[type=button].mf-input__m, input[type=date].mf-input__m, input[type=datetime-local].mf-input__m, input[type=datetime].mf-input__m, input[type=email].mf-input__m, input[type=month].mf-input__m, input[type=number].mf-input__m, input[type=password].mf-input__m, input[type=search].mf-input__m, input[type=tel].mf-input__m, input[type=text].mf-input__m, input[type=time].mf-input__m, input[type=url].mf-input__m, input[type=week].mf-input__m, select.mf-input__m, textarea.mf-input__m {
         width: 280px;
         max-width: 100%;
+        height: 22px;
+        padding: 0;
+        padding-left: 5px;
     }
     #intEscriba{
     	min-height: 44px;
