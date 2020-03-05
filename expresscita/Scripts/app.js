@@ -77,3 +77,6 @@ $('input#intTelefono').on('keyup', function(){
 	} 
   }
 });
+$('input[name="rdbTipoCon"]').change(function(){
+	$('#intTelefono').val("");
+});
