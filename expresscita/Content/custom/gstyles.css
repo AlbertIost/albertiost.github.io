@@ -22,7 +22,7 @@
 	font-weight: 700;
 }
 select.mf-input__m{
-	border: 1px solid transparent!important;
+	border: 0!important;
 }
 label.required + .mf-input__m.notCompleted, select.mf-input__m.notCompleted{
 	box-shadow: 0px 0px 6px 3px #4c97ff;
