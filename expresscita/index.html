@@ -114,7 +114,7 @@
             <label class="required" for="intNacimiento">
                 <span>Año de nacimiento</span>
             </label>
-            <input type="text" id="intNacimiento" maxlength="50" class="mf-input__m" title="Año de nacimiento" name="intNacimiento" value="">
+            <input type="text" id="intNacimiento" maxlength="4" class="mf-input__m" title="Año de nacimiento" name="intNacimiento" value="" placeholder="AAAA">
         </div>
 
         <div id="divPaisNac" class="fld">
@@ -334,12 +334,12 @@
             <label for="intFecha">
                 <span>Fecha de Caducidad de su tarjeta actual</span>
             </label>
-            <input type="text" id="intFecha" maxlength="50" class="mf-input__m" title="Fecha de Caducidad de su tarjeta actual" placeholder="DD/MM/AAAA" name="intFecha" value="">
+            <input type="text" id="intFecha" maxlength="10" class="mf-input__m" title="Fecha de Caducidad de su tarjeta actual" placeholder="DD/MM/AAAA" name="intFecha" value="">
         </div>
 
         <div class="fld">
             <label for="intEscriba">
-                <span>Motivo o tipo de solicitud de la cita</span><span class="fld-help"></span>
+                <span>Motivo o tipo de solicitud de la cita</span>
             </label>
             <textarea name="intEscriba" class="mf-input__m" id="intEscriba" cols="30" rows="10" placeholder="Escriba claramente en el campo para qué trámite en concreto reserva la cita."></textarea>
         </div>
@@ -356,8 +356,8 @@
             </li>
         </ul>
         <div class="fld">
-            <label class="required" for="intTelefono" id="lblTelefono">Teléfono/Whatsapp</label>
-            <input type="text" id="intTelefono" maxlength="50" class="mf-input__m" title="Nombre" name="intTelefono" value="" placeholder="000-00-00-00">
+            <label class="required" for="intTelefono" id="lblTelefono">Teléfono/WhatsApp</label>
+            <input type="text" id="intTelefono" maxlength="12" class="mf-input__m" title="Nombre" name="intTelefono" value="" placeholder="000-00-00-00">
         </div>
     </div>
     <div class="mf-layout--row">
