@@ -78,8 +78,8 @@ $('input#intTelefono').on('keyup', function(){
   }
 });
 $('input[name="rdbTipoCon"]').change(function(){
-	$('#intTelefono').val("");
+	$('#intTelefono').val("").addClass("notCompleted");
 });
 $('input[name="rdbTipoDoc"]').change(function(){
-	$('#intPasaporte').val("");
+	$('#intPasaporte').val("").addClass("notCompleted");
 });

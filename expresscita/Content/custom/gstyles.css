@@ -5350,7 +5350,7 @@ body {
 }
 
 .mf-wrapper {
-    margin-top: 40px;
+    margin-top: 10px;
     position: relative;
     width: 100%;
     margin-left: 0;
@@ -6771,11 +6771,12 @@ input.mf-datepicker {
     .mf-accesibility-item, .mf-topbar .mf-accesibility-item {
         display: none
     }
+    .mf-logo--link{
+    	background: #fff;
+    }
 }
 
 .mf-header {
-    position: fixed;
-    top: 0;
     width: 100%;
     z-index: 6;
     background: #515784;
@@ -6854,10 +6855,8 @@ input.mf-datepicker {
 
 .mf-logo {
     position: static;
-    height: 0;
-    overflow: hidden;
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 
 @media (min-width:55em) {
@@ -7281,7 +7280,6 @@ input.mf-datepicker {
 
 @media (max-width:54.99375em) {
     .mf-logo {
-        display: none
     }
 }
 
@@ -16844,7 +16842,6 @@ a[target=_blank] {
 
 @media (max-width:54.99375em) {
     .mf-header--logo {
-        display: none
     }
 }
 
