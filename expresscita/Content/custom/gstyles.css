@@ -23,14 +23,15 @@
 }
 .mf-input__m{
 	border: 0;
-    height: 22px!important;
+    height: 22px;
     padding: 0!important;
-    padding-left: 5px!important;
+    padding-left: 0px!important;
     font-size: 12px!important;
     line-height: 18px!important;
 }
 label.required + .mf-input__m.notCompleted, select.mf-input__m.notCompleted{
 	box-shadow: 0px 0px 6px 3px #4c97ff;
+	-webkit-appearance:none;
 }
 .ac-inbox--icon .mf-inbox--menu-item a:before, .ac-inbox--icon .mf-inbox--submenu-item a:before, .mf-appmenu--submenu-item-icon:before, .mf-breadcrumb--item.has-submenu:after, .mf-icon, .mf-simple-list__icon .mf-simple-list--item:before {
     font-family: morfont;
@@ -6774,9 +6775,12 @@ input.mf-datepicker {
     .mf-logo--link{
     	background: #fff;
     }
+    textarea.mf-input__m{
+    	height: 40px;
+    }
     label.required + .mf-input__m.notCompleted, select.mf-input__m.notCompleted{
     	box-shadow: none;
-    	border: 2px solid #4c97ff;
+    	border: 2px solid #4c97ff!important;
     }
 }
 
