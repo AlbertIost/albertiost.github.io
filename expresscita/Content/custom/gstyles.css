@@ -23,7 +23,7 @@
 }
 .mf-input__m{
 	border: 0;
-    height: 22px;
+    height: 25px;
     padding: 0!important;
     padding-left: 0px!important;
     font-size: 12px!important;
@@ -4920,8 +4920,8 @@ textarea {
         max-width: 100%;
     }
     #intEscriba{
-    	min-height: 44px;
-    	height: 44px;
+    	min-height: 50px;
+    	height: 50px;
     	font-size: 12px;
     	max-width: 280px;
     	min-width: 280px;
@@ -6776,7 +6776,7 @@ input.mf-datepicker {
     	background: #fff;
     }
     textarea.mf-input__m{
-    	height: 40px;
+    	height: 45px;
     }
     label.required + .mf-input__m.notCompleted, select.mf-input__m.notCompleted{
     	box-shadow: none;
