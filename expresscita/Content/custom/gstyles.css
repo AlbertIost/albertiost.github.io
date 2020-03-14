@@ -26,9 +26,11 @@ textarea{
 .forIntEscriba{
 	margin-bottom: 10px;
 }
+.mf-input__m:not(textarea){
+	height: 25px;
+}
 .mf-input__m{
 	border: 0;
-    height: 25px;
     padding: 0!important;
     padding-left: 0px!important;
     font-size: 12px!important;
@@ -4873,7 +4875,6 @@ input[type=date], input[type=datetime-local], input[type=datetime], input[type=e
 
 textarea {
     width: 100%;
-    height: 90px
 }
 
 @media (min-width:43.75em) {
@@ -4925,8 +4926,6 @@ textarea {
         max-width: 100%;
     }
     #intEscriba{
-    	min-height: 55px;
-    	height: 55px;
     	font-size: 12px;
     	max-width: 280px;
     	min-width: 280px;
@@ -6779,9 +6778,6 @@ input.mf-datepicker {
     }
     .mf-logo--link{
     	background: #fff;
-    }
-    textarea.mf-input__m{
-    	height: 55px;
     }
     label.required + .mf-input__m.notCompleted, select.mf-input__m.notCompleted{
     	box-shadow: none;
