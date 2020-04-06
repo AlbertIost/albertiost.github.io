@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="../cabinet-css/bootstrap.min.css">
 	<link rel="stylesheet" href="../cabinet-css/style.css">
 	<link rel="stylesheet" href="../cabinet-css/css.css">
-	<link rel="icon" href="/img/icon.png">
+	<link rel="icon" href="../img/icon.png">
 	<meta name="yandex-verification" content="1c71f5e66f2808c2" />
 	<!-- Facebook Pixel Code -->
 <script>
@@ -53,8 +53,7 @@
 		<div id="wrap"><!-- header -->
 <header>
 	<div class="container">
-		<div class="logo"><a href="/"><img src="../img/logo.png" alt=""></a></div>
-		
+		<div class="logo"><a href="/cabinet/"><img src="../img/logo.png" alt=""></a></div>
 		<div class="header-right">
 			<a href="#" class="btn btn-danger btn-lg hidden-xs-m">подготовка</a>
 		    <ul class="navigation">
@@ -124,9 +123,9 @@
 				  </div>
 					
 					<div class="panel block">
-					<a class="collapsed sprites i-arrow-down" data-toggle="collapse" data-parent="#accordion" href="#changeemail" aria-expanded="false"></a>
+					<a class="collapsed sprites i-arrow-down" data-toggle="collapse" data-parent="#accordion" href="#leaveassoc" aria-expanded="false"></a>
 					<div class="block-title text-red">Выйти из Проектной Ассоциации</div>
-					<div id="changeemail" class="panel-collapse collapse" role="tabpanel">
+					<div id="leaveassoc" class="panel-collapse collapse" role="tabpanel">
 						<p>Для исключения из Проектной Ассоциации напишите нам на info@projects.management.</p>
 						<!--p class="text-center"><a href="/cabinet/manage.asp?Email=vadim@yandex.ru" class="btn btn-danger disabled" >Изменить</a></p-->
 						  
@@ -164,39 +163,19 @@
 	</div>
 </footer>
 <!-- /footer -->
-<!-- sidebar -->
-<div class="sidebar-offcanvas visible-sm visible-xs" id="sidebar">
-    <div class="user-name">Вадим Богданов</div>
-    <!-- notification -->
-    <div class="notification dropdown inactive" />
-    <a href="#" class="sprites i-notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
-</div>
-<!-- /notification -->
-<ul class="user-links">
-    <!--li><a href="#">Настройки</a></li-->
-    <li><a href="/enter.asp">Каталог курсов</a></li>
-    <li><a href="/enter.asp?view=complete">Пройденные курсы</a></li>
-    <li><a href="http://subscribe.bogdanov-associates.com/manage.asp?e=vadim@yandex.ru">Рассылки</a></li>
-    <li><a href="/">Вход</a></li>
-</ul>
-</div>
-<!-- /sidebar -->
-
 </div>
 	</div>
 
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	<script  src="../cabinet-js/bootstrap.min.js"></script>
-	<script  src="../cabinet-js/common.js"></script>
-	<script  src="../cabinet-js/libs.js"></script>
+	<script  src="/cabinet-js/bootstrap.min.js"></script>
+	<script  src="/cabinet-js/common.js"></script>
+	<script  src="/cabinet-js/libs.js"></script>
+	<script src="/cabinet-js/jquery.min.js"></script>
 	<script>
 		$(document).ready(function() {
 	        $(document).on('click', '.dropdown-menu', function (e) {
 	            $(this).hasClass('keep_open') && e.stopPropagation(); 
-	        });
-	        $('.user-info.dropdown').click(function(){
-	        	$(this).toggleClass('open');
-	        });
+	        }); 
 	    });
 	    $(document).ready(function () {
 		  $('[data-toggle="offcanvas"]').click(function () {
@@ -282,18 +261,32 @@
 </body>
 </html>
 
-
-			
-		
-
-
 		</div>
 	</div>
 
 	<script src="../cabinet-js/jquery.min.js"></script>
-	<script src="../cabinet-js/bootstrap.min.js"></script>
+	<script  src="../cabinet-js/bootstrap.min.js"></script>
 	<script src="../cabinet-js/common.js"></script>
 	<script src="../cabinet-js/libs.js"></script>
+	
+	<script>
+		$(document).ready(function() {
+	        $(document).on('click', '.dropdown-menu', function (e) {
+	            $(this).hasClass('keep_open') && e.stopPropagation(); 
+	        }); 
+	    });
+	    $(document).ready(function () {
+		  $('[data-toggle="offcanvas"]').click(function () {
+		    $('.row-offcanvas').toggleClass('active')
+		  });
+		});
+		$('.button-wrap').on("click", function(){
+		  $(this).toggleClass('button-active');
+		});
+		$(function () {
+		  $('[data-toggle="tooltip"]').tooltip()
+		})
+	</script>
 	
 	<!-- slick -->
 	<script type="text/javascript">
