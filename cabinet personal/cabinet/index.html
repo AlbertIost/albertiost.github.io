@@ -75,8 +75,23 @@
 					<li><a href="#">Пройденные курсы</a></li>
 				</ul>
 			</div>
-			<div class="notification dropdown inactive">
-				<a href="#" class="sprites i-notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+			<div class="notification dropdown active noclose">
+				<a href="#" class="sprites i-notification" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>							
+				<div class="dropdown-menu keep_open" role="menu">
+					
+					<div class="notification-block collapse in" id="notification-block-1">
+						<a data-toggle="collapse" href="#notification-block-1" aria-expanded="true" aria-controls="notification-block-1" class="sprites i-close"></a>
+						<p>Опубликован видео-отчет о результатах Ассоциации в марте 2020.</p>
+						<p><a href="https://www.youtube.com/watch?v=Q-0fKGjGWd4&amp;t=2s" class="btn btn-danger" target="_blanc">Подробнее.</a></p>
+					</div>
+					
+					<div class="notification-block collapse in" id="notification-block-2">
+						<a data-toggle="collapse" href="#notification-block-2" aria-expanded="true" aria-controls="notification-block-2" class="sprites i-close"></a>
+						<p>Волонтеры Ассоциации завершили проект по искусственному интеллекту в проектном офисе.</p>
+						<p><a href="/infopage.html?Page=aireq" class="btn btn-danger" target="_blanc">Подробнее</a></p>
+					</div>
+					
+				</div>
 			</div>
 			<!-- /user-info -->
 			<button type="button" class="navbar-toggle collapsed " data-toggle="offcanvas">
