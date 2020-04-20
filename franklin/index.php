@@ -17,31 +17,32 @@
     <!--/metatextblock-->
     <meta property="fb:app_id" content="257953674358265" />
     <meta name="format-detection" content="telephone=no" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="https://static.tildacdn.com/tild6166-6266-4064-b332-313064623262/favicon.ico" type="image/x-icon" /><!-- Assets -->
-    <link rel="stylesheet" href="assets/css/tilda-grid-3.0.min.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="assets/css/tilda-blocks-2.12.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="assets/css/tilda-animation-1.0.min.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="assets/css/tilda-menusub-1.0.min.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="assets/css/tilda-slds-1.4.min.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="assets/css/tilda-zoom-2.0.min.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="assets/css/tilda-popup-1.1.min.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="assets/css/tilda-catalog-1.1.min.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/js/jquery-1.10.2.min.js"></script>
-    <script src="assets/js/tilda-scripts-2.8.min.js"></script>
-    <script src="assets/js/tilda-blocks-2.7.js"></script>
-    <script src="assets/js/lazyload-1.3.min.js" charset="utf-8"></script>
-    <script src="assets/js/tilda-animation-1.0.min.js" charset="utf-8"></script>
-    <script src="assets/js/tilda-menusub-1.0.min.js" charset="utf-8"></script>
-    <script src="assets/js/tilda-slds-1.4.min.js" charset="utf-8"></script>
-    <script src="assets/js/hammer.min.js" charset="utf-8"></script>
-    <script src="assets/js/tilda-zoom-2.0.min.js" charset="utf-8"></script>
-    <script src="assets/js/tilda-animation-ext-1.0.min.js" charset="utf-8"></script>
-    <script src="assets/js/tilda-forms-1.0.min.js" charset="utf-8"></script>
-    <script src="assets/js/tilda-products-1.0.min.js" charset="utf-8"></script>
-    <script src="assets/js/tilda-catalog-1.1.min.js" charset="utf-8"></script>
-    <script src="assets/js/tilda-map-1.0.min.js" charset="utf-8"></script>
-    <script src="assets/js/form-main.js"></script>
+    <link rel="stylesheet" href="https://albertiost.github.io/franklin/assets/css/tilda-grid-3.0.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://albertiost.github.io/franklin/assets/css/tilda-blocks-2.12.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://albertiost.github.io/franklin/assets/css/tilda-animation-1.0.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://albertiost.github.io/franklin/assets/css/tilda-menusub-1.0.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://albertiost.github.io/franklin/assets/css/tilda-slds-1.4.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://albertiost.github.io/franklin/assets/css/tilda-zoom-2.0.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://albertiost.github.io/franklin/assets/css/tilda-popup-1.1.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://albertiost.github.io/franklin/assets/css/tilda-catalog-1.1.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="https://albertiost.github.io/franklin/assets/css/style.css">
+    <script src="https://albertiost.github.io/franklin/assets/js/jquery-1.10.2.min.js"></script>
+    <script src="https://albertiost.github.io/franklin/assets/js/tilda-scripts-2.8.min.js"></script>
+    <script src="https://albertiost.github.io/franklin/assets/js/tilda-blocks-2.7.js"></script>
+    <script src="https://albertiost.github.io/franklin/assets/js/lazyload-1.3.min.js" charset="utf-8"></script>
+    <script src="https://albertiost.github.io/franklin/assets/js/tilda-animation-1.0.min.js" charset="utf-8"></script>
+    <script src="https://albertiost.github.io/franklin/assets/js/tilda-menusub-1.0.min.js" charset="utf-8"></script>
+    <script src="https://albertiost.github.io/franklin/assets/js/tilda-slds-1.4.min.js" charset="utf-8"></script>
+    <script src="https://albertiost.github.io/franklin/assets/js/hammer.min.js" charset="utf-8"></script>
+    <script src="https://albertiost.github.io/franklin/assets/js/tilda-zoom-2.0.min.js" charset="utf-8"></script>
+    <script src="https://albertiost.github.io/franklin/assets/js/tilda-animation-ext-1.0.min.js" charset="utf-8"></script>
+    <script src="https://albertiost.github.io/franklin/assets/js/tilda-forms-1.0.min.js" charset="utf-8"></script>
+    <script src="https://albertiost.github.io/franklin/assets/js/tilda-products-1.0.min.js" charset="utf-8"></script>
+    <script src="https://albertiost.github.io/franklin/assets/js/tilda-catalog-1.1.min.js" charset="utf-8"></script>
+    <script src="https://albertiost.github.io/franklin/assets/js/tilda-map-1.0.min.js" charset="utf-8"></script>
+    <script src="https://albertiost.github.io/franklin/assets/js/form-main.js"></script>
     <script type="text/javascript">
     window.dataLayer = window.dataLayer || [];
     </script>
@@ -69,17 +70,17 @@
                 <div class="t228__maincontainer " style="height:110px;">
                     <div class="t228__padding40px"></div>
                     <div class="t228__leftside">
-                        <div class="t228__leftcontainer"> <img src="https://static.tildacdn.com/tild6635-3664-4835-b432-643636323037/Logo_Franklin_PNG.png" class="t228__imglogo t228__imglogomobile" imgfield="img" style="max-width: 200px;width: 200px; height: auto; display: block;" alt=""> </div>
+                        <div class="t228__leftcontainer"> <span class="logo">Celebrity</span> </div>
                     </div>
                     <div class="t228__centerside ">
                         <div class="t228__centercontainer">
                             <ul class="t228__list t228__list_hidden">
-                                <li class="t228__list_item"><a class="t-menu__link-item" href="index.html#rec119867648" data-menu-submenu-hook="" style="color:#000000;font-size:20px;font-weight:500;letter-spacing:1px;font-family:&apos;Roboto&apos;;padding:0 0px;" data-menu-item-number="1">О нас</a> </li>
-                                <li class="t228__list_item"><a class="t-menu__link-item" href="index.html#rec121112425" data-menu-submenu-hook="" style="color:#000000;font-size:20px;font-weight:500;letter-spacing:1px;font-family:&apos;Roboto&apos;;padding:0 0px;" data-menu-item-number="2">Преимущества</a> </li>
-                                <li class="t228__list_item"><a class="t-menu__link-item" href="index.html#rec120835493" data-menu-submenu-hook="" style="color:#000000;font-size:20px;font-weight:500;letter-spacing:1px;font-family:&apos;Roboto&apos;;padding:0 0px;" data-menu-item-number="3">Вакансии</a> </li>
-                                <li class="t228__list_item"><a class="t-menu__link-item" href="index.html#rec121129492" data-menu-submenu-hook="" style="color:#000000;font-size:20px;font-weight:500;letter-spacing:1px;font-family:&apos;Roboto&apos;;padding:0 0px;" data-menu-item-number="4">FAQ</a> </li>
-                                <li class="t228__list_item"><a class="t-menu__link-item" href="index.html#rec119904606" data-menu-submenu-hook="" style="color:#000000;font-size:20px;font-weight:500;letter-spacing:1px;font-family:&apos;Roboto&apos;;padding:0 0px;" data-menu-item-number="5">Контакты</a> </li>
-                                <li class="t228__list_item"><a class="t-menu__link-item" href="index.html#rec119901687" data-menu-submenu-hook="" style="color:#000000;font-size:20px;font-weight:500;letter-spacing:1px;font-family:&apos;Roboto&apos;;padding:0 0px;" data-menu-item-number="6">Оставить заявку </a> </li>
+                                <li class="t228__list_item"><a class="t-menu__link-item" href="#rec119867648" data-menu-submenu-hook="" style="color:#000000;font-size:20px;font-weight:500;letter-spacing:1px;font-family:&apos;Roboto&apos;;padding:0 0px;" data-menu-item-number="1">О нас</a> </li>
+                                <li class="t228__list_item"><a class="t-menu__link-item" href="#rec121112425" data-menu-submenu-hook="" style="color:#000000;font-size:20px;font-weight:500;letter-spacing:1px;font-family:&apos;Roboto&apos;;padding:0 0px;" data-menu-item-number="2">Преимущества</a> </li>
+                                <li class="t228__list_item"><a class="t-menu__link-item" href="#rec120835493" data-menu-submenu-hook="" style="color:#000000;font-size:20px;font-weight:500;letter-spacing:1px;font-family:&apos;Roboto&apos;;padding:0 0px;" data-menu-item-number="3">Вакансии</a> </li>
+                                <li class="t228__list_item"><a class="t-menu__link-item" href="#rec121129492" data-menu-submenu-hook="" style="color:#000000;font-size:20px;font-weight:500;letter-spacing:1px;font-family:&apos;Roboto&apos;;padding:0 0px;" data-menu-item-number="4">FAQ</a> </li>
+                                <li class="t228__list_item"><a class="t-menu__link-item" href="#rec119904606" data-menu-submenu-hook="" style="color:#000000;font-size:20px;font-weight:500;letter-spacing:1px;font-family:&apos;Roboto&apos;;padding:0 0px;" data-menu-item-number="5">Контакты</a> </li>
+                                <li class="t228__list_item"><a class="t-menu__link-item" href="#rec119901687" data-menu-submenu-hook="" style="color:#000000;font-size:20px;font-weight:500;letter-spacing:1px;font-family:&apos;Roboto&apos;;padding:0 0px;" data-menu-item-number="6">Оставить заявку </a> </li>
                             </ul>
                         </div>
                     </div>
@@ -497,7 +498,7 @@
                     <div class='t396__elem tn-elem tn-elem__1226973211470210011265 t-animate' data-elem-id='1470210011265' data-elem-type='text' data-field-top-value="-22" data-field-top-res-960-value="-84" data-field-top-res-640-value="-64" data-field-top-res-480-value="-68" data-field-top-res-320-value="-19" data-field-left-value="-10" data-field-left-res-960-value="0" data-field-left-res-640-value="10" data-field-left-res-480-value="10" data-field-left-res-320-value="5" data-field-width-value="960" data-field-width-res-960-value="780" data-field-width-res-640-value="620" data-field-width-res-480-value="460" data-field-width-res-320-value="290" data-field-axisy-value="center" data-field-axisx-value="center" data-field-container-value="grid" data-field-topunits-value="" data-field-leftunits-value="" data-field-heightunits-value="" data-field-widthunits-value="" data-animate-style="zoomin" data-animate-duration="2" data-animate-delay="0.1" data-animate-scale="0.7" data-animate-prx="scroll">
                         <div class='tn-atom' field='tn_text_1470210011265'>Зарабатывай от 100 тысяч рублей в месяц!<br><br></div>
                     </div>
-                    <div class='t396__elem tn-elem tn-elem__1226973211473846124811 t-animate' data-elem-id='1473846124811' data-elem-type='button' data-field-top-value="140" data-field-top-res-960-value="150" data-field-top-res-640-value="190" data-field-top-res-480-value="100" data-field-top-res-320-value="195" data-field-left-value="-20" data-field-left-res-960-value="-8" data-field-left-res-640-value="2" data-field-left-res-480-value="3" data-field-left-res-320-value="5" data-field-height-value="60" data-field-height-res-480-value="60" data-field-height-res-320-value="60" data-field-width-value="200" data-field-width-res-960-value="184" data-field-width-res-480-value="165" data-field-width-res-320-value="190" data-field-axisy-value="center" data-field-axisx-value="center" data-field-container-value="grid" data-field-topunits-value="" data-field-leftunits-value="" data-field-heightunits-value="" data-field-widthunits-value="" data-animate-style="zoomin" data-animate-duration="1.5" data-animate-delay="0.7" data-animate-scale="0.3"> <a class='tn-atom' href="index.html#rec119901687">Оставить заявку</a> </div>
+                    <div class='t396__elem tn-elem tn-elem__1226973211473846124811 t-animate' data-elem-id='1473846124811' data-elem-type='button' data-field-top-value="140" data-field-top-res-960-value="150" data-field-top-res-640-value="190" data-field-top-res-480-value="100" data-field-top-res-320-value="195" data-field-left-value="-20" data-field-left-res-960-value="-8" data-field-left-res-640-value="2" data-field-left-res-480-value="3" data-field-left-res-320-value="5" data-field-height-value="60" data-field-height-res-480-value="60" data-field-height-res-320-value="60" data-field-width-value="200" data-field-width-res-960-value="184" data-field-width-res-480-value="165" data-field-width-res-320-value="190" data-field-axisy-value="center" data-field-axisx-value="center" data-field-container-value="grid" data-field-topunits-value="" data-field-leftunits-value="" data-field-heightunits-value="" data-field-widthunits-value="" data-animate-style="zoomin" data-animate-duration="1.5" data-animate-delay="0.7" data-animate-scale="0.3"> <a class='tn-atom' href="#rec119901687">Оставить заявку</a> </div>
                     <div class='t396__elem tn-elem tn-elem__1226973211566378128559 t-animate' data-elem-id='1566378128559' data-elem-type='text' data-field-top-value="345" data-field-top-res-960-value="325" data-field-top-res-640-value="375" data-field-top-res-480-value="285" data-field-top-res-320-value="370" data-field-left-value="370" data-field-left-res-960-value="360" data-field-left-res-640-value="210" data-field-left-res-480-value="-30" data-field-left-res-320-value="20" data-field-width-value="560" data-field-width-res-320-value="270" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="" data-field-leftunits-value="" data-field-heightunits-value="" data-field-widthunits-value="" data-animate-style="zoomin" data-animate-duration="0.5" data-animate-delay="0.5" data-animate-scale="0.8">
                         <div class='tn-atom' field='tn_text_1566378128559'>Можешь связаться с нами по номеру: +79622520820 или</div>
                     </div>
@@ -519,7 +520,7 @@
                     <div class='t396__elem tn-elem tn-elem__1232394111470210011265 t-animate' data-elem-id='1470210011265' data-elem-type='text' data-field-top-value="-22" data-field-top-res-960-value="-84" data-field-top-res-640-value="-64" data-field-top-res-480-value="-68" data-field-top-res-320-value="-19" data-field-left-value="-10" data-field-left-res-960-value="0" data-field-left-res-640-value="10" data-field-left-res-480-value="10" data-field-left-res-320-value="5" data-field-width-value="960" data-field-width-res-960-value="780" data-field-width-res-640-value="620" data-field-width-res-480-value="460" data-field-width-res-320-value="290" data-field-axisy-value="center" data-field-axisx-value="center" data-field-container-value="grid" data-field-topunits-value="" data-field-leftunits-value="" data-field-heightunits-value="" data-field-widthunits-value="" data-animate-style="zoomin" data-animate-duration="2" data-animate-delay="0.1" data-animate-scale="0.7" data-animate-prx="scroll">
                         <div class='tn-atom' field='tn_text_1470210011265'>Зарабатывай от 100 тысяч рублей в месяц!<br><br></div>
                     </div>
-                    <div class='t396__elem tn-elem tn-elem__1232394111473846124811 t-animate' data-elem-id='1473846124811' data-elem-type='button' data-field-top-value="140" data-field-top-res-960-value="150" data-field-top-res-640-value="190" data-field-top-res-480-value="100" data-field-top-res-320-value="190" data-field-left-value="-20" data-field-left-res-960-value="-8" data-field-left-res-640-value="2" data-field-left-res-480-value="3" data-field-left-res-320-value="5" data-field-height-value="60" data-field-height-res-480-value="60" data-field-height-res-320-value="50" data-field-width-value="200" data-field-width-res-960-value="184" data-field-width-res-480-value="165" data-field-width-res-320-value="170" data-field-axisy-value="center" data-field-axisx-value="center" data-field-container-value="grid" data-field-topunits-value="" data-field-leftunits-value="" data-field-heightunits-value="" data-field-widthunits-value="" data-animate-style="zoomin" data-animate-duration="1.5" data-animate-delay="0.7" data-animate-scale="0.3"> <a class='tn-atom' href="index.html#rec119901687">Оставить заявку</a> </div>
+                    <div class='t396__elem tn-elem tn-elem__1232394111473846124811 t-animate' data-elem-id='1473846124811' data-elem-type='button' data-field-top-value="140" data-field-top-res-960-value="150" data-field-top-res-640-value="190" data-field-top-res-480-value="100" data-field-top-res-320-value="190" data-field-left-value="-20" data-field-left-res-960-value="-8" data-field-left-res-640-value="2" data-field-left-res-480-value="3" data-field-left-res-320-value="5" data-field-height-value="60" data-field-height-res-480-value="60" data-field-height-res-320-value="50" data-field-width-value="200" data-field-width-res-960-value="184" data-field-width-res-480-value="165" data-field-width-res-320-value="170" data-field-axisy-value="center" data-field-axisx-value="center" data-field-container-value="grid" data-field-topunits-value="" data-field-leftunits-value="" data-field-heightunits-value="" data-field-widthunits-value="" data-animate-style="zoomin" data-animate-duration="1.5" data-animate-delay="0.7" data-animate-scale="0.3"> <a class='tn-atom' href="#rec119901687">Оставить заявку</a> </div>
                     <div class='t396__elem tn-elem tn-elem__1232394111566311911989 t-animate' data-elem-id='1566311911989' data-elem-type='image' data-field-top-value="55" data-field-top-res-960-value="-10" data-field-top-res-640-value="25" data-field-top-res-480-value="15" data-field-top-res-320-value="0" data-field-left-value="450" data-field-left-res-960-value="10" data-field-left-res-640-value="20" data-field-left-res-480-value="20" data-field-left-res-320-value="-10" data-field-width-value="260" data-field-width-res-640-value="150" data-field-width-res-480-value="170" data-field-width-res-320-value="160" data-field-axisy-value="top" data-field-axisx-value="left" data-field-container-value="grid" data-field-topunits-value="" data-field-leftunits-value="" data-field-heightunits-value="" data-field-widthunits-value="" data-animate-style="zoomin" data-animate-duration="1" data-animate-scale="0.9">
                         <div class='tn-atom'> <img class='tn-atom__img t-img' data-original='https://static.tildacdn.com/tild3732-3965-4233-b263-383665353063/Logo_Franklin_PNG.png' imgfield='tn_img_1566311911989'> </div>
                     </div>
