@@ -19,30 +19,30 @@
     <meta name="format-detection" content="telephone=no" />
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="https://static.tildacdn.com/tild6166-6266-4064-b332-313064623262/favicon.ico" type="image/x-icon" /><!-- Assets -->
-    <link rel="stylesheet" href="https://albertiost.github.io/celebrity/assets/css/tilda-grid-3.0.min.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="https://albertiost.github.io/celebrity/assets/css/tilda-blocks-2.12.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="https://albertiost.github.io/celebrity/assets/css/tilda-animation-1.0.min.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="https://albertiost.github.io/celebrity/assets/css/tilda-menusub-1.0.min.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="https://albertiost.github.io/celebrity/assets/css/tilda-slds-1.4.min.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="https://albertiost.github.io/celebrity/assets/css/tilda-zoom-2.0.min.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="https://albertiost.github.io/celebrity/assets/css/tilda-popup-1.1.min.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="https://albertiost.github.io/celebrity/assets/css/tilda-catalog-1.1.min.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="https://albertiost.github.io/celebrity/assets/css/style.css">
-    <script src="https://albertiost.github.io/celebrity/assets/js/jquery-1.10.2.min.js"></script>
-    <script src="https://albertiost.github.io/celebrity/assets/js/tilda-scripts-2.8.min.js"></script>
-    <script src="https://albertiost.github.io/celebrity/assets/js/tilda-blocks-2.7.js"></script>
-    <script src="https://albertiost.github.io/celebrity/assets/js/lazyload-1.3.min.js" charset="utf-8"></script>
-    <script src="https://albertiost.github.io/celebrity/assets/js/tilda-animation-1.0.min.js" charset="utf-8"></script>
-    <script src="https://albertiost.github.io/celebrity/assets/js/tilda-menusub-1.0.min.js" charset="utf-8"></script>
-    <script src="https://albertiost.github.io/celebrity/assets/js/tilda-slds-1.4.min.js" charset="utf-8"></script>
-    <script src="https://albertiost.github.io/celebrity/assets/js/hammer.min.js" charset="utf-8"></script>
-    <script src="https://albertiost.github.io/celebrity/assets/js/tilda-zoom-2.0.min.js" charset="utf-8"></script>
-    <script src="https://albertiost.github.io/celebrity/assets/js/tilda-animation-ext-1.0.min.js" charset="utf-8"></script>
-    <script src="https://albertiost.github.io/celebrity/assets/js/tilda-forms-1.0.min.js" charset="utf-8"></script>
-    <script src="https://albertiost.github.io/celebrity/assets/js/tilda-products-1.0.min.js" charset="utf-8"></script>
-    <script src="https://albertiost.github.io/celebrity/assets/js/tilda-catalog-1.1.min.js" charset="utf-8"></script>
-    <script src="https://albertiost.github.io/celebrity/assets/js/tilda-map-1.0.min.js" charset="utf-8"></script>
-    <script src="https://albertiost.github.io/celebrity/assets/js/form-main.js"></script>
+    <link rel="stylesheet" href="assets/css/tilda-grid-3.0.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/tilda-blocks-2.12.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/tilda-animation-1.0.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/tilda-menusub-1.0.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/tilda-slds-1.4.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/tilda-zoom-2.0.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/tilda-popup-1.1.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/tilda-catalog-1.1.min.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/tilda-scripts-2.8.min.js"></script>
+    <script src="assets/js/tilda-blocks-2.7.js"></script>
+    <script src="assets/js/lazyload-1.3.min.js" charset="utf-8"></script>
+    <script src="assets/js/tilda-animation-1.0.min.js" charset="utf-8"></script>
+    <script src="assets/js/tilda-menusub-1.0.min.js" charset="utf-8"></script>
+    <script src="assets/js/tilda-slds-1.4.min.js" charset="utf-8"></script>
+    <script src="assets/js/hammer.min.js" charset="utf-8"></script>
+    <script src="assets/js/tilda-zoom-2.0.min.js" charset="utf-8"></script>
+    <script src="assets/js/tilda-animation-ext-1.0.min.js" charset="utf-8"></script>
+    <script src="assets/js/tilda-forms-1.0.min.js" charset="utf-8"></script>
+    <script src="assets/js/tilda-products-1.0.min.js" charset="utf-8"></script>
+    <script src="assets/js/tilda-catalog-1.1.min.js" charset="utf-8"></script>
+    <script src="assets/js/tilda-map-1.0.min.js" charset="utf-8"></script>
+    <script src="assets/js/form-main.js"></script>
     <script type="text/javascript">
     window.dataLayer = window.dataLayer || [];
     </script>
