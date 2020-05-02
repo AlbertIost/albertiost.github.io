@@ -184,6 +184,7 @@ header{
         }
         a{
             font-size: 17px;
+            font-weight: 700;
         }
     }
     .cart{
@@ -634,6 +635,101 @@ section.main{
                             }
                         }
                     }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px){
+    header{
+        .wrapper{
+            .qr-code{
+                display: none;
+            }
+            .payment-method{
+                display: none;
+            }
+            .inst{
+                display: none;
+            }
+        }
+    }
+    section.main{
+        flex-direction: column;
+        section.sidebar{
+            height: auto;
+            .wrapper{
+                height: auto;
+                overflow: visible;
+                padding: 0 80px 28px;
+            }
+        }
+        section.food{
+            height: auto;
+            overflow: visible;
+        }
+    }
+}
+@media screen and (max-width: 576px){
+    header.fixed{
+        background-color: #fff;
+        z-index: 10000;
+        position: fixed;
+        width: 100%;
+        top: 0;
+    }
+    header{
+        padding: 5px 2px;
+        .wrapper{
+            .heading{
+                h1{
+                    font-size: 12px;
+                }
+                p{
+                    font-size: 8px;
+                }
+           }
+           .callback{
+               padding: 0;
+               a{
+                   font-size: 11px;
+               }
+               &:after{
+                   display: none;
+               }
+           }
+           .cart{
+               padding-right: 0;
+               
+               p.heading{
+                   font-size: 10px;
+               }
+               &:after{
+                   display: none;
+               }
+               .total-price{
+                   font-size: 9px;
+               }
+           }
+        }
+    }
+    section.main{
+        flex-direction: column;
+        section.sidebar{
+            height: auto;
+            .wrapper{
+                height: auto;
+                overflow: visible;
+                padding: 0 20px 28px;
+            }
+        }
+        section.food{
+            height: auto;
+            overflow: visible;
+            .wrapper{
+                .item{
+                    width: 50%;
+                    padding-bottom: 50%;
                 }
             }
         }
