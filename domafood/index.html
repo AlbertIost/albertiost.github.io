@@ -1,13 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/media-queries.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
     <title>Domafood</title>
 </head>
 <body>
+    <div id="modal-item-wrapper">
+    </div>
+    <div class="modal modal-overlay modal-cart">
+        <form class="modal-wrapper">
+            <div class="modal-header">
+                <h2>Корзина</h2>
+                <a href="#" class="modal-close"></a>
+            </div>
+            <div class="modal-content">
+                <table>
+                    <tr class="head">
+                        <td class="id">Id</td>
+                        <td class="name">Наименование</td>
+                        <td class="price">Цена</td>
+                        <td class="num">Кол-во</td>
+                        <td class="total">Сумма</td>
+                        <td class="del"></td>
+                    </tr>
+                    <tr class="content">
+                        <td class="id">1</td>
+                        <td class="name">Чуду с мясом (хичины)</td>
+                        <td class="price">250</td>
+                        <td class="num">
+                            <span class="minus">–</span>
+                            <input type="text" value="1">
+                            <span class="plus">+</span>
+                        </td>
+                        <td class="total">5500</td>
+                        <td class="del"><button></button></td>
+                    </tr>
+                    <tr class="content">
+                        <td class="id">2</td>
+                        <td class="name">Чуду с творогом (хичины)</td>
+                        <td class="price">250</td>
+                        <td class="num">
+                            <span class="minus">–</span>
+                            <input type="text" value="1">
+                            <span class="plus">+</span>
+                        </td>
+                        <td class="total">5500</td>
+                        <td class="del"><button></button></td>
+                    </tr>
+                </table>
+                <p>Итого: <span class="total-price">0</span></p>
+            </div>
+            <div class="modal-footer">
+                <input type="submit" class="btn-orange" value="Отправить заявку"></input>
+            </div>
+        </form>
+    </div>
+    <div class="modal modal-overlay modal-callback">
+        <form class="modal-wrapper">
+            <div class="modal-header">
+                <h2>Обратный звонок</h2>
+                <a href="#" class="modal-close"></a>
+            </div>
+            <div class="modal-content">
+                
+                <div class="input-group">
+                    <div class="input-item">
+                        <label for="">Ваше имя</label>
+                        <input placeholder="Иванов Иван" type="text">
+                    </div>
+                    <div class="input-item">
+                        <label for="">Ваш номер телефона</label>
+                        <input placeholder="+7-999-999-99-99" type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <input type="submit" class="btn-orange" value="Отправить заявку"></input>
+            </div>
+        </form>
+    </div>
     <header class="header" id="header">
         <div class="wrapper">
             <div class="heading">
@@ -26,12 +100,12 @@
             <div class="payment-method"></div>
             <div class="callback">
                 <a href="tel:+79693477176" class="number">+7 969 347-71-76</a>
-                <button class="btn-orange">Перезвоните мне</button>
+                <button class="btn-orange" id="callback">Перезвоните мне</button>
             </div>
             <div class="cart">
-                <p class="heading">Ваш заказ</p>
+                <p class="heading">Ваш заказ <span>0</span></p>
                 <p class="descr">
-                    <span class="total-price">1‘980 р. </span>
+                    <span class="total-price">0</span>
                     <button class="btn-orange">Оформить</button>
                 </p>
             </div>
@@ -47,56 +121,140 @@
                             <li>
                                 <div class="menu-item">
                                     <div class="title">Чуду с мясом (хичины)</div>
-                                    <div class="price">250</div>
+                                    <div class="price">1</div>
                                 </div>
-                                <a href="#" class="item-control added"></a>
+                                <a href="#" class="item-control"></a>
                             </li>
                             <li>
                                 <div class="menu-item">
-                                    <div class="title">Чуду с мясом (хичины)</div>
+                                    <div class="title">Чуду с творогом (хичины)</div>
+                                    <div class="price">180</div>
+                                </div>
+                                <a href="#" class="item-control"></a>
+                            </li>
+                            <li>
+                                <div class="menu-item">
+                                    <div class="title">Чуду с картошкой (хичины)</div>
+                                    <div class="price">180</div>
+                                </div>
+                                <a href="#" class="item-control"></a>
+                            </li>
+                            <li>
+                                <div class="menu-item">
+                                    <div class="title">Хинкал слоеный 1п.</div>
+                                    <div class="price">300</div>
+                                </div>
+                                <a href="#" class="item-control"></a>
+                            </li>
+                            <li>
+                                <div class="menu-item">
+                                    <div class="title">Хинкал лакский 1п.</div>
+                                    <div class="price">300</div>
+                                </div>
+                                <a href="#" class="item-control"></a>
+                            </li>
+                            <li>
+                                <div class="menu-item">
+                                    <div class="title">Хинкал аварский 1п.</div>
+                                    <div class="price">300</div>
+                                </div>
+                                <a href="#" class="item-control"></a>
+                            </li>
+                            <li>
+                                <div class="menu-item">
+                                    <div class="title">Манты с руб.говядиной 10шт/1п</div>
+                                    <div class="price">210</div>
+                                </div>
+                                <a href="#" class="item-control"></a>
+                            </li>
+                            <li>
+                                <div class="menu-item">
+                                    <div class="title">Курзе с мясом 15шт/1п</div>
+                                    <div class="price">200</div>
+                                </div>
+                                <a href="#" class="item-control"></a>
+                            </li>
+                            <li>
+                                <div class="menu-item">
+                                    <div class="title">Курзе с картошкой (вареники) 15шт/1п</div>
+                                    <div class="price">150</div>
+                                </div>
+                                <a href="#" class="item-control"></a>
+                            </li>
+                            <li>
+                                <div class="menu-item">
+                                    <div class="title">Курзе с творогом (вареники) 15шт/1п</div>
+                                    <div class="price">170</div>
+                                </div>
+                                <a href="#" class="item-control"></a>
+                            </li>
+                            <li>
+                                <div class="menu-item">
+                                    <div class="title">Голубцы 4шт. + картошка</div>
+                                    <div class="price">200</div>
+                                </div>
+                                <a href="#" class="item-control"></a>
+                            </li>
+                            <li>
+                                <div class="menu-item">
+                                    <div class="title">Пельмени 20шт/1п</div>
+                                    <div class="price">200</div>
+                                </div>
+                                <a href="#" class="item-control"></a>
+                            </li>
+                            <li>
+                                <div class="menu-item">
+                                    <div class="title">Долма 5шт/1уп</div>
+                                    <div class="price">200</div>
+                                </div>
+                                <a href="#" class="item-control"></a>
+                            </li>
+                            <li>
+                                <div class="menu-item">
+                                    <div class="title">Хинкали 4шт/1уп</div>
                                     <div class="price">250</div>
                                 </div>
                                 <a href="#" class="item-control"></a>
                             </li>
                             <li>
                                 <div class="menu-item">
-                                    <div class="title">Чуду с мясом (хичины)</div>
+                                    <div class="title">Дюшбара в бульоне</div>
                                     <div class="price">250</div>
                                 </div>
                                 <a href="#" class="item-control"></a>
                             </li>
                             <li>
                                 <div class="menu-item">
-                                    <div class="title">Чуду с мясом (хичины)</div>
-                                    <div class="price">250</div>
+                                    <div class="title">Булочка с мясом</div>
+                                    <div class="price">55</div>
                                 </div>
                                 <a href="#" class="item-control"></a>
                             </li>
                             <li>
                                 <div class="menu-item">
-                                    <div class="title">Чуду с мясом (хичины)</div>
-                                    <div class="price">250</div>
+                                    <div class="title">Булочка с капустой</div>
+                                    <div class="price">30</div>
                                 </div>
                                 <a href="#" class="item-control"></a>
                             </li>
                             <li>
                                 <div class="menu-item">
-                                    <div class="title">Чуду с мясом (хичины)</div>
-                                    <div class="price">250</div>
+                                    <div class="title">Булочка с картошкой</div>
+                                    <div class="price">55</div>
                                 </div>
                                 <a href="#" class="item-control"></a>
                             </li>
                             <li>
                                 <div class="menu-item">
-                                    <div class="title">Чуду с мясом (хичины)</div>
-                                    <div class="price">250</div>
+                                    <div class="title">Самса с говядиной</div>
+                                    <div class="price">55</div>
                                 </div>
                                 <a href="#" class="item-control"></a>
                             </li>
                             <li>
                                 <div class="menu-item">
-                                    <div class="title">Чуду с мясом (хичины)</div>
-                                    <div class="price">250</div>
+                                    <div class="title">Булочка с яблоком</div>
+                                    <div class="price">57</div>
                                 </div>
                                 <a href="#" class="item-control"></a>
                             </li>
@@ -107,57 +265,29 @@
                         <ul>
                             <li>
                                 <div class="menu-item">
-                                    <div class="title">Чуду с мясом (хичины)</div>
-                                    <div class="price">250</div>
-                                </div>
-                                <a href="#" class="item-control added"></a>
-                            </li>
-                            <li>
-                                <div class="menu-item">
-                                    <div class="title">Чуду с мясом (хичины)</div>
-                                    <div class="price">250</div>
+                                    <div class="title">Курица по-французски 1п.</div>
+                                    <div class="price">140</div>
                                 </div>
                                 <a href="#" class="item-control"></a>
                             </li>
                             <li>
                                 <div class="menu-item">
-                                    <div class="title">Чуду с мясом (хичины)</div>
-                                    <div class="price">250</div>
+                                    <div class="title">Котлеты куриные 2шт.</div>
+                                    <div class="price">140</div>
                                 </div>
                                 <a href="#" class="item-control"></a>
                             </li>
                             <li>
                                 <div class="menu-item">
-                                    <div class="title">Чуду с мясом (хичины)</div>
-                                    <div class="price">250</div>
+                                    <div class="title">Котлеты говяжьи 2шт.</div>
+                                    <div class="price">140</div>
                                 </div>
                                 <a href="#" class="item-control"></a>
                             </li>
                             <li>
                                 <div class="menu-item">
-                                    <div class="title">Чуду с мясом (хичины)</div>
-                                    <div class="price">250</div>
-                                </div>
-                                <a href="#" class="item-control"></a>
-                            </li>
-                            <li>
-                                <div class="menu-item">
-                                    <div class="title">Чуду с мясом (хичины)</div>
-                                    <div class="price">250</div>
-                                </div>
-                                <a href="#" class="item-control"></a>
-                            </li>
-                            <li>
-                                <div class="menu-item">
-                                    <div class="title">Чуду с мясом (хичины)</div>
-                                    <div class="price">250</div>
-                                </div>
-                                <a href="#" class="item-control"></a>
-                            </li>
-                            <li>
-                                <div class="menu-item">
-                                    <div class="title">Чуду с мясом (хичины)</div>
-                                    <div class="price">250</div>
+                                    <div class="title">Тефтели с овощами 1п.</div>
+                                    <div class="price">140</div>
                                 </div>
                                 <a href="#" class="item-control"></a>
                             </li>
@@ -168,183 +298,183 @@
         </section>
         <section class="food" id="food">
             <div class="wrapper">
-                <div class="item item-1">
+                <div class="item">
                     <div class="content">
-                        <p>Курзе с картошкой (вареники) 15шт/1п</p>
+                        <p class="title">Чуду с мясом (хичины)</p>
                         <div class="content-footer">
-                            <span>250р./порция</span>
-                            <a href="#" class="item-control added"></a>
+                            <span class="price">250</span>
+                            <a href="#" class="item-control"></a>
                         </div>
                     </div>
                 </div>
-                <div class="item item-2">
+                <div class="item">
                     <div class="content">
-                        <p>Курзе с картошкой (вареники) 15шт/1п</p>
+                        <p class="title">Чуду с творогом (хичины)</p>
                         <div class="content-footer">
-                            <span>250р./порция</span>
-                            <a href="#" class="item-control "></a>
+                            <span class="price">250</span>
+                            <a href="#" class="item-control"></a>
                         </div>
                     </div>
                 </div>
-                <div class="item item-3">
+                <div class="item">
                     <div class="content">
-                        <p>Курзе с картошкой (вареники) 15шт/1п</p>
+                        <p class="title">Чуду с картошкой (хичины)</p>
                         <div class="content-footer">
-                            <span>250р./порция</span>
-                            <a href="#" class="item-control "></a>
+                            <span class="price">250</span>
+                            <a href="#" class="item-control"></a>
                         </div>
                     </div>
                 </div>
-                <div class="item item-4">
+                <div class="item">
                     <div class="content">
-                        <p>Курзе с картошкой (вареники) 15шт/1п</p>
+                        <p class="title">Хинкал слоеный 1п.</p>
                         <div class="content-footer">
-                            <span>250р./порция</span>
-                            <a href="#" class="item-control "></a>
+                            <span class="price">250</span>
+                            <a href="#" class="item-control"></a>
                         </div>
                     </div>
                 </div>
-                <div class="item item-5">
+                <div class="item">
                     <div class="content">
-                        <p>Курзе с картошкой (вареники) 15шт/1п</p>
+                        <p class="title">Хинкал лакский 1п.</p>
                         <div class="content-footer">
-                            <span>250р./порция</span>
-                            <a href="#" class="item-control "></a>
+                            <span class="price">250</span>
+                            <a href="#" class="item-control"></a>
                         </div>
                     </div>
                 </div>
-                <div class="item item-6">
+                <div class="item">
                     <div class="content">
-                        <p>Курзе с картошкой (вареники) 15шт/1п</p>
+                        <p class="title">Хинкал аварский 1п.</p>
                         <div class="content-footer">
-                            <span>250р./порция</span>
-                            <a href="#" class="item-control "></a>
+                            <span class="price">250</span>
+                            <a href="#" class="item-control"></a>
                         </div>
                     </div>
                 </div>
-                <div class="item item-7">
+                <div class="item">
                     <div class="content">
-                        <p>Курзе с картошкой (вареники) 15шт/1п</p>
+                        <p class="title">Манты с руб.говядиной 10шт/1п</p>
                         <div class="content-footer">
-                            <span>250р./порция</span>
-                            <a href="#" class="item-control "></a>
+                            <span class="price">250</span>
+                            <a href="#" class="item-control"></a>
                         </div>
                     </div>
                 </div>
-                <div class="item item-8">
+                <div class="item">
                     <div class="content">
-                        <p>Курзе с картошкой (вареники) 15шт/1п</p>
+                        <p class="title">Курзе с мясом 15шт/1п</p>
                         <div class="content-footer">
-                            <span>250р./порция</span>
-                            <a href="#" class="item-control "></a>
+                            <span class="price">250</span>
+                            <a href="#" class="item-control"></a>
                         </div>
                     </div>
                 </div>
-                <div class="item item-9">
+                <div class="item">
                     <div class="content">
-                        <p>Курзе с картошкой (вареники) 15шт/1п</p>
+                        <p class="title">Курзе с картошкой (вареники) 15шт/1п</p>
                         <div class="content-footer">
-                            <span>250р./порция</span>
-                            <a href="#" class="item-control "></a>
+                            <span class="price">250</span>
+                            <a href="#" class="item-control"></a>
                         </div>
                     </div>
                 </div>
-                <div class="item item-10">
+                <div class="item">
                     <div class="content">
-                        <p>Курзе с картошкой (вареники) 15шт/1п</p>
+                        <p class="title">Курзе с творогом (вареники) 15шт/1п</p>
                         <div class="content-footer">
-                            <span>250р./порция</span>
-                            <a href="#" class="item-control "></a>
+                            <span class="price">250</span>
+                            <a href="#" class="item-control"></a>
                         </div>
                     </div>
                 </div>
-                <div class="item item-11">
+                <div class="item">
                     <div class="content">
-                        <p>Курзе с картошкой (вареники) 15шт/1п</p>
+                        <p class="title">Голубцы 4шт. + картошка</p>
                         <div class="content-footer">
-                            <span>250р./порция</span>
-                            <a href="#" class="item-control "></a>
+                            <span class="price">250</span>
+                            <a href="#" class="item-control"></a>
                         </div>
                     </div>
                 </div>
-                <div class="item item-12">
+                <div class="item">
                     <div class="content">
-                        <p>Курзе с картошкой (вареники) 15шт/1п</p>
+                        <p class="title">Пельмени 20шт/1п</p>
                         <div class="content-footer">
-                            <span>250р./порция</span>
-                            <a href="#" class="item-control "></a>
+                            <span class="price">250</span>
+                            <a href="#" class="item-control"></a>
                         </div>
                     </div>
                 </div>
-                <div class="item item-13">
+                <div class="item">
                     <div class="content">
-                        <p>Курзе с картошкой (вареники) 15шт/1п</p>
+                        <p class="title">Долма 5шт/1уп</p>
                         <div class="content-footer">
-                            <span>250р./порция</span>
-                            <a href="#" class="item-control "></a>
+                            <span class="price">250</span>
+                            <a href="#" class="item-control"></a>
                         </div>
                     </div>
                 </div>
-                <div class="item item-14">
+                <div class="item">
                     <div class="content">
-                        <p>Курзе с картошкой (вареники) 15шт/1п</p>
+                        <p class="title">Хинкали 4шт/1уп</p>
                         <div class="content-footer">
-                            <span>250р./порция</span>
-                            <a href="#" class="item-control "></a>
+                            <span class="price">250</span>
+                            <a href="#" class="item-control"></a>
                         </div>
                     </div>
                 </div>
-                <div class="item item-15">
+                <div class="item">
                     <div class="content">
-                        <p>Курзе с картошкой (вареники) 15шт/1п</p>
+                        <p class="title">Дюшбара в бульоне</p>
                         <div class="content-footer">
-                            <span>250р./порция</span>
-                            <a href="#" class="item-control "></a>
+                            <span class="price">250</span>
+                            <a href="#" class="item-control"></a>
                         </div>
                     </div>
                 </div>
-                <div class="item item-16">
+                <div class="item">
                     <div class="content">
-                        <p>Курзе с картошкой (вареники) 15шт/1п</p>
+                        <p class="title">Булочка с мясом</p>
                         <div class="content-footer">
-                            <span>250р./порция</span>
-                            <a href="#" class="item-control "></a>
+                            <span class="price">250</span>
+                            <a href="#" class="item-control"></a>
                         </div>
                     </div>
                 </div>
-                <div class="item item-17">
+                <div class="item">
                     <div class="content">
-                        <p>Курзе с картошкой (вареники) 15шт/1п</p>
+                        <p class="title">Булочка с капустой</p>
                         <div class="content-footer">
-                            <span>250р./порция</span>
-                            <a href="#" class="item-control "></a>
+                            <span class="price">250</span>
+                            <a href="#" class="item-control"></a>
                         </div>
                     </div>
                 </div>
-                <div class="item item-18">
+                <div class="item">
                     <div class="content">
-                        <p>Курзе с картошкой (вареники) 15шт/1п</p>
+                        <p class="title">Булочка с картошкой</p>
                         <div class="content-footer">
-                            <span>250р./порция</span>
-                            <a href="#" class="item-control "></a>
+                            <span class="price">250</span>
+                            <a href="#" class="item-control"></a>
                         </div>
                     </div>
                 </div>
-                <div class="item item-19">
+                <div class="item">
                     <div class="content">
-                        <p>Курзе с картошкой (вареники) 15шт/1п</p>
+                        <p class="title">Самса с говядиной</p>
                         <div class="content-footer">
-                            <span>250р./порция</span>
-                            <a href="#" class="item-control "></a>
+                            <span class="price">250</span>
+                            <a href="#" class="item-control"></a>
                         </div>
                     </div>
                 </div>
-                <div class="item item-20">
+                <div class="item">
                     <div class="content">
-                        <p>Курзе с картошкой (вареники) 15шт/1п</p>
+                        <p class="title">Булочка с яблоком</p>
                         <div class="content-footer">
-                            <span>250р./порция</span>
-                            <a href="#" class="item-control "></a>
+                            <span class="price">250</span>
+                            <a href="#" class="item-control"></a>
                         </div>
                     </div>
                 </div>
@@ -354,5 +484,8 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="assets/js/header-fixed.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/modal-callback.js"></script>
+    <script src="assets/js/modal-item-1.js"></script>
 </body>
 </html>

@@ -1,0 +1,10 @@
+$(document).ready(function(){
+    $('a.modal-close').click(function(e){
+        e.preventDefault();
+        console.log('true');
+        $(this).parents('.modal').removeClass('open');
+    });
+    $('#callback').click(function(){
+        $('.modal-callback').addClass('open');
+    });
+});

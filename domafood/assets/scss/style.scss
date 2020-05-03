@@ -213,6 +213,10 @@ header{
         p.descr{
             font-size: 12px;
             font-weight: 700;
+
+            .total-price:after{
+                content: ' р.';
+            }
         }
         p.heading{
             position: relative;
@@ -220,9 +224,8 @@ header{
             font-size: 17px;
             font-weight: 700;
 
-            &:after{
+            span{
                 display: inline-block;
-                content: '0';
                 text-align: center;
                 line-height: 15px;
                 color: #fff;
@@ -250,8 +253,8 @@ section.main{
         &:after{
             content: '';
             position: absolute;
-            width: 74px;
-            height: 165px;
+            width: 58px;
+            height: 152px;
             background-image: url(../img/icon/leaves-left.png);
             background-repeat: no-repeat;
             left: 0;
@@ -261,8 +264,8 @@ section.main{
         &:before{
             content: '';
             position: absolute;
-            width: 72px;
-            height: 167px;
+            width: 42px;
+            height: 120px;
             background-image: url(../img/icon/leaves-right.png);
             background-repeat: no-repeat;
             right: 0;
@@ -345,7 +348,6 @@ section.main{
             .item{
                 $size: (100%/4);
                 width: $size;
-                background-image: url(../img/dish-1.png);
                 background-size: 100%;
                 position: relative;
                 height: 0;
@@ -370,6 +372,7 @@ section.main{
                         font-size: 16px;
                         color: #fff;
                         padding: 14px 14px 0;
+                        flex: 1 auto;
                     }
                     .content-footer{
                         background-color: $grey-rgba;
@@ -377,9 +380,13 @@ section.main{
                         justify-content: space-between;
                         align-items: center;
                         padding: 11px 12px;
+                        flex: 0 auto;
                         span{
                             font-size: 12px;
                             color: #fff;
+                            &:after{
+                                content: 'р./порция';
+                            }
                         }
                         a.item-control{
                             width: 25px;
@@ -399,6 +406,26 @@ section.main{
                         }
                     }
                 }
+                &.item-1{background-image: url(../img/dish-1.png);}
+                &.item-2{background-image: url(../img/dish-2.png);}
+                &.item-3{background-image: url(../img/dish-3.png);}
+                &.item-4{background-image: url(../img/dish-4.png);}
+                &.item-5{background-image: url(../img/dish-5.png);}
+                &.item-6{background-image: url(../img/dish-6.png);}
+                &.item-7{background-image: url(../img/dish-7.png);}
+                &.item-8{background-image: url(../img/dish-8.png);}
+                &.item-9{background-image: url(../img/dish-9.png);}
+                &.item-10{background-image: url(../img/dish-10.png);}
+                &.item-11{background-image: url(../img/dish-11.png);}
+                &.item-12{background-image: url(../img/dish-12.png);}
+                &.item-13{background-image: url(../img/dish-13.png);}
+                &.item-14{background-image: url(../img/dish-14.png);}
+                &.item-15{background-image: url(../img/dish-15.png);}
+                &.item-16{background-image: url(../img/dish-16.png);}
+                &.item-17{background-image: url(../img/dish-17.png);}
+                &.item-18{background-image: url(../img/dish-18.png);}
+                &.item-19{background-image: url(../img/dish-19.png);}
+                &.item-20{background-image: url(../img/dish-20.png);}
             }
         }
     }
