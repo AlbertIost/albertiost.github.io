@@ -167,73 +167,76 @@
 
 .modal-cart .modal-wrapper {
   width: 800px; }
-  .modal-cart .modal-wrapper .modal-content p {
-    font-weight: 600;
-    padding: 10px 0 5px;
-    text-align: right; }
-    .modal-cart .modal-wrapper .modal-content p span:after {
-      content: ' ₽'; }
-  .modal-cart .modal-wrapper .modal-content table {
-    width: 100%;
-    border-collapse: collapse; }
-    .modal-cart .modal-wrapper .modal-content table tr td {
-      vertical-align: middle;
-      border: 1px solid #ccc;
-      padding: 5px;
-      text-align: center; }
-      .modal-cart .modal-wrapper .modal-content table tr td.id {
-        text-transform: uppercase; }
-    .modal-cart .modal-wrapper .modal-content table tr.head td {
-      font-weight: 600; }
-    .modal-cart .modal-wrapper .modal-content table tr.content input {
-      width: 24px;
-      height: 24px;
-      border: 1px solid #252627;
-      border-radius: 5px;
-      margin: 0 10px;
-      text-align: center;
-      font-weight: 600; }
-    .modal-cart .modal-wrapper .modal-content table tr.content td span.minus, .modal-cart .modal-wrapper .modal-content table tr.content td span.plus {
-      font-size: 16px;
+  .modal-cart .modal-wrapper .modal-content {
+    padding: 5px; }
+    .modal-cart .modal-wrapper .modal-content p {
       font-weight: 600;
-      cursor: pointer; }
-    .modal-cart .modal-wrapper .modal-content table tr.content td.price:after {
-      content: ' ₽'; }
-    .modal-cart .modal-wrapper .modal-content table tr.content td.total:after {
-      content: ' ₽'; }
-    .modal-cart .modal-wrapper .modal-content table tr.content td.del button {
-      width: 20px;
-      height: 20px;
-      background-color: #f60538;
-      border: none;
-      margin-top: 3px;
-      border-radius: 50%;
-      position: relative; }
-      .modal-cart .modal-wrapper .modal-content table tr.content td.del button:after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 14px;
-        height: 2px;
-        background: #000;
-        -webkit-transform: rotate(45deg) translate(-50%, -50%);
-        -ms-transform: rotate(45deg) translate(-50%, -50%);
-        transform: rotate(45deg) translate(-50%, -50%);
-        -webkit-transform-origin: 0% 0%;
-        -ms-transform-origin: 0% 0%;
-        transform-origin: 0% 0%; }
-      .modal-cart .modal-wrapper .modal-content table tr.content td.del button:before {
-        content: '';
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 14px;
-        height: 2px;
-        background: #000;
-        -webkit-transform: rotate(-45deg) translate(-50%, -50%);
-        -ms-transform: rotate(-45deg) translate(-50%, -50%);
-        transform: rotate(-45deg) translate(-50%, -50%);
-        -webkit-transform-origin: 0% 0%;
-        -ms-transform-origin: 0% 0%;
-        transform-origin: 0% 0%; }
+      padding: 10px 0 5px;
+      text-align: right; }
+      .modal-cart .modal-wrapper .modal-content p span:after {
+        content: ' ₽'; }
+    .modal-cart .modal-wrapper .modal-content table {
+      width: 100%;
+      border-collapse: collapse; }
+      .modal-cart .modal-wrapper .modal-content table tr td {
+        vertical-align: middle;
+        border: 1px solid #ccc;
+        padding: 5px;
+        text-align: center;
+        font-size: 12px; }
+        .modal-cart .modal-wrapper .modal-content table tr td.id {
+          text-transform: uppercase; }
+      .modal-cart .modal-wrapper .modal-content table tr.head td {
+        font-weight: 600; }
+      .modal-cart .modal-wrapper .modal-content table tr.content input {
+        width: 24px;
+        height: 24px;
+        border: 1px solid #252627;
+        border-radius: 5px;
+        margin: 0 10px;
+        text-align: center;
+        font-weight: 600; }
+      .modal-cart .modal-wrapper .modal-content table tr.content td span.minus, .modal-cart .modal-wrapper .modal-content table tr.content td span.plus {
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer; }
+      .modal-cart .modal-wrapper .modal-content table tr.content td.price:after {
+        content: ' ₽'; }
+      .modal-cart .modal-wrapper .modal-content table tr.content td.total:after {
+        content: ' ₽'; }
+      .modal-cart .modal-wrapper .modal-content table tr.content td.del button {
+        width: 20px;
+        height: 20px;
+        background-color: #f60538;
+        border: none;
+        margin-top: 3px;
+        border-radius: 50%;
+        position: relative; }
+        .modal-cart .modal-wrapper .modal-content table tr.content td.del button:after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 14px;
+          height: 2px;
+          background: #000;
+          -webkit-transform: rotate(45deg) translate(-50%, -50%);
+          -ms-transform: rotate(45deg) translate(-50%, -50%);
+          transform: rotate(45deg) translate(-50%, -50%);
+          -webkit-transform-origin: 0% 0%;
+          -ms-transform-origin: 0% 0%;
+          transform-origin: 0% 0%; }
+        .modal-cart .modal-wrapper .modal-content table tr.content td.del button:before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 14px;
+          height: 2px;
+          background: #000;
+          -webkit-transform: rotate(-45deg) translate(-50%, -50%);
+          -ms-transform: rotate(-45deg) translate(-50%, -50%);
+          transform: rotate(-45deg) translate(-50%, -50%);
+          -webkit-transform-origin: 0% 0%;
+          -ms-transform-origin: 0% 0%;
+          transform-origin: 0% 0%; }

@@ -184,6 +184,7 @@ $red: #f60538;
     .modal-wrapper{
         width: 800px;
         .modal-content{
+            padding: 5px;
             p{
                 font-weight: 600;
                 padding: 10px 0 5px;
@@ -203,6 +204,7 @@ $red: #f60538;
                         border: 1px solid #ccc;
                         padding: 5px;
                         text-align: center;
+                        font-size: 12px;
                         &.id{
                             text-transform: uppercase;
                         }
