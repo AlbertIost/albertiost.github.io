@@ -249,6 +249,9 @@ section.main{
         position: relative;
         flex: 0 40%;
         max-width: 800px;
+        background-image: url(../img/icon/leaves-right.png);
+        background-repeat: no-repeat;
+        background-position: right 0;
 
         &:after{
             content: '';
@@ -261,24 +264,21 @@ section.main{
             top: 0;
             z-index: 999;
         }
-        &:before{
-            content: '';
-            position: absolute;
-            width: 42px;
-            height: 120px;
-            background-image: url(../img/icon/leaves-right.png);
-            background-repeat: no-repeat;
-            right: 0;
-            top: 0;
-            z-index: 999;
-        }
+        // &:before{
+        //     content: '';
+        //     position: absolute;
+        //     width: 42px;
+        //     height: 120px;
+        //     background-image: url(../img/icon/leaves-right.png);
+        //     background-repeat: no-repeat;
+        //     right: 0;
+        //     top: 0;
+        //     z-index: 999;
+        // }
         
         .wrapper{
             height: calc(100vh - 100px);
             overflow-y: auto;
-            background-image: url(../img/icon/leaves-right.png);
-            background-repeat: no-repeat;
-            background-position: right 0;
             padding: 0 50px;
         }
         .menu{
