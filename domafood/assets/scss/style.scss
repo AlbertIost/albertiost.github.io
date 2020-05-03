@@ -283,6 +283,7 @@ section.main{
                         display: flex;
                         margin-top: 15px;
                         align-items: center;
+
                         &:first-child{margin-top: 0;}
                         .menu-item{
                             flex: 1 auto;
@@ -298,6 +299,7 @@ section.main{
                                 z-index: 10;
                             }
                             .title{
+                                cursor: pointer;
                                 padding-right: 7px;
                             }
                             .price{
@@ -415,6 +417,10 @@ section.main{
                 &.item-18{background-image: url(../img/dish-18.png);}
                 &.item-19{background-image: url(../img/dish-19.png);}
                 &.item-20{background-image: url(../img/dish-20.png);}
+                &.item-21{background-image: url(../img/dish-21.png);}
+                &.item-22{background-image: url(../img/dish-22.png);}
+                &.item-23{background-image: url(../img/dish-23.png);}
+                &.item-24{background-image: url(../img/dish-24.png);}
             }
         }
     }
