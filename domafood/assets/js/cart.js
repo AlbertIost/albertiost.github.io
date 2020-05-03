@@ -18,7 +18,8 @@ $(document).ready(() => {
         contInItem.eq(i).attr('data-dish', contInItem.eq(i).parent().siblings('.title').text());
     }
     let totalPrice = 0;
-    $('.item-control').on('click', function(){
+    $('body').on('click', '.item-control',  function(e){
+        e.preventDefault();
         let dish = $(this).attr('data-dish');
 
         if( $(this).hasClass('added') ){//если выбран
