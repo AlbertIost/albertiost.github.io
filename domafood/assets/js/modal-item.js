@@ -1,6 +1,5 @@
 $(document).ready(() => {
     let user = detect.parse(navigator.userAgent);
-    alert(user.browser.family);
     let items = $('.item');
     for(let i = 0; i < items.length; i++){
         items.eq(i).addClass(`item-${i+1}`);
