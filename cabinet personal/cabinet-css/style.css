@@ -1032,16 +1032,15 @@ footer .logo{margin-right: 6%;}
 @media (max-width:570px){
 	.wrapper-panel-collapse{
 		flex-direction: column;
+		align-items: center;
 	}
 	.wrapper-panel-collapse .panel-collapse-content{
 		padding-left: 0;
 	}
 	.wrapper-panel-collapse .panel-collapse-icon{
-		order: 2;
-		flex: 0 0 60px;
+		padding: 10px 0;
 	}
 }
-
 
 
 
