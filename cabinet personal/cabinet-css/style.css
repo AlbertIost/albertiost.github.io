@@ -411,6 +411,20 @@ header{
 	border: none;
 }
 .slick-dots .slick-active button{background: #e73029;}
+.wrapper-panel-collapse{
+	display: flex;
+	align-items: flex-start;
+}
+.wrapper-panel-collapse .panel-collapse-content{
+	flex: 1 1 auto;
+	padding-left: 20px;
+}
+.wrapper-panel-collapse .panel-collapse-icon{
+	flex: 0 0 100px;
+}
+.wrapper-panel-collapse .panel-collapse-icon img{
+	max-width: 100%;
+}
 #accordion, #wrap-slider{
 	height: auto !important;
 	display: block;
@@ -1016,7 +1030,16 @@ footer .logo{margin-right: 6%;}
 
 }
 @media (max-width:570px){
-
+	.wrapper-panel-collapse{
+		flex-direction: column;
+	}
+	.wrapper-panel-collapse .panel-collapse-content{
+		padding-left: 0;
+	}
+	.wrapper-panel-collapse .panel-collapse-icon{
+		order: 2;
+		flex: 0 0 60px;
+	}
 }
 
 
