@@ -1039,6 +1039,8 @@ footer .logo{margin-right: 6%;}
 	}
 	.wrapper-panel-collapse .panel-collapse-icon{
 		padding: 10px 0;
+		width: 100%;
+		max-width: 200px;
 	}
 }
 
