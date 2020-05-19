@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&family=Vollkorn+SC&display=swap');
+@font-face {
+    font-family: 'Hoefler Text';
+    src: url('../webfonts/13577.otf') format('opentype');
+}
+    $hoefler: 'Hoefler Text', serif;
+    $forum: 'Forum', cursive;
+    $vollkorn: 'Vollkorn SC', serif;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $hoefler;
+}
+a, a:hover, a:visited{
+    color: #000;
+    text-decoration: none;
+}
+ul, li{
+    list-style: none;
+}
+.img-fluid{
+    max-width: 100%;
+}
+.wrapper{
+    margin: 0 auto;
+    width: 100%;
+}
+header.header{
+    background: #3C3C3C;
+    .wrapper{
+        max-width: 1438px;
+        padding-top: 56px;
+        padding-bottom: 65px;
+        .quote{
+            font-family: $vollkorn;
+            font-size: 21px;
+            font-weight: normal;
+            color: #fff;
+            opacity: .8;
+        }
+        .signature{
+            margin: 0 auto;
+            width: 650px;
+
+            p{
+                font-family: $forum;
+                font-size: 39px;
+                font-weight: 400;
+                text-transform: uppercase;
+                line-height: 63px;
+                color: #FFF;
+            }
+        }
+    }
+    nav.nav-header{
+        background: #fff;
+        width: 100%;
+        padding-top: 26px;
+        padding-bottom: 10px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+        ul{
+            display: flex;
+            justify-content: center;
+            li{
+                margin-left: 32px;
+                cursor: pointer;
+                border-bottom: 5px solid transparent;
+                transition: .3s;
+
+                &:first-child{
+                    margin-left: 0;
+                }
+
+                &:hover, &.carret{
+                    border-bottom: 5px solid #000;
+                    a{
+                        color: #000;
+                        font-weight: bold;
+                    }
+                }
+
+                a{
+                    color: #4B4B4B;
+                    font-size: 18px;
+                    line-height: 31px;
+                }
+            }
+        }
+    }
+}
+section.news{
+    .wrapper{
+        max-width: 1200px;
+        display: flex;
+        padding-bottom: 78px;
+
+        .sidebar{
+            padding-top: 190px;
+            flex: 0 0 240px;
+            ul{
+                display: flex;
+                flex-direction: column;
+                li{
+                    padding-bottom: 28px;
+                    a{
+                        font-size: 39px;
+                        color: #5C5B5B;
+                        font-weight: bold;
+                    }
+                    &.active{
+                        a{
+                            font-size: 50px;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+        .content{
+            padding-top: 97px;
+            flex: 1 auto;
+            h2{
+                font-family: $vollkorn;
+                font-size: 38px;
+                font-weight: bold;
+                padding-bottom: 47px;
+            }
+            .news-list{
+                .news-item{
+                    padding-top: 19px;
+                    padding-bottom: 30px;
+                    border-top: 1px solid #929292;
+                    .date{
+                        font-size: 32px;
+                        line-height: 38px;
+                    }
+                    .descr{
+                        font-size: 20px;
+                        line-height: 26px;
+                    }
+                }
+            }
+            .all-news{
+                text-align: right;
+                padding: 15px 0;
+                margin-top: 21px;
+                a{
+                    color: #696969;
+                    padding: 15px;
+                    border: 2px solid #696969;
+                    font-size: 16px;
+                    line-height: 16px;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
+footer.footer{
+    background: #ebebeb;
+    .wrapper{
+        max-width: 1200px;
+        display: flex;
+        .sidebar{
+            flex: 0 0 340px;
+            padding-top: 72px;
+
+            .signature{
+                padding-bottom: 34px;
+                p{
+                    font-family: $forum;
+                    font-size: 15px;
+                    line-height: 24px;
+                    text-transform: uppercase;
+                }
+            }
+            nav.nav-footer{
+                display: flex;
+                ul{
+                    width: 50%;
+                    li{
+                        margin-bottom: 27px;
+                        a{
+                            font-size: 15px;
+                            color: #000;
+                            &:hover{
+                                border-bottom: 2px solid #3c3c3c;
+                                color: #3a3a3a;
+                            }                  
+                        }
+                        &.carret{
+                            a{
+                                color: #363636;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .main{
+            flex: 1 auto;
+            padding-top: 126px;
+
+            .top{
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 24px;
+                .find{
+                    h3{
+                        font-size: 20px;
+                        font-weight: bold;
+                        text-align: center;
+                    }
+                    .input-group{
+                        padding-top: 33px;
+                        input{
+                            font-size: 13px;
+                            color: #848181;
+                            background: transparent;
+                            border: none;
+                            padding-bottom: 7px;
+                            border-bottom: 1px solid #000;
+                            width: 265px;
+                        }
+                        a{
+                            font-size: 11px;
+                            letter-spacing: 0.09em;
+                            text-transform: uppercase;
+                            color: #696969;
+                            padding: 7px;
+                            border: 1px solid #696969;
+                            &:hover{
+                                color: #000;
+                                border: 1px solid #000;
+                            }
+                        }
+                    }
+                    .donate{
+                        font-size: 23px;
+                        letter-spacing: 0.09em;
+                        color: #696969;
+                        padding: 7px;
+                        border: 1px solid #696969;
+                        text-transform: uppercase;
+                        display: block;
+                        text-align: center;
+                        margin-top: 28px;
+                        &:hover{
+                            color: #000;
+                            border: 1px solid #000;
+                        }
+                    }
+                }
+                .contacts{
+                    text-align: right;
+                    h3{
+                        font-size: 20px;
+                        font-weight: bold;
+                    }
+                    p.email{
+                        font-size: 15px;
+                        padding-top: 37px;
+                        padding-bottom: 22px;
+                    }
+                }
+            }
+            .bottom{
+                p{
+                    font-size: 15px;
+                    line-height: 18px;
+                    &:first-child{
+                        padding-bottom: 7px;
+                    }
+                }
+            }
+        }
+    }
+}

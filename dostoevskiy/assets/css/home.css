@@ -1,0 +1,73 @@
+section.slider .wrapper {
+  max-width: 1370px;
+  position: relative;
+  padding-top: 51px; }
+  section.slider .wrapper .slider-main {
+    width: 100%;
+    margin: 0 auto; }
+    section.slider .wrapper .slider-main .item {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 100% 50%; }
+      section.slider .wrapper .slider-main .item .content {
+        padding-top: 43px;
+        margin-left: 89px;
+        padding-bottom: 89px;
+        width: 506px; }
+        section.slider .wrapper .slider-main .item .content h1 {
+          font-size: 37px;
+          line-height: 48px;
+          font-weight: bold;
+          color: #3C3C3C;
+          margin-bottom: 10px; }
+        section.slider .wrapper .slider-main .item .content p {
+          font-size: 22px;
+          line-height: 37px;
+          margin-bottom: 15px; }
+        section.slider .wrapper .slider-main .item .content a {
+          font-size: 16px;
+          line-height: 16px;
+          letter-spacing: 0.09em;
+          text-transform: uppercase;
+          color: #696969;
+          padding: 11.56px 12px;
+          border: 2px solid #696969;
+          display: inline-block; }
+          section.slider .wrapper .slider-main .item .content a:hover {
+            color: #000;
+            border: 2px solid #000; }
+      section.slider .wrapper .slider-main .item-1 {
+        background-image: url(../img/banner-1.png); }
+  section.slider .wrapper .arr {
+    width: 29px;
+    height: 90px;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    font-size: 25px;
+    line-height: 90px;
+    cursor: pointer; }
+    section.slider .wrapper .arr.arr-next {
+      right: 0; }
+  section.slider .wrapper .slick-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: absolute;
+    bottom: 28px;
+    left: 83px; }
+    section.slider .wrapper .slick-dots li {
+      margin-right: 16px; }
+      section.slider .wrapper .slick-dots li button {
+        font-size: 0;
+        width: 69px;
+        height: 6px;
+        background: #C4C4C4;
+        border: none; }
+      section.slider .wrapper .slick-dots li.slick-active button {
+        background: #3C3C3C; }
+      section.slider .wrapper .slick-dots li:last-child {
+        margin-right: 0; }

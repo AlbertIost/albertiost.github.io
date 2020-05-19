@@ -1,0 +1,92 @@
+section.slider{
+    .wrapper{
+        max-width: 1370px;
+        position: relative;
+        padding-top: 51px;
+        .slider-main{
+            width: 100%;
+            margin: 0 auto;
+
+            .item{
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: 100% 50%;
+                .content{
+                    padding-top: 43px;
+                    margin-left: 89px;
+                    padding-bottom: 89px;
+                    width: 506px;
+
+                    h1{
+                        font-size: 37px;
+                        line-height: 48px;
+                        font-weight: bold;
+                        color: #3C3C3C;
+                        margin-bottom: 10px;
+                    }
+                    p{
+                        font-size: 22px;
+                        line-height: 37px;
+                        margin-bottom: 15px;
+                    }
+                    a{
+                        font-size: 16px;
+                        line-height: 16px;
+                        letter-spacing: 0.09em;
+                        text-transform: uppercase;
+                        color: #696969;
+                        padding: 11.56px 12px;
+                        border: 2px solid #696969;
+                        display: inline-block;
+                        &:hover{
+                            color: #000;
+                            border: 2px solid #000;
+                        }
+                    }
+                }
+                &-1{
+                    background-image: url(../img/banner-1.png);
+                }
+            }
+        }
+        .arr{
+            width: 29px;
+            height: 90px;
+            background: #fff;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 25px;
+            line-height: 90px;
+            cursor: pointer;
+
+            &.arr-next{
+                right: 0;
+            }
+        }
+        .slick-dots{
+            display: flex;
+            position: absolute;
+            bottom: 28px;
+            left: 83px;
+            li{
+                margin-right: 16px;
+                button{
+                    font-size: 0;
+                    width: 69px;
+                    height: 6px;
+                    background: #C4C4C4;
+                    border: none;
+                }
+                &.slick-active{
+                    button{
+                        background: #3C3C3C;
+                    }
+                }
+                &:last-child{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
