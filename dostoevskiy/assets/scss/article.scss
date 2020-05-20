@@ -1,0 +1,51 @@
+$hoefler: 'Hoefler Text', serif;
+$forum: 'Forum', cursive;
+$vollkorn: 'Vollkorn SC', serif;
+
+section.main{
+    .wrapper{
+        .content{
+            h2{
+                padding-bottom: 9px;
+            }
+            .date{
+                font-size: 25px;
+                line-height: 32px;
+                padding-bottom: 29px;
+            }
+            h4{
+                font-size: 20px;
+                line-height: 26px;
+                font-weight: bold;
+                padding-bottom: 29px;
+            }
+            p.text{
+                font-size: 20px;
+                line-height: 26px;
+                padding-bottom: 23px;
+            }
+            p.italic{
+                font-style: italic;
+                font-size: 22px;
+                line-height: 37px;
+            }
+            .article-img{
+                p{
+                    padding-bottom: 0;
+                    text-align: left;
+                }
+                padding-bottom: 33px;
+            }
+            .signature{
+                padding-top: 33px;
+                font-size: 20px;
+                line-height: 26px;
+                text-align: right;
+                .author{
+                    font-weight: bold;
+                    padding-bottom: 25px;
+                }
+            }
+        }
+    }
+}

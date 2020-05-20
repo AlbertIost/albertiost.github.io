@@ -1,3 +1,6 @@
+$hoefler: 'Hoefler Text', serif;
+$forum: 'Forum', cursive;
+$vollkorn: 'Vollkorn SC', serif;
 section.slider{
     .wrapper{
         max-width: 1370px;
@@ -46,7 +49,7 @@ section.slider{
                     }
                 }
                 &-1{
-                    background-image: url(../img/banner-1.png);
+                    background-image: url('../img/banner-1.png');
                 }
             }
         }
@@ -56,13 +59,20 @@ section.slider{
             background: #fff;
             position: absolute;
             top: 50%;
-            transform: translateY(-50%);
+            transform: translateY(-25%);
             font-size: 25px;
             line-height: 90px;
             cursor: pointer;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            background-image: url('../img/icons/arrow.png');
 
             &.arr-next{
                 right: 0;
+            }
+            &.arr-prev{
+                transform: rotate(180deg) translateY(25%);
             }
         }
         .slick-dots{
@@ -86,6 +96,48 @@ section.slider{
                 }
                 &:last-child{
                     margin-right: 0;
+                }
+            }
+        }
+    }
+}
+section.main{
+    .wrapper{
+        .sidebar{
+            padding-top: 190px;
+        }
+        .content{
+            padding-top: 97px;
+            h2{
+                font-family: $vollkorn;
+            }
+            .news-list{
+                .news-item{
+                    padding-top: 19px;
+                    padding-bottom: 30px;
+                    border-top: 1px solid #929292;
+                    .date{
+                        font-size: 32px;
+                        line-height: 38px;
+                    }
+                    .descr{
+                        font-size: 20px;
+                        line-height: 26px;
+                    }
+                }
+            }
+            .all-news{
+                text-align: right;
+                padding: 15px 0;
+                margin-top: 21px;
+                a{
+                    color: #696969;
+                    padding: 15px;
+                    border: 2px solid #696969;
+                    font-size: 16px;
+                    line-height: 16px;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
                 }
             }
         }

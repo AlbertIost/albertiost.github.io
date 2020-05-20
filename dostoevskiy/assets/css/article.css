@@ -1,0 +1,38 @@
+section.main .wrapper .content h2 {
+  padding-bottom: 9px; }
+
+section.main .wrapper .content .date {
+  font-size: 25px;
+  line-height: 32px;
+  padding-bottom: 29px; }
+
+section.main .wrapper .content h4 {
+  font-size: 20px;
+  line-height: 26px;
+  font-weight: bold;
+  padding-bottom: 29px; }
+
+section.main .wrapper .content p.text {
+  font-size: 20px;
+  line-height: 26px;
+  padding-bottom: 23px; }
+
+section.main .wrapper .content p.italic {
+  font-style: italic;
+  font-size: 22px;
+  line-height: 37px; }
+
+section.main .wrapper .content .article-img {
+  padding-bottom: 33px; }
+  section.main .wrapper .content .article-img p {
+    padding-bottom: 0;
+    text-align: left; }
+
+section.main .wrapper .content .signature {
+  padding-top: 33px;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: right; }
+  section.main .wrapper .content .signature .author {
+    font-weight: bold;
+    padding-bottom: 25px; }

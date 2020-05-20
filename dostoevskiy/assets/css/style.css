@@ -14,6 +14,10 @@ a, a:hover, a:visited {
   color: #000;
   text-decoration: none; }
 
+a.hyperlink {
+  color: #5F0000;
+  text-decoration: underline; }
+
 ul, li {
   list-style: none; }
 
@@ -37,6 +41,7 @@ header.header {
       color: #fff;
       opacity: .8; }
     header.header .wrapper .signature {
+      display: block;
       margin: 0 auto;
       width: 650px; }
       header.header .wrapper .signature p {
@@ -79,18 +84,18 @@ header.header {
           font-size: 18px;
           line-height: 31px; }
 
-section.news .wrapper {
+section.main .wrapper {
   max-width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 78px; }
-  section.news .wrapper .sidebar {
-    padding-top: 190px;
+  section.main .wrapper .sidebar {
+    padding-top: 149px;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 240px;
     flex: 0 0 240px; }
-    section.news .wrapper .sidebar ul {
+    section.main .wrapper .sidebar ul {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -98,47 +103,43 @@ section.news .wrapper {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column; }
-      section.news .wrapper .sidebar ul li {
+      section.main .wrapper .sidebar ul li {
         padding-bottom: 28px; }
-        section.news .wrapper .sidebar ul li a {
+        section.main .wrapper .sidebar ul li a {
           font-size: 39px;
           color: #5C5B5B;
           font-weight: bold; }
-        section.news .wrapper .sidebar ul li.active a {
+        section.main .wrapper .sidebar ul li.active a {
           font-size: 50px;
           color: #000; }
-  section.news .wrapper .content {
-    padding-top: 97px;
+  section.main .wrapper .sidebar-has-child {
+    padding-top: 149px;
+    padding-right: 25px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 240px;
+    flex: 0 0 240px; }
+    section.main .wrapper .sidebar-has-child ul li {
+      font-size: 20px;
+      line-height: 24px;
+      padding-bottom: 13px;
+      margin-bottom: 13px;
+      border-bottom: 1px solid #929292; }
+      section.main .wrapper .sidebar-has-child ul li .writer {
+        font-weight: bold;
+        color: #5C5B5B; }
+      section.main .wrapper .sidebar-has-child ul li .descr {
+        font-size: 18px; }
+  section.main .wrapper .content {
+    padding-top: 78px;
     -webkit-box-flex: 1;
     -ms-flex: 1 auto;
     flex: 1 auto; }
-    section.news .wrapper .content h2 {
-      font-family: "Vollkorn SC", serif;
+    section.main .wrapper .content h2 {
+      font-family: "Hoefler Text", serif;
       font-size: 38px;
       font-weight: bold;
-      padding-bottom: 47px; }
-    section.news .wrapper .content .news-list .news-item {
-      padding-top: 19px;
-      padding-bottom: 30px;
-      border-top: 1px solid #929292; }
-      section.news .wrapper .content .news-list .news-item .date {
-        font-size: 32px;
-        line-height: 38px; }
-      section.news .wrapper .content .news-list .news-item .descr {
-        font-size: 20px;
-        line-height: 26px; }
-    section.news .wrapper .content .all-news {
-      text-align: right;
-      padding: 15px 0;
-      margin-top: 21px; }
-      section.news .wrapper .content .all-news a {
-        color: #696969;
-        padding: 15px;
-        border: 2px solid #696969;
-        font-size: 16px;
-        line-height: 16px;
-        letter-spacing: 1px;
-        text-transform: uppercase; }
+      padding-bottom: 47px;
+      color: #3c3c3c; }
 
 footer.footer {
   background: #ebebeb; }
@@ -175,12 +176,12 @@ footer.footer {
                 color: #3a3a3a; }
             footer.footer .wrapper .sidebar nav.nav-footer ul li.carret a {
               color: #363636; }
-    footer.footer .wrapper .main {
+    footer.footer .wrapper .main-footer {
       -webkit-box-flex: 1;
       -ms-flex: 1 auto;
       flex: 1 auto;
       padding-top: 126px; }
-      footer.footer .wrapper .main .top {
+      footer.footer .wrapper .main-footer .top {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -188,13 +189,13 @@ footer.footer {
         -ms-flex-pack: justify;
         justify-content: space-between;
         padding-bottom: 24px; }
-        footer.footer .wrapper .main .top .find h3 {
+        footer.footer .wrapper .main-footer .top .find h3 {
           font-size: 20px;
           font-weight: bold;
           text-align: center; }
-        footer.footer .wrapper .main .top .find .input-group {
+        footer.footer .wrapper .main-footer .top .find .input-group {
           padding-top: 33px; }
-          footer.footer .wrapper .main .top .find .input-group input {
+          footer.footer .wrapper .main-footer .top .find .input-group input {
             font-size: 13px;
             color: #848181;
             background: transparent;
@@ -202,17 +203,17 @@ footer.footer {
             padding-bottom: 7px;
             border-bottom: 1px solid #000;
             width: 265px; }
-          footer.footer .wrapper .main .top .find .input-group a {
+          footer.footer .wrapper .main-footer .top .find .input-group a {
             font-size: 11px;
             letter-spacing: 0.09em;
             text-transform: uppercase;
             color: #696969;
             padding: 7px;
             border: 1px solid #696969; }
-            footer.footer .wrapper .main .top .find .input-group a:hover {
+            footer.footer .wrapper .main-footer .top .find .input-group a:hover {
               color: #000;
               border: 1px solid #000; }
-        footer.footer .wrapper .main .top .find .donate {
+        footer.footer .wrapper .main-footer .top .find .donate {
           font-size: 23px;
           letter-spacing: 0.09em;
           color: #696969;
@@ -222,20 +223,20 @@ footer.footer {
           display: block;
           text-align: center;
           margin-top: 28px; }
-          footer.footer .wrapper .main .top .find .donate:hover {
+          footer.footer .wrapper .main-footer .top .find .donate:hover {
             color: #000;
             border: 1px solid #000; }
-        footer.footer .wrapper .main .top .contacts {
+        footer.footer .wrapper .main-footer .top .contacts {
           text-align: right; }
-          footer.footer .wrapper .main .top .contacts h3 {
+          footer.footer .wrapper .main-footer .top .contacts h3 {
             font-size: 20px;
             font-weight: bold; }
-          footer.footer .wrapper .main .top .contacts p.email {
+          footer.footer .wrapper .main-footer .top .contacts p.email {
             font-size: 15px;
             padding-top: 37px;
             padding-bottom: 22px; }
-      footer.footer .wrapper .main .bottom p {
+      footer.footer .wrapper .main-footer .bottom p {
         font-size: 15px;
         line-height: 18px; }
-        footer.footer .wrapper .main .bottom p:first-child {
+        footer.footer .wrapper .main-footer .bottom p:first-child {
           padding-bottom: 7px; }

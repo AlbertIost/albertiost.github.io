@@ -5,8 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/home.css">
-    <title>Главная</title>
+    <link rel="stylesheet" href="assets/css/news.css">
+    <title>Новости</title>
 </head>
 <body>
     <header class="header">
@@ -19,7 +19,7 @@
         </div>
         <nav class="nav-header">
             <ul>
-                <li><a href="#">Новости</a></li>
+                <li class="carret"><a href="#">Новости</a></li>
                 <li><a href="#">Биография</a></li>
                 <li><a href="#">Сочинения</a></li>
                 <li><a href="#">Окружение</a></li>
@@ -30,35 +30,6 @@
             </ul>
         </nav>
     </header>
-    <section class="slider" id="slider">
-        <div class="wrapper">
-            <div class="slider-main">
-                <div class="item item-1">
-                    <div class="content">
-                        <h1>Прижизненные издания Ф.М. Достоевского</h1>
-                        <p>От первого до последнего. Газетные и журнальные редакции. Публикации в сборниках и отдельные издания. От «Бедных людей» до «Братьев Карамазовых»</p>
-                        <a href="#">Подробнее</a>
-                    </div>
-                </div>
-                <div class="item item-1">
-                    <div class="content">
-                        <h1>Прижизненные издания Ф.М. Есенина</h1>
-                        <p>От первого до последнего. Газетные и журнальные редакции. Публикации в сборниках и отдельные издания. От «Бедных людей» до «Братьев Карамазовых»</p>
-                        <a href="#">Подробнее</a>
-                    </div>
-                </div>
-                <div class="item item-1">
-                    <div class="content">
-                        <h1>Прижизненные издания А.С. Пушкина</h1>
-                        <p>От первого до последнего. Газетные и журнальные редакции. Публикации в сборниках и отдельные издания. От «Бедных людей» до «Братьев Карамазовых»</p>
-                        <a href="#">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-            <div class="arr arr-prev"></div>
-            <div class="arr arr-next"></div>
-        </div>
-    </section>
     <section class="main">
         <div class="wrapper">
             <nav class="sidebar">
@@ -70,7 +41,7 @@
                 </ul>
             </nav>
             <div class="content">
-                <h2>Разныя извѣстiя</h2>
+                <h2>Новости</h2>
                 <div class="news-list">
                     <div class="news-item">
                         <p class="date">27.02.2020</p>
@@ -89,9 +60,17 @@
                         <p class="desct">Дети победителей: потомка Достоевского на войне спас от смерти бюст деда</p>
                     </div>
                 </div>
-                <div class="all-news">
-                    <a href="#">Все новости</a>
-                </div>
+                <nav class="nav-news">
+                    <div class="switcher">
+                        <a href="#" class="news-prev deactivate"></a>
+                        <div class="pages">
+                            <span class="num-page">1</span>
+                            <span class="separator"> / </span>
+                            <span class="total-num">70</span>
+                        </div>
+                        <a href="#" class="news-next"></a>
+                    </div>
+                </nav>
             </div>
         </div>
     </section>

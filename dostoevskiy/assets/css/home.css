@@ -37,21 +37,29 @@ section.slider .wrapper {
             color: #000;
             border: 2px solid #000; }
       section.slider .wrapper .slider-main .item-1 {
-        background-image: url(../img/banner-1.png); }
+        background-image: url("../img/banner-1.png"); }
   section.slider .wrapper .arr {
     width: 29px;
     height: 90px;
     background: #fff;
     position: absolute;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-25%);
+    -ms-transform: translateY(-25%);
+    transform: translateY(-25%);
     font-size: 25px;
     line-height: 90px;
-    cursor: pointer; }
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-image: url("../img/icons/arrow.png"); }
     section.slider .wrapper .arr.arr-next {
       right: 0; }
+    section.slider .wrapper .arr.arr-prev {
+      -webkit-transform: rotate(180deg) translateY(25%);
+      -ms-transform: rotate(180deg) translateY(25%);
+      transform: rotate(180deg) translateY(25%); }
   section.slider .wrapper .slick-dots {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -71,3 +79,33 @@ section.slider .wrapper {
         background: #3C3C3C; }
       section.slider .wrapper .slick-dots li:last-child {
         margin-right: 0; }
+
+section.main .wrapper .sidebar {
+  padding-top: 190px; }
+
+section.main .wrapper .content {
+  padding-top: 97px; }
+  section.main .wrapper .content h2 {
+    font-family: "Vollkorn SC", serif; }
+  section.main .wrapper .content .news-list .news-item {
+    padding-top: 19px;
+    padding-bottom: 30px;
+    border-top: 1px solid #929292; }
+    section.main .wrapper .content .news-list .news-item .date {
+      font-size: 32px;
+      line-height: 38px; }
+    section.main .wrapper .content .news-list .news-item .descr {
+      font-size: 20px;
+      line-height: 26px; }
+  section.main .wrapper .content .all-news {
+    text-align: right;
+    padding: 15px 0;
+    margin-top: 21px; }
+    section.main .wrapper .content .all-news a {
+      color: #696969;
+      padding: 15px;
+      border: 2px solid #696969;
+      font-size: 16px;
+      line-height: 16px;
+      letter-spacing: 1px;
+      text-transform: uppercase; }

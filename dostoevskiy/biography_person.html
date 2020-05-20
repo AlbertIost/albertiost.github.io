@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/home.css">
-    <title>Главная</title>
+    <link rel="stylesheet" href="assets/css/article.css">
+    <link rel="stylesheet" href="assets/css/biography.css">
+    <title>Биография</title>
 </head>
 <body>
     <header class="header">
         <div class="wrapper">
             <p class="quote">И свѣтъ во тьмѣ свѣтитъ, и тьма не объяла его (Отъ Iоанна 1:5)</p>
-            <div class="signature">
+            <a href="index.html" class="signature">
                 <img src="assets/img/white-signature.png" alt="" class="img-fluid">
                 <p>Антология жизни и творчества</p>
-            </div>
+            </a>
         </div>
         <nav class="nav-header">
             <ul>
-                <li><a href="#">Новости</a></li>
+                <li class="carret"><a href="#">Новости</a></li>
                 <li><a href="#">Биография</a></li>
                 <li><a href="#">Сочинения</a></li>
                 <li><a href="#">Окружение</a></li>
@@ -30,68 +31,43 @@
             </ul>
         </nav>
     </header>
-    <section class="slider" id="slider">
-        <div class="wrapper">
-            <div class="slider-main">
-                <div class="item item-1">
-                    <div class="content">
-                        <h1>Прижизненные издания Ф.М. Достоевского</h1>
-                        <p>От первого до последнего. Газетные и журнальные редакции. Публикации в сборниках и отдельные издания. От «Бедных людей» до «Братьев Карамазовых»</p>
-                        <a href="#">Подробнее</a>
-                    </div>
-                </div>
-                <div class="item item-1">
-                    <div class="content">
-                        <h1>Прижизненные издания Ф.М. Есенина</h1>
-                        <p>От первого до последнего. Газетные и журнальные редакции. Публикации в сборниках и отдельные издания. От «Бедных людей» до «Братьев Карамазовых»</p>
-                        <a href="#">Подробнее</a>
-                    </div>
-                </div>
-                <div class="item item-1">
-                    <div class="content">
-                        <h1>Прижизненные издания А.С. Пушкина</h1>
-                        <p>От первого до последнего. Газетные и журнальные редакции. Публикации в сборниках и отдельные издания. От «Бедных людей» до «Братьев Карамазовых»</p>
-                        <a href="#">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-            <div class="arr arr-prev"></div>
-            <div class="arr arr-next"></div>
-        </div>
-    </section>
     <section class="main">
         <div class="wrapper">
-            <nav class="sidebar">
+            <nav class="sidebar-has-child">
                 <ul>
-                    <li class="active"><a href="#">2020</a></li>
-                    <li><a href="#">2019</a></li>
-                    <li><a href="#">2018</a></li>
-                    <li><a href="#">2017</a></li>
+                    <li>
+                        <p class="writer">К. Мочульский</p>
+                        <p class="descr">Достоевский. Жизнь и творчество</p>
+                    </li>
+                    <li>
+                        <p class="writer">Л. Сараскина</p>
+                        <p class="descr">Жизнь замечательных людей. Достоевский </p>
+                    </li>
+                    <li>
+                        <p class="writer">Ю. Селезнев</p>
+                        <p class="descr">Жизнь замечательных людей. Достоевский </p>
+                    </li>
+                    <li>
+                        <p class="writer">Г. Чулков</p>
+                        <p class="descr">Жизнь Достоевского</p>
+                    </li>
+                    <li>
+                        <p class="writer">Евангелие Достоевского</p>
+                    </li>
+                    <li>
+                        <p class="writer">Летопись жизни и творчества</p>
+                    </li>
                 </ul>
             </nav>
             <div class="content">
-                <h2>Разныя извѣстiя</h2>
-                <div class="news-list">
-                    <div class="news-item">
-                        <p class="date">27.02.2020</p>
-                        <p class="desct">Дети победителей: потомка Достоевского на войне спас от смерти бюст деда</p>
-                    </div>
-                    <div class="news-item">
-                        <p class="date">27.02.2020</p>
-                        <p class="desct">Дети победителей: потомка Достоевского на войне спас от смерти бюст деда</p>
-                    </div>
-                    <div class="news-item">
-                        <p class="date">27.02.2020</p>
-                        <p class="desct">Дети победителей: потомка Достоевского на войне спас от смерти бюст деда</p>
-                    </div>
-                    <div class="news-item">
-                        <p class="date">27.02.2020</p>
-                        <p class="desct">Дети победителей: потомка Достоевского на войне спас от смерти бюст деда</p>
-                    </div>
+                <h2>Достоевский. Жизнь и творчество (К. Мочульский)</h2>
+                <div class="article-img">
+                    <img src="assets/img/mochulsky.png" alt="" class="img-fluid">
                 </div>
-                <div class="all-news">
-                    <a href="#">Все новости</a>
-                </div>
+                <p class="text">Монография Константина Мочульского о Достоевском, переведенная на многие языки мира, и сегодня по праву является одним из лучших жизнеописаний великого романиста, начиная со дня его смерти. Перебравшись в 1922 г. после первой волны эмиграции в Париж, Мочульский, обратившийся к христианству, впоследствии стал автором фундаментального биографического исследования о Достоевском, которое ни при каких обстоятельствах не могло быть издано в атеистической советской России. В то время, когда критики и литературоведы СССР писали откровенно тенденциозные книги об авторе «Бесов» и «Братьев Карамазовых», Мочульский, проживая в Париже, готовил эту монографию без оглядки на Главлит и цензуру. В изложении Мочульского Достоевский представлен истинно верующим, христианским писателем.</p>
+                <p class="author">Сергей Рублев</p>
+                <p class="text">Текст монографии публикуется по единственному прижизненному изданию: Мочульский К. Достоевский. Жизнь и творчество. Париж: YMCA-PRESS, 1947. 561 с. </p>
+                <h4>Полужирный шрифт в тексте везде принадлежит автору.</h4>
             </div>
         </div>
     </section>

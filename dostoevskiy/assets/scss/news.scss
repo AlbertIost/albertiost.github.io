@@ -1,0 +1,102 @@
+$hoefler: 'Hoefler Text', serif;
+$forum: 'Forum', cursive;
+$vollkorn: 'Vollkorn SC', serif;
+section.main{
+    .wrapper{
+        max-width: 1200px;
+        display: flex;
+        padding-bottom: 78px;
+
+        .sidebar{
+            padding-top: 190px;
+            flex: 0 0 240px;
+            ul{
+                display: flex;
+                flex-direction: column;
+                li{
+                    padding-bottom: 28px;
+                    a{
+                        font-size: 39px;
+                        color: #5C5B5B;
+                        font-weight: bold;
+                    }
+                    &.active{
+                        a{
+                            font-size: 50px;
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+        .content{
+            padding-top: 97px;
+            flex: 1 auto;
+            h2{
+                font-family: $vollkorn;
+                font-size: 38px;
+                font-weight: bold;
+                padding-bottom: 47px;
+            }
+            .news-list{
+                .news-item{
+                    padding-top: 19px;
+                    padding-bottom: 30px;
+                    border-top: 1px solid #929292;
+                    .date{
+                        font-size: 32px;
+                        line-height: 38px;
+                    }
+                    .descr{
+                        font-size: 20px;
+                        line-height: 26px;
+                    }
+                }
+            }
+            .nav-news{
+                padding: 15px 0;
+                margin-top: 21px;
+                text-align: right;
+
+                .switcher{
+                    .pages{
+                        font-size: 26px;
+                        padding: 0 13px;
+                    }
+                    display: flex;
+                    align-items: center;
+                    .news-prev, .news-next{
+                        display: inline-block;
+                        width: 46px;
+                        height: 25px;
+                        border: 1.25362px solid #000000;
+                        background-repeat: no-repeat;
+                        background-position: center;
+
+                        &.deactivate{
+                            border: 1px solid transparent;
+                        }
+                    }
+                    .news-prev{
+                        margin-left: auto;
+                        background-image: url('../img/icons/arrow.png');
+                        transform: rotate(180deg);
+
+                        &.deactivate{
+                            background-image: url('../img/icons/arrow-dis.png');
+                            transform: rotate(0deg);
+                        }
+                    }
+                    .news-next{
+                        background-image: url('../img/icons/arrow.png');
+
+                        &.deactivate{
+                            background-image: url('../img/icons/arrow-dis.png');
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

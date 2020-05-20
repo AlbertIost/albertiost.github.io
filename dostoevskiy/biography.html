@@ -5,22 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/home.css">
-    <title>Главная</title>
+    <link rel="stylesheet" href="assets/css/article.css">
+    <link rel="stylesheet" href="assets/css/biography.css">
+    <title>Биография</title>
 </head>
 <body>
     <header class="header">
         <div class="wrapper">
             <p class="quote">И свѣтъ во тьмѣ свѣтитъ, и тьма не объяла его (Отъ Iоанна 1:5)</p>
-            <div class="signature">
+            <a href="index.html" class="signature">
                 <img src="assets/img/white-signature.png" alt="" class="img-fluid">
                 <p>Антология жизни и творчества</p>
-            </div>
+            </a>
         </div>
         <nav class="nav-header">
             <ul>
                 <li><a href="#">Новости</a></li>
-                <li><a href="#">Биография</a></li>
+                <li class="carret"><a href="#">Биография</a></li>
                 <li><a href="#">Сочинения</a></li>
                 <li><a href="#">Окружение</a></li>
                 <li><a href="#">Воспоминания</a></li>
@@ -30,68 +31,38 @@
             </ul>
         </nav>
     </header>
-    <section class="slider" id="slider">
-        <div class="wrapper">
-            <div class="slider-main">
-                <div class="item item-1">
-                    <div class="content">
-                        <h1>Прижизненные издания Ф.М. Достоевского</h1>
-                        <p>От первого до последнего. Газетные и журнальные редакции. Публикации в сборниках и отдельные издания. От «Бедных людей» до «Братьев Карамазовых»</p>
-                        <a href="#">Подробнее</a>
-                    </div>
-                </div>
-                <div class="item item-1">
-                    <div class="content">
-                        <h1>Прижизненные издания Ф.М. Есенина</h1>
-                        <p>От первого до последнего. Газетные и журнальные редакции. Публикации в сборниках и отдельные издания. От «Бедных людей» до «Братьев Карамазовых»</p>
-                        <a href="#">Подробнее</a>
-                    </div>
-                </div>
-                <div class="item item-1">
-                    <div class="content">
-                        <h1>Прижизненные издания А.С. Пушкина</h1>
-                        <p>От первого до последнего. Газетные и журнальные редакции. Публикации в сборниках и отдельные издания. От «Бедных людей» до «Братьев Карамазовых»</p>
-                        <a href="#">Подробнее</a>
-                    </div>
-                </div>
-            </div>
-            <div class="arr arr-prev"></div>
-            <div class="arr arr-next"></div>
-        </div>
-    </section>
     <section class="main">
         <div class="wrapper">
-            <nav class="sidebar">
+            <nav class="sidebar-has-child">
                 <ul>
-                    <li class="active"><a href="#">2020</a></li>
-                    <li><a href="#">2019</a></li>
-                    <li><a href="#">2018</a></li>
-                    <li><a href="#">2017</a></li>
+                    <li>
+                        <p class="writer">К. Мочульский</p>
+                        <p class="descr">Достоевский. Жизнь и творчество</p>
+                    </li>
+                    <li>
+                        <p class="writer">Л. Сараскина</p>
+                        <p class="descr">Жизнь замечательных людей. Достоевский </p>
+                    </li>
+                    <li>
+                        <p class="writer">Ю. Селезнев</p>
+                        <p class="descr">Жизнь замечательных людей. Достоевский </p>
+                    </li>
+                    <li>
+                        <p class="writer">Г. Чулков</p>
+                        <p class="descr">Жизнь Достоевского</p>
+                    </li>
+                    <li>
+                        <p class="writer">Евангелие Достоевского</p>
+                    </li>
+                    <li>
+                        <p class="writer">Летопись жизни и творчества</p>
+                    </li>
                 </ul>
             </nav>
             <div class="content">
-                <h2>Разныя извѣстiя</h2>
-                <div class="news-list">
-                    <div class="news-item">
-                        <p class="date">27.02.2020</p>
-                        <p class="desct">Дети победителей: потомка Достоевского на войне спас от смерти бюст деда</p>
-                    </div>
-                    <div class="news-item">
-                        <p class="date">27.02.2020</p>
-                        <p class="desct">Дети победителей: потомка Достоевского на войне спас от смерти бюст деда</p>
-                    </div>
-                    <div class="news-item">
-                        <p class="date">27.02.2020</p>
-                        <p class="desct">Дети победителей: потомка Достоевского на войне спас от смерти бюст деда</p>
-                    </div>
-                    <div class="news-item">
-                        <p class="date">27.02.2020</p>
-                        <p class="desct">Дети победителей: потомка Достоевского на войне спас от смерти бюст деда</p>
-                    </div>
-                </div>
-                <div class="all-news">
-                    <a href="#">Все новости</a>
-                </div>
+                <h2>Биография</h2>
+                <p class="text">Биография Достоевского на сайте представлена двумя изданиями из серии «ЖЗЛ — Жизнь замечательных людей» (<a class="hyperlink" href="#">Селезнев, Сараскина</a>); монографией Г.И. Чулкова <a href="#" class="hyperlink">«Жизнь Достоевского»</a>, которая несколько десятилетий пролежала в российских архивах, не пропущенная в печать атеистической советской цензурой; <a href="#" class="hyperlink">летописью жизни и творчества писателя</a> и электронной версией уникального личного экземпляра <a href="#" class="hyperlink">Евангелия Достоевского</a> — основной книгой его жизни.</p>
+                <p class="text">Другие материалы биографического толка отражены в <a href="#" class="hyperlink">«Исследованиях»</a>.</p>
             </div>
         </div>
     </section>
