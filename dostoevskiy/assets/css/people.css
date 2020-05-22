@@ -1,0 +1,74 @@
+.clear {
+  clear: both; }
+
+section.main .wrapper {
+  display: block;
+  max-width: 1080px; }
+  section.main .wrapper .content {
+    padding-top: 68px; }
+    section.main .wrapper .content ul.alph {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      section.main .wrapper .content ul.alph li a {
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+        display: block;
+        width: 36px;
+        height: 36px;
+        text-align: center;
+        line-height: 40px;
+        font-size: 20px;
+        color: #5C5B5B;
+        text-transform: uppercase;
+        border: 1px solid #5C5B5B;
+        border-right: none;
+        font-weight: bold; }
+      section.main .wrapper .content ul.alph li:last-child a {
+        border-right: 1px solid #5C5B5B; }
+      section.main .wrapper .content ul.alph li:last-child:hover a {
+        border-right: 1px solid #000; }
+      section.main .wrapper .content ul.alph li:hover a {
+        border: 1px solid #000;
+        border-right: none;
+        color: #000;
+        background: #EBEBEB; }
+    section.main .wrapper .content .peoples {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+      padding-top: 50px; }
+      section.main .wrapper .content .peoples ul li {
+        font-size: 20px;
+        line-height: 34px; }
+        section.main .wrapper .content .peoples ul li a {
+          position: relative; }
+        section.main .wrapper .content .peoples ul li a:hover:after {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 6px;
+          height: 6px;
+          border-radius: 50%;
+          background: #000;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+          left: -20px; }
+    section.main .wrapper .content .name {
+      font-size: 30px;
+      line-height: 50px;
+      font-weight: bold;
+      color: #3c3c3c; }
+    section.main .wrapper .content .born {
+      font-size: 20px;
+      line-height: 34px; }
+    section.main .wrapper .content img {
+      float: right;
+      display: block;
+      margin-left: 43px; }

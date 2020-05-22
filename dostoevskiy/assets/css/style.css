@@ -1,7 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Forum&family=Vollkorn+SC&display=swap");
 @font-face {
   font-family: 'Hoefler Text';
-  src: url("../webfonts/13577.otf") format("opentype"); }
+  src: url("../webfonts/HoeflerText-BlackItalic.woff2") format("woff2"), url("../webfonts/HoeflerText-BlackItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic; }
+
+@font-face {
+  font-family: 'Hoefler Text';
+  src: url("../webfonts/HoeflerText-Regular.woff2") format("woff2"), url("../webfonts/HoeflerText-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Hoefler Text';
+  src: url("../webfonts/HoeflerText-Black.woff2") format("woff2"), url("../webfonts/HoeflerText-Black.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Hoefler Text';
+  src: url("../webfonts/HoeflerText-Italic.woff2") format("woff2"), url("../webfonts/HoeflerText-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic; }
 
 * {
   -webkit-box-sizing: border-box;
@@ -58,31 +78,53 @@ header.header {
     padding-bottom: 10px;
     -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05); }
-    header.header nav.nav-header ul {
+    header.header nav.nav-header > ul {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center; }
-      header.header nav.nav-header ul li {
+      header.header nav.nav-header > ul > li {
         margin-left: 32px;
         cursor: pointer;
         border-bottom: 5px solid transparent;
         -webkit-transition: .3s;
         -o-transition: .3s;
-        transition: .3s; }
-        header.header nav.nav-header ul li:first-child {
+        transition: .3s;
+        position: relative; }
+        header.header nav.nav-header > ul > li:first-child {
           margin-left: 0; }
-        header.header nav.nav-header ul li:hover, header.header nav.nav-header ul li.carret {
+        header.header nav.nav-header > ul > li:hover {
           border-bottom: 5px solid #000; }
-          header.header nav.nav-header ul li:hover a, header.header nav.nav-header ul li.carret a {
-            color: #000;
-            font-weight: bold; }
-        header.header nav.nav-header ul li a {
+          header.header nav.nav-header > ul > li:hover > a {
+            color: #000; }
+        header.header nav.nav-header > ul > li > a {
           color: #4B4B4B;
           font-size: 18px;
-          line-height: 31px; }
+          line-height: 31px;
+          font-weight: bold; }
+        header.header nav.nav-header > ul > li > ul {
+          display: none;
+          top: 50px;
+          position: absolute;
+          z-index: 999;
+          width: 388px;
+          padding: 13px 10px 13px 42px;
+          background: #000;
+          background: rgba(0, 0, 0, 0.66);
+          -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25); }
+          header.header nav.nav-header > ul > li > ul li:hover {
+            color: #B7B5B5;
+            list-style-type: disc; }
+            header.header nav.nav-header > ul > li > ul li:hover a {
+              color: #B7B5B5; }
+          header.header nav.nav-header > ul > li > ul li a {
+            font-size: 19px;
+            line-height: 32px;
+            color: #fff;
+            font-weight: normal; }
 
 section.main .wrapper {
   max-width: 1200px;
@@ -120,15 +162,21 @@ section.main .wrapper {
     flex: 0 0 240px; }
     section.main .wrapper .sidebar-has-child ul li {
       font-size: 20px;
-      line-height: 24px;
-      padding-bottom: 13px;
-      margin-bottom: 13px;
-      border-bottom: 1px solid #929292; }
-      section.main .wrapper .sidebar-has-child ul li .writer {
-        font-weight: bold;
-        color: #5C5B5B; }
-      section.main .wrapper .sidebar-has-child ul li .descr {
-        font-size: 18px; }
+      line-height: 24px; }
+      section.main .wrapper .sidebar-has-child ul li a {
+        border-bottom: 1px solid #929292;
+        display: block;
+        padding-bottom: 17px;
+        margin-bottom: 17px; }
+        section.main .wrapper .sidebar-has-child ul li a .writer {
+          font-weight: bold;
+          color: #5C5B5B; }
+        section.main .wrapper .sidebar-has-child ul li a .descr {
+          font-size: 18px; }
+      section.main .wrapper .sidebar-has-child ul li > ul {
+        padding-left: 20px; }
+    section.main .wrapper .sidebar-has-child > ul > li:last-child a {
+      border-bottom: none; }
   section.main .wrapper .content {
     padding-top: 78px;
     -webkit-box-flex: 1;
@@ -140,6 +188,47 @@ section.main .wrapper {
       font-weight: bold;
       padding-bottom: 47px;
       color: #3c3c3c; }
+    section.main .wrapper .content .nav-news {
+      padding: 15px 0;
+      margin-top: 21px;
+      text-align: right; }
+      section.main .wrapper .content .nav-news .switcher {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        section.main .wrapper .content .nav-news .switcher .pages {
+          font-size: 26px;
+          padding: 0 13px; }
+        section.main .wrapper .content .nav-news .switcher .news-prev, section.main .wrapper .content .nav-news .switcher .news-next {
+          display: inline-block;
+          width: 46px;
+          height: 25px;
+          border: 1.25362px solid #000000;
+          background-repeat: no-repeat;
+          background-position: center; }
+          section.main .wrapper .content .nav-news .switcher .news-prev.deactivate, section.main .wrapper .content .nav-news .switcher .news-next.deactivate {
+            border: 1px solid transparent; }
+        section.main .wrapper .content .nav-news .switcher .news-prev {
+          margin-left: auto;
+          background-image: url("../img/icons/arrow.png");
+          -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
+          section.main .wrapper .content .nav-news .switcher .news-prev.deactivate {
+            background-image: url("../img/icons/arrow-dis.png");
+            -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+            transform: rotate(0deg); }
+        section.main .wrapper .content .nav-news .switcher .news-next {
+          background-image: url("../img/icons/arrow.png"); }
+          section.main .wrapper .content .nav-news .switcher .news-next.deactivate {
+            background-image: url("../img/icons/arrow-dis.png");
+            -webkit-transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            transform: rotate(180deg); }
 
 footer.footer {
   background: #ebebeb; }

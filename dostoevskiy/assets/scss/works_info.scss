@@ -1,0 +1,46 @@
+section.main{
+    .wrapper{
+        .content{
+            text-align: center;
+            .article-img{
+                img{
+                    margin-left: 0;
+                }
+            }
+            .file{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .icon{
+                    display: block;
+                    width: 91px;
+                    height: 125px;
+                    background-image: url('../img/icons/pdf.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 91px 125px;
+                    position: relative;
+
+                    .size{
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        bottom: -25px;
+                        font-size: 18px;
+                    }
+                    &:hover{
+                        background-image: url('../img/icons/pdf-red.png');
+                    }
+                }
+                .info{
+                    text-align: left;
+                    color: #5F0000;
+                    padding-left: 56px;
+                    h4{
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,49 @@
+.modal-wrapper{
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 999;
+    .modal-img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 600px;
+
+        .modal-body{
+            position: relative;
+            img{
+                display: block;
+                width: 100%;
+            }
+            .img-ctrl{
+                position: absolute;
+                bottom: 0;
+                width: 53px;
+                height: 31px;
+                background-color: #3c3c3c;
+                background-image: url('../img/icons/arrow-dis.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                &.img-prev{
+                    left: 0;
+                }
+                &.img-next{
+                    right: 0;
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        .modal-footer{
+            background-color: #3c3c3c;
+            padding: 23px 53px;
+            p{
+                font-size: 20px;
+                line-height: 26px;
+                color: #fff;
+            }
+        }
+    }
+}

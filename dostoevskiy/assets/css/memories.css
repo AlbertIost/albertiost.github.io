@@ -1,0 +1,68 @@
+section.main .wrapper .content .articles {
+  padding-top: 20px; }
+  section.main .wrapper .content .articles .item {
+    font-size: 20px;
+    line-height: 24px;
+    padding-bottom: 22px;
+    margin-bottom: 27px;
+    border-bottom: 1px solid #929292; }
+    section.main .wrapper .content .articles .item:last-child {
+      border-bottom: none; }
+    section.main .wrapper .content .articles .item .name {
+      font-size: 24px;
+      padding-bottom: 10px;
+      font-weight: bold;
+      color: #3c3c3c; }
+
+section.main .wrapper .content .article-img {
+  text-align: center; }
+  section.main .wrapper .content .article-img img {
+    margin: 0; }
+
+section.main .wrapper .content p.text span {
+  font-weight: bold; }
+
+section.main .wrapper .content .file {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  section.main .wrapper .content .file.type2 {
+    margin-top: 30px; }
+    section.main .wrapper .content .file.type2:last-child {
+      margin-top: 70px; }
+  section.main .wrapper .content .file.many {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding-top: 54px; }
+  section.main .wrapper .content .file .icon {
+    display: block;
+    width: 91px;
+    height: 125px;
+    background-image: url("../img/icons/pdf.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 91px 125px;
+    position: relative; }
+    section.main .wrapper .content .file .icon h4 {
+      position: absolute;
+      top: -30px; }
+    section.main .wrapper .content .file .icon .size {
+      position: absolute;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+      bottom: -25px;
+      font-size: 18px; }
+    section.main .wrapper .content .file .icon:hover {
+      background-image: url("../img/icons/pdf-red.png"); }
+  section.main .wrapper .content .file .info {
+    text-align: left;
+    color: #5F0000;
+    padding-left: 56px; }
+    section.main .wrapper .content .file .info h4 {
+      padding-bottom: 0; }

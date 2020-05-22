@@ -1,0 +1,90 @@
+.clear{
+    clear: both;
+}
+section.main{
+    .wrapper{
+        display: block;
+        max-width: 1080px;
+        .content{
+            padding-top: 68px;
+            ul.alph{
+                display: flex;
+                li{
+                    a{
+                        transition: .3s;
+                        display: block;
+                        width: 36px;
+                        height: 36px;
+                        text-align: center;
+                        line-height: 40px;
+                        font-size: 20px;
+                        color: #5C5B5B;
+                        text-transform: uppercase;
+                        border: 1px solid #5C5B5B;
+                        border-right: none;
+                        font-weight: bold;
+                    }
+                    &:last-child{
+                        a{
+                            border-right: 1px solid #5C5B5B;
+                        }
+                        &:hover{
+                            a{
+                                border-right: 1px solid #000;
+                            }
+                        }
+                    }
+                    &:hover{
+                        a{
+                            border: 1px solid #000;
+                            border-right: none;
+                            color: #000;
+                            background: #EBEBEB;
+                        }
+                    }
+                }
+            }
+            .peoples{
+                display: flex;
+                justify-content: space-between;
+                padding-top: 50px;
+                ul{
+                    li{
+                        font-size: 20px;
+                        line-height: 34px;
+                        a{
+                            position: relative;
+                        }
+                        a:hover:after{
+                            content: '';
+                            display: block;
+                            position: absolute;
+                            width: 6px;
+                            height: 6px;
+                            border-radius: 50%;
+                            background: #000;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            left: -20px;
+                        }
+                    }
+                }
+            }
+            .name{
+                font-size: 30px;
+                line-height: 50px;
+                font-weight: bold;
+                color: #3c3c3c;
+            }
+            .born{
+                font-size: 20px;
+                line-height: 34px;
+            }
+            img{
+                float: right;
+                display: block;
+                margin-left: 43px;
+            }
+        }
+    }
+}

@@ -6,10 +6,25 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/article.css">
-    <link rel="stylesheet" href="assets/css/biography.css">
-    <title>Биография</title>
+    <link rel="stylesheet" href="assets/css/media.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
+    <title>Медиа</title>
 </head>
 <body>
+    <div class="modal-wrapper">
+        <div class="modal-img">
+            <div class="modal-body">
+                <img src="assets/img/photo1.png" alt="">
+                <div class="img-ctrl img-prev"></div>
+                <div class="img-ctrl img-next"></div>
+            </div>
+            <div class="modal-footer">
+                <p>
+                    TEST
+                </p>
+            </div>
+        </div>
+    </div>
     <header class="header">
         <div class="wrapper">
             <p class="quote">И свѣтъ во тьмѣ свѣтитъ, и тьма не объяла его (Отъ Iоанна 1:5)</p>
@@ -56,44 +71,61 @@
                 <ul>
                     <li>
                         <a href="#">
-                            <p class="writer">К. Мочульский</p>
-                            <p class="descr">Достоевский. Жизнь и творчество</p>
+                            <p class="writer">Фотографии</p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <p class="writer">Л. Сараскина</p>
-                            <p class="descr">Жизнь замечательных людей. Достоевский </p>
+                            <p class="writer">Графика и живопись</p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <p class="writer">Ю. Селезнев</p>
-                            <p class="descr">Жизнь замечательных людей. Достоевский </p>
+                            <p class="writer">Кино</p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <p class="writer">Г. Чулков</p>
-                            <p class="descr">Жизнь Достоевского</p>
+                            <p class="writer">ТВ</p>
                         </a>
                     </li>
                     <li>
                         <a href="#">
-                            <p class="writer">Евангелие Достоевского</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <p class="writer">Летопись жизни и творчества</p>
+                            <p class="writer">Театр</p>
                         </a>
                     </li>
                 </ul>
             </nav>
             <div class="content">
-                <h2>Биография</h2>
-                <p class="text">Биография Достоевского на сайте представлена двумя изданиями из серии «ЖЗЛ — Жизнь замечательных людей» (<a class="hyperlink" href="#">Селезнев, Сараскина</a>); монографией Г.И. Чулкова <a href="#" class="hyperlink">«Жизнь Достоевского»</a>, которая несколько десятилетий пролежала в российских архивах, не пропущенная в печать атеистической советской цензурой; <a href="#" class="hyperlink">летописью жизни и творчества писателя</a> и электронной версией уникального личного экземпляра <a href="#" class="hyperlink">Евангелия Достоевского</a> — основной книгой его жизни.</p>
-                <p class="text">Другие материалы биографического толка отражены в <a href="#" class="hyperlink">«Исследованиях»</a>.</p>
+                <h2>Медиа</h2>
+                <p class="text">В разделе публикуются все известные на сегодняшний день фотографии писателя, а также обстоятельная статья Б.Н. Тихомирова <a href="#" class="hyperlink">«Прижизненная иконография Достоевского»</a>.</p>
+                <h4>© Все фото: Сетевое издание FedorDostoevsky.ru</h4>
+                <div class="photos">
+                    <a href="#" class="photo" data-src="assets/img/photo1.png" data-text="Ф.М. Достоевский. 1858 или 1859. <br> Фотография Соломона (Шлеймы) Лейбина">
+                        <img class="img-fluid" src="assets/img/photo1.png" alt="">
+                        <div class="layer">
+                            <div class="loupe"></div>
+                        </div>
+                    </a>
+                    <a href="#" class="photo" data-src="assets/img/photo2.png" data-text="Ф.М. Достоевский. 1858 или 1859. <br> Фотография Соломона (Шлеймы) Лейбина">
+                        <img class="img-fluid" src="assets/img/photo2.png" alt="">
+                        <div class="layer">
+                            <div class="loupe"></div>
+                        </div>
+                    </a>
+                    <a href="#" class="photo" data-src="assets/img/photo3.png" data-text="Ф.М. Достоевский. 1858 или 1859. <br> Фотография Соломона (Шлеймы) Лейбина">
+                        <img class="img-fluid" src="assets/img/photo3.png" alt="">
+                        <div class="layer">
+                            <div class="loupe"></div>
+                        </div>
+                    </a>
+                    <a href="#" class="photo" data-src="assets/img/photo4.png" data-text="Ф.М. Достоевский. 1858 или 1859. <br> Фотография Соломона (Шлеймы) Лейбина">
+                        <img class="img-fluid" src="assets/img/photo4.png" alt="">
+                        <div class="layer">
+                            <div class="loupe"></div>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -158,5 +190,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/modal.js"></script>
 </body>
 </html>

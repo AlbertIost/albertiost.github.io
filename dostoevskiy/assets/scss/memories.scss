@@ -1,0 +1,85 @@
+section.main{
+    .wrapper{
+        .content{
+            .articles{
+                padding-top: 20px;
+                .item{
+                    font-size: 20px;
+                    line-height: 24px;
+                    padding-bottom: 22px;
+                    margin-bottom: 27px;
+                    border-bottom: 1px solid #929292;
+
+                    &:last-child{
+                        border-bottom: none;
+                    }
+                    .name{
+                        font-size: 24px;
+                        padding-bottom: 10px;
+                        font-weight: bold;
+                        color: #3c3c3c;
+                    }
+                }
+            }
+            .article-img{
+                text-align: center;
+                img{
+                    margin: 0;
+                }
+            }
+            p.text{
+                span{
+                    font-weight: bold;
+                }
+            }
+            .file{
+                display: flex;
+                align-items: center;
+
+                &.type2{
+                    margin-top: 30px;
+                    &:last-child{
+                        margin-top: 70px;
+                    }
+                }
+                &.many{
+                    justify-content: space-between;
+                    padding-top: 54px;
+                }
+                .icon{
+                    display: block;
+                    width: 91px;
+                    height: 125px;
+                    background-image: url('../img/icons/pdf.png');
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: 91px 125px;
+                    position: relative;
+
+                    h4{
+                        position: absolute;
+                        top: -30px;
+                    }
+                    .size{
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        bottom: -25px;
+                        font-size: 18px;
+                    }
+                    &:hover{
+                        background-image: url('../img/icons/pdf-red.png');
+                    }
+                }
+                .info{
+                    text-align: left;
+                    color: #5F0000;
+                    padding-left: 56px;
+                    h4{
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
