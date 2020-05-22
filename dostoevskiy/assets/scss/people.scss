@@ -28,13 +28,13 @@ section.main{
                         a{
                             border-right: 1px solid #5C5B5B;
                         }
-                        &:hover{
+                        &:hover, &.active{
                             a{
                                 border-right: 1px solid #000;
                             }
                         }
                     }
-                    &:hover{
+                    &:hover, &.active{
                         a{
                             border: 1px solid #000;
                             border-right: none;

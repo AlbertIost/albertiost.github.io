@@ -27,9 +27,9 @@ section.main .wrapper {
         font-weight: bold; }
       section.main .wrapper .content ul.alph li:last-child a {
         border-right: 1px solid #5C5B5B; }
-      section.main .wrapper .content ul.alph li:last-child:hover a {
+      section.main .wrapper .content ul.alph li:last-child:hover a, section.main .wrapper .content ul.alph li:last-child.active a {
         border-right: 1px solid #000; }
-      section.main .wrapper .content ul.alph li:hover a {
+      section.main .wrapper .content ul.alph li:hover a, section.main .wrapper .content ul.alph li.active a {
         border: 1px solid #000;
         border-right: none;
         color: #000;
