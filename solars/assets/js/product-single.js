@@ -4,6 +4,9 @@ $(document).ready(() => {
     let plus = document.querySelector('#product-single .btn-group .input-group .plus');
     let minus = document.querySelector('#product-single .btn-group .input-group .minus');
     let numInput = document.querySelector('#product-single .btn-group .input-group input');
+    let addCart = document.querySelector('#product-single .product-description a.btn');
+
+    addCart.onclick = addedCart;
 
     numInput.onkeypress = keyPressNum;
     numInput.onkeydown = inputNum;
@@ -13,6 +16,12 @@ $(document).ready(() => {
     nav.forEach((el, i) => {
         el.onclick = () => toggleSlide(i);
     });
+
+    function addedCart(e){
+        e.preventDefault();
+        $(this).parent().css('display', 'none');
+        $(this).parent().siblings('.blue').css('display', 'flex');
+    }
 
     function toggleSlide(index){
         if($(sliderImg[index]).css('display') == 'none'){

@@ -33,7 +33,7 @@ $(document).ready(() => {
         fade: true,
         dots: true,
         autoplay: true,
-        autoplaySpeed: 5000
+        autoplaySpeed: 8000
     });
     //Конец настроек слайдера на первом экране
 
