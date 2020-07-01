@@ -5,6 +5,11 @@ $(document).ready(()=>{
         () => $('header .lang ul').stop().slideUp(200)
     );
 
+    $('header .numbers').hover(
+        () => $('header .numbers ul').stop().slideDown(200),
+        () => $('header .numbers ul').stop().slideUp(200)
+    );
+
     $('header li.has-child').hover(function(){
         $(this).find('ul').stop().slideDown(200);
     },
@@ -89,7 +94,8 @@ $(document).ready(()=>{
             this.value = this.value.slice(1);
     }
 
-    function toggleModal(){
+    function toggleModal(e){
+        e.preventDefault();
         $('header .cart .modal').fadeToggle();
         $('header .cart .cart-icon').toggleClass('active');
     }
