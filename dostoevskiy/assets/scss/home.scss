@@ -91,6 +91,7 @@ section.slider{
                     height: 6px;
                     background: #C4C4C4;
                     border: none;
+                    transition: background .2s;
                 }
                 &.slick-active{
                     button{

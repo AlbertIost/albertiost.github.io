@@ -4,7 +4,7 @@ $(document).ready(() => {
         nextArrow: $('.arr-next'),
         dots: true,
         autoplay: true,
-        autoplaySpeed: 4000
+        autoplaySpeed: 4000,
     });
 
     $('li.has-inner').on('click', function(e){

@@ -77,7 +77,10 @@ section.slider .wrapper {
         width: 69px;
         height: 6px;
         background: #C4C4C4;
-        border: none; }
+        border: none;
+        -webkit-transition: background .2s;
+        -o-transition: background .2s;
+        transition: background .2s; }
       section.slider .wrapper .slick-dots li.slick-active button {
         background: #3C3C3C; }
       section.slider .wrapper .slick-dots li:last-child {
