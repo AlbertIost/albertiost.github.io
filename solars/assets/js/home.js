@@ -1,39 +1,46 @@
 $(document).ready(() => {
-    //Слайдер в секции product-example
-    let itemWidth = +$('.slider-products .item').css('width').replace(/[^-0-9]/gim,'');
-    let sliderProductsWidth = $('.slider-products .item').length * itemWidth;
-    let sectionPadding = +$('#product-example').css('width').replace(/[^-0-9]/gim,'') - +$('#product-example .container-fix').css('width').slice(0, $('#product-example .container-fix').length - 3);
-    let maxML = +$('#product-example').css('width').replace(/[^-0-9]/gim,'') - sliderProductsWidth - sectionPadding;
-    
-    console.log();
+    if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+        //Слайдер в секции product-example
+        let itemWidth = +$('.slider-products .item').css('width').replace(/[^-0-9]/gim,'');
+        let sliderProductsWidth = $('.slider-products .item').length * itemWidth;
+        let sectionPadding = +$('#product-example').css('width').replace(/[^-0-9]/gim,'') - +$('#product-example .container-fix').css('width').slice(0, $('#product-example .container-fix').length - 3);
+        let maxML = +$('#product-example').css('width').replace(/[^-0-9]/gim,'') - sliderProductsWidth - sectionPadding;
 
-    $('.slider-products').css('display', 'flex');
+        $('.slider-products').css('display', 'flex');
 
-    $('.slider-products').css('width', sliderProductsWidth + 'px');
-    let startPos, ml, nextPos;
-    $('.slider-products').mousedown(function(eventStart){
-        startPos = eventStart.clientX;
-        $(this).on('mousemove', function(event){
-            ml = +$(this).css('margin-left').replace(/[^-0-9]/gim,'');
-            nextPos = event.clientX;
-            let offSet = nextPos - startPos;
-            startPos = nextPos;
-            console.log(`maxML: ${maxML}, ml: ${ml}`);
-            if((maxML <= ml || offSet > 0) && (ml <= 0 || offSet < 0 ))
-                $(this).css('margin-left', `${ml + offSet}px`);
+        $('.slider-products').css('width', sliderProductsWidth + 'px');
+        let startPos, ml, nextPos;
+        $('.slider-products').mousedown(function(eventStart){
+            startPos = eventStart.clientX;
+            $(this).on('mousemove', function(event){
+                ml = +$(this).css('margin-left').replace(/[^-0-9]/gim,'');
+                nextPos = event.clientX;
+                let offSet = nextPos - startPos;
+                startPos = nextPos;
+                console.log(`maxML: ${maxML}, ml: ${ml}`);
+                if((maxML <= ml || offSet > 0) && (ml <= 0 || offSet < 0 ))
+                    $(this).css('margin-left', `${ml + offSet}px`);
+            });
         });
-    });
-    $('.slider-products').mouseup(function(){
-        $(this).off('mousemove');
-    });
+        $('.slider-products').mouseup(function(){
+            $(this).off('mousemove');
+        });
+    }else{
+        $('.slider-products').addClass('mobile');
+    }
 
     //Настройки слайдера на первом экране
     $('.slider-main').slick({
         arrows: false,
         fade: true,
         dots: true,
-        autoplay: true,
-        autoplaySpeed: 8000
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: "unslick",
+                dots: false
+            }
+        ]
     });
     //Конец настроек слайдера на первом экране
 
@@ -91,21 +98,5 @@ $(document).ready(() => {
             scrollTop: $("section#first").height()}, 
             500
         );
-    });
-
-    //Настройки блока с проектами
-    $('#our-projects .item').hover(function(){
-        $(this).find('.characteristics').stop().slideDown(300);
-    },
-    function(){
-        $(this).find('.characteristics').stop().slideUp(300);
-    });
-
-    //Настройка блока с блогом
-    $('#blog .item').hover(function(){
-        $(this).find('.characteristics').stop().slideDown(300);
-    },
-    function(){
-        $(this).find('.characteristics').stop().slideUp(300);
     });
 });

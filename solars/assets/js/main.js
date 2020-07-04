@@ -1,19 +1,17 @@
 $(document).ready(()=>{
     //Настройки шапки
-    $('header .lang').hover(
-        () => $('header .lang ul').stop().slideDown(200),
-        () => $('header .lang ul').stop().slideUp(200)
-    );
+    $('header .lang').on('mouseover', () => $('header .lang ul').stop().slideDown(200));
+    $('header .lang').on('mouseout', () => $('header .lang ul').stop().slideUp(200));
 
     $('header .numbers').hover(
         () => $('header .numbers ul').stop().slideDown(200),
         () => $('header .numbers ul').stop().slideUp(200)
     );
 
-    $('header li.has-child').hover(function(){
+    $('header li.has-child').on('mouseover', function(){
         $(this).find('ul').stop().slideDown(200);
-    },
-    function(){
+    });
+    $('header li.has-child').on('mouseout', function(){
         $(this).find('ul').stop().slideUp(200);
     });
 
@@ -39,10 +37,6 @@ $(document).ready(()=>{
     let item = document.querySelectorAll('header .cart .item');
     let cartModalClose = document.querySelector('header .cart .close');
     let cart = document.querySelector('header .cart .cart-icon');
-
-    cart.onclick = toggleModal;
-
-    cartModalClose.onclick = toggleModal;
 
     numInput.forEach((element) => {
         element.onkeypress = keyPressNum;
@@ -117,4 +111,76 @@ $(document).ready(()=>{
         let itemBg = element.dataset.bg;
         element.style.backgroundImage = `url('${itemBg}')`;
     });
+
+    //Настройки блока с проектами
+    $('#our-projects .item').on('mouseover', function(){
+        $(this).find('.characteristics').stop().slideDown(300);
+    });
+    $('#our-projects .item').on('mouseout', function(){
+        $(this).find('.characteristics').stop().slideUp(300);
+    });
+    $('#projects .item').on('mouseover', function(){
+        $(this).find('.characteristics').stop().slideDown(300);
+    });
+    $('#projects .item').on('mouseout', function(){
+        $(this).find('.characteristics').stop().slideUp(300);
+    });
+
+    //Настройка блока с блогом
+    $('#blog .item').on('mouseover', function(){
+        $(this).find('.characteristics').stop().slideDown(300);
+    });
+    $('#blog .item').on('mouseout', function(){
+        $(this).find('.characteristics').stop().slideUp(300);
+    });
+
+    $('.thank-you .cross').on('click', () => $('.thank-you').fadeOut());
+
+    //media queries
+    $(window).resize(() => {
+        if( $(window).width() <= 992 )
+            mediaQueriesMobile();
+        else
+            mediaQueriesDesktop();
+    });
+    if( $(window).width() <= 992 )
+        mediaQueriesMobile();
+    else
+        mediaQueriesDesktop();
+
+    function mediaQueriesMobile(){
+        $('header').append($('header .center'));
+
+        $('header li.has-child').off('mouseover');
+        $('header li.has-child').off('mouseout');
+
+        $('header .lang').off('mouseover');
+        $('header .lang').off('mouseout');
+
+        $('#blog .item').off('mouseover');
+        $('#blog .item').off('mouseout');
+
+        $('#our-projects .item').off('mouseover');
+        $('#our-projects .item').off('mouseout');
+
+        $('#projects .item').off('mouseover');
+        $('#projects .item').off('mouseout');
+
+        $('header li.has-child > a').on('click', function(e){
+            e.preventDefault();
+            $(this).siblings('ul').slideToggle(300);
+        });;
+
+        $('header .burger-menu').on('click', function(){
+            $('header .center').slideToggle();
+            $(this).toggleClass('opened');
+        });
+
+
+    }
+    function mediaQueriesDesktop(){
+        $('header .left').after($('header .center'));
+        cart.onclick = toggleModal;
+        cartModalClose.onclick = toggleModal;
+    }
 });

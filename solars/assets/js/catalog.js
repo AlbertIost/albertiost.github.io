@@ -22,8 +22,9 @@ $(document).ready(() => {
     });
 
     let showItem = document.querySelectorAll('.sidebar .setting[data-maxitem]');
-
-    showAll(showItem);
+    if( $(window).width() > 992 ){
+        showAll(showItem);
+    }
 
     function showAll(showItem){
         showItem.forEach((element, index) => {
@@ -142,5 +143,20 @@ $(document).ready(() => {
         slidesToScroll: 1,
         prevArrow: '<div class="prev"><svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.8269 11.6542L1.07644 0.154077C0.837189 -0.0441597 0.441665 -0.0529723 0.192632 0.138467C-0.0564011 0.329391 -0.0649557 0.6458 0.17312 0.84549L13.5098 11.9999L0.173061 23.1543C-0.0650148 23.354 -0.0564593 23.6704 0.192574 23.8613C0.313458 23.9541 0.469675 24 0.62472 24C0.78955 24 0.953092 23.9483 1.07638 23.8457L14.8269 12.3456C15.0577 12.1522 15.0577 11.8475 14.8269 11.6542Z" fill="#424242" fill-opacity="0.7"/></svg></div>',
         nextArrow: '<div class="next"><svg width="15" height="24" viewBox="0 0 15 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.8269 11.6542L1.07644 0.154077C0.837189 -0.0441597 0.441665 -0.0529723 0.192632 0.138467C-0.0564011 0.329391 -0.0649557 0.6458 0.17312 0.84549L13.5098 11.9999L0.173061 23.1543C-0.0650148 23.354 -0.0564593 23.6704 0.192574 23.8613C0.313458 23.9541 0.469675 24 0.62472 24C0.78955 24 0.953092 23.9483 1.07638 23.8457L14.8269 12.3456C15.0577 12.1522 15.0577 11.8475 14.8269 11.6542Z" fill="#424242" fill-opacity="0.7"/></svg></div>', 
+        responsive: [
+            {
+                breakpoint: 520,
+                settings: {
+                    slidesToShow: 3
+                }
+            }
+        ]
+    });
+
+    $('#oborudovanie-catalog .sidebar-header .close').click(function(){
+        $('#oborudovanie-catalog .sidebar').slideUp();
+    });
+    $('#oborudovanie-catalog .catalog .filters').click(function(){
+        $('#oborudovanie-catalog .sidebar').slideDown();
     });
 });
