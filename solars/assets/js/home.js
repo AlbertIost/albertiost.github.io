@@ -57,7 +57,7 @@ $(document).ready(() => {
     $('.sliderNav').slick({
         asNavFor: '.slider-about',
         arrows: false,
-        slidesToShow: 3,
+        slidesToShow: 4,
         focusOnSelect: true
     });
 
@@ -65,16 +65,21 @@ $(document).ready(() => {
         if (currentSlide == 0) {
             $('.sliderNav .dot').removeClass('active');
             $('.sliderNav .dot').eq(0).addClass('active');
-            $('.slider-wrapper .progress .line-black').css('width', '33.3%');
+            $('.slider-wrapper .progress .line-black').css('width', '25%');
             $('.slider-wrapper .progress .end').removeClass('active');
         }else if(currentSlide == 1) {
             $('.sliderNav .dot').removeClass('active');
             $('.sliderNav .dot').eq(1).addClass('active');
-            $('.slider-wrapper .progress .line-black').css('width', '66.7%');
+            $('.slider-wrapper .progress .line-black').css('width', '50%');
             $('.slider-wrapper .progress .end').removeClass('active');
         }else if(currentSlide == 2) {
             $('.sliderNav .dot').removeClass('active');
             $('.sliderNav .dot').eq(2).addClass('active');
+            $('.slider-wrapper .progress .line-black').css('width', '75%');
+            $('.slider-wrapper .progress .end').addClass('active');
+        }else if(currentSlide == 3) {
+            $('.sliderNav .dot').removeClass('active');
+            $('.sliderNav .dot').eq(3).addClass('active');
             $('.slider-wrapper .progress .line-black').css('width', '100%');
             $('.slider-wrapper .progress .end').addClass('active');
         }
