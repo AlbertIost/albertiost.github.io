@@ -171,11 +171,44 @@ $(document).ready(()=>{
             $(this).siblings('ul').slideToggle(300);
         });;
 
-        $('header .burger-menu').on('click', function(){
-            $('header .center').slideToggle();
-            $(this).toggleClass('opened');
-        });
+        if(!checkEvent($('.burger-menu'), 'click')){
+            $('header .burger-menu').on('click', function(){
+                $('header .center').slideToggle();
+                $(this).toggleClass('opened');
+            });
+        }
 
+        function eventsList(element) {
+            // В разных версиях jQuery список событий получается по-разному
+            var events = element.data('events');
+            if (events !== undefined) return events;
+    
+            events = $.data(element, 'events');
+            if (events !== undefined) return events;
+    
+            events = $._data(element, 'events');
+            if (events !== undefined) return events;
+    
+            events = $._data(element[0], 'events');
+            if (events !== undefined) return events;
+    
+            return false;
+        }
+        function checkEvent(element, eventname) {
+            var events,
+                ret = false;
+    
+            events = eventsList(element);
+            if (events) {
+                $.each(events, function(evName, e) {
+                    if (evName == eventname) {
+                        ret = true;
+                    }
+                });
+            }
+    
+            return ret;
+        }
 
     }
     function mediaQueriesDesktop(){

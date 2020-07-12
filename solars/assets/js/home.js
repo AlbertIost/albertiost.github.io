@@ -33,14 +33,18 @@ $(document).ready(() => {
     $('.slider-main').slick({
         arrows: false,
         fade: true,
-        dots: true,
-        responsive: [
-            {
-                breakpoint: 992,
-                settings: "unslick",
-                dots: false
-            }
-        ]
+        dots: true
+    });
+    widthProgressBar(1);
+    function widthProgressBar(numberSlide){
+        let progressBar = document.querySelector('#first .progress-bar .line');
+        let countSlides = document.querySelectorAll('#first .slider-main .slide').length;
+
+        $(progressBar).css('width', `${(numberSlide/countSlides)*100}%`);
+    }
+
+    $('.slider-main').on('afterChange', function(event, slick, currentSlide){
+        widthProgressBar(currentSlide + 1);
     });
     //Конец настроек слайдера на первом экране
 
