@@ -33,7 +33,9 @@ $(document).ready(() => {
     $('.slider-main').slick({
         arrows: false,
         fade: true,
-        dots: true
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 8000
     });
     widthProgressBar(1);
     function widthProgressBar(numberSlide){

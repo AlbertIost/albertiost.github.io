@@ -776,7 +776,7 @@ section#first {
   section#first .slider-main .slide-2 {
     background-image: url("../img/bg2.png"); }
   section#first .slider-main .slide-3 {
-    background-image: url("../img/bg1.png"); }
+    background-image: url("../img/bg3.png"); }
   section#first .slider-main .slide-4 {
     background-image: url("../img/bg4.png"); }
   section#first .slider-main ul.slick-dots {
@@ -798,7 +798,8 @@ section#first {
         border: none;
         color: rgba(239, 239, 239, 0.4);
         padding: 5px;
-        outline: none; }
+        outline: none;
+        cursor: pointer; }
         section#first .slider-main ul.slick-dots li button:before {
           content: '0'; }
       section#first .slider-main ul.slick-dots li:last-child {
@@ -1487,16 +1488,6 @@ section#brands {
       width: 1px;
       height: 51px;
       background: rgba(225, 225, 225, 0.3); }
-    section#brands .container-fix .brand:hover img {
-      -webkit-filter: grayscale(0);
-              filter: grayscale(0); }
-    section#brands .container-fix .brand img {
-      -webkit-filter: grayscale(100%);
-              filter: grayscale(100%);
-      -webkit-transition: -webkit-filter .3s;
-      transition: -webkit-filter .3s;
-      transition: filter .3s;
-      transition: filter .3s, -webkit-filter .3s; }
 
 section#product-example {
   padding-top: 200px;
