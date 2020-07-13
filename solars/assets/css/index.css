@@ -89,6 +89,9 @@
 body, html {
   overflow-x: hidden; }
 
+input {
+  outline: none; }
+
 input[type="submit"] {
   cursor: pointer; }
 
@@ -216,7 +219,25 @@ header .cart .modal {
         padding-bottom: 21px; }
         header .cart .modal .modal-wrapper .products .list .item .delete {
           position: absolute;
-          right: 0; }
+          right: 0;
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          background: transparent;
+          -webkit-transition: background .3s;
+          transition: background .3s;
+          cursor: pointer; }
+          header .cart .modal .modal-wrapper .products .list .item .delete:hover {
+            background: #e1e1e1; }
         header .cart .modal .modal-wrapper .products .list .item .thumb {
           padding: 10px;
           width: 103px;
@@ -994,81 +1015,57 @@ section#about {
         section#about .container-fix .half .right .for-who .transformed .right .bg.active ~ a.link {
           right: 60px; }
 
-section#why-solars .container-fix > .heading {
-  padding-top: 70px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  section#why-solars .container-fix > .heading .heading-wrapper p.top-text {
-    margin-bottom: 4px;
-    padding: 0; }
-  section#why-solars .container-fix > .heading .heading-wrapper h2 {
-    margin-bottom: 10px;
-    text-align: left; }
-  section#why-solars .container-fix > .heading .heading-wrapper p.descr {
-    font-size: 16px;
-    color: #363636;
-    font-family: 'Lato', sans-serif;
-    font-weight: 400; }
-
-section#why-solars .container-fix .advantage {
-  margin-top: 66px;
-  display: grid;
-  grid-template-columns: 380px 380px;
-  grid-template-rows: 235px 235px;
-  grid-row-gap: 100px;
-  grid-column-gap: 72px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-  section#why-solars .container-fix .advantage .advantage-item {
-    padding: 30px 17px;
-    font-family: 'Lato', sans-serif;
-    color: #363636;
-    -webkit-transition: .3s ease;
-    transition: .3s ease;
-    position: relative; }
-    section#why-solars .container-fix .advantage .advantage-item h5 {
-      text-align: center;
-      font-size: 20px;
-      font-weight: bold;
-      margin-bottom: 10px; }
-    section#why-solars .container-fix .advantage .advantage-item p {
+section#why-solars .container-fix {
+  padding-bottom: 70px; }
+  section#why-solars .container-fix > .heading {
+    padding-top: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    section#why-solars .container-fix > .heading .heading-wrapper p.top-text {
+      margin-bottom: 4px;
+      padding: 0; }
+    section#why-solars .container-fix > .heading .heading-wrapper h2 {
+      margin-bottom: 10px;
+      text-align: left; }
+    section#why-solars .container-fix > .heading .heading-wrapper p.descr {
       font-size: 16px;
-      font-weight: 400;
-      line-height: 20px; }
-      section#why-solars .container-fix .advantage .advantage-item p span {
-        font-weight: 400; }
-    section#why-solars .container-fix .advantage .advantage-item .number-wrapper {
-      position: absolute;
-      border-radius: 50%;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      bottom: 0;
-      left: 50%;
-      -webkit-transform: translate(-50%, 60%) scale(0);
-              transform: translate(-50%, 60%) scale(0);
-      background: rgba(66, 66, 66, 0.06);
-      width: 62px;
-      height: 62px;
-      -webkit-transition: -webkit-transform .2s ease;
-      transition: -webkit-transform .2s ease;
-      transition: transform .2s ease;
-      transition: transform .2s ease, -webkit-transform .2s ease; }
-      section#why-solars .container-fix .advantage .advantage-item .number-wrapper .number {
-        width: 47px;
-        height: 47px;
-        background: rgba(11, 113, 185, 0.85);
+      color: #363636;
+      font-family: 'Lato', sans-serif;
+      font-weight: 400; }
+  section#why-solars .container-fix .advantage {
+    margin-top: 66px;
+    display: grid;
+    grid-template-columns: 380px 380px;
+    grid-template-rows: 235px 235px;
+    grid-row-gap: 100px;
+    grid-column-gap: 72px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    section#why-solars .container-fix .advantage .advantage-item {
+      padding: 30px 17px;
+      font-family: 'Lato', sans-serif;
+      color: #363636;
+      -webkit-transition: .3s ease;
+      transition: .3s ease;
+      position: relative; }
+      section#why-solars .container-fix .advantage .advantage-item h5 {
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px; }
+      section#why-solars .container-fix .advantage .advantage-item p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px; }
+        section#why-solars .container-fix .advantage .advantage-item p span {
+          font-weight: 400; }
+      section#why-solars .container-fix .advantage .advantage-item .number-wrapper {
+        position: absolute;
         border-radius: 50%;
         display: -webkit-box;
         display: -ms-flexbox;
@@ -1079,14 +1076,39 @@ section#why-solars .container-fix .advantage {
         -webkit-box-align: center;
             -ms-flex-align: center;
                 align-items: center;
-        color: #E1E1E1;
-        font-size: 16px; }
-    section#why-solars .container-fix .advantage .advantage-item:hover {
-      -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
-              box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1); }
-      section#why-solars .container-fix .advantage .advantage-item:hover .number-wrapper {
-        -webkit-transform: translate(-50%, 60%) scale(1);
-                transform: translate(-50%, 60%) scale(1); }
+        bottom: 0;
+        left: 50%;
+        -webkit-transform: translate(-50%, 60%) scale(0);
+                transform: translate(-50%, 60%) scale(0);
+        background: rgba(66, 66, 66, 0.06);
+        width: 62px;
+        height: 62px;
+        -webkit-transition: -webkit-transform .2s ease;
+        transition: -webkit-transform .2s ease;
+        transition: transform .2s ease;
+        transition: transform .2s ease, -webkit-transform .2s ease; }
+        section#why-solars .container-fix .advantage .advantage-item .number-wrapper .number {
+          width: 47px;
+          height: 47px;
+          background: rgba(11, 113, 185, 0.85);
+          border-radius: 50%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          color: #E1E1E1;
+          font-size: 16px; }
+      section#why-solars .container-fix .advantage .advantage-item:hover {
+        -webkit-box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+                box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1); }
+        section#why-solars .container-fix .advantage .advantage-item:hover .number-wrapper {
+          -webkit-transform: translate(-50%, 60%) scale(1);
+                  transform: translate(-50%, 60%) scale(1); }
 
 section#saving {
   background: #fafafa;
@@ -4775,17 +4797,15 @@ footer {
       display: -ms-flexbox;
       display: flex;
       padding-top: 25px;
-      -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: flex-start;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
       footer .container-fix .left .partners img {
-        margin-right: 27px; }
-      footer .container-fix .left .partners img:first-child {
-        height: 23px; }
-      footer .container-fix .left .partners img:last-child {
-        margin-right: 0; }
+        margin-right: 20px; }
+        footer .container-fix .left .partners img:last-child {
+          margin-right: 0; }
     footer .container-fix .center p.heading {
       padding-bottom: 37px;
       font-size: 16px;
@@ -5166,7 +5186,14 @@ footer {
           -ms-flex-align: center;
               align-items: center; }
       section#brands .container-fix .brand img {
-        max-height: 100%; }
+        max-height: 100%;
+        -webkit-filter: saturate(50%);
+                filter: saturate(50%);
+        -webkit-transition: .3s;
+        transition: .3s; }
+        section#brands .container-fix .brand img:hover {
+          -webkit-filter: saturate(100%);
+                  filter: saturate(100%); }
   section#product-example {
     padding: 100px 0; }
     section#product-example .container-fix .slider-products {
@@ -5315,9 +5342,18 @@ footer {
       width: 300px;
       font-size: 12px; }
     footer .container-fix .left .partners {
-      padding-top: 20px; }
+      width: 300px;
+      padding-top: 20px;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; }
       footer .container-fix .left .partners img {
-        margin-right: 17px; }
+        margin-right: 10px; }
+        footer .container-fix .left .partners img:nth-child(1) {
+          width: 76px; }
+        footer .container-fix .left .partners img:nth-child(2) {
+          width: 126px; }
+        footer .container-fix .left .partners img:nth-child(3) {
+          width: 78px; }
     footer .container-fix .center p.heading {
       padding-bottom: 39px;
       font-size: 14px; }
@@ -6920,19 +6956,15 @@ footer {
       padding-top: 10px;
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex;
-      -webkit-box-align: start;
-          -ms-flex-align: start;
-              align-items: flex-start; }
+      display: flex; }
       footer .container-fix .left .partners img {
         margin-right: 5px; }
         footer .container-fix .left .partners img:nth-child(1) {
-          width: 36px;
-          height: auto; }
+          width: 36px; }
         footer .container-fix .left .partners img:nth-child(2) {
-          width: 44px; }
+          width: 59px; }
         footer .container-fix .left .partners img:nth-child(3) {
-          width: 51px; }
+          width: 37px; }
     footer .container-fix .center p.heading {
       font-size: 12px;
       line-height: 112.9%;
@@ -8175,70 +8207,72 @@ footer {
             right: 10px; }
           section#about .container-fix .half .right .for-who .transformed .right .bg.active ~ a.link {
             right: 10px; }
-  section#why-solars .container-fix > .heading {
-    padding-top: 30px;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start; }
-    section#why-solars .container-fix > .heading .heading-wrapper h2 {
-      font-size: 14px;
-      line-height: 17px; }
-    section#why-solars .container-fix > .heading .heading-wrapper p.descr {
-      display: none; }
-  section#why-solars .container-fix .advantage {
-    margin-top: 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    section#why-solars .container-fix .advantage .advantage-item {
-      padding: 20px 0;
-      width: 220px;
-      padding-left: 0;
-      padding-right: 0; }
-      section#why-solars .container-fix .advantage .advantage-item:hover {
-        -webkit-box-shadow: none;
-                box-shadow: none; }
-      section#why-solars .container-fix .advantage .advantage-item:nth-child(1) h5:after {
-        content: '01'; }
-      section#why-solars .container-fix .advantage .advantage-item:nth-child(2) h5:after {
-        content: '02'; }
-      section#why-solars .container-fix .advantage .advantage-item:nth-child(3) h5:after {
-        content: '03'; }
-      section#why-solars .container-fix .advantage .advantage-item:nth-child(4) h5:after {
-        content: '04'; }
-      section#why-solars .container-fix .advantage .advantage-item h5 {
+  section#why-solars .container-fix {
+    padding-bottom: 30px; }
+    section#why-solars .container-fix > .heading {
+      padding-top: 30px;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start; }
+      section#why-solars .container-fix > .heading .heading-wrapper h2 {
         font-size: 14px;
-        line-height: 17px;
-        text-align: left;
-        margin-bottom: 6px;
-        position: relative;
-        display: inline-block; }
-        section#why-solars .container-fix .advantage .advantage-item h5:after {
-          position: absolute;
-          font-weight: 900;
-          font-size: 60px;
-          line-height: 72px;
-          letter-spacing: 0.01em;
-          color: rgba(11, 113, 185, 0.07);
-          bottom: -25px;
-          right: -50px; }
-      section#why-solars .container-fix .advantage .advantage-item p {
-        font-size: 9px;
-        line-height: 127%; }
-      section#why-solars .container-fix .advantage .advantage-item .number-wrapper {
+        line-height: 17px; }
+      section#why-solars .container-fix > .heading .heading-wrapper p.descr {
         display: none; }
+    section#why-solars .container-fix .advantage {
+      margin-top: 20px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: flex-start;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      section#why-solars .container-fix .advantage .advantage-item {
+        padding: 20px 0;
+        width: 220px;
+        padding-left: 0;
+        padding-right: 0; }
+        section#why-solars .container-fix .advantage .advantage-item:hover {
+          -webkit-box-shadow: none;
+                  box-shadow: none; }
+        section#why-solars .container-fix .advantage .advantage-item:nth-child(1) h5:after {
+          content: '01'; }
+        section#why-solars .container-fix .advantage .advantage-item:nth-child(2) h5:after {
+          content: '02'; }
+        section#why-solars .container-fix .advantage .advantage-item:nth-child(3) h5:after {
+          content: '03'; }
+        section#why-solars .container-fix .advantage .advantage-item:nth-child(4) h5:after {
+          content: '04'; }
+        section#why-solars .container-fix .advantage .advantage-item h5 {
+          font-size: 14px;
+          line-height: 17px;
+          text-align: left;
+          margin-bottom: 6px;
+          position: relative;
+          display: inline-block; }
+          section#why-solars .container-fix .advantage .advantage-item h5:after {
+            position: absolute;
+            font-weight: 900;
+            font-size: 60px;
+            line-height: 72px;
+            letter-spacing: 0.01em;
+            color: rgba(11, 113, 185, 0.07);
+            bottom: -25px;
+            right: -50px; }
+        section#why-solars .container-fix .advantage .advantage-item p {
+          font-size: 9px;
+          line-height: 127%; }
+        section#why-solars .container-fix .advantage .advantage-item .number-wrapper {
+          display: none; }
   section#saving .container-fix {
     padding-top: 10px;
     padding-bottom: 20px; }
