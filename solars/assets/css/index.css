@@ -1510,6 +1510,15 @@ section#brands {
       width: 1px;
       height: 51px;
       background: rgba(225, 225, 225, 0.3); }
+    section#brands .container-fix img {
+      max-height: 100%;
+      -webkit-filter: saturate(50%);
+              filter: saturate(50%);
+      -webkit-transition: .3s;
+      transition: .3s; }
+      section#brands .container-fix img:hover {
+        -webkit-filter: saturate(100%);
+                filter: saturate(100%); }
 
 section#product-example {
   padding-top: 200px;
@@ -5185,15 +5194,6 @@ footer {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-      section#brands .container-fix .brand img {
-        max-height: 100%;
-        -webkit-filter: saturate(50%);
-                filter: saturate(50%);
-        -webkit-transition: .3s;
-        transition: .3s; }
-        section#brands .container-fix .brand img:hover {
-          -webkit-filter: saturate(100%);
-                  filter: saturate(100%); }
   section#product-example {
     padding: 100px 0; }
     section#product-example .container-fix .slider-products {
