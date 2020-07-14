@@ -4812,9 +4812,16 @@ footer {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
       footer .container-fix .left .partners img {
-        margin-right: 20px; }
+        -webkit-filter: saturate(50%);
+                filter: saturate(50%);
+        margin-right: 20px;
+        -webkit-transition: .3s;
+        transition: .3s; }
         footer .container-fix .left .partners img:last-child {
           margin-right: 0; }
+        footer .container-fix .left .partners img:hover {
+          -webkit-filter: saturate(100%);
+                  filter: saturate(100%); }
     footer .container-fix .center p.heading {
       padding-bottom: 37px;
       font-size: 16px;
