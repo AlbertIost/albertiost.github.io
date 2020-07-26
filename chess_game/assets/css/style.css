@@ -1,0 +1,41 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+body {
+  height: 100vh; }
+
+#main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 320px;
+  height: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  #main .cell {
+    width: 40px;
+    height: 40px;
+    background-size: 40px 40px; }
+    #main .cell.white {
+      background-color: #d1d1d1; }
+    #main .cell.black {
+      background-color: #964b00; }
+      #main .cell.black[data-taken="1"] {
+        cursor: pointer; }
+      #main .cell.black.bf {
+        background-image: url("../img/figures/black.png"); }
+      #main .cell.black.wf {
+        background-image: url("../img/figures/white.png"); }
+      #main .cell.black.focus {
+        background-color: blue; }
+      #main .cell.black[data-moved="1"] {
+        background-color: lightblue; }

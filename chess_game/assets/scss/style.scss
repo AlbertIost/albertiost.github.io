@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+}
+$widthCell: 40px;
+$heightCell: 40px;
+#main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: $widthCell * 8;
+    height: $heightCell * 8;
+    display: flex;
+    flex-wrap: wrap;
+    .cell{
+        width: $widthCell;
+        height: $heightCell;
+        background-size: 40px 40px;
+        
+        &.white{
+            background-color: rgb(209, 209, 209);
+        }
+        &.black{
+            background-color: #964b00;
+            &[data-taken="1"]{
+                cursor: pointer;
+            }
+            &.bf{
+                background-image: url('../img/figures/black.png');
+            }
+            &.wf{
+                background-image: url('../img/figures/white.png');
+            }
+            &.focus{
+                background-color: blue;
+            }
+            &[data-moved="1"]{
+                background-color: lightblue;
+            }
+        }
+    }
+}
