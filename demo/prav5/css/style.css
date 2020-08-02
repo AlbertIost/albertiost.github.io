@@ -513,6 +513,10 @@ header{
 	padding-bottom: 19px;
 	padding-right: 118px;
 }
+.block-buy .row .text-right a.btn{
+	min-width: 0;
+	width: 100%;
+}
 .block-buy .i-arrow-down{
 	bottom: auto;
 	right: 49px;
