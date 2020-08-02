@@ -1,0 +1,346 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<!-- Google Tag Manager -->
+	<script>
+		(function (w, d, s, l, i) {
+			w[l] = w[l] || [];
+			w[l].push({
+				'gtm.start': new Date().getTime(),
+				event: 'gtm.js'
+			});
+			var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s),
+				dl = l != 'dataLayer' ? '&l=' + l : '';
+			j.async = true;
+			j.src =
+				'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+			f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-P6GZKPP');
+	</script>
+	<!-- End Google Tag Manager -->
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta name="yandex-verification" content="cdedbd8133722a5d" />
+	<meta name="viewport" content="width=device-width">
+	<title>Богданов и партнеры</title>
+	<meta name="description"
+		content="Проектный университет Богданов и партнеры. Электронные курсы по управлению проектами.">
+
+
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
+
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
+	<link rel="stylesheet" href="css/slick.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/css.css">
+	<link rel="icon" type="image/png" href="img/icon.png">
+	<script id="mcjs">
+		! function (c, h, i, m, p) {
+			m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p)
+		}(document, "script",
+			"https://chimpstatic.com/mcjs-connected/js/users/aa112dbf132f7e8598b939eb0/f9c76cf6d38f23dd38d930a54.js");
+	</script>
+
+</head>
+
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6GZKPP" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<div class="row-offcanvas row-offcanvas-right">
+		<div id="wrap">
+
+			<!-- header -->
+			<header>
+				<div class="container">
+					<div class="logo"><a href="/cabinet/"><img src="/img/logo.png" alt=""></a></div>
+					<div class="header-right">
+
+						<div class="user-info dropdown">
+							<a>Вадим Богданов</a>
+						</div>
+
+					</div>
+				</div>
+			</header>
+			<!-- /header -->
+
+			<!-- content -->
+			<script>
+				function validateForm() {
+					//alert("here");
+
+					var sums = document.getElementsByName('price');
+					for (var i = 0; i < sums.length; i++) {
+						if (sums[i].checked) {
+							var selectedradio = sums[i];
+						}
+					}
+
+					//alert(selectedradio.value);
+
+					var orderid = document.getElementById('orderid');
+					orderid.value = "PMU-631-" + selectedradio.dataset.accesstype + "-" + selectedradio.dataset.duration;
+					//alert(orderid.value);
+
+					var service = document.getElementById('service_name');
+					service.value = "Оплата доступа к курсу Проектный Лекторий: " + selectedradio.dataset.packagename;
+					//alert(service.value);
+
+					var sum = document.getElementById('sum');
+					sum.value = selectedradio.value;
+					//alert (sum.value);
+
+					return true;
+				}
+			</script>
+
+			<div class="content">
+				<div class="container">
+					<!--form method="POST" action="#" onsubmit="return validateForm()"-->
+
+					<form method="POST" action="http://pm-train.server.paykeeper.ru/create/"
+						onsubmit="return validateForm()">
+
+
+						<div class="block-title title-margin">Проектный Лекторий</div>
+
+						<div class="block block-buy block-red">
+							<div class="row">
+								<div class="col-xs-10 col-lg-11">
+									<div class="price text-orange">СКИДКА НА ПРОДЛЕНИЕ ВО ВРЕМЯ ДОСТУПА К КУРСУ!</div>
+									<div class="block-text">У Вас есть доступ к курсу до 15.05.2021 и Вы можете продлить
+										его на особых условиях. Сроки доступа суммируются.</div>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="block block-buy block-red">
+
+							<div class="row">
+								<div class="col-xs-10 col-lg-11">
+									<div class="block-title">Быстрый доступ</div>
+									<div class="block-text">Доступ ко всем видео-записям архива на одну неделю.
+										Подойдет, если Вы хотите посмотреть несколько конкретных видео. Загрузка файлов
+										презентаций не включена и оплачивается при необходимости.</div>
+								</div>
+								<div class="col-xs-2 col-lg-1 text-right">
+
+
+									<div class="price text-orange">888<span>o</span></div>
+									<input type="radio" name="price" checked value="888" data-duration="12"
+										data-accesstype="1111000100#" data-packagename="Быстрый доступ">
+
+								</div>
+							</div>
+						</div>
+
+
+						<div class="block block-buy block-red">
+
+							<div class="row">
+								<div class="col-xs-10 col-lg-11">
+									<div class="block-title">Знакомство</div>
+									<div class="block-text">Полный доступ к архиву выступлений в течение трех месяцев.
+										Вам будут доступны и те видео, которые уже есть в архиве, и те, которые будут
+										размещаться в нем. Файлы презентаций и все дополнительные материалы, размещенные
+										вместе с видео, можно будет загрузить.
+										Вы получите доступ к программе живых лекций&nbsp;и сможете в них участвовать.
+										Сертификат не входит в стоимость.</div>
+								</div>
+								<div class="col-xs-2 col-lg-1 text-right">
+
+
+									<div class="price text-orange"><s>2880</s> 2488<span>o</span></div>
+									<input type="radio" name="price" value="2488" data-duration="33"
+										data-accesstype="1111180100#" data-packagename="Знакомство (со скидкой)">
+
+								</div>
+							</div>
+						</div>
+
+
+						<div class="block block-buy block-red block-action">
+
+							<div class="row">
+								<div class="col-xs-10 col-lg-11">
+									<div class="block-title">Полный доступ</div>
+									<div class="block-text">Лучший вариант для профессионала, который связал свою
+										карьеру с проектным управлением. Вы получите сертификат в случае просмотра
+										достаточного количества материалов и доступ ко всем материалам без ограничений
+										на год по наиболее выгодной цене.</div>
+								</div>
+								<div class="col-xs-2 col-lg-1 text-right">
+
+
+									<div class="price text-orange"><s>5880</s> 5088<span>o</span></div>
+									<input type="radio" name="price" value="5088" data-duration="123"
+										data-accesstype="1111110100#213245"
+										data-packagename="Полный доступ (со скидкой)" checked>
+
+								</div>
+							</div>
+						</div>
+
+
+						<script>
+							function applyPromo() {
+								var promo = document.getElementById("PROMO");
+								//alert (promo.value);
+								if (promo.value) {
+									window.location.href =
+										'/buy-initial-access.asp?CourseID=631&testpay=1&email=vadim@yandex.ru&PromoCode=' + promo.value;
+								} else {
+									alert('Введите промо-код');
+								}
+							}
+						</script>
+
+						<div class="block block-buy">
+
+							<div class="row">
+								<div class="col-xs-9 col-lg-10">
+									<div class="block-text"><input type="text" id="PROMO" name="PROMO"
+											placeholder="Промо-код"></div>
+								</div>
+								<div class="col-xs-3 col-lg-2 text-right">
+									<a href="#" class="btn btn-danger">Проверить</a>
+								</div>
+
+
+							</div>
+						</div>
+
+
+						<div class="summ">
+
+							<div class="price"><output id="rezultatRadio">888</output><span>o</span></div>
+
+							<input type=submit class="btn btn-danger" value="оформить заказ (Вадим Богданов)" />
+						</div>
+
+						<input type='hidden' name='sum' id="sum" />
+						<input type='hidden' name='orderid' id="orderid" value='' />
+
+						<input type='hidden' name='client_email' value='vadim@yandex.ru' />
+
+						<input type='hidden' name='clientid' value='vadim@yandex.ru' />
+						<input type='hidden' name='service_name' id='service_name' value="Курс: НАЗВАНИЕ, Доступ:" />
+
+						<input type='hidden' name='user_result_callback'
+							value="http://pmu.bogdanov-associates.com/afterpayment.asp?CourseID=631&ref=pay&Email=vadim@yandex.ru" />
+
+
+
+					</form>
+				</div>
+			</div>
+			<!-- /content -->
+
+			<!-- footer -->
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-8 col-md-8">
+							<div class="logo hidden-xs-m"><a href="/cabinet/"><img src="/img/logo.png" alt=""></a></div>
+							<ul class="social-list">
+								<li><a href="https://www.facebook.com/Управление-проектами-347717151974512/"
+										class="sprites i-fb" target="_blank"></a></li>
+								<li><a href="http://twitter.com/Vadim__Bogdanov" class="sprites i-tw"
+										target="_blank"></a></li>
+								<li><a href="https://www.flickr.com/photos/153250608@N08/albums" class="sprites i-dots"
+										target="_blank"></a></li>
+								<li><a href="https://www.instagram.com/vadim__bogdanov/" class="sprites i-ins"
+										target="_blank"></a></li>
+							</ul>
+						</div>
+						<div class="col-sm-4 col-md-4">
+							<ul class="contacts-list">
+								<li><a href="mailto:info@bogdanov-associates.com" class="sprites i-email"></a></li>
+								<li><a href="tel:+74952233537"><span class="sprites i-phone"></span><span
+											class="hidden-xs hidden-sm">+7(495)223-35-37</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- /footer -->
+
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/common.js"></script>
+	<script src="js/libs.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			$(document).on('click', '.dropdown-menu', function (e) {
+				$(this).hasClass('keep_open') && e.stopPropagation();
+			});
+		});
+		$(document).ready(function () {
+			$('[data-toggle="offcanvas"]').click(function () {
+				$('.row-offcanvas').toggleClass('active')
+			});
+		});
+		$('.button-wrap').on("click", function () {
+			$(this).toggleClass('button-active');
+		});
+		$(function () {
+			$('[data-toggle="tooltip"]').tooltip()
+		})
+	</script>
+
+	<!-- slick -->
+	<script type="text/javascript">
+		{
+			if (screen.width < 992) document.write('<sc' + 'ript type="text/javascript" src="js/slick.min.js" ></sc' +
+				'ript>');
+		}
+	</script>
+
+	<script>
+		$('.item-slider').slick({
+			dots: true,
+			arrows: false,
+			infinite: true,
+			speed: 300,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+		});
+	</script>
+
+	<!-- formstyler -->
+	<script src="/js/jquery.formstyler.js"></script>
+	<script type="text/javascript">
+		(function ($) {
+			$(function () {
+				$('input').styler();
+			});
+		})(jQuery);
+	</script>
+	<script>
+		window.onclick = function onclickRadio() {
+			var nameRadio = document.getElementsByName('price');
+			for (var i = 0; i < nameRadio.length; i++) {
+				if (nameRadio[i].type === 'radio' && nameRadio[i].checked) {
+					rezultatRadio = nameRadio[i].value;
+				}
+			}
+			document.getElementById('rezultatRadio').innerHTML = rezultatRadio;
+		}
+	</script>
+	<!-- formstyler -->
+
+
+</body>
+
+</html>

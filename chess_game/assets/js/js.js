@@ -43,13 +43,11 @@ cell.forEach((element, index, array) => {
     if( y == 0 || y == 1 || y == 2){
         if(element.classList.contains('black')){
             setFigure(element, 'bf');
-            element.setAttribute('data-color', 'black');
         }
     }
     if( y == 5 || y == 6 || y == 7){
         if(element.classList.contains('black')){
             setFigure(element, 'wf');
-            element.setAttribute('data-color', 'white');
         }
     }
 })
@@ -63,11 +61,7 @@ cell.forEach((element, index, array) => {
 function setFigure(pos, fig){
     pos.classList.add(fig);
 }
-function step(elementClick){
-    if(playerWhite){
-        focus(elementClick);
-    }
-}
-function focus(a){
-    console.log(a);
+
+function step(elementTarget){
+    console.log(elementTarget);
 }

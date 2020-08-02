@@ -26,6 +26,7 @@
 }
 .article-detail .banner-footer .row .left-col .banner-footer-text{
     margin: 0;
+    padding-right: 10px;
 }
 .article-detail .banner-footer .row .right-col, .article-detail .banner-footer .row .left-col{
     flex: none;

@@ -5,10 +5,12 @@
 }
 body{
     height: 100vh;
+    background: #eee;
 }
 $widthCell: 40px;
 $heightCell: 40px;
 #main{
+    box-sizing: content-box;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -17,13 +19,14 @@ $heightCell: 40px;
     height: $heightCell * 8;
     display: flex;
     flex-wrap: wrap;
+    border: 1px solid;
     .cell{
         width: $widthCell;
         height: $heightCell;
         background-size: 40px 40px;
         
         &.white{
-            background-color: rgb(209, 209, 209);
+            background-color: #fff;
         }
         &.black{
             background-color: #964b00;
@@ -39,7 +42,7 @@ $heightCell: 40px;
             &.focus{
                 background-color: blue;
             }
-            &[data-moved="1"]{
+            &.accessCell{
                 background-color: lightblue;
             }
         }

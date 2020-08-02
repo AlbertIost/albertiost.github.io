@@ -5,9 +5,12 @@
   margin: 0; }
 
 body {
-  height: 100vh; }
+  height: 100vh;
+  background: #eee; }
 
 #main {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -20,13 +23,14 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  border: 1px solid; }
   #main .cell {
     width: 40px;
     height: 40px;
     background-size: 40px 40px; }
     #main .cell.white {
-      background-color: #d1d1d1; }
+      background-color: #fff; }
     #main .cell.black {
       background-color: #964b00; }
       #main .cell.black[data-taken="1"] {
@@ -37,5 +41,5 @@ body {
         background-image: url("../img/figures/white.png"); }
       #main .cell.black.focus {
         background-color: blue; }
-      #main .cell.black[data-moved="1"] {
+      #main .cell.black.accessCell {
         background-color: lightblue; }
