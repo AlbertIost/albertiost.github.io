@@ -958,9 +958,8 @@ footer .logo{margin-right: 6%;}
 	    right: 41px;
 	}
 	.block-buy{margin-bottom: 22px;}
-	.block-buy .row>div{
-		width: 100%;
-		position: static;
+	.block-buy .row a.btn{
+		margin-top: 10px;
 	}
 	.block-buy .collapse{
 		height: auto !important;
