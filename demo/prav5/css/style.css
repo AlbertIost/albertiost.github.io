@@ -517,6 +517,9 @@ header{
 	min-width: 0;
 	width: 100%;
 }
+.block-buy .row input[type="text"]{
+	height: 40px;
+}
 .block-buy .i-arrow-down{
 	bottom: auto;
 	right: 49px;
@@ -958,8 +961,12 @@ footer .logo{margin-right: 6%;}
 	    right: 41px;
 	}
 	.block-buy{margin-bottom: 22px;}
-	.block-buy .row a.btn{
+	
+	.block-buy .row .text-right a.btn{
+		width: 213px;
+		margin: 0 auto;
 		margin-top: 10px;
+		display: block;
 	}
 	.block-buy .collapse{
 		height: auto !important;
