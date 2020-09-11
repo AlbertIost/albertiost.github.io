@@ -31,12 +31,14 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
     display: flex;
     justify-content: space-between;
     align-items: start;
+    flex-wrap: wrap;
 }
 
 .s-simulator .simulator .simulator-item{
     background: #fff;
     box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
     width: 300px;
+    margin-bottom: 20px;
 }
 
 .s-simulator .simulator .simulator-item .simulator-item__title{
@@ -86,6 +88,17 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
     display: inline-block;
     margin-top: 20px;
 }
+.s-partners .container .partner .partner-col.few-reviews{
+    flex-wrap: nowrap;
+}
+.s-partners .container .partner .partner-col.few-reviews .t-col{
+    width: auto;
+    flex: 1 1 auto;
+}
+.s-partners .container .partner .partner-col.few-reviews .t595__line{
+    display: none;
+}
+
 @media screen and (max-width: 800px){
     .s-free .free{
         flex-direction: column;
