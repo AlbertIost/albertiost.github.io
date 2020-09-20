@@ -38,7 +38,7 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
     background: #fff;
     box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
     width: 300px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;in-bottom: 20px;
 }
 
 .s-simulator .simulator .simulator-item .simulator-item__title{
@@ -90,6 +90,7 @@ html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:b
 }
 .s-partners .container .partner .partner-col.few-reviews{
     flex-wrap: nowrap;
+    border-bottom: 0;
 }
 .s-partners .container .partner .partner-col.few-reviews .t-col{
     width: auto;
