@@ -1,0 +1,366 @@
+;(function($){
+
+	var mfp = $.magnificPopup.instance;
+	var bookSale = {};
+
+
+	bookSale.functions = {
+		isPageHome: function(){
+			return $("body").hasClass("home");
+		},
+
+		isPageForm: function(){
+			return $("body").hasClass("form");
+		},
+
+		scrollTo: function(){
+			$("body").on("click", ".scrollto", function (e) {
+				e.preventDefault();
+
+				var self = $(this),
+						id  = self.attr("href"),
+						menuWrap = self.closest(".mnu-wrap"),
+						top = $(id).offset().top;
+
+
+				if( $(window).width() <= "992" ){
+					menuWrap.slideUp();
+					menuWrap.siblings(".btn-mnu").removeClass("on");
+				}
+
+				$("body, html").stop(true, false).animate({scrollTop: top }, 1500);
+			});
+		},
+
+		menu: function(){
+			$(".btn-mnu").on("click", function(){
+				var self = $(this);
+
+				self.toggleClass("on");
+
+				if( self.hasClass("on") )
+					$(".mnu-wrap").slideDown(300);
+				else
+					$(".mnu-wrap").slideUp(300);
+			});
+		},
+
+		openPopup: function(){
+			$(".open-popup").magnificPopup({
+				type: "inline"
+			});
+		},
+
+		addPatternValidateForm: function(){
+			$.validator.addMethod("myText", function( value, element ) {
+				return this.optional( element ) || /^[а-яё\ ]+$/i.test( value );
+			});
+			$.validator.addMethod("myNumb", function( value, element ) {
+				return this.optional( element ) || /^[0-9]+$/i.test( value );
+			});
+			$.validator.addMethod("myPhone", function( value, element ) {
+				return this.optional( element ) || /^([+]?[0-9\s-\(\)]{5,25})*$/i.test( value );
+			});
+			$.validator.addMethod("myAddress", function( value, element ) {
+				return this.optional( element ) || /^[а-яё0-9\ \,\/\-\.]+$/i.test( value );
+			});
+		},
+
+		setOptionValidateForm: function(){
+			jQuery.extend(jQuery.validator.messages, {
+				required: "Поле обязательное для заполнения",
+				myText: "Поле должно содержать только русские буквы",
+				myPhone: "Введите корректный телефон",
+				myAddress: "Введите корректный адрес",
+				email: "Введите корректный E-mail",
+				minlength: jQuery.validator.format("Длина поля должно быть не менее {0}-х символов")
+			});
+
+			jQuery.validator.setDefaults({
+				errorClass: "invalid-label",
+				focusCleanup: true,
+				submitHandler: function(form) {
+					form.submit();
+				}
+			});
+
+			$("body").on("click","label.invalid-label", function(){
+				$(this).remove();
+			});
+		},
+				
+		ajax: function(form){
+			$(form).submit(function() {
+				var self = $(this);
+				$.ajax({
+					type: "POST",
+					url: "mail.php",
+					data: self.serialize()
+				}).done(function() {
+					alert("Thank you!");
+					setTimeout(function() {
+				self.trigger("reset");
+			}, 1000);
+				});
+				return false;
+			});
+
+		}
+
+	};
+
+
+	bookSale.homePage = function(){
+
+		function changeLogo(){
+			var logo = $(".logo-wrap").find("img"),
+					srcLogo = "img/logo.png",
+					srcLogoMob = "img/logo-mobile.png";
+
+			if( $(window).width() < "992" && logo.attr("src") != srcLogoMob )
+				logo.attr("src", srcLogoMob);
+			else if( $(window).width() > "992" && logo.attr("src") != srcLogo )
+				logo.attr("src", srcLogo);
+		}
+
+		$(window).on("load resize", changeLogo);
+
+
+		var customer = {
+			timeShow: 30000,
+			timeClose: 10000,
+			popup: ".last-customer",
+			btnClose: ".last-customer-close",
+			interval: null,
+			closeCustomerOnBtn: function(btn){
+				var self = this;
+				$(btn).on("click", function(){
+					self.closeCustomer();
+					self.clearInterv();
+				});
+			},
+
+			closeCustomer: function(btn){
+				if( $(this.popup).is(":visible") ){
+					$(this.popup).fadeOut(200);
+				}
+			},
+
+			timeoutClose: function(){
+				var self = this;
+				setTimeout(function(){
+					self.closeCustomer(self.btnClose);
+				}, self.timeClose);
+			},
+
+			openCustomer: function(){
+				if (!mfp.isOpen) $(this.popup).fadeIn(200);
+			},
+
+			clearInterv: function(){
+				clearInterval(this.interval)
+			},
+
+			init: function(){
+				var self = this;
+				
+				self.closeCustomerOnBtn(self.btnClose);
+				
+				self.interval = setInterval(function(){
+					self.openCustomer();
+					self.timeoutClose(self.btnClose);
+				}, self.timeShow + self.timeClose);
+			}
+
+		}
+		customer.init();
+
+
+		function openPopup(){
+			if (!mfp.isOpen) {
+				$.magnificPopup.open({
+					items: {
+						src: $("#popup")
+					},
+					type: "inline"
+				});
+			}
+		}
+		
+		var popupTimeout = setTimeout( openPopup, 60000 );
+		$("form button").on("click", function(){
+			clearTimeout(popupTimeout);
+		});
+
+		var headCarouselInterval = 5000;
+		$(".head-carousel").owlCarousel({
+			items: 1,
+			loop: true,
+			smartSpeed: 700,
+			autoplay:true,
+			autoplayTimeout: headCarouselInterval
+		});
+
+
+		// Карусель отзывов
+		$(".reviews-carousel").owlCarousel({
+			items: 1,
+			loop: true,
+			nav: true,
+			smartSpeed: 1000,
+			navText: ['',''],
+			autoHeight: true
+		});
+
+		
+		$(".form").each(function(){
+			$(this).validate({
+				rules: {
+					home_email: {
+						required: true,
+						email: true
+					},
+					FNAME: {
+						required: true,
+						minlength: 3,
+						myText: true
+					},
+					home_question: {
+						required: true
+					},
+					home_phone: {
+						required: true,
+						myPhone: true
+					},
+					QUESTION: {
+						required: true,
+						myText: true
+					}
+				}
+			});
+		});
+
+
+	};
+
+	bookSale.formPage = function(){
+
+		//Счётчик
+		var counter,
+				clockTime = 20;
+
+		counter = $(".form-counter").FlipClock(60 * clockTime, {
+			clockFace: "MinuteCounter",
+			language: "ru-ru",
+			countdown: true,
+			callbacks: {
+				stop : function() {
+					$(".form-counter-descr").html("Поспешите! Количество книг ограничено");
+				}
+			}
+		});
+		
+		// Форма
+		// Валидация формы
+		var formValidate = $(".form-payment").validate({
+			rules: {
+				FNAME: {
+					required: true,
+					minlength: 3,
+					myText: true
+				},
+				email: {
+					required: true,
+					email: true
+				},
+				TELEPH: {
+					required: true,
+					myPhone: true
+				},
+				DELINAME: {
+					required: true,
+					myText: true
+				},
+				DELIPHONE: {
+					required: true,
+					myPhone: true
+				},
+				DELIADRES: {
+					required: true,
+					myAddress: true
+				},
+				DELIREGION: {
+					required: "#form-payment-russia:checked" 
+				},
+				DELICITY: {
+					required: "#form-payment-russia:checked"
+				},
+				DELIZIP: {
+					required: "#form-payment-russia:checked",
+					myNumb: true
+				}
+			},
+			messages: {
+				DELIZIP: {
+					myNumb: "Введите корректный индекс"
+				}
+			},
+			success: function(label){
+				var input = label.siblings("input"),
+						attr = input.attr("name"),
+						val = input.val();
+				
+				if( attr == "name" ){
+					$(".form-payment").find("input[name='DELINAME']").val( val );
+				}
+				else if( attr == "phone" ){
+					$(".form-payment").find("input[name='DELIPHONE']").val( val );
+				}
+
+				label.remove();
+			}
+		});
+
+		//Радио кнопки
+		var radioBtn = $(".form-payment-region").find("input[name='region']");
+
+		function checkRadio(radioBtn){
+			var wrap = radioBtn.closest(".form-payment-address");
+					checked = radioBtn.filter(":checked");
+
+			if( checked.val() == "moscow" ){
+				wrap.find("input").filter("[name='DELIREGION']").hide();
+				wrap.find("input").filter("[name='DELICITY']").hide();
+				wrap.find("input").filter("[name='DELIZIP']").hide();
+			}
+			else if( checked.val() == "russia" ){
+				wrap.find("input").filter("[name='DELIREGION']").show();
+				wrap.find("input").filter("[name='DELICITY']").show();
+				wrap.find("input").filter("[name='DELIZIP']").show();
+			}
+
+			formValidate.resetForm();
+		}
+
+		radioBtn.on("change", function(){
+			checkRadio( $(this) );
+		});
+		checkRadio(radioBtn);
+
+	};
+
+	//INIT
+	bookSale.functions.addPatternValidateForm();
+	bookSale.functions.setOptionValidateForm();
+	if( bookSale.functions.isPageHome() ) {
+		bookSale.functions.scrollTo();
+		bookSale.functions.menu();
+		bookSale.homePage();
+	}
+
+	if( bookSale.functions.isPageForm() ) {
+		bookSale.formPage();
+	}
+
+
+})(jQuery);
