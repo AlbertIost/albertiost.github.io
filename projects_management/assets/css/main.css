@@ -47,6 +47,7 @@ section.main .wrapper .news {
 section.main .wrapper .news .slider-news .slide-imgs{
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 section.main .wrapper .news .slider-news .slide-imgs a{
