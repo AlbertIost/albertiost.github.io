@@ -2,8 +2,7 @@ $(document).ready(function(){
 	$('.slider-news').slick({
 		arrows: false,
 		dots: true,
-		appendDots: '.news-dots',
-		adaptiveHeight: true
+		appendDots: '.news-dots'
 	});
 
 
