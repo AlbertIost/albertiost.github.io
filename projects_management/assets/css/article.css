@@ -772,6 +772,7 @@ section.research .wrapper .slider-research__dots .slick-dots li button{
 section.research .wrapper .slider-research .el img{
   margin: 0 auto;
   max-width: 100%;
+  max-height: 300px;
 }
 
 @media screen and (max-width: 1650px) {
@@ -785,8 +786,7 @@ section.research .wrapper .slider-research .el img{
     font-size: 30px;
   }
   section.research .wrapper .slider-research .el img{
-    max-height: 300px;
-    max-width: 220px;
+    max-height: 250px;
   }
   section.article .wrapper {
     width: 100%;
@@ -906,6 +906,9 @@ section.research .wrapper .slider-research .el img{
     padding-left: 50px;
     padding-right: 50px;
   }
+  section.research .wrapper .slider-research .el img{
+    max-height: 200px;
+  }
   section.article .wrapper h1 {
     padding-top: 20px;
   }
@@ -1022,6 +1025,9 @@ section.research .wrapper .slider-research .el img{
 }
 
 @media screen and (max-width: 650px) {
+  section.research .wrapper .slider-research .el img{
+    max-height: 140px;
+  }
   section.article .wrapper {
     padding-left: 5px;
     padding-right: 5px;
