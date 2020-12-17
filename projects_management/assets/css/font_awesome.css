@@ -21,3 +21,7 @@ content: "\f39e"; }
   content: "\f0e1"; }
 .fa-instagram:before {
 content: "\f16d"; }
+.fa-twitter:before {
+  content: "\f099"; }
+  .fa-telegram:before {
+    content: "\f2c6"; }

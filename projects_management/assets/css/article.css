@@ -772,7 +772,7 @@ section.research .wrapper .slider-research__dots .slick-dots li button{
 section.research .wrapper .slider-research .el img{
   margin: 0 auto;
   max-width: 100%;
-  max-height: 300px;
+  max-height: 220px;
 }
 
 @media screen and (max-width: 1650px) {
@@ -786,7 +786,7 @@ section.research .wrapper .slider-research .el img{
     font-size: 30px;
   }
   section.research .wrapper .slider-research .el img{
-    max-height: 250px;
+    max-height: 200px;
   }
   section.article .wrapper {
     width: 100%;
