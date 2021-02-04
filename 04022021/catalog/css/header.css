@@ -1,0 +1,550 @@
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    src: url("../webfonts/RobotoSlab-Regular.ttf")
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 700;
+    src: url("../webfonts/RobotoSlab-Bold.ttf")
+}
+
+.header-top{
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.header-top .wrapper {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px
+}
+
+.header-top .wrapper .logo {
+    max-width: 300px
+}
+
+.header-top .wrapper .menu-top-btn {
+    display: none
+}
+
+.header-top .wrapper .menu-top {
+    background-color: #fff;
+    display: block;
+    font-size: 30px;
+    z-index: 99
+}
+
+.header-top .wrapper .menu-top .menu-top-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.header-top .wrapper .menu-top .menu-top-inner .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 20px 0
+}
+
+.header-top .wrapper .menu-top .menu-top-inner .nav a {
+    font-weight: 700;
+    padding-left: 70px
+}
+
+.header-top .wrapper .menu-top .menu-top-inner .nav a:hover {
+    text-decoration: underline
+}
+
+.header-top .wrapper .menu-top .menu-top-inner .login {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-left: 130px
+}
+
+.header-top .wrapper .menu-top .menu-top-inner .login a:hover {
+    text-decoration: underline
+}
+
+.header-top .wrapper .menu-top .menu-top-inner .login span {
+    padding: 0 10px
+}
+
+.header-top .wrapper .menu-top .menu-top-inner .login a.signin {
+    color: #ff0000;
+    font-weight: 700
+}
+
+.header-top .wrapper .login-auth {
+    display: block;
+    position: relative;
+    margin-left: 130px
+}
+
+.header-top .wrapper .login-auth .mini-avatar {
+    position: relative;
+    width: 91px;
+    height: 91px;
+    margin-right: 75px;
+    background-image: url("../img/avatar.png");
+    background-size: 91px 91px;
+    background-repeat: no-repeat;
+    background-position: 100%
+}
+
+.header-top .wrapper .login-auth .actions {
+    display: none;
+    position: absolute;
+    right: 0;
+    width: 230px;
+    text-align: center;
+    padding: 22px 30px;
+    background: #fff
+}
+
+.header-top .wrapper .login-auth .actions a {
+    display: block;
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border-bottom: 3px solid #a89fab
+}
+
+.header-top .wrapper .login-auth .actions a:first-child {
+    padding-top: 0
+}
+
+.header-top .wrapper .login-auth .actions a:last-child {
+    padding-bottom: 0;
+    border-bottom: 0
+}
+
+.header-top.notifications .wrapper .mini-avatar .notification {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    top: 2px;
+    left: 2px;
+    background-color: #ff0000
+}
+
+@media screen and (max-width:1650px) {
+    .header-top .wrapper {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin: 0 auto
+    }
+
+    .header-top .wrapper .logo {
+        max-width: 300px
+    }
+
+    .header-top .wrapper .menu-top-btn {
+        display: none
+    }
+
+    .header-top .wrapper .menu-top {
+        background-color: #fff;
+        display: block;
+        font-size: 24px;
+        z-index: 99
+    }
+
+    .header-top .wrapper .menu-top .menu-top-inner {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end
+    }
+
+    .header-top .wrapper .menu-top .menu-top-inner .nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between
+    }
+
+    .header-top .wrapper .menu-top .menu-top-inner .nav a {
+        padding-left: 30px
+    }
+
+    .header-top .wrapper .menu-top .menu-top-inner .login {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        margin-left: 50px
+    }
+
+    .header-top .wrapper .menu-top .menu-top-inner .login span {
+        padding: 0 10px
+    }
+
+    .header-top .wrapper .menu-top .menu-top-inner .login a.signin {
+        color: #ff0000;
+        font-weight: 700
+    }
+}
+
+@media screen and (max-width:1250px) {
+    .header-top {
+        padding-top: 10px
+    }
+
+    .header-top .wrapper {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 0
+    }
+
+    .header-top .wrapper .logo {
+        max-width: 250px;
+        margin-left: 30px
+    }
+
+    .header-top .wrapper .menu-top-btn {
+        margin-right: 35px;
+        position: relative;
+        display: block;
+        right: 0;
+        bottom: 0;
+        width: 70px;
+        height: 42px
+    }
+
+    .header-top .wrapper .menu-top-btn:after,
+    .header-top .wrapper .menu-top-btn:before {
+        content: "";
+        position: absolute;
+        height: 6px;
+        width: 100%;
+        background: #000;
+        border-radius: 2px;
+        -webkit-transition: .2s ease;
+        -o-transition: .2s ease;
+        transition: .2s ease;
+        -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+        transform-origin: center center;
+        right: 0
+    }
+
+    .header-top .wrapper .menu-top-btn:after {
+        content: "";
+        position: absolute;
+        height: 6px;
+        width: 100%;
+        background: #000;
+        top: 0
+    }
+
+    .header-top .wrapper .menu-top-btn:before {
+        content: "";
+        position: absolute;
+        height: 6px;
+        width: 100%;
+        background: #000;
+        bottom: 0
+    }
+
+    .header-top .wrapper .menu-top-btn span {
+        position: absolute;
+        height: 6px;
+        width: 100%;
+        background: #000;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        right: 0;
+        border-radius: 2px;
+        -webkit-transition: .2s ease;
+        -o-transition: .2s ease;
+        transition: .2s ease
+    }
+
+    .header-top .wrapper .menu-top-btn_active:after {
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        width: 52px;
+        -webkit-transform-origin: right;
+        -ms-transform-origin: right;
+        transform-origin: right
+    }
+
+    .header-top .wrapper .menu-top-btn_active:before {
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        width: 52px;
+        -webkit-transform-origin: right;
+        -ms-transform-origin: right;
+        transform-origin: right
+    }
+
+    .header-top .wrapper .menu-top-btn_active span {
+        width: 0
+    }
+
+    .header-top .wrapper .menu-top {
+        position: absolute;
+        width: 100%;
+        top: 100%;
+        background-color: #fff;
+        display: none;
+        border: 30px solid #fff;
+        margin: 0;
+        font-size: 24px;
+        z-index: 99
+    }
+
+    .header-top .wrapper .menu-top .menu-top-inner {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start
+    }
+
+    .header-top .wrapper .menu-top .menu-top-inner .nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 0
+    }
+
+    .header-top .wrapper .menu-top .menu-top-inner .nav a {
+        padding-left: 0;
+        padding-bottom: 20px
+    }
+
+    .header-top .wrapper .menu-top .menu-top-inner span {
+        display: none
+    }
+
+    .header-top .wrapper .menu-top .menu-top-inner .login {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin: 0;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start
+    }
+
+    .header-top .wrapper .menu-top .menu-top-inner .login .signin {
+        color: #000 !important;
+        font-weight: 700 !important
+    }
+
+    .header-top .wrapper .menu-top .menu-top-inner .login .signup {
+        font-weight: 700;
+        padding-bottom: 20px
+    }
+
+    .header-top .wrapper .menu-top .menu-top-inner .login-auth {
+        margin: 0
+    }
+
+    .header-top .wrapper .menu-top .menu-top-inner .login-auth .mini-avatar {
+        display: none
+    }
+
+    .header-top .wrapper .menu-top .menu-top-inner .login-auth .actions {
+        padding: 0;
+        position: static;
+        display: block;
+        width: auto
+    }
+
+    .header-top .wrapper .menu-top .menu-top-inner .login-auth .actions a {
+        border: none;
+        padding: 0;
+        padding-bottom: 20px
+    }
+
+    .header-top.notifications .wrapper .menu-top-btn .notification {
+        content: '';
+        position: absolute;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        top: 0;
+        left: 0;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        background-color: #ff0000;
+        z-index: 999;
+        -webkit-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s
+    }
+
+    .header-top.notifications .wrapper .menu-top-btn_active .notification {
+        width: 0;
+        height: 0
+    }
+}
+
+@media screen and (max-width:650px) {
+    .header-top {
+        padding-top: 10px
+    }
+
+    .header-top .wrapper .logo {
+        margin-left: 10px;
+        max-width: 240px
+    }
+
+    .header-top .wrapper .menu-top-btn {
+        margin-right: 10px
+    }
+
+    .header-top .wrapper .menu-top .menu-top-inner .login-auth {
+        margin-left: 0
+    }
+
+    .header-top .wrapper .menu-top .menu-top-inner .login-auth .actions {
+        width: auto
+    }
+
+    .header-top .wrapper .menu-top .menu-top-inner .nav a {
+        padding-left: 0
+    }
+
+    .header-top .wrapper a {
+        font-size: 18px !important
+    }
+}
+
+@media screen and (max-width:500px) {
+    .header-top .wrapper .logo {
+        margin-left: 10px;
+        max-width: 200px
+    }
+
+    .header-top .wrapper .menu-top-btn {
+        width: 50px;
+        height: 32px
+    }
+
+    .header-top .wrapper .menu-top-btn:after,
+    .header-top .wrapper .menu-top-btn:before {
+        height: 4px
+    }
+
+    .header-top .wrapper .menu-top-btn span {
+        height: 4px;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%)
+    }
+
+    .header-top .wrapper .menu-top-btn_active:after {
+        -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        width: 40px;
+        -webkit-transform-origin: right;
+        -ms-transform-origin: right;
+        transform-origin: right
+    }
+
+    .header-top .wrapper .menu-top-btn_active:before {
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        width: 40px;
+        -webkit-transform-origin: right;
+        -ms-transform-origin: right;
+        transform-origin: right
+    }
+
+    .header-top .wrapper .menu-top-btn_active span {
+        width: 0;
+        right: 0
+    }
+
+    .header-top .wrapper .menu-top {
+        border: 10px solid #fff;
+        border-top: 20px solid #fff;
+        border-bottom: 20px solid #fff
+    }
+
+    .header-top .wrapper .menu-top .login-auth {
+        margin-left: 0
+    }
+
+    .header-top .wrapper a {
+        font-size: 18px !important
+    }
+
+    .header-top.notifications .wrapper .menu-top-btn .notification {
+        width: 20px;
+        height: 20px
+    }
+
+    .header-top.notifications .wrapper .menu-top-btn_active .notification {
+        width: 0;
+        height: 0
+    }
+}
