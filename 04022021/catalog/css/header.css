@@ -37,7 +37,7 @@
     max-width: 300px
 }
 
-.header-top .wrapper .menu-top-btn {
+.header-top .wrapper .menu-btn {
     display: none
 }
 
@@ -177,7 +177,7 @@
         max-width: 300px
     }
 
-    .header-top .wrapper .menu-top-btn {
+    .header-top .wrapper .menu-btn {
         display: none
     }
 
@@ -207,7 +207,12 @@
     }
 
     .header-top .wrapper .menu-top .menu-top-inner .nav a {
-        padding-left: 30px
+        padding-left: 30px;
+        color:#000;
+    }
+
+    .header-top .wrapper .menu-top .menu-top-inner .nav a:hover{
+        text-decoration: none;
     }
 
     .header-top .wrapper .menu-top .menu-top-inner .login {
@@ -218,6 +223,10 @@
         -ms-flex-pack: justify;
         justify-content: space-between;
         margin-left: 50px
+    }
+
+    .header-top .wrapper .menu-top .menu-top-inner .login a:hover{
+        text-decoration: none;
     }
 
     .header-top .wrapper .menu-top .menu-top-inner .login span {
@@ -247,7 +256,7 @@
         margin-left: 30px
     }
 
-    .header-top .wrapper .menu-top-btn {
+    .header-top .wrapper .menu-btn {
         margin-right: 35px;
         position: relative;
         display: block;
@@ -257,8 +266,8 @@
         height: 42px
     }
 
-    .header-top .wrapper .menu-top-btn:after,
-    .header-top .wrapper .menu-top-btn:before {
+    .header-top .wrapper .menu-btn:after,
+    .header-top .wrapper .menu-btn:before {
         content: "";
         position: absolute;
         height: 6px;
@@ -274,7 +283,7 @@
         right: 0
     }
 
-    .header-top .wrapper .menu-top-btn:after {
+    .header-top .wrapper .menu-btn:after {
         content: "";
         position: absolute;
         height: 6px;
@@ -283,7 +292,7 @@
         top: 0
     }
 
-    .header-top .wrapper .menu-top-btn:before {
+    .header-top .wrapper .menu-btn:before {
         content: "";
         position: absolute;
         height: 6px;
@@ -292,7 +301,7 @@
         bottom: 0
     }
 
-    .header-top .wrapper .menu-top-btn span {
+    .header-top .wrapper .menu-btn span {
         position: absolute;
         height: 6px;
         width: 100%;
@@ -308,7 +317,7 @@
         transition: .2s ease
     }
 
-    .header-top .wrapper .menu-top-btn_active:after {
+    .header-top .wrapper .menu-btn_active:after {
         -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
         transform: rotate(-45deg);
@@ -318,7 +327,7 @@
         transform-origin: right
     }
 
-    .header-top .wrapper .menu-top-btn_active:before {
+    .header-top .wrapper .menu-btn_active:before {
         -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
         transform: rotate(45deg);
@@ -328,7 +337,7 @@
         transform-origin: right
     }
 
-    .header-top .wrapper .menu-top-btn_active span {
+    .header-top .wrapper .menu-btn_active span {
         width: 0
     }
 
@@ -421,7 +430,7 @@
         padding-bottom: 20px
     }
 
-    .header-top.notifications .wrapper .menu-top-btn .notification {
+    .header-top.notifications .wrapper .menu-btn .notification {
         content: '';
         position: absolute;
         border-radius: 50%;
@@ -439,7 +448,7 @@
         transition: .3s
     }
 
-    .header-top.notifications .wrapper .menu-top-btn_active .notification {
+    .header-top.notifications .wrapper .menu-btn_active .notification {
         width: 0;
         height: 0
     }
@@ -455,7 +464,7 @@
         max-width: 240px
     }
 
-    .header-top .wrapper .menu-top-btn {
+    .header-top .wrapper .menu-btn {
         margin-right: 10px
     }
 
@@ -482,24 +491,24 @@
         max-width: 200px
     }
 
-    .header-top .wrapper .menu-top-btn {
+    .header-top .wrapper .menu-btn {
         width: 50px;
         height: 32px
     }
 
-    .header-top .wrapper .menu-top-btn:after,
-    .header-top .wrapper .menu-top-btn:before {
+    .header-top .wrapper .menu-btn:after,
+    .header-top .wrapper .menu-btn:before {
         height: 4px
     }
 
-    .header-top .wrapper .menu-top-btn span {
+    .header-top .wrapper .menu-btn span {
         height: 4px;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%)
     }
 
-    .header-top .wrapper .menu-top-btn_active:after {
+    .header-top .wrapper .menu-btn_active:after {
         -webkit-transform: rotate(-45deg);
         -ms-transform: rotate(-45deg);
         transform: rotate(-45deg);
@@ -509,7 +518,7 @@
         transform-origin: right
     }
 
-    .header-top .wrapper .menu-top-btn_active:before {
+    .header-top .wrapper .menu-btn_active:before {
         -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
         transform: rotate(45deg);
@@ -519,7 +528,7 @@
         transform-origin: right
     }
 
-    .header-top .wrapper .menu-top-btn_active span {
+    .header-top .wrapper .menu-btn_active span {
         width: 0;
         right: 0
     }
@@ -538,12 +547,12 @@
         font-size: 18px !important
     }
 
-    .header-top.notifications .wrapper .menu-top-btn .notification {
+    .header-top.notifications .wrapper .menu-btn .notification {
         width: 20px;
         height: 20px
     }
 
-    .header-top.notifications .wrapper .menu-top-btn_active .notification {
+    .header-top.notifications .wrapper .menu-btn_active .notification {
         width: 0;
         height: 0
     }
