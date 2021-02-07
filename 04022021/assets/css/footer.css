@@ -23,7 +23,8 @@ footer.footer {
       footer.footer .wrapper .site-map ul li a {
         font-size: 25px;
         letter-spacing: 3px;
-        color: #fff; }
+        color: #fff; 
+        font-family: 'Roboto Slab', serif;}
     footer.footer .wrapper .contacts .contact-group {
       display: -webkit-box;
       display: -ms-flexbox;
