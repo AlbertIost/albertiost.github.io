@@ -101,7 +101,8 @@
 
 .header-top .wrapper .menu-top .menu-top-inner .login a.signin {
     color: #ff0000;
-    font-weight: 700
+    font-weight: 700;
+    font-family: 'Roboto Slab', serif;
 }
 
 .header-top .wrapper .login-auth {
