@@ -1,0 +1,1023 @@
+* {
+  font-family: "Open Sans", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+body {
+  background-color: #ededed;
+}
+body.visually-impaired .footer .container .visually_impaired {
+  display: flex;
+}
+body.visually-impaired .header .container ul .info ul li.home {
+  display: block;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header .container {
+  padding-top: 30px;
+}
+.header .container p.title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+.header .container ul {
+  padding-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.header .container ul .logo ul {
+  padding-top: 0;
+}
+.header .container ul .info {
+  display: flex;
+  align-items: center;
+}
+.header .container ul .info > ul > li:nth-child(2) a {
+  border-radius: 7px 0 0 7px;
+  border-left: 3px solid #fff;
+}
+.header .container ul .info ul {
+  padding-top: 0;
+}
+.header .container ul .info ul li {
+  position: relative;
+  color: #fff;
+}
+.header .container ul .info ul li.home {
+  display: none;
+}
+.header .container ul .info ul li a {
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  display: block;
+  padding: 15px 10px;
+  font-size: 18px;
+  background-color: #1a7fb0;
+}
+.header .container ul .info ul li a:hover {
+  background-color: #2ea3dd;
+}
+.header .container ul .info ul li:last-child a {
+  border-radius: 0 7px 7px 0;
+  border-right: 3px solid #fff;
+}
+.header .container ul .info ul li:last-child ul {
+  left: auto;
+  right: 3px;
+}
+.header .container ul .info ul li ul {
+  z-index: 2;
+  transform: translateY(-3px);
+  left: -3px;
+  top: 100%;
+  height: 0;
+  overflow: hidden;
+  min-width: 250px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+.header .container ul .info ul li ul li {
+  width: 100%;
+  border-radius: 0;
+}
+.header .container ul .info ul li ul li:last-child a {
+  border-radius: 0 0 7px 7px;
+  border-bottom: 3px solid #fff;
+}
+.header .container ul .info ul li ul li:first-child a {
+  border-radius: 0;
+}
+.header .container ul .info ul li ul li a {
+  border-left: 3px solid #fff;
+  border-right: 3px solid #fff;
+  border-top: 0;
+  border-bottom: 0;
+}
+.header .container ul .info ul li:hover ul {
+  height: auto;
+}
+.header .visuallyImp {
+  z-index: 10;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+}
+.header .visuallyImp a {
+  border: 3px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #1a7fb0;
+}
+.header .visuallyImp a img {
+  width: 80%;
+}
+
+.main .container {
+  padding-top: 40px;
+}
+.main .container .bread {
+  display: flex;
+  padding-bottom: 20px;
+}
+.main .container .bread li {
+  color: #006EA6;
+  font-weight: bold;
+  font-size: 20px;
+}
+.main .container .bread li a {
+  padding-right: 5px;
+}
+.main .container .bread li:after {
+  content: "/";
+  padding-right: 5px;
+}
+.main .container .bread li:last-child:after {
+  content: none;
+  padding-right: 0;
+}
+.main .container div[data-paver] {
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+}
+.main .container div[data-paver] img {
+  height: 100%;
+}
+.main .container p {
+  padding-bottom: 10px;
+  font-size: 17px;
+  color: #4e4e4e;
+}
+.main .container p.links {
+  color: #004da4;
+}
+.main .container .groups {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.main .container .groups .groups-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main .container .groups .groups-wrapper .item {
+  flex-basis: 270px;
+  flex-grow: 1;
+  cursor: pointer;
+  position: relative;
+  height: 200px;
+  border: 3px solid #fff;
+  margin-bottom: 30px;
+  margin-right: 15px;
+  margin-left: 15px;
+  overflow: hidden;
+}
+.main .container .groups .groups-wrapper .item:nth-child(4n) {
+  margin-right: 0;
+}
+.main .container .groups .groups-wrapper .item:nth-child(4n+1) {
+  margin-left: 0;
+}
+.main .container .groups .groups-wrapper .item .group {
+  transition: top 0.5s;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  line-height: 200px;
+  background-color: #1a7fb0;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+.main .container .groups .groups-wrapper .item-clearfix {
+  opacity: 0;
+  height: 0px;
+  padding: 0;
+  overflow: hidden;
+  margin-bottom: 0;
+  border: 0;
+}
+.main .container .schedule {
+  width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+.main .container .schedule p.group-name {
+  font-size: 26px;
+  color: #006EA6;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+.main .container .schedule table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.main .container .schedule table tr td {
+  border: 1px solid #000;
+  color: #000;
+  text-align: center;
+  padding: 5px 0;
+}
+.main .container .schedule table tr td p {
+  color: inherit;
+  font-size: inherit;
+  padding: 0;
+}
+.main .container .schedule table tr td:first-child {
+  width: 5%;
+}
+.main .container .schedule table tr td:nth-child(2) {
+  width: 15%;
+}
+.main .container .schedule table tr.head td {
+  background-color: #2ea3dd;
+  padding: 10px 0;
+  font-weight: bold;
+  text-align: center;
+}
+.main .container .schedule table tr.lesson.active td {
+  background-color: #2ea3dd77;
+}
+.main .container .about {
+  padding: 0 270px;
+}
+.main .container .about div {
+  display: flex;
+  justify-content: center;
+}
+.main .container .about div iframe {
+  width: 622px;
+  height: 350px;
+}
+.main .container .equipment {
+  padding: 0 200px;
+}
+.main .container .equipment ul:not(.bread) li {
+  list-style: decimal inside;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  color: #4e4e4e;
+}
+.main .container .selection {
+  width: 1040px;
+  margin: 0 auto;
+}
+.main .container .selection p.attention {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.main .container .selection p.info {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+.main .container .videos {
+  padding: 0 50px;
+}
+.main .container .videos .videos-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main .container .videos .videos-wrapper .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 622px;
+  padding-bottom: 30px;
+}
+.main .container .videos .videos-wrapper .item p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+.main .container .videos .videos-wrapper .item iframe {
+  width: 100%;
+  height: 350px;
+}
+.main .container .specialty table {
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+.main .container .specialty table tr.department {
+  font-weight: bold;
+}
+.main .container .specialty table tr.head {
+  font-weight: bold;
+  font-style: italic;
+}
+.main .container .specialty table tr td {
+  border: 1px solid;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+.main .container .specialty table tr td.number {
+  width: 3.5%;
+}
+.main .container .specialty table tr td.spec {
+  width: 22.3%;
+}
+.main .container .specialty table tr td.base {
+  width: 15.7%;
+}
+.main .container .specialty table tr td.term {
+  width: 13.8%;
+}
+.main .container .specialty table tr td.work {
+  width: 14.5%;
+}
+.main .container .specialty table tr td.date {
+  width: 14%;
+  vertical-align: middle;
+}
+.main .container .specialty table tr td.circs {
+  width: 16.2%;
+}
+.main .container .specialty table.prof tr td {
+  vertical-align: text-top;
+  padding: 10px 0;
+}
+.main .container .specialty table.prof tr td.short {
+  font-weight: bold;
+}
+.main .container .specialty table.prof tr td.code {
+  text-align: left;
+}
+.main .container .specialty table.prof tr td.code p {
+  font-weight: bold;
+}
+.main .container .specialty table.prof tr td.code p span {
+  font-weight: normal;
+  text-decoration: underline;
+}
+.main .container .specialty table.prof tr td:nth-child(1) {
+  width: 20.9%;
+}
+.main .container .specialty table.prof tr td:nth-child(2) {
+  width: 9.7%;
+}
+.main .container .specialty table.prof tr td:nth-child(3) {
+  width: 9.1%;
+}
+.main .container .specialty table.prof tr td:nth-child(4) {
+  width: 7.6%;
+}
+.main .container .specialty table.prof tr td:nth-child(5) {
+  width: 7.6%;
+}
+.main .container .specialty table.prof tr td:nth-child(6) {
+  width: 9.6%;
+}
+.main .container .specialty table.prof tr td:nth-child(7) {
+  width: 10.8%;
+}
+.main .container .specialty table.prof tr td:nth-child(8) {
+  width: 8.8%;
+}
+.main .container .specialty table.prof tr td:nth-child(9) {
+  width: 6.5%;
+}
+.main .container .specialty table.prof tr td:nth-child(10) {
+  width: 9%;
+}
+.main .container .specialty table.prof tr.head td {
+  text-align: center;
+}
+.main .container .workers .wrapper .leadershipes, .main .container .workers .wrapper .teachers {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.main .container .workers .wrapper .leadershipes .item, .main .container .workers .wrapper .teachers .item {
+  width: 320px;
+  margin-bottom: 50px;
+}
+.main .container .workers .wrapper .leadershipes .item img, .main .container .workers .wrapper .teachers .item img {
+  max-width: 100%;
+}
+.main .container .workers .wrapper .leadershipes .item p.name, .main .container .workers .wrapper .teachers .item p.name {
+  font-weight: bold;
+}
+.main .container .workers .wrapper .leadershipes .item p span, .main .container .workers .wrapper .teachers .item p span {
+  font-weight: bold;
+}
+.main .container .workers .wrapper .leadershipes .item p.non-avatar, .main .container .workers .wrapper .teachers .item p.non-avatar {
+  width: 320px;
+  height: 455px;
+  margin-bottom: 15px;
+  padding-bottom: 0;
+  background-color: grey;
+  position: relative;
+  overflow: hidden;
+}
+.main .container .workers .wrapper .leadershipes .item p.non-avatar::after, .main .container .workers .wrapper .teachers .item p.non-avatar::after {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 180px;
+  background-color: #ededed;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  border-radius: 50px 50px 0 0;
+}
+.main .container .workers .wrapper .leadershipes .item p.non-avatar::before, .main .container .workers .wrapper .teachers .item p.non-avatar::before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-color: #ededed;
+  bottom: 200px;
+  left: 50%;
+  border-radius: 100%;
+  transform: translateX(-50%);
+}
+.main .container .panos {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.main .container .panos .pano-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main .container .panos .pano-wrapper .item {
+  flex-basis: 270px;
+  flex-grow: 1;
+  cursor: pointer;
+  position: relative;
+  height: 200px;
+  border: 3px solid #fff;
+  margin-bottom: 30px;
+  margin-right: 15px;
+  margin-left: 15px;
+  overflow: hidden;
+}
+.main .container .panos .pano-wrapper .item:nth-child(4n) {
+  margin-right: 0;
+}
+.main .container .panos .pano-wrapper .item:nth-child(4n+1) {
+  margin-left: 0;
+}
+.main .container .panos .pano-wrapper .item .cab {
+  transition: top 0.5s;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  line-height: 200px;
+  background-color: #1a7fb0;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+.main .container .panos .pano-wrapper .item-clearfix {
+  opacity: 0;
+  height: 0px;
+  padding: 0;
+  overflow: hidden;
+  margin-bottom: 0;
+  border: 0;
+}
+
+.footer {
+  background-color: #fff;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+}
+.footer .container {
+  padding: 15px 0;
+}
+.footer .container .visually_impaired {
+  display: none;
+  padding: 5px 0;
+  width: 850px;
+  margin: 0 auto;
+  border: 1px solid;
+}
+.footer .container .visually_impaired-font {
+  width: 33.3333333333%;
+  display: flex;
+  align-items: center;
+}
+.footer .container .visually_impaired-font .font_label {
+  padding-top: 4px;
+  line-height: 1;
+  margin: 0 10px;
+}
+.footer .container .visually_impaired-font .font_list div {
+  display: inline-block;
+  vertical-align: baseline;
+  padding: 5px 4px;
+  margin: 0 4px;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 1;
+}
+.footer .container .visually_impaired-font .font_list div.font_list-normal {
+  font-size: 16px;
+}
+.footer .container .visually_impaired-font .font_list div.font_list-big {
+  font-size: 22px;
+}
+.footer .container .visually_impaired-font .font_list div.font_list-biggest {
+  font-size: 26px;
+}
+.footer .container .visually_impaired-font .font_list div.active, .footer .container .visually_impaired-font .font_list div:hover {
+  background-color: #000;
+  color: #fff;
+}
+.footer .container .visually_impaired-color {
+  width: 33.3333333333%;
+  display: flex;
+  align-items: center;
+}
+.footer .container .visually_impaired-color .color_label {
+  margin: 0 10px;
+}
+.footer .container .visually_impaired-color .color_list {
+  display: flex;
+}
+.footer .container .visually_impaired-color .color_list div {
+  display: inline-block;
+  vertical-align: baseline;
+  padding: 5px 4px;
+  margin: 0 4px;
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 1;
+  font-size: 22px;
+  border: 1px solid #000;
+  box-sizing: content-box;
+}
+.footer .container .visually_impaired-color .color_list div.color_list-normal {
+  background-color: #fff;
+}
+.footer .container .visually_impaired-color .color_list div.color_list-inverse {
+  background-color: #000;
+  color: #fff;
+}
+.footer .container .visually_impaired-color .color_list div.color_list-blue {
+  background-color: #9dd1ff;
+  color: #0e2557;
+}
+.footer .container .visually_impaired-color .color_list div.color_list-beige {
+  background-color: #f7f3d6;
+  color: #4d4b43;
+}
+.footer .container .visually_impaired-color .color_list div.active, .footer .container .visually_impaired-color .color_list div:hover {
+  box-shadow: 0 0 0 3px black;
+}
+.footer .container .visually_impaired-switch {
+  width: 33.3333333333%;
+  display: flex;
+  align-items: center;
+}
+.footer .container .visually_impaired-switch a {
+  color: #0000ee;
+}
+
+body.visually-impaired .main {
+  padding-bottom: 78px;
+}
+body.visually-impaired .footer {
+  display: block;
+}
+body.visually-impaired .footer .container .visually_impaired {
+  display: flex;
+}
+body.visually-impaired .header .container ul .info ul li.home {
+  display: block;
+}
+body.visually-impaired .visuallyImp {
+  display: none;
+}
+body.visually-impaired .header .container > ul > .info > ul > li:first-child a {
+  border-radius: 7px 0 0 7px;
+}
+body.visually-impaired .header .container > ul > .info > ul > li:nth-child(2) a {
+  border-left: 0;
+}
+body.visually-impaired.font-big .header .container ul .info ul li a {
+  font-size: 22px;
+}
+body.visually-impaired.font-big .main .container .bread {
+  padding-bottom: 24px;
+}
+body.visually-impaired.font-big .main .container .bread li {
+  font-size: 24px;
+}
+body.visually-impaired.font-big .main .container p {
+  font-size: 20px;
+}
+body.visually-impaired.font-big .main .container .specialty table tr td {
+  font-size: 18px;
+}
+body.visually-impaired.font-big .main .container .videos .item p {
+  font-size: 22px;
+}
+body.visually-impaired.font-big .main .container .equipment ul li {
+  font-size: 20px;
+}
+body.visually-impaired.font-big .main .container .schedule table tr td {
+  font-size: 20px;
+}
+body.visually-impaired.font-big .main .container .schedule p.group-name {
+  font-size: 30px;
+}
+body.visually-impaired.font-big .main .container .workers .wrapper .leadershipes .item {
+  width: 340px;
+}
+body.visually-impaired.font-big .main .container .workers .wrapper .leadershipes .item p {
+  font-size: 20px;
+}
+body.visually-impaired.font-biggest .header .container ul .info ul li a {
+  font-size: 26px;
+}
+body.visually-impaired.font-biggest .main .container {
+  max-width: 1650px;
+}
+body.visually-impaired.font-biggest .main .container .bread {
+  padding-bottom: 28px;
+}
+body.visually-impaired.font-biggest .main .container .bread li {
+  font-size: 28px;
+}
+body.visually-impaired.font-biggest .main .container p {
+  font-size: 24px;
+}
+body.visually-impaired.font-biggest .main .container .specialty table tr td {
+  font-size: 22px;
+}
+body.visually-impaired.font-biggest .main .container .videos .item p {
+  font-size: 26px;
+}
+body.visually-impaired.font-biggest .main .container .equipment ul li {
+  font-size: 24px;
+}
+body.visually-impaired.font-biggest .main .container .schedule table tr td {
+  font-size: 24px;
+}
+body.visually-impaired.font-biggest .main .container .schedule p.group-name {
+  font-size: 36px;
+}
+body.visually-impaired.font-biggest .main .container .workers .wrapper .leadershipes .item {
+  width: 400px;
+}
+body.visually-impaired.font-biggest .main .container .workers .wrapper .leadershipes .item p {
+  font-size: 20px;
+}
+body.visually-impaired.color-normal {
+  background-color: #fff;
+}
+body.visually-impaired.color-normal .header .container ul .logo {
+  display: none;
+}
+body.visually-impaired.color-normal .header .container ul .info ul li {
+  color: #000;
+}
+body.visually-impaired.color-normal .header .container ul .info ul li:nth-child(2) a {
+  border-radius: 0;
+}
+body.visually-impaired.color-normal .header .container ul .info ul li a {
+  background-color: #fff;
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+  font-weight: bold;
+}
+body.visually-impaired.color-normal .header .container ul .info ul li:first-child a {
+  border-left: 3px solid #000;
+}
+body.visually-impaired.color-normal .header .container ul .info ul li:last-child a {
+  border-right: 3px solid #000;
+}
+body.visually-impaired.color-normal .header .container ul .info ul li ul li:last-child a {
+  border-radius: 0 0 7px 7px;
+  border-bottom: 3px solid #000;
+}
+body.visually-impaired.color-normal .header .container ul .info ul li ul li a {
+  border-left: 3px solid #000;
+  border-right: 3px solid #000;
+  border-bottom: 0;
+}
+body.visually-impaired.color-normal .main .container .bread li {
+  color: #000;
+}
+body.visually-impaired.color-normal .main .container .arrow {
+  background-color: #fff;
+  border: 3px solid #000;
+}
+body.visually-impaired.color-normal .main .container .arrow svg polygon {
+  fill: #000;
+}
+body.visually-impaired.color-normal .main .container p {
+  color: #000;
+}
+body.visually-impaired.color-normal .main .container p.links {
+  color: #000;
+  text-decoration: underline;
+}
+body.visually-impaired.color-normal .main .container .groups .item {
+  border: 3px solid #000;
+}
+body.visually-impaired.color-normal .main .container .groups .item .group {
+  background-color: #fff;
+  color: #000;
+}
+body.visually-impaired.color-normal .main .container .panos .item {
+  border: 3px solid #000;
+}
+body.visually-impaired.color-normal .main .container .panos .item .cab {
+  background-color: #fff;
+  color: #000;
+}
+body.visually-impaired.color-normal .main .container .specialty table tr td {
+  border: 1px solid;
+}
+body.visually-impaired.color-normal .main .container .equipment ul li {
+  color: #000;
+}
+body.visually-impaired.color-normal .main .container .schedule table tr td {
+  border: 1px solid #000;
+  color: #000;
+}
+body.visually-impaired.color-normal .main .container .schedule table tr.head td {
+  background-color: #fff;
+}
+body.visually-impaired.color-inverse {
+  background-color: #000;
+}
+body.visually-impaired.color-inverse .header .container p.title {
+  color: #fff;
+}
+body.visually-impaired.color-inverse .header .container ul .logo {
+  display: none;
+}
+body.visually-impaired.color-inverse .header .container ul .info ul li {
+  color: #fff;
+}
+body.visually-impaired.color-inverse .header .container ul .info ul li:nth-child(2) a {
+  border-radius: 0;
+}
+body.visually-impaired.color-inverse .header .container ul .info ul li a {
+  background-color: #000;
+  border-top: 3px solid #fff;
+  border-bottom: 3px solid #fff;
+  font-weight: bold;
+}
+body.visually-impaired.color-inverse .header .container ul .info ul li:first-child a {
+  border-left: 3px solid #fff;
+}
+body.visually-impaired.color-inverse .header .container ul .info ul li:last-child a {
+  border-right: 3px solid #fff;
+}
+body.visually-impaired.color-inverse .header .container ul .info ul li ul li:last-child a {
+  border-radius: 0 0 7px 7px;
+  border-bottom: 3px solid #fff;
+}
+body.visually-impaired.color-inverse .header .container ul .info ul li ul li a {
+  border-left: 3px solid #fff;
+  border-right: 3px solid #fff;
+  border-bottom: 0;
+}
+body.visually-impaired.color-inverse .main .container .bread li {
+  color: #fff;
+}
+body.visually-impaired.color-inverse .main .container .arrow {
+  background-color: #000;
+  border: 3px solid #fff;
+}
+body.visually-impaired.color-inverse .main .container .arrow svg polygon {
+  fill: #fff;
+}
+body.visually-impaired.color-inverse .main .container p {
+  color: #fff;
+}
+body.visually-impaired.color-inverse .main .container p.links {
+  color: #fff;
+  text-decoration: underline;
+}
+body.visually-impaired.color-inverse .main .container .groups .item {
+  border: 3px solid #fff;
+}
+body.visually-impaired.color-inverse .main .container .groups .item .group {
+  background-color: #000;
+  color: #fff;
+}
+body.visually-impaired.color-inverse .main .container .panos .item {
+  border: 3px solid #fff;
+}
+body.visually-impaired.color-inverse .main .container .panos .item .cab {
+  background-color: #000;
+  color: #fff;
+}
+body.visually-impaired.color-inverse .main .container .specialty table tr td {
+  border: 1px solid #fff;
+  color: #fff;
+}
+body.visually-impaired.color-inverse .main .container .equipment ul li {
+  color: #fff;
+}
+body.visually-impaired.color-inverse .main .container .schedule table tr td {
+  border: 1px solid #fff;
+  color: #fff;
+}
+body.visually-impaired.color-inverse .main .container .schedule table tr.head td {
+  background-color: #000;
+}
+body.visually-impaired.color-blue {
+  background-color: #9dd1ff;
+}
+body.visually-impaired.color-blue .header .container p.title {
+  color: #0e2557;
+}
+body.visually-impaired.color-blue .header .container ul .logo {
+  display: none;
+}
+body.visually-impaired.color-blue .header .container ul .info ul li {
+  color: #0e2557;
+}
+body.visually-impaired.color-blue .header .container ul .info ul li:nth-child(2) a {
+  border-radius: 0;
+}
+body.visually-impaired.color-blue .header .container ul .info ul li a {
+  background-color: #9dd1ff;
+  border-top: 3px solid #0e2557;
+  border-bottom: 3px solid #0e2557;
+  font-weight: bold;
+}
+body.visually-impaired.color-blue .header .container ul .info ul li:first-child a {
+  border-left: 3px solid #0e2557;
+}
+body.visually-impaired.color-blue .header .container ul .info ul li:last-child a {
+  border-right: 3px solid #0e2557;
+}
+body.visually-impaired.color-blue .header .container ul .info ul li ul li:last-child a {
+  border-radius: 0 0 7px 7px;
+  border-bottom: 3px solid #0e2557;
+}
+body.visually-impaired.color-blue .header .container ul .info ul li ul li a {
+  border-left: 3px solid #0e2557;
+  border-right: 3px solid #0e2557;
+  border-bottom: 0;
+}
+body.visually-impaired.color-blue .main .container .bread li {
+  color: #0e2557;
+}
+body.visually-impaired.color-blue .main .container .arrow {
+  background-color: #9dd1ff;
+  border: 3px solid #0e2557;
+}
+body.visually-impaired.color-blue .main .container .arrow svg polygon {
+  fill: #0e2557;
+}
+body.visually-impaired.color-blue .main .container p {
+  color: #0e2557;
+}
+body.visually-impaired.color-blue .main .container p.links {
+  color: #0e2557;
+  text-decoration: underline;
+}
+body.visually-impaired.color-blue .main .container .groups .item {
+  border: 3px solid #0e2557;
+}
+body.visually-impaired.color-blue .main .container .groups .item .group {
+  background-color: #9dd1ff;
+  color: #0e2557;
+}
+body.visually-impaired.color-blue .main .container .panos .item {
+  border: 3px solid #0e2557;
+}
+body.visually-impaired.color-blue .main .container .panos .item .cab {
+  background-color: #9dd1ff;
+  color: #0e2557;
+}
+body.visually-impaired.color-blue .main .container .equipment ul li {
+  color: #0e2557;
+}
+body.visually-impaired.color-blue .main .container .schedule table tr td {
+  border: 1px solid #0e2557;
+  color: #0e2557;
+}
+body.visually-impaired.color-blue .main .container .schedule table tr.head td {
+  background-color: #9dd1ff;
+}
+body.visually-impaired.color-beige {
+  background-color: #f7f3d6;
+}
+body.visually-impaired.color-beige .header .container p.title {
+  color: #4d4b43;
+}
+body.visually-impaired.color-beige .header .container ul .logo {
+  display: none;
+}
+body.visually-impaired.color-beige .header .container ul .info ul li {
+  color: #4d4b43;
+}
+body.visually-impaired.color-beige .header .container ul .info ul li:nth-child(2) a {
+  border-radius: 0;
+}
+body.visually-impaired.color-beige .header .container ul .info ul li a {
+  background-color: #f7f3d6;
+  border-top: 3px solid #4d4b43;
+  border-bottom: 3px solid #4d4b43;
+  font-weight: bold;
+}
+body.visually-impaired.color-beige .header .container ul .info ul li:first-child a {
+  border-left: 3px solid #4d4b43;
+}
+body.visually-impaired.color-beige .header .container ul .info ul li:last-child a {
+  border-right: 3px solid #4d4b43;
+}
+body.visually-impaired.color-beige .header .container ul .info ul li ul li:last-child a {
+  border-radius: 0 0 7px 7px;
+  border-bottom: 3px solid #4d4b43;
+}
+body.visually-impaired.color-beige .header .container ul .info ul li ul li a {
+  border-left: 3px solid #4d4b43;
+  border-right: 3px solid #4d4b43;
+  border-bottom: 0;
+}
+body.visually-impaired.color-beige .main .container .bread li {
+  color: #4d4b43;
+}
+body.visually-impaired.color-beige .main .container .panorama .arrow {
+  background-color: #f7f3d6;
+  border: 3px solid #4d4b43;
+}
+body.visually-impaired.color-beige .main .container .panorama .arrow svg polygon {
+  fill: #4d4b43;
+}
+body.visually-impaired.color-beige .main .container p {
+  color: #4d4b43;
+}
+body.visually-impaired.color-beige .main .container p.links {
+  color: #4d4b43;
+  text-decoration: underline;
+}
+body.visually-impaired.color-beige .main .container .groups .item {
+  border: 3px solid #4d4b43;
+}
+body.visually-impaired.color-beige .main .container .groups .item .group {
+  background-color: #f7f3d6;
+  color: #4d4b43;
+}
+body.visually-impaired.color-beige .main .container .panos .item {
+  border: 3px solid #4d4b43;
+}
+body.visually-impaired.color-beige .main .container .panos .item .cab {
+  background-color: #f7f3d6;
+  color: #4d4b43;
+}
+body.visually-impaired.color-beige .main .container .equipment ul li {
+  color: #4d4b43;
+}
+body.visually-impaired.color-beige .main .container .schedule table tr td {
+  border: 1px solid #4d4b43;
+  color: #4d4b43;
+}
+body.visually-impaired.color-beige .main .container .schedule table tr.head td {
+  background-color: #f7f3d6;
+}
